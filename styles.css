@@ -1017,6 +1017,95 @@ input, select, textarea {
     line-height: 1.6;
 }
 
+/* --- Testimonials --- */
+.testimonials-section {
+    background: var(--color-bg-alt);
+    border-top: 1px solid var(--color-border);
+}
+
+.testimonials-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+}
+
+.testimonial-card {
+    background: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-lg);
+    padding: 32px;
+    transition: all 0.4s var(--ease-out);
+    position: relative;
+}
+
+.testimonial-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background: linear-gradient(90deg, var(--color-accent), transparent);
+    border-radius: var(--radius-lg) var(--radius-lg) 0 0;
+    opacity: 0;
+    transition: opacity 0.4s ease;
+}
+
+.testimonial-card:hover {
+    transform: translateY(-4px);
+    border-color: var(--color-border-hover);
+}
+
+.testimonial-card:hover::before {
+    opacity: 1;
+}
+
+.testimonial-stars {
+    color: #f59e0b;
+    font-size: 1.1rem;
+    letter-spacing: 2px;
+    margin-bottom: 16px;
+}
+
+.testimonial-card blockquote {
+    font-size: 0.92rem;
+    color: var(--color-text-secondary);
+    line-height: 1.7;
+    margin-bottom: 24px;
+    font-style: italic;
+}
+
+.testimonial-author {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.testimonial-avatar {
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, var(--color-accent), #c4501a);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.75rem;
+    font-weight: 700;
+    color: var(--color-white);
+    flex-shrink: 0;
+}
+
+.testimonial-author strong {
+    display: block;
+    font-size: 0.85rem;
+}
+
+.testimonial-author span {
+    font-size: 0.75rem;
+    color: var(--color-text-secondary);
+    line-height: 1.6;
+}
+
 /* --- Contact Section --- */
 .contact-section {
     padding: var(--section-pad) 0;
@@ -1354,6 +1443,12 @@ input, select, textarea {
 
     .why-grid {
         grid-template-columns: repeat(2, 1fr);
+    }
+
+    .testimonials-grid {
+        grid-template-columns: 1fr;
+        max-width: 600px;
+        margin: 0 auto;
     }
 
     .contact-layout {
