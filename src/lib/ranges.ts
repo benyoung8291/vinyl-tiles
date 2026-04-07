@@ -47,61 +47,81 @@ export const ranges: Range[] = [
         name: "Natural Woodgrains",
         slug: "natural-woodgrains",
         description:
-          "Authentic wood visuals in skinny plank format capturing the beauty of natural timber grain with colours including Beech, Chestnut, Washed Maple and Rustic Oak.",
+          "Authentic timber grain in skinny plank format with 6 colourways including Beech, Chestnut, Washed Maple and Rustic Oak. Sound Choice backing for superior noise reduction.",
         format: "Skinny Plank (25 x 100cm)",
         style: "Wood Look",
         image:
-          "https://s7d1.scene7.com/is/image/interfaceprd/natural-woodgrains_beech_va0?wid=600&fit=constrain&fmt=jpg&qlt=85",
+          "https://s7d1.scene7.com/is/image/interfaceprd/NaturalWoodgrains_Chestnut2_wip4_sl_web?wid=600&fit=constrain",
       },
       {
         name: "Textured Woodgrains",
         slug: "textured-woodgrains",
         description:
-          "Rich wood textures ranging from glossy to distressed finishes, featuring Antique Light Oak, Antique Dark Oak, Silver Dune, White Wash and Grey Dune.",
+          "Distressed and antiqued timber aesthetics in 12 colourways from light washed tones to deep dark oaks. Herringbone and ashlar installation patterns available.",
         format: "Skinny Plank (25 x 100cm)",
         style: "Wood Look",
         image:
-          "https://s7d1.scene7.com/is/image/interfaceprd/textured-woodgrains_antique-light-oak_va0?wid=600&fit=constrain&fmt=jpg&qlt=85",
+          "https://s7d1.scene7.com/is/image/interfaceprd/textured-woodgrains_antique-light-oak_va0?hei=600&fit=constrain&fmt=jpg&qlt=85",
+      },
+      {
+        name: "Textured Stones",
+        slug: "textured-stones",
+        description:
+          "Stone-inspired square tiles from subdued concrete to expressive polished cement and marble. Part of the Level Set collection with Sound Choice acoustic backing.",
+        format: "Tile (50 x 50cm)",
+        style: "Stone Look",
+        image:
+          "https://s7d1.scene7.com/is/image/interfaceprd/textured-stones_dark-concrete_va1?hei=600&fit=constrain&fmt=jpg&qlt=85",
       },
       {
         name: "Brushed Lines",
         slug: "brushed-lines",
         description:
-          "Diffused linear texture with a light-capturing quality. 22 solid colours from warm and cool neutrals to earthy, mineral-like tones including Blush, Graphite, Celadon and Alabaster.",
+          "Diffused linear texture with light-capturing sparkle. 22 solid colours from warm and cool neutrals to earthy mineral tones including Blush, Graphite, and Celadon.",
         format: "Tile (50 x 50cm)",
         style: "Abstract / Linear",
         image:
-          "https://s7d1.scene7.com/is/image/interfaceprd/brushed-lines_blush_va0?wid=600&fit=constrain&fmt=jpg&qlt=85",
+          "https://s7d1.scene7.com/is/image/interfaceprd/brushed-lines_blush_va0?hei=600&fit=constrain&fmt=jpg&qlt=85",
       },
       {
-        name: "Level Set Stones",
-        slug: "level-set-stones",
+        name: "Drawn Lines",
+        slug: "drawn-lines",
         description:
-          "Stone-inspired square tiles from subdued to outspoken designs, part of the Level Set collection with Sound Choice acoustic backing for superior noise reduction.",
+          "Fractal-inspired prismatic geometry with metallic shimmer. 10 colourways including Smokey Quartz, Diamond, Amber, and Bronze. Fine linear matrix with no visible repeats.",
         format: "Tile (50 x 50cm)",
-        style: "Stone Look",
+        style: "Abstract / Geometric",
         image:
-          "https://s7d1.scene7.com/is/image/interfaceprd/Level%20Set%20-%20Rustic%20Oak%20(Ashlar)?wid=600&fit=constrain&fmt=jpg&qlt=85",
+          "https://s7d1.scene7.com/is/image/interfaceprd/drawn-lines_smokey-quartz_va0?hei=600&fit=constrain&fmt=jpg&qlt=85",
       },
       {
-        name: "Earthen Forms",
-        slug: "earthen-forms",
+        name: "Northern Grain",
+        slug: "northern-grain",
         description:
-          "Organic textures inspired by raw earth and natural formations, combining subtle colour variation with tactile surface detail for biophilic commercial interiors.",
-        format: "Plank & Tile",
-        style: "Organic / Abstract",
+          "Scandinavian-inspired timber with refined satin and washed finishes. 8 colourways including Chiffon Oak, Dark Wash and Aged Satin. Herringbone and ashlar layouts.",
+        format: "Plank (12.5 x 100cm)",
+        style: "Wood Look",
         image:
-          "https://shop.interface.com/dw/image/v2/BGTH_PRD/on/demandware.static/-/Library-Sites-int-content-global/default/dwfa13d012/images/nav/eaaa-nav/nav-resilient-earthen-forms.jpg?sw=600&q=80",
+          "https://s7d1.scene7.com/is/image/interfaceprd/northerngrain_chiffonoak_va0?hei=600&fit=constrain&fmt=jpg&qlt=85",
       },
       {
-        name: "Lasting Impressions",
-        slug: "lasting-impressions",
+        name: "On Grain",
+        slug: "on-grain",
         description:
-          "A different take on timeless visuals inspired by traditional crafts of tatami and plaster artisans. Features Ceramor+ ceramic bead coating for enhanced scratch and slip resistance.",
-        format: "Plank & Tile",
-        style: "Artisan / Craft",
+          "Part of the Earthen Forms collection with refined wood-veneer aesthetics. 7 colourways from pale ash to deep walnut including White Oak Veneer and European Walnut.",
+        format: "Plank (25 x 100cm)",
+        style: "Wood Look",
         image:
-          "https://shop.interface.com/dw/image/v2/BGTH_PRD/on/demandware.static/-/Library-Sites-int-content-global/default/dw629fbb92/images/nav/nav-lvt-lasting-impressions.jpg?sw=600&q=80",
+          "https://s7d1.scene7.com/is/image/interfaceprd/on-grain_white-oak-veneer_va0?hei=600&fit=constrain&fmt=jpg&qlt=85",
+      },
+      {
+        name: "Iridescence",
+        slug: "iridescence",
+        description:
+          "Mineral and organic pigment-inspired abstract surfaces with soft smoky colour transitions. 10 colourways spanning greys, blush pinks, powdery blues, and terracotta.",
+        format: "Tile (50 x 50cm)",
+        style: "Abstract / Painted",
+        image:
+          "https://s7d1.scene7.com/is/image/interfaceprd/iridescence_blossom_va1?hei=600&fit=constrain&fmt=jpg&qlt=85",
       },
     ],
   },
