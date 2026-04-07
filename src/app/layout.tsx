@@ -11,11 +11,11 @@ const geistMono = GeistMono;
 
 export const metadata: Metadata = {
   title: {
-    default: "Vinyl Tiles by Premrest | Commercial Vinyl Tile Supply & Installation",
+    default: "Vinyl Tiles by Premrest | Commercial Vinyl Tile Flooring, Supplied & Installed",
     template: "%s | Vinyl Tiles by Premrest",
   },
   description:
-    "Australia's commercial flooring specialists. We source, supply, and professionally install LVT, VCT, and vinyl plank flooring from the world's leading manufacturers.",
+    "Commercial vinyl tile flooring supplied and installed across Australia. LVT, VCT, and vinyl plank from leading manufacturers. One call, sorted.",
   keywords: [
     "vinyl tiles",
     "commercial vinyl flooring",
@@ -30,15 +30,15 @@ export const metadata: Metadata = {
     locale: "en_AU",
     url: "https://vinyltiles.com.au",
     siteName: "Vinyl Tiles by Premrest",
-    title: "Vinyl Tiles by Premrest | Commercial Vinyl Tile Supply & Installation",
+    title: "Vinyl Tiles by Premrest | Commercial Vinyl Tile Flooring, Supplied & Installed",
     description:
-      "Australia's commercial flooring specialists. Supply and professional installation of LVT, VCT, and vinyl plank flooring.",
+      "Commercial vinyl tile flooring supplied and installed across Australia. LVT, VCT, and vinyl plank from leading manufacturers.",
   },
   twitter: {
     card: "summary_large_image",
     title: "Vinyl Tiles by Premrest",
     description:
-      "Commercial vinyl tile supply & professional installation. Australia-wide service.",
+      "Commercial vinyl tile flooring supplied and installed across Australia. One call, sorted.",
   },
   robots: {
     index: true,
