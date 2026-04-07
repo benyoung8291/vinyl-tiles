@@ -3,6 +3,15 @@ export interface RangeSpec {
   value: string;
 }
 
+export interface Product {
+  name: string;
+  slug: string;
+  description: string;
+  format: string;
+  style: string;
+  image: string;
+}
+
 export interface Range {
   name: string;
   slug: string;
@@ -10,6 +19,7 @@ export interface Range {
   description: string[];
   specs: RangeSpec[];
   manufacturerUrl: string;
+  products: Product[];
 }
 
 export const ranges: Range[] = [
@@ -32,6 +42,68 @@ export const ranges: Range[] = [
       { label: "Warranty", value: "15 years commercial" },
     ],
     manufacturerUrl: "https://www.interface.com/au",
+    products: [
+      {
+        name: "Natural Woodgrains",
+        slug: "natural-woodgrains",
+        description:
+          "Authentic wood visuals in skinny plank format capturing the beauty of natural timber grain with colours including Beech, Chestnut, Washed Maple and Rustic Oak.",
+        format: "Skinny Plank (25 x 100cm)",
+        style: "Wood Look",
+        image:
+          "https://s7d1.scene7.com/is/image/interfaceprd/natural-woodgrains_beech_va0?wid=600&fit=constrain&fmt=jpg&qlt=85",
+      },
+      {
+        name: "Textured Woodgrains",
+        slug: "textured-woodgrains",
+        description:
+          "Rich wood textures ranging from glossy to distressed finishes, featuring Antique Light Oak, Antique Dark Oak, Silver Dune, White Wash and Grey Dune.",
+        format: "Skinny Plank (25 x 100cm)",
+        style: "Wood Look",
+        image:
+          "https://s7d1.scene7.com/is/image/interfaceprd/textured-woodgrains_antique-light-oak_va0?wid=600&fit=constrain&fmt=jpg&qlt=85",
+      },
+      {
+        name: "Brushed Lines",
+        slug: "brushed-lines",
+        description:
+          "Diffused linear texture with a light-capturing quality. 22 solid colours from warm and cool neutrals to earthy, mineral-like tones including Blush, Graphite, Celadon and Alabaster.",
+        format: "Tile (50 x 50cm)",
+        style: "Abstract / Linear",
+        image:
+          "https://s7d1.scene7.com/is/image/interfaceprd/brushed-lines_blush_va0?wid=600&fit=constrain&fmt=jpg&qlt=85",
+      },
+      {
+        name: "Level Set Stones",
+        slug: "level-set-stones",
+        description:
+          "Stone-inspired square tiles from subdued to outspoken designs, part of the Level Set collection with Sound Choice acoustic backing for superior noise reduction.",
+        format: "Tile (50 x 50cm)",
+        style: "Stone Look",
+        image:
+          "https://s7d1.scene7.com/is/image/interfaceprd/Level%20Set%20-%20Rustic%20Oak%20(Ashlar)?wid=600&fit=constrain&fmt=jpg&qlt=85",
+      },
+      {
+        name: "Earthen Forms",
+        slug: "earthen-forms",
+        description:
+          "Organic textures inspired by raw earth and natural formations, combining subtle colour variation with tactile surface detail for biophilic commercial interiors.",
+        format: "Plank & Tile",
+        style: "Organic / Abstract",
+        image:
+          "https://shop.interface.com/dw/image/v2/BGTH_PRD/on/demandware.static/-/Library-Sites-int-content-global/default/dwfa13d012/images/nav/eaaa-nav/nav-resilient-earthen-forms.jpg?sw=600&q=80",
+      },
+      {
+        name: "Lasting Impressions",
+        slug: "lasting-impressions",
+        description:
+          "A different take on timeless visuals inspired by traditional crafts of tatami and plaster artisans. Features Ceramor+ ceramic bead coating for enhanced scratch and slip resistance.",
+        format: "Plank & Tile",
+        style: "Artisan / Craft",
+        image:
+          "https://shop.interface.com/dw/image/v2/BGTH_PRD/on/demandware.static/-/Library-Sites-int-content-global/default/dw629fbb92/images/nav/nav-lvt-lasting-impressions.jpg?sw=600&q=80",
+      },
+    ],
   },
   {
     name: "Karndean",
@@ -52,6 +124,78 @@ export const ranges: Range[] = [
       { label: "Warranty", value: "Lifetime residential / 15yr commercial" },
     ],
     manufacturerUrl: "https://www.karndean.com/en-au",
+    products: [
+      {
+        name: "Art Select",
+        slug: "art-select",
+        description:
+          "Premium collection capturing the beauty of European oaks and Italian marble with unparalleled artistry, hand-crafted designs, and realistic embossed textures found in nature.",
+        format: "Plank & Tile",
+        style: "Wood & Stone",
+        image:
+          "https://globalassets.karndean.com/karndean/b2c-blocks/b2c-dual-content-block/usa/collections/caliza-classico--lm39__akt-lm39--bathroom.jpg",
+      },
+      {
+        name: "Korlok Select",
+        slug: "korlok-select",
+        description:
+          "Rigid core collection with 5G locking mechanism for fast, easy installation. Wood and stone-inspired designs with built-in noise reduction and HoldFast lifetime warranty.",
+        format: "Rigid Core Plank",
+        style: "Wood & Stone",
+        image:
+          "https://globalassets.karndean.com/products/korlok-and-korlok-reserve/korlok/residential-roomsets/rkp8116-canadianurbanoak-livingroom-ls1_cm-range-page.jpg",
+      },
+      {
+        name: "Van Gogh",
+        slug: "van-gogh",
+        description:
+          "Wide variety of stylish wood-inspired designs from clean prime-grade oak to rustic reclaimed redwood. Available in gluedown and rigid core formats.",
+        format: "Plank",
+        style: "Wood Look",
+        image:
+          "https://globalassets.karndean.com/products/van-gogh-multi/residential-roomsets/vgw115t-natural-prime-oak-ds05-5mm-living-room-hallway-ls2_cm.jpg",
+      },
+      {
+        name: "Opus",
+        slug: "opus",
+        description:
+          "Modern and contemporary collection featuring wood, stone, abstract, and geometric designs. Compatible with design strips for creative floor patterns.",
+        format: "Tile & Plank",
+        style: "Contemporary / Abstract",
+        image:
+          "https://globalassets.karndean.com/products/opus/residential-roomsets/sm-sp216-fumo-ds12-3mm-kitchen-p1_cm.jpg",
+      },
+      {
+        name: "LooseLay",
+        slug: "looselay",
+        description:
+          "K-Wave friction-grip backing eliminates the need for full-spread adhesive. Reduces noise to lower floors and offers cushioned comfort underfoot for quick, easy installations.",
+        format: "LooseLay Plank",
+        style: "Wood & Stone",
+        image:
+          "https://globalassets.karndean.com/products/looselay-and-looselay-longboard/looselay/residential-roomsets/golden-danish-oak--llp359--kitchen--p2_cm.jpg",
+      },
+      {
+        name: "Knight Tile",
+        slug: "knight-tile",
+        description:
+          "Entry-level collection offering signature Karndean style in oak, pine, marble, slate, and limestone designs. Available in chevron planks, gluedown, and rigid core options.",
+        format: "Plank & Tile",
+        style: "Wood & Stone",
+        image:
+          "https://globalassets.karndean.com/products/knight-tile-multi/residential-roomsets/scb-st31-g-rivermarble-kitchen-p1_cm.jpg",
+      },
+      {
+        name: "Korlok Reserve",
+        slug: "korlok-reserve",
+        description:
+          "Features oak, elm, maple and more in rigid core format for rapid installation. Stylish designs inspired by a variety of wood species with enhanced acoustic performance.",
+        format: "Rigid Core Plank",
+        style: "Wood Look",
+        image:
+          "https://globalassets.karndean.com/products/korlok-and-korlok-reserve/korlok-reserve/residential-roomsets/rcp6546-millstonesycamore-homeoffice-ls1_cm.jpg",
+      },
+    ],
   },
   {
     name: "Armstrong",
@@ -72,6 +216,68 @@ export const ranges: Range[] = [
       { label: "Warranty", value: "Up to 15 years commercial" },
     ],
     manufacturerUrl: "https://www.armstrongflooring.com.au",
+    products: [
+      {
+        name: "Aspirations",
+        slug: "aspirations",
+        description:
+          "Premium luxury vinyl plank collection with sophisticated timber designs combining realistic wood visuals with scratch and stain resistance for demanding commercial environments.",
+        format: "Plank",
+        style: "Wood Look",
+        image:
+          "https://www.armstrongflooring.au/cdn/shop/files/Cocoa_Oak_190_Chesterfield_4.0_e98cffed-56c9-4a86-aff7-85c5d35d0d91_600x.jpg?v=1727852714",
+      },
+      {
+        name: "Chesterfield",
+        slug: "chesterfield",
+        description:
+          "Premium LVT planks designed for high-traffic commercial spaces featuring realistic timber grain patterns, enhanced durability, and easy-to-maintain waterproof surfaces.",
+        format: "Plank",
+        style: "Wood Look",
+        image:
+          "https://www.armstrongflooring.au/cdn/shop/files/Chesterfield_2.0_Fortuna_Oak-tile_600x.jpg?v=1712904868",
+      },
+      {
+        name: "Natural Creations EarthCuts",
+        slug: "natural-creations-earthcuts",
+        description:
+          "Realistic stone, concrete, and terrazzo look tiles for healthcare, education, and aged care environments. Designed for heavy commercial traffic with superior infection control properties.",
+        format: "Tile",
+        style: "Stone & Concrete",
+        image:
+          "https://www.armstrongflooring.au/cdn/shop/files/Natural_Creations_EarthCuts_tile_600x.jpg?v=1712649744",
+      },
+      {
+        name: "Natural Creations Longplank",
+        slug: "natural-creations-longplank",
+        description:
+          "Extended-length wood look planks offering a premium wide-plank aesthetic. Diamond 10 surface treatment ensures lasting scratch resistance in commercial installations.",
+        format: "Long Plank",
+        style: "Wood Look",
+        image:
+          "https://www.armstrongflooring.au/cdn/shop/files/Cocoa_Oak_190_Chesterfield_4.0_e98cffed-56c9-4a86-aff7-85c5d35d0d91_600x.jpg?v=1727852714",
+      },
+      {
+        name: "Natural Creations XL",
+        slug: "natural-creations-xl",
+        description:
+          "Extra-large format tiles and planks for expansive commercial spaces. Fewer joints create a seamless visual flow ideal for open-plan offices, retail, and hospitality.",
+        format: "XL Plank & Tile",
+        style: "Wood & Stone",
+        image:
+          "https://www.armstrongflooring.au/cdn/shop/files/Chesterfield_2.0_Fortuna_Oak-tile_600x.jpg?v=1712904868",
+      },
+      {
+        name: "Natural Creations ArborArt",
+        slug: "natural-creations-arborart",
+        description:
+          "Artistically crafted wood visuals that capture the character of hand-selected timber. Designed for spaces where aesthetic impact and commercial durability must coexist.",
+        format: "Plank",
+        style: "Wood Look",
+        image:
+          "https://www.armstrongflooring.au/cdn/shop/files/Natural_Creations_EarthCuts_tile_600x.jpg?v=1712649744",
+      },
+    ],
   },
   {
     name: "Tarkett",
@@ -93,6 +299,68 @@ export const ranges: Range[] = [
       { label: "Acoustic Rating", value: "19dB" },
     ],
     manufacturerUrl: "https://www.tarkett.com.au",
+    products: [
+      {
+        name: "iD Inspiration Ultimate",
+        slug: "id-inspiration-ultimate",
+        description:
+          "Ultra-resistant vinyl tile flooring combining easy installation, extreme durability, acoustic comfort, and lifelike designs. Answers all needs in one robust and long-lasting solution.",
+        format: "Plank & Tile",
+        style: "Wood & Stone",
+        image:
+          "https://media.tarkett-image.com/medium/IN_iD_Inspiration_Ultimate_001.jpg",
+      },
+      {
+        name: "iD Naturals 70",
+        slug: "id-naturals-70",
+        description:
+          "Advanced digital printing reveals the most subtle details of wood and stone, making each plank or tile unique. 0.70mm wear layer for heavy traffic commercial areas.",
+        format: "Plank & Tile",
+        style: "Wood & Stone",
+        image:
+          "https://media.tarkett-image.com/medium/IN_iD_Naturals_70_001.jpg",
+      },
+      {
+        name: "iD Comfort 19",
+        slug: "id-comfort-19",
+        description:
+          "Multi-layer construction with built-in foam backing delivers 19dB impact sound reduction. Ideal for multi-storey buildings, aged care, and open-plan offices where acoustic comfort is essential.",
+        format: "Plank & Tile",
+        style: "Wood & Stone",
+        image:
+          "https://media.tarkett-image.com/medium/IN_iD_Comfort_19_001.jpg",
+      },
+      {
+        name: "iD Inspiration Loose-Lay",
+        slug: "id-inspiration-loose-lay",
+        description:
+          "Combines design and performance for quick renovation projects. Vinyl planks can be easily combined to create stunning layouts from distressed beachwoods to sawn oaks.",
+        format: "Loose-Lay Plank",
+        style: "Wood Look",
+        image:
+          "https://media.tarkett-image.com/medium/IN_iD_Inspiration_Loose_Lay_001.jpg",
+      },
+      {
+        name: "iD Inspiration 55",
+        slug: "id-inspiration-55",
+        description:
+          "30 brilliant colours including 24 planks and 6 tile compositions with abstract, stone, and woven arrangements. 0.55mm wear layer for moderate to heavy commercial traffic.",
+        format: "Plank & Tile",
+        style: "Wood, Stone & Abstract",
+        image:
+          "https://media.tarkett-image.com/medium/IN_iD_Inspiration_55_001.jpg",
+      },
+      {
+        name: "iD Click Ultimate",
+        slug: "id-click-ultimate",
+        description:
+          "Natural design rendering with ultimate performance for retail, hospitality, and workplace. Combines extreme durability with sound absorption and water resistance in easy-to-install click tiles.",
+        format: "Click Plank & Tile",
+        style: "Wood & Stone",
+        image:
+          "https://media.tarkett-image.com/medium/IN_iD_Click_Ultimate_001.jpg",
+      },
+    ],
   },
 ];
 

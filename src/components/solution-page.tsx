@@ -14,7 +14,8 @@ export function SolutionPage({ solution }: SolutionPageProps) {
   return (
     <>
       {/* Hero */}
-      <section className="bg-stone-950 pt-[72px]">
+      <section className="relative overflow-hidden bg-gradient-to-br from-stone-950 via-stone-900 to-stone-950 pt-[72px]">
+        <div className="pointer-events-none absolute top-0 right-0 h-[500px] w-[500px] rounded-full bg-brand/8 blur-[100px]" />
         <div className="mx-auto max-w-[1400px] px-6 pb-20 pt-20 md:pb-28 md:pt-24 lg:px-10 lg:pt-28">
           <p className="text-editorial-caption text-brand-light mb-6">
             Sector Solution
@@ -22,14 +23,14 @@ export function SolutionPage({ solution }: SolutionPageProps) {
           <h1 className="text-editorial-display text-white max-w-3xl">
             {solution.title}
           </h1>
-          <p className="mt-6 max-w-2xl text-[1.0625rem] leading-relaxed text-stone-400">
+          <p className="mt-6 max-w-2xl text-lg leading-relaxed text-stone-400">
             {solution.subtitle}
           </p>
         </div>
       </section>
 
-      {/* Content — editorial layout */}
-      <section className="bg-white">
+      {/* Content */}
+      <section className="bg-warm-white">
         <div className="mx-auto max-w-[1400px] px-6 py-24 md:py-32 lg:px-10">
           <div className="grid gap-16 lg:grid-cols-[1fr_1.8fr] lg:gap-24">
             <div>
@@ -57,7 +58,7 @@ export function SolutionPage({ solution }: SolutionPageProps) {
       </section>
 
       {/* Key Requirements */}
-      <section className="border-y border-stone-200/60 bg-stone-50">
+      <section className="bg-gradient-to-b from-brand-50/50 to-warm-white">
         <div className="mx-auto max-w-[1400px] px-6 py-24 md:py-32 lg:px-10">
           <p className="text-editorial-caption text-brand mb-4">
             Requirements
@@ -66,13 +67,13 @@ export function SolutionPage({ solution }: SolutionPageProps) {
             What this sector demands.
           </h2>
 
-          <div className="grid gap-px sm:grid-cols-2 lg:grid-cols-3">
+          <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
             {solution.requirements.map((requirement, i) => (
               <div
                 key={requirement}
-                className="border-t border-stone-200 py-6 pr-8"
+                className="rounded-2xl border border-stone-200/60 bg-white p-6 shadow-sm"
               >
-                <span className="text-editorial-caption text-stone-300">
+                <span className="inline-flex size-8 items-center justify-center rounded-full bg-brand/10 text-xs font-bold text-brand">
                   {String(i + 1).padStart(2, "0")}
                 </span>
                 <p className="mt-3 text-[0.9375rem] leading-relaxed text-stone-700">
@@ -85,7 +86,7 @@ export function SolutionPage({ solution }: SolutionPageProps) {
       </section>
 
       {/* Recommended Products */}
-      <section className="bg-white">
+      <section className="bg-warm-white">
         <div className="mx-auto max-w-[1400px] px-6 py-24 md:py-32 lg:px-10">
           <p className="text-editorial-caption text-brand mb-4">
             Recommended
@@ -99,7 +100,7 @@ export function SolutionPage({ solution }: SolutionPageProps) {
               <Link
                 key={product.slug}
                 href={`/ranges/${product.slug}`}
-                className="group border border-stone-200/80 p-8 transition-all hover:border-brand/20 hover:bg-brand-50 lg:p-10"
+                className="group overflow-hidden rounded-2xl border border-stone-200/60 bg-white p-8 shadow-sm transition-all hover:shadow-md hover:-translate-y-0.5 hover:border-brand/20 lg:p-10"
               >
                 <h3 className="text-xl font-bold tracking-[-0.02em] text-stone-900 transition-colors group-hover:text-brand">
                   {product.name}
@@ -107,7 +108,7 @@ export function SolutionPage({ solution }: SolutionPageProps) {
                 <p className="mt-3 text-sm leading-relaxed text-stone-500">
                   {product.reason}
                 </p>
-                <div className="mt-6 flex items-center gap-1.5 text-xs font-semibold uppercase tracking-wider text-stone-400 transition-colors group-hover:text-brand">
+                <div className="mt-6 flex items-center gap-1.5 text-xs font-semibold uppercase tracking-wider text-brand/60 transition-colors group-hover:text-brand">
                   View Range
                   <ArrowRight className="size-3.5" />
                 </div>
@@ -124,7 +125,7 @@ export function SolutionPage({ solution }: SolutionPageProps) {
       />
 
       {/* Continue Exploring */}
-      <section className="bg-white">
+      <section className="bg-warm-white">
         <div className="mx-auto max-w-[1400px] px-6 py-24 md:py-32 lg:px-10">
           <p className="text-editorial-caption text-brand mb-4">
             Also explore
@@ -133,12 +134,12 @@ export function SolutionPage({ solution }: SolutionPageProps) {
             Other sectors
           </h2>
 
-          <div className="grid gap-0 divide-y divide-stone-200/80">
+          <div className="space-y-3">
             {otherSolutions.map((other, i) => (
               <Link
                 key={other.slug}
                 href={`/${other.slug}`}
-                className="group flex items-center justify-between py-8"
+                className="group flex items-center justify-between rounded-xl border border-stone-200/60 bg-white px-6 py-5 shadow-sm transition-all hover:shadow-md hover:border-brand/20"
               >
                 <div className="flex items-baseline gap-4">
                   <span className="text-editorial-caption text-stone-300">
