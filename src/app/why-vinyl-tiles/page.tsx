@@ -78,7 +78,8 @@ export default function WhyVinylTilesPage() {
       />
 
       {/* Hero */}
-      <section className="bg-stone-950 pt-[72px]">
+      <section className="relative overflow-hidden bg-gradient-to-br from-stone-950 via-stone-900 to-stone-950 pt-[72px]">
+        <div className="pointer-events-none absolute top-0 right-0 h-[500px] w-[500px] rounded-full bg-brand/8 blur-[100px]" />
         <div className="mx-auto max-w-[1400px] px-6 pb-20 pt-20 md:pb-28 md:pt-24 lg:px-10 lg:pt-28">
           <p className="text-editorial-caption text-brand-light mb-6">
             The Complete Guide
@@ -88,7 +89,7 @@ export default function WhyVinylTilesPage() {
             <br />
             vinyl tile flooring?
           </h1>
-          <p className="mt-6 max-w-xl text-[1.0625rem] leading-relaxed text-stone-400">
+          <p className="mt-6 max-w-xl text-lg leading-relaxed text-stone-400">
             The smart, durable, and cost-effective choice for commercial spaces
             across Australia.
           </p>
@@ -96,7 +97,7 @@ export default function WhyVinylTilesPage() {
       </section>
 
       {/* Why Vinyl Over Alternatives */}
-      <section className="bg-white">
+      <section className="bg-warm-white">
         <div className="mx-auto max-w-[1400px] px-6 py-24 md:py-32 lg:px-10">
           <div className="grid gap-16 lg:grid-cols-[1fr_1.8fr] lg:gap-24">
             <div>
@@ -152,7 +153,7 @@ export default function WhyVinylTilesPage() {
       </section>
 
       {/* LVT vs VCT vs Vinyl Plank */}
-      <section className="border-y border-stone-200/60 bg-stone-50">
+      <section className="bg-gradient-to-b from-brand-50/30 to-warm-white">
         <div className="mx-auto max-w-[1400px] px-6 py-24 md:py-32 lg:px-10">
           <p className="text-editorial-caption text-brand mb-4">
             Product Types
@@ -197,7 +198,7 @@ export default function WhyVinylTilesPage() {
             ].map((type) => (
               <div
                 key={type.title}
-                className="border border-stone-200/80 bg-white p-8 lg:p-10"
+                className="rounded-2xl border border-stone-200/60 bg-white p-8 shadow-sm lg:p-10"
               >
                 <h3 className="text-2xl font-bold tracking-[-0.03em] text-stone-900">
                   {type.title}
@@ -228,7 +229,7 @@ export default function WhyVinylTilesPage() {
       </section>
 
       {/* Technical Specs */}
-      <section className="bg-white">
+      <section className="bg-warm-white">
         <div className="mx-auto max-w-[1400px] px-6 py-24 md:py-32 lg:px-10">
           <div className="grid gap-16 lg:grid-cols-[1fr_1.8fr] lg:gap-24">
             <div>
@@ -280,7 +281,7 @@ export default function WhyVinylTilesPage() {
       </section>
 
       {/* Sustainability + Lifecycle */}
-      <section className="bg-stone-950">
+      <section className="relative overflow-hidden bg-gradient-to-br from-stone-950 via-stone-900 to-stone-950">
         <div className="mx-auto max-w-[1400px] px-6 py-24 md:py-32 lg:px-10">
           <div className="grid gap-16 lg:grid-cols-2 lg:gap-24">
             <div>
@@ -331,7 +332,7 @@ export default function WhyVinylTilesPage() {
       </section>
 
       {/* FAQ */}
-      <section className="bg-white">
+      <section className="bg-warm-white">
         <div className="mx-auto max-w-[1400px] px-6 py-24 md:py-32 lg:px-10">
           <div className="grid gap-16 lg:grid-cols-[1fr_1.8fr] lg:gap-24">
             <div>

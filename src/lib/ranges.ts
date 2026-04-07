@@ -3,6 +3,15 @@ export interface RangeSpec {
   value: string;
 }
 
+export interface Product {
+  name: string;
+  slug: string;
+  description: string;
+  format: string;
+  style: string;
+  image: string;
+}
+
 export interface Range {
   name: string;
   slug: string;
@@ -10,6 +19,7 @@ export interface Range {
   description: string[];
   specs: RangeSpec[];
   manufacturerUrl: string;
+  products: Product[];
 }
 
 export const ranges: Range[] = [
@@ -32,6 +42,88 @@ export const ranges: Range[] = [
       { label: "Warranty", value: "15 years commercial" },
     ],
     manufacturerUrl: "https://www.interface.com/au",
+    products: [
+      {
+        name: "Natural Woodgrains",
+        slug: "natural-woodgrains",
+        description:
+          "Authentic timber grain in skinny plank format with 6 colourways including Beech, Chestnut, Washed Maple and Rustic Oak. Sound Choice backing for superior noise reduction.",
+        format: "Skinny Plank (25 x 100cm)",
+        style: "Wood Look",
+        image:
+          "https://s7d1.scene7.com/is/image/interfaceprd/NaturalWoodgrains_Chestnut2_wip4_sl_web?wid=600&fit=constrain",
+      },
+      {
+        name: "Textured Woodgrains",
+        slug: "textured-woodgrains",
+        description:
+          "Distressed and antiqued timber aesthetics in 12 colourways from light washed tones to deep dark oaks. Herringbone and ashlar installation patterns available.",
+        format: "Skinny Plank (25 x 100cm)",
+        style: "Wood Look",
+        image:
+          "https://s7d1.scene7.com/is/image/interfaceprd/textured-woodgrains_antique-light-oak_va0?hei=600&fit=constrain&fmt=jpg&qlt=85",
+      },
+      {
+        name: "Textured Stones",
+        slug: "textured-stones",
+        description:
+          "Stone-inspired square tiles from subdued concrete to expressive polished cement and marble. Part of the Level Set collection with Sound Choice acoustic backing.",
+        format: "Tile (50 x 50cm)",
+        style: "Stone Look",
+        image:
+          "https://s7d1.scene7.com/is/image/interfaceprd/textured-stones_dark-concrete_va1?hei=600&fit=constrain&fmt=jpg&qlt=85",
+      },
+      {
+        name: "Brushed Lines",
+        slug: "brushed-lines",
+        description:
+          "Diffused linear texture with light-capturing sparkle. 22 solid colours from warm and cool neutrals to earthy mineral tones including Blush, Graphite, and Celadon.",
+        format: "Tile (50 x 50cm)",
+        style: "Abstract / Linear",
+        image:
+          "https://s7d1.scene7.com/is/image/interfaceprd/brushed-lines_blush_va0?hei=600&fit=constrain&fmt=jpg&qlt=85",
+      },
+      {
+        name: "Drawn Lines",
+        slug: "drawn-lines",
+        description:
+          "Fractal-inspired prismatic geometry with metallic shimmer. 10 colourways including Smokey Quartz, Diamond, Amber, and Bronze. Fine linear matrix with no visible repeats.",
+        format: "Tile (50 x 50cm)",
+        style: "Abstract / Geometric",
+        image:
+          "https://s7d1.scene7.com/is/image/interfaceprd/drawn-lines_smokey-quartz_va0?hei=600&fit=constrain&fmt=jpg&qlt=85",
+      },
+      {
+        name: "Northern Grain",
+        slug: "northern-grain",
+        description:
+          "Scandinavian-inspired timber with refined satin and washed finishes. 8 colourways including Chiffon Oak, Dark Wash and Aged Satin. Herringbone and ashlar layouts.",
+        format: "Plank (12.5 x 100cm)",
+        style: "Wood Look",
+        image:
+          "https://s7d1.scene7.com/is/image/interfaceprd/northerngrain_chiffonoak_va0?hei=600&fit=constrain&fmt=jpg&qlt=85",
+      },
+      {
+        name: "On Grain",
+        slug: "on-grain",
+        description:
+          "Part of the Earthen Forms collection with refined wood-veneer aesthetics. 7 colourways from pale ash to deep walnut including White Oak Veneer and European Walnut.",
+        format: "Plank (25 x 100cm)",
+        style: "Wood Look",
+        image:
+          "https://s7d1.scene7.com/is/image/interfaceprd/on-grain_white-oak-veneer_va0?hei=600&fit=constrain&fmt=jpg&qlt=85",
+      },
+      {
+        name: "Iridescence",
+        slug: "iridescence",
+        description:
+          "Mineral and organic pigment-inspired abstract surfaces with soft smoky colour transitions. 10 colourways spanning greys, blush pinks, powdery blues, and terracotta.",
+        format: "Tile (50 x 50cm)",
+        style: "Abstract / Painted",
+        image:
+          "https://s7d1.scene7.com/is/image/interfaceprd/iridescence_blossom_va1?hei=600&fit=constrain&fmt=jpg&qlt=85",
+      },
+    ],
   },
   {
     name: "Karndean",
@@ -52,6 +144,78 @@ export const ranges: Range[] = [
       { label: "Warranty", value: "Lifetime residential / 15yr commercial" },
     ],
     manufacturerUrl: "https://www.karndean.com/en-au",
+    products: [
+      {
+        name: "Art Select",
+        slug: "art-select",
+        description:
+          "Premium 0.7mm wear layer collection inspired by globally sourced wood and stone. European oaks, Italian marble, and limestone with meticulous hand-crafted detail. 20-year commercial warranty.",
+        format: "Plank & Tile (Gluedown + Rigid Core)",
+        style: "Wood & Stone",
+        image:
+          "https://www.karndean.com/globalassets/products/art-select/residential-roomsets/blended-oak-rl50_akp-rl50-dining-room.jpg",
+      },
+      {
+        name: "Korlok Select",
+        slug: "korlok-select",
+        description:
+          "Premium rigid core with 5G click-lock for fast adhesive-free installation. 0.55mm wear layer with HoldFast lifetime warranty, InteGrout technology, and noise-reducing backing.",
+        format: "Rigid Core Plank (1420 x 225mm)",
+        style: "Wood & Stone",
+        image:
+          "https://www.karndean.com/globalassets/products/korlok-and-korlok-reserve/korlok/residential-roomsets/canadian-urban-oak--rkp8116--living-space--p_cm.jpg",
+      },
+      {
+        name: "Van Gogh",
+        slug: "van-gogh",
+        description:
+          "Inspired by wood species worldwide including Australian timbers — Blackbutt, Spotted Gum. Each design lovingly crafted with unique origin story. 0.55mm wear layer, 15-year commercial warranty.",
+        format: "Plank (Gluedown + Rigid Core)",
+        style: "Wood Look",
+        image:
+          "https://www.karndean.com/globalassets/karndean/b2c-blocks/b2c-carousel-card-block/usa/smoked-school-cedar-vgw138t_scb138-kitchen.jpg",
+      },
+      {
+        name: "Opus",
+        slug: "opus",
+        description:
+          "Modern and contemporary designs spanning wood, stone, abstract, and geometric visuals. Compatible with design strips and borders for custom layouts. Single plank replacement capability.",
+        format: "Tile & Plank (Gluedown)",
+        style: "Wood, Stone & Abstract",
+        image:
+          "https://www.karndean.com/globalassets/karndean/b2c-blocks/b2c-random-image-hero/usa/opus/vermeer-oak--wp427--kitchen---desktop.jpg",
+      },
+      {
+        name: "LooseLay Longboard",
+        slug: "looselay-longboard",
+        description:
+          "1.5m long planks with K-Wave friction-grip backing — no adhesive required. Featuring native Australian species including Spotted Gum and Blackbutt. 0.55mm wear layer with K-Guard+ protection.",
+        format: "Longboard Plank (1500 x 250mm)",
+        style: "Wood Look",
+        image:
+          "https://www.karndean.com/globalassets/products/looselay-and-looselay-longboard/looselay/residential-roomsets/field-oak--llp356--bedroom--p_cm2.jpg",
+      },
+      {
+        name: "Knight Tile",
+        slug: "knight-tile",
+        description:
+          "Signature Karndean style at entry-level pricing in oak, pine, marble, slate, and limestone. Available in chevron planks, gluedown, and rigid core with 22dB acoustic reduction.",
+        format: "Plank & Tile (Gluedown + Rigid Core)",
+        style: "Wood & Stone",
+        image:
+          "https://www.karndean.com/globalassets/karndean/b2c-blocks/b2c-carousel-card-block/usa/mid-limed-oak-ch-kp96_scb-ch-kp96-bedroom.jpg",
+      },
+      {
+        name: "Korlok Reserve",
+        slug: "korlok-reserve",
+        description:
+          "12 intricate wood designs enhanced through oiling, liming, and fuming techniques. Click-and-lock rigid core installs over most hard subfloors. Oak, elm, maple, and sycamore options.",
+        format: "Rigid Core Plank (1220 x 179mm)",
+        style: "Wood Look",
+        image:
+          "https://www.karndean.com/globalassets/products/korlok-and-korlok-reserve/korlok-reserve/residential-roomsets/rcp6546-millstonesycamore-homeoffice-ls1_cm.jpg",
+      },
+    ],
   },
   {
     name: "Armstrong",
@@ -72,6 +236,68 @@ export const ranges: Range[] = [
       { label: "Warranty", value: "Up to 15 years commercial" },
     ],
     manufacturerUrl: "https://www.armstrongflooring.com.au",
+    products: [
+      {
+        name: "Aspirations",
+        slug: "aspirations",
+        description:
+          "Premium 4.5mm luxury vinyl plank with 0.55mm wear layer, featuring 12 authentic oak designs from light Chardonnay to rich Cocoa tones. Scratch, stain, and water resistant for demanding commercial environments.",
+        format: "Plank (1219 x 184mm)",
+        style: "Wood Look",
+        image:
+          "https://www.armstrongflooring.au/cdn/shop/files/Malt_Oak_175_Portrait_Aspirations.jpg?v=1727850062",
+      },
+      {
+        name: "Chesterfield",
+        slug: "chesterfield",
+        description:
+          "12 timber designs including Australian hardwoods — Spotted Gum, Blackbutt, and Tassie Oak. 5-star acoustic rating (43dB) and GreenTag Level A certified. Waterproof with scratch and stain resistance.",
+        format: "Plank (1219 x 184mm)",
+        style: "Wood Look",
+        image:
+          "https://www.armstrongflooring.au/cdn/shop/files/Chesterfield_2.0_Fortuna_Oak-tile_600x.jpg?v=1712904868",
+      },
+      {
+        name: "Natural Creations EarthCuts",
+        slug: "natural-creations-earthcuts",
+        description:
+          "17 colours in authentic terrazzo, stone, and concrete visuals including Sandstone, Concrete Grey, and Firenze Terrazzo. Waterproof, 5-star acoustic rating for healthcare, education, and aged care.",
+        format: "Tile",
+        style: "Stone & Terrazzo",
+        image:
+          "https://www.armstrongflooring.au/cdn/shop/files/Sandstone3L233134_Landscape_NaturalCreationsEarthCuts.jpg?v=1732596599",
+      },
+      {
+        name: "Natural Creations Longplank",
+        slug: "natural-creations-longplank",
+        description:
+          "Ultra-matte finish long-format planks in 18 designs including Lemon Scented Gum, Rose Gum, and Southern Blackbutt. 4.5mm thickness with 0.55mm wear layer for commercial durability.",
+        format: "Long Plank (1500 x 185mm)",
+        style: "Wood Look",
+        image:
+          "https://www.armstrongflooring.au/cdn/shop/files/LemonScentedGum215_Portrait_NCLongplank_895ef0c8-8ea3-4741-bb86-ae167e2fc61c.jpg?v=1729744853",
+      },
+      {
+        name: "Natural Creations XL",
+        slug: "natural-creations-xl",
+        description:
+          "The widest plank in the Natural Creations range at 230mm. 18 designs including Barnyard Grey, Riverland Limed, and Mount Barker Ironbark. 5.0mm thick with 5-star acoustic rating (42dB).",
+        format: "XL Plank (1500 x 230mm)",
+        style: "Wood Look",
+        image:
+          "https://www.armstrongflooring.au/cdn/shop/files/RiverlandLimed3X111907_Landscape_NaturalCreationsXL.jpg",
+      },
+      {
+        name: "Natural Creations ArborArt",
+        slug: "natural-creations-arborart",
+        description:
+          "22 classical and contemporary wood-grain designs including Ghost Gum, Summer Oak, and Limed Oak. 0.55mm wear layer with 5-star acoustic rating. GreenTag Level A certified.",
+        format: "Plank",
+        style: "Wood Look",
+        image:
+          "https://www.armstrongflooring.au/cdn/shop/files/GhostGum3L093606_Landscape_NaturalCreationsArborArt.jpg?v=1732595690",
+      },
+    ],
   },
   {
     name: "Tarkett",
@@ -93,6 +319,68 @@ export const ranges: Range[] = [
       { label: "Acoustic Rating", value: "19dB" },
     ],
     manufacturerUrl: "https://www.tarkett.com.au",
+    products: [
+      {
+        name: "iD Inspiration Ultimate",
+        slug: "id-inspiration-ultimate",
+        description:
+          "Ultra-resistant vinyl tile flooring combining easy installation, extreme durability, acoustic comfort, and lifelike designs. Answers all needs in one robust and long-lasting solution.",
+        format: "Plank & Tile",
+        style: "Wood & Stone",
+        image:
+          "https://media.tarkett-image.com/medium/IN_iD_Inspiration_Ultimate_001.jpg",
+      },
+      {
+        name: "iD Naturals 70",
+        slug: "id-naturals-70",
+        description:
+          "Advanced digital printing reveals the most subtle details of wood and stone, making each plank or tile unique. 0.70mm wear layer for heavy traffic commercial areas.",
+        format: "Plank & Tile",
+        style: "Wood & Stone",
+        image:
+          "https://media.tarkett-image.com/medium/IN_iD_Naturals_70_001.jpg",
+      },
+      {
+        name: "iD Comfort 19",
+        slug: "id-comfort-19",
+        description:
+          "Multi-layer construction with built-in foam backing delivers 19dB impact sound reduction. Ideal for multi-storey buildings, aged care, and open-plan offices where acoustic comfort is essential.",
+        format: "Plank & Tile",
+        style: "Wood & Stone",
+        image:
+          "https://media.tarkett-image.com/medium/IN_iD_Comfort_19_001.jpg",
+      },
+      {
+        name: "iD Inspiration Loose-Lay",
+        slug: "id-inspiration-loose-lay",
+        description:
+          "Combines design and performance for quick renovation projects. Vinyl planks can be easily combined to create stunning layouts from distressed beachwoods to sawn oaks.",
+        format: "Loose-Lay Plank",
+        style: "Wood Look",
+        image:
+          "https://media.tarkett-image.com/medium/IN_iD_Inspiration_Loose_Lay_001.jpg",
+      },
+      {
+        name: "iD Inspiration 55",
+        slug: "id-inspiration-55",
+        description:
+          "30 brilliant colours including 24 planks and 6 tile compositions with abstract, stone, and woven arrangements. 0.55mm wear layer for moderate to heavy commercial traffic.",
+        format: "Plank & Tile",
+        style: "Wood, Stone & Abstract",
+        image:
+          "https://media.tarkett-image.com/medium/IN_iD_Inspiration_55_001.jpg",
+      },
+      {
+        name: "iD Click Ultimate",
+        slug: "id-click-ultimate",
+        description:
+          "Natural design rendering with ultimate performance for retail, hospitality, and workplace. Combines extreme durability with sound absorption and water resistance in easy-to-install click tiles.",
+        format: "Click Plank & Tile",
+        style: "Wood & Stone",
+        image:
+          "https://media.tarkett-image.com/medium/IN_iD_Click_Ultimate_001.jpg",
+      },
+    ],
   },
 ];
 

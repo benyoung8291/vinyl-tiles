@@ -109,7 +109,8 @@ export default function HowWeWorkPage() {
   return (
     <>
       {/* Hero */}
-      <section className="bg-stone-950 pt-[72px]">
+      <section className="relative overflow-hidden bg-gradient-to-br from-stone-950 via-stone-900 to-stone-950 pt-[72px]">
+        <div className="pointer-events-none absolute top-0 right-0 h-[500px] w-[500px] rounded-full bg-brand/8 blur-[100px]" />
         <div className="mx-auto max-w-[1400px] px-6 pb-20 pt-20 md:pb-28 md:pt-24 lg:px-10 lg:pt-28">
           <p className="text-editorial-caption text-brand-light mb-6">
             Our Process
@@ -119,7 +120,7 @@ export default function HowWeWorkPage() {
             <br />
             to finished floor.
           </h1>
-          <p className="mt-6 max-w-xl text-[1.0625rem] leading-relaxed text-stone-400">
+          <p className="mt-6 max-w-xl text-lg leading-relaxed text-stone-400">
             Here&apos;s exactly what to expect when you work with Vinyl Tiles by
             Premrest.
           </p>
@@ -134,7 +135,7 @@ export default function HowWeWorkPage() {
         return (
           <section
             key={step.number}
-            className={isDark ? "bg-stone-50 border-y border-stone-200/60" : "bg-white"}
+            className={isDark ? "bg-gradient-to-b from-brand-50/30 to-warm-white" : "bg-warm-white"}
           >
             <div className="mx-auto max-w-[1400px] px-6 py-24 md:py-32 lg:px-10">
               {/* Step header */}
@@ -166,7 +167,7 @@ export default function HowWeWorkPage() {
 
                   {/* Two columns */}
                   <div className="mt-12 grid gap-8 sm:grid-cols-2">
-                    <div className="border-t-2 border-stone-900 pt-6">
+                    <div className="rounded-xl border border-stone-200/60 bg-white p-5 shadow-sm">
                       <h3 className="text-editorial-caption text-brand mb-5">
                         What to Expect
                       </h3>
@@ -183,7 +184,7 @@ export default function HowWeWorkPage() {
                       </ul>
                     </div>
 
-                    <div className="border-t-2 border-stone-900 pt-6">
+                    <div className="rounded-xl border border-stone-200/60 bg-white p-5 shadow-sm">
                       <h3 className="text-editorial-caption text-brand mb-5">
                         {index < 2 ? "What We\u2019ll Discuss" : "Key Details"}
                       </h3>
@@ -208,7 +209,7 @@ export default function HowWeWorkPage() {
       })}
 
       {/* Why Work With Us */}
-      <section className="bg-stone-950">
+      <section className="relative overflow-hidden bg-gradient-to-br from-stone-950 via-stone-900 to-stone-950">
         <div className="mx-auto max-w-[1400px] px-6 py-24 md:py-32 lg:px-10">
           <div className="grid gap-16 lg:grid-cols-[1fr_1.5fr]">
             <div>

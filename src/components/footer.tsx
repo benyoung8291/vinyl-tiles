@@ -24,7 +24,10 @@ const solutions = [
 
 export default function Footer() {
   return (
-    <footer className="bg-stone-950 text-stone-400">
+    <footer className="relative overflow-hidden bg-gradient-to-br from-stone-950 via-stone-900 to-stone-950 text-stone-400">
+      {/* Warm glow */}
+      <div className="pointer-events-none absolute bottom-0 right-0 h-[400px] w-[400px] rounded-full bg-brand/5 blur-[100px]" />
+
       {/* Main footer */}
       <div className="mx-auto max-w-[1400px] px-6 pt-20 pb-12 lg:px-10">
         {/* Brand + columns */}
@@ -46,13 +49,13 @@ export default function Footer() {
             <div className="mt-8 space-y-2">
               <a
                 href="tel:1300207915"
-                className="block text-sm font-medium text-stone-300 transition-colors hover:text-white"
+                className="block text-sm font-medium text-stone-300 transition-colors hover:text-brand-light"
               >
                 1300 207 915
               </a>
               <a
                 href="mailto:vinyl@premrest.com.au"
-                className="block text-sm text-stone-500 transition-colors hover:text-white"
+                className="block text-sm text-stone-500 transition-colors hover:text-brand-light"
               >
                 vinyl@premrest.com.au
               </a>
@@ -72,7 +75,7 @@ export default function Footer() {
                 <li key={range.slug}>
                   <Link
                     href={`/ranges/${range.slug}`}
-                    className="text-sm text-stone-400 transition-colors hover:text-white"
+                    className="text-sm text-stone-400 transition-colors hover:text-brand-light"
                   >
                     {range.name}
                   </Link>
@@ -91,7 +94,7 @@ export default function Footer() {
                 <li key={solution.href}>
                   <Link
                     href={solution.href}
-                    className="text-sm text-stone-400 transition-colors hover:text-white"
+                    className="text-sm text-stone-400 transition-colors hover:text-brand-light"
                   >
                     {solution.name}
                   </Link>
@@ -110,7 +113,7 @@ export default function Footer() {
                 <li key={resource.href}>
                   <Link
                     href={resource.href}
-                    className="text-sm text-stone-400 transition-colors hover:text-white"
+                    className="text-sm text-stone-400 transition-colors hover:text-brand-light"
                   >
                     {resource.name}
                   </Link>
@@ -130,7 +133,7 @@ export default function Footer() {
                   href="https://modularcarpet.com.au"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center gap-1 text-sm text-stone-400 transition-colors hover:text-white"
+                  className="inline-flex items-center gap-1 text-sm text-stone-400 transition-colors hover:text-brand-light"
                 >
                   Modular Carpet
                   <ArrowUpRight className="size-3 opacity-40" />
@@ -141,7 +144,7 @@ export default function Footer() {
                   href="https://comcorkflooring.com.au"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center gap-1 text-sm text-stone-400 transition-colors hover:text-white"
+                  className="inline-flex items-center gap-1 text-sm text-stone-400 transition-colors hover:text-brand-light"
                 >
                   ComCork Flooring
                   <ArrowUpRight className="size-3 opacity-40" />
@@ -152,7 +155,7 @@ export default function Footer() {
         </div>
 
         {/* Bottom bar */}
-        <div className="mt-16 flex flex-col items-start justify-between gap-4 border-t border-stone-800/60 pt-8 sm:flex-row sm:items-center">
+        <div className="mt-16 flex flex-col items-start justify-between gap-4 border-t border-stone-800/40 pt-8 sm:flex-row sm:items-center">
           <p className="text-xs text-stone-600">
             &copy; 2026 Premier Restorations Group Pty Ltd. All rights reserved.
           </p>
