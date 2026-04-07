@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { Button } from "@/components/ui/button";
+import { ArrowRight } from "lucide-react";
 
 interface QuoteCtaProps {
   title?: string;
@@ -9,25 +9,32 @@ interface QuoteCtaProps {
 }
 
 export function QuoteCta({
-  title = "Get Your Free Quote Today",
-  description = "Contact our team for expert advice and a no-obligation quote on commercial vinyl tile flooring for your project.",
+  title = "Start your project",
+  description = "Expert advice and a no-obligation quote for commercial vinyl tile flooring.",
   buttonText = "Get a Quote",
   buttonHref = "/contact",
 }: QuoteCtaProps) {
   return (
-    <section className="bg-primary px-6 py-16 text-center text-primary-foreground">
-      <div className="mx-auto max-w-2xl">
-        <h2 className="text-3xl font-bold tracking-tight">{title}</h2>
-        <p className="mt-4 text-lg text-primary-foreground/90">{description}</p>
-        <Button
-          size="lg"
-          variant="secondary"
-          className="mt-8 px-8 text-base"
-          render={<Link href={buttonHref} />}
-        >
-          {buttonText}
-        </Button>
+    <section className="relative overflow-hidden bg-brand">
+      <div className="mx-auto max-w-[1400px] px-6 py-20 md:py-28 lg:px-10">
+        <div className="grid items-center gap-8 lg:grid-cols-[1fr_auto]">
+          <div>
+            <h2 className="text-editorial-heading text-white">{title}</h2>
+            <p className="mt-4 max-w-lg text-[1.0625rem] leading-relaxed text-white/70">
+              {description}
+            </p>
+          </div>
+          <Link
+            href={buttonHref}
+            className="inline-flex items-center gap-2 self-start bg-white px-8 py-4 text-sm font-semibold tracking-[-0.01em] text-stone-950 transition-colors hover:bg-stone-100 lg:self-center"
+          >
+            {buttonText}
+            <ArrowRight className="size-4" />
+          </Link>
+        </div>
       </div>
+      {/* Decorative brand gradient */}
+      <div className="pointer-events-none absolute inset-0 bg-gradient-to-br from-brand-dark/30 to-transparent" />
     </section>
   );
 }
