@@ -9,8 +9,8 @@ interface QuoteCtaProps {
 }
 
 export function QuoteCta({
-  title = "Start your project",
-  description = "Expert advice and a no-obligation quote for commercial vinyl tile flooring.",
+  title = "Let\u2019s sort your floor out.",
+  description = "Tell us what you need. We\u2019ll come back with a quote and a plan.",
   buttonText = "Get a Quote",
   buttonHref = "/contact",
 }: QuoteCtaProps) {

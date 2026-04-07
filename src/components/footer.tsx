@@ -43,8 +43,8 @@ export default function Footer() {
               </span>
             </Link>
             <p className="mt-5 max-w-xs text-sm leading-relaxed text-stone-500">
-              Australia&apos;s commercial flooring specialists. Supply and
-              professional installation of luxury vinyl tile flooring.
+              Commercial vinyl tile flooring, supplied and installed across
+              Australia. A Premrest Group business, est.&nbsp;1986.
             </p>
             <div className="mt-8 space-y-2">
               <a

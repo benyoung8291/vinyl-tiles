@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { ArrowRight, ArrowUpRight, Sparkles, Leaf, Shield, Truck } from "lucide-react";
+import { ArrowRight, ArrowUpRight, Layers, Leaf, Shield, Truck } from "lucide-react";
 import { QuoteCta } from "@/components/quote-cta";
 
 const rangeItems = [
@@ -103,30 +103,24 @@ export default function Home() {
         <div className="mx-auto max-w-[1400px] px-6 py-24 md:py-32 lg:px-10 lg:py-40">
           <div className="grid gap-12 lg:grid-cols-[1.2fr_1fr] lg:items-end lg:gap-16">
             <div>
-              <p className="text-editorial-caption text-brand-light mb-6 flex items-center gap-2">
-                <Sparkles className="size-4" />
-                Commercial Vinyl Tile Specialists
-              </p>
               <h1 className="text-editorial-display text-white">
-                Premium flooring,
+                Beautiful floors,
                 <br />
-                <span className="bg-gradient-to-r from-brand-light to-brand bg-clip-text text-transparent">sourced & installed</span>
-                <br />
-                with precision.
+                <span className="bg-gradient-to-r from-brand-light to-brand bg-clip-text text-transparent">sorted.</span>
               </h1>
             </div>
             <div className="lg:pb-2">
               <p className="text-lg leading-relaxed text-stone-400 lg:max-w-md">
-                We source, supply, and professionally install luxury vinyl tile
-                flooring from the world&apos;s leading manufacturers. One call.
-                Done right.
+                Vinyl tile flooring for commercial spaces. We handle the
+                lot&nbsp;&mdash; find the right product, get it to site, lay it
+                properly. One call.
               </p>
               <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:items-center">
                 <Link
                   href="/contact"
                   className="inline-flex items-center justify-center rounded-full bg-brand px-8 py-3.5 text-sm font-semibold tracking-[-0.01em] text-white shadow-lg shadow-brand/25 transition-all hover:bg-brand-light hover:shadow-xl hover:shadow-brand/30 hover:-translate-y-0.5"
                 >
-                  Get a Free Quote
+                  Get a Quote
                 </Link>
                 <Link
                   href="#ranges"
@@ -139,21 +133,6 @@ export default function Home() {
             </div>
           </div>
 
-          {/* Metric strip — with warm accents */}
-          <div className="mt-20 grid grid-cols-3 gap-6 lg:mt-28">
-            {[
-              { value: "$45", unit: "/m\u00B2", label: "Supply from" },
-              { value: "$18", unit: "/m\u00B2", label: "Installation from" },
-              { value: "15", unit: "yr", label: "Commercial warranty" },
-            ].map((metric, i) => (
-              <div key={i} className="rounded-2xl border border-stone-800/60 bg-stone-900/50 p-6 backdrop-blur-sm">
-                <p className="text-2xl font-bold tracking-tight text-white md:text-3xl">
-                  {metric.value}<span className="text-brand-light">{metric.unit}</span>
-                </p>
-                <p className="mt-1 text-xs text-stone-500">{metric.label}</p>
-              </div>
-            ))}
-          </div>
         </div>
       </section>
 
@@ -162,10 +141,10 @@ export default function Home() {
         <div className="mx-auto max-w-[1400px] px-6 py-8 lg:px-10">
           <div className="grid grid-cols-2 gap-4 lg:grid-cols-4">
             {[
-              { icon: Shield, label: "Supply + Install", detail: "One point of contact" },
-              { icon: Sparkles, label: "Any Brand", detail: "Not tied to one manufacturer" },
-              { icon: Leaf, label: "Since 2010", detail: "Commercial specialists" },
-              { icon: Truck, label: "Australia-Wide", detail: "Every state and territory" },
+              { icon: Shield, label: "Supply + Install", detail: "One call, one crew, done" },
+              { icon: Layers, label: "Any manufacturer", detail: "We pick the right floor, fit for purpose" },
+              { icon: Leaf, label: "Est. 1986", detail: "Premrest" },
+              { icon: Truck, label: "Australia-wide", detail: "Every state and territory" },
             ].map((item) => (
               <div
                 key={item.label}
@@ -190,9 +169,9 @@ export default function Home() {
           <div className="mb-16 max-w-xl lg:mb-20">
             <p className="text-editorial-caption text-brand mb-4">Our Ranges</p>
             <h2 className="text-editorial-heading text-stone-950">
-              World-class manufacturers,
+              Good floors start with
               <br className="hidden sm:block" />
-              curated for your project.
+              good products.
             </h2>
           </div>
 
@@ -260,10 +239,10 @@ export default function Home() {
 
             <div className="grid gap-4 sm:grid-cols-2">
               {[
-                { n: "01", title: "Consult", text: "Free site visit & project discussion" },
-                { n: "02", title: "Source", text: "Right product, competitive pricing" },
-                { n: "03", title: "Supply", text: "Direct from manufacturer to site" },
-                { n: "04", title: "Install", text: "Licensed installers, full project management" },
+                { n: "01", title: "Consult", text: "We come to you. Look at the space, talk it through." },
+                { n: "02", title: "Source", text: "Find the right floor for the job and the budget." },
+                { n: "03", title: "Supply", text: "Ordered, delivered, on time." },
+                { n: "04", title: "Install", text: "Our crew lays it. We manage the lot." },
               ].map((step) => (
                 <div
                   key={step.n}
@@ -285,6 +264,34 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Pricing guide */}
+      <section className="bg-warm-white border-b border-stone-200/40">
+        <div className="mx-auto max-w-[1400px] px-6 py-10 lg:px-10">
+          <div className="flex flex-wrap items-center justify-center gap-8 text-center lg:gap-16">
+            <div>
+              <p className="text-xl font-bold tracking-tight text-stone-900">
+                $45<span className="text-brand">/m²</span>
+              </p>
+              <p className="mt-1 text-xs text-stone-500">Supply from (ex GST)</p>
+            </div>
+            <div className="hidden h-8 w-px bg-stone-200 sm:block" />
+            <div>
+              <p className="text-xl font-bold tracking-tight text-stone-900">
+                $20<span className="text-brand">/m²</span>
+              </p>
+              <p className="mt-1 text-xs text-stone-500">Install from (ex GST)</p>
+            </div>
+            <div className="hidden h-8 w-px bg-stone-200 sm:block" />
+            <div>
+              <p className="text-xl font-bold tracking-tight text-stone-900">
+                15<span className="text-brand"> yr</span>
+              </p>
+              <p className="mt-1 text-xs text-stone-500">Commercial warranty</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Sectors — playful cards */}
       <section className="bg-warm-white">
         <div className="mx-auto max-w-[1400px] px-6 py-24 md:py-32 lg:px-10">
@@ -293,9 +300,9 @@ export default function Home() {
               By Sector
             </p>
             <h2 className="text-editorial-heading text-stone-950">
-              Purpose-built flooring
+              Different spaces need
               <br className="hidden sm:block" />
-              for every environment.
+              different floors.
             </h2>
           </div>
 
@@ -327,7 +334,7 @@ export default function Home() {
         <div className="mx-auto max-w-[1400px] px-6 py-24 md:py-32 lg:px-10">
           <p className="text-editorial-caption text-brand mb-4">Testimonials</p>
           <h2 className="text-editorial-heading text-stone-950 mb-16">
-            Trusted across Australia.
+            Don&apos;t take our word for it.
           </h2>
 
           <div className="grid gap-6 md:grid-cols-3">
