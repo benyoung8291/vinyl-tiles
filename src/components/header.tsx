@@ -2,14 +2,13 @@
 
 import { useState } from "react";
 import Link from "next/link";
-import { Menu, X, ChevronDown, Phone } from "lucide-react";
-import { Button } from "@/components/ui/button";
+import { Menu, X, ChevronDown, ArrowRight } from "lucide-react";
 
 const ranges = [
-  { label: "Interface", href: "/ranges/interface" },
-  { label: "Karndean", href: "/ranges/karndean" },
-  { label: "Armstrong", href: "/ranges/armstrong" },
-  { label: "Tarkett", href: "/ranges/tarkett" },
+  { label: "Interface", href: "/ranges/interface", detail: "Modular flooring" },
+  { label: "Karndean", href: "/ranges/karndean", detail: "Design flooring" },
+  { label: "Armstrong", href: "/ranges/armstrong", detail: "Performance flooring" },
+  { label: "Tarkett", href: "/ranges/tarkett", detail: "Sustainable flooring" },
 ];
 
 const solutions = [
@@ -26,33 +25,43 @@ export default function Header() {
   const [mobileSolutionsOpen, setMobileSolutionsOpen] = useState(false);
 
   return (
-    <header className="fixed top-0 right-0 left-0 z-50 border-b border-gray-200 bg-white">
-      <div className="mx-auto flex h-16 max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
+    <header className="fixed top-0 right-0 left-0 z-50 bg-white/95 backdrop-blur-sm">
+      <div className="mx-auto flex h-[72px] max-w-[1400px] items-center justify-between px-6 lg:px-10">
         {/* Logo */}
-        <Link href="/" className="flex items-baseline gap-1.5">
-          <span className="text-xl font-bold tracking-tight text-gray-900">
+        <Link href="/" className="flex items-baseline gap-2">
+          <span className="text-[1.35rem] font-bold tracking-[-0.04em] text-stone-950">
             Vinyl Tiles
           </span>
-          <span className="text-xs font-medium text-gray-500">by Premrest</span>
+          <span className="text-editorial-caption text-brand tracking-[0.1em]">
+            Premrest
+          </span>
         </Link>
 
         {/* Desktop Nav */}
-        <nav className="hidden items-center gap-1 lg:flex">
-          {/* Our Ranges Dropdown */}
+        <nav className="hidden items-center gap-0.5 lg:flex">
+          {/* Ranges Dropdown */}
           <div className="group relative">
-            <button className="inline-flex items-center gap-1 rounded-lg px-3 py-2 text-sm font-medium text-gray-700 transition-colors hover:bg-gray-100 hover:text-gray-900">
-              Our Ranges
-              <ChevronDown className="size-4 transition-transform group-hover:rotate-180" />
+            <button className="inline-flex items-center gap-1 px-4 py-2 text-[0.8125rem] font-medium tracking-[-0.01em] text-stone-600 transition-colors hover:text-stone-950">
+              Ranges
+              <ChevronDown className="size-3.5 opacity-40 transition-transform group-hover:rotate-180" />
             </button>
-            <div className="pointer-events-none absolute left-0 top-full pt-1 opacity-0 transition-all group-hover:pointer-events-auto group-hover:opacity-100">
-              <div className="w-48 rounded-lg border border-gray-200 bg-white py-1 shadow-lg">
+            <div className="pointer-events-none absolute left-1/2 top-full -translate-x-1/2 pt-3 opacity-0 transition-all duration-200 group-hover:pointer-events-auto group-hover:opacity-100">
+              <div className="w-64 border border-stone-200/80 bg-white p-2 shadow-xl shadow-stone-900/5">
                 {ranges.map((item) => (
                   <Link
                     key={item.href}
                     href={item.href}
-                    className="block px-4 py-2 text-sm text-gray-700 transition-colors hover:bg-gray-50 hover:text-gray-900"
+                    className="group/item flex items-center justify-between px-3.5 py-2.5 transition-colors hover:bg-stone-50"
                   >
-                    {item.label}
+                    <div>
+                      <span className="block text-[0.8125rem] font-semibold text-stone-900">
+                        {item.label}
+                      </span>
+                      <span className="block text-[0.6875rem] text-stone-400">
+                        {item.detail}
+                      </span>
+                    </div>
+                    <ArrowRight className="size-3.5 text-stone-300 transition-transform group-hover/item:translate-x-0.5 group-hover/item:text-brand" />
                   </Link>
                 ))}
               </div>
@@ -61,33 +70,34 @@ export default function Header() {
 
           <Link
             href="/why-vinyl-tiles"
-            className="rounded-lg px-3 py-2 text-sm font-medium text-gray-700 transition-colors hover:bg-gray-100 hover:text-gray-900"
+            className="px-4 py-2 text-[0.8125rem] font-medium tracking-[-0.01em] text-stone-600 transition-colors hover:text-stone-950"
           >
-            Why Vinyl Tiles?
+            Why Vinyl
           </Link>
 
           <Link
             href="/how-we-work"
-            className="rounded-lg px-3 py-2 text-sm font-medium text-gray-700 transition-colors hover:bg-gray-100 hover:text-gray-900"
+            className="px-4 py-2 text-[0.8125rem] font-medium tracking-[-0.01em] text-stone-600 transition-colors hover:text-stone-950"
           >
-            How We Work
+            Process
           </Link>
 
           {/* Solutions Dropdown */}
           <div className="group relative">
-            <button className="inline-flex items-center gap-1 rounded-lg px-3 py-2 text-sm font-medium text-gray-700 transition-colors hover:bg-gray-100 hover:text-gray-900">
-              Solutions
-              <ChevronDown className="size-4 transition-transform group-hover:rotate-180" />
+            <button className="inline-flex items-center gap-1 px-4 py-2 text-[0.8125rem] font-medium tracking-[-0.01em] text-stone-600 transition-colors hover:text-stone-950">
+              Sectors
+              <ChevronDown className="size-3.5 opacity-40 transition-transform group-hover:rotate-180" />
             </button>
-            <div className="pointer-events-none absolute left-0 top-full pt-1 opacity-0 transition-all group-hover:pointer-events-auto group-hover:opacity-100">
-              <div className="w-48 rounded-lg border border-gray-200 bg-white py-1 shadow-lg">
+            <div className="pointer-events-none absolute left-1/2 top-full -translate-x-1/2 pt-3 opacity-0 transition-all duration-200 group-hover:pointer-events-auto group-hover:opacity-100">
+              <div className="w-52 border border-stone-200/80 bg-white p-2 shadow-xl shadow-stone-900/5">
                 {solutions.map((item) => (
                   <Link
                     key={item.href}
                     href={item.href}
-                    className="block px-4 py-2 text-sm text-gray-700 transition-colors hover:bg-gray-50 hover:text-gray-900"
+                    className="group/item flex items-center justify-between px-3.5 py-2.5 transition-colors hover:bg-stone-50"
                   >
-                    {item.label}
+                    <span className="text-[0.8125rem] font-medium text-stone-700">{item.label}</span>
+                    <ArrowRight className="size-3.5 text-stone-300 transition-transform group-hover/item:translate-x-0.5 group-hover/item:text-brand" />
                   </Link>
                 ))}
               </div>
@@ -96,58 +106,62 @@ export default function Header() {
 
           <Link
             href="/contact"
-            className="rounded-lg px-3 py-2 text-sm font-medium text-gray-700 transition-colors hover:bg-gray-100 hover:text-gray-900"
+            className="px-4 py-2 text-[0.8125rem] font-medium tracking-[-0.01em] text-stone-600 transition-colors hover:text-stone-950"
           >
             Contact
           </Link>
         </nav>
 
-        {/* Desktop Right Side */}
-        <div className="hidden items-center gap-4 lg:flex">
+        {/* Desktop CTA */}
+        <div className="hidden items-center gap-6 lg:flex">
           <a
             href="tel:1300207915"
-            className="inline-flex items-center gap-1.5 text-sm font-medium text-gray-700 transition-colors hover:text-gray-900"
+            className="text-[0.8125rem] font-medium tracking-[-0.01em] text-stone-400 transition-colors hover:text-stone-900"
           >
-            <Phone className="size-4" />
             1300 207 915
           </a>
-          <Button render={<Link href="/contact" />}>
+          <Link
+            href="/contact"
+            className="bg-stone-950 px-5 py-2.5 text-[0.8125rem] font-medium tracking-[-0.01em] text-white transition-colors hover:bg-brand"
+          >
             Get a Quote
-          </Button>
+          </Link>
         </div>
 
         {/* Mobile Menu Button */}
         <button
-          className="inline-flex items-center justify-center rounded-lg p-2 text-gray-700 transition-colors hover:bg-gray-100 lg:hidden"
+          className="inline-flex items-center justify-center p-2 text-stone-700 lg:hidden"
           onClick={() => setMobileOpen(!mobileOpen)}
           aria-label={mobileOpen ? "Close menu" : "Open menu"}
         >
-          {mobileOpen ? <X className="size-6" /> : <Menu className="size-6" />}
+          {mobileOpen ? <X className="size-5" /> : <Menu className="size-5" />}
         </button>
       </div>
 
+      {/* Divider line */}
+      <div className="h-px bg-stone-200/60" />
+
       {/* Mobile Nav */}
       {mobileOpen && (
-        <div className="border-t border-gray-200 bg-white lg:hidden">
-          <nav className="mx-auto max-w-7xl space-y-1 px-4 py-4 sm:px-6">
-            {/* Our Ranges */}
+        <div className="border-t border-stone-100 bg-white lg:hidden">
+          <nav className="mx-auto max-w-7xl space-y-0 px-6 py-6">
             <div>
               <button
-                className="flex w-full items-center justify-between rounded-lg px-3 py-2 text-sm font-medium text-gray-700 transition-colors hover:bg-gray-100"
+                className="flex w-full items-center justify-between py-3 text-sm font-medium text-stone-800"
                 onClick={() => setMobileRangesOpen(!mobileRangesOpen)}
               >
-                Our Ranges
+                Ranges
                 <ChevronDown
-                  className={`size-4 transition-transform ${mobileRangesOpen ? "rotate-180" : ""}`}
+                  className={`size-4 text-stone-400 transition-transform ${mobileRangesOpen ? "rotate-180" : ""}`}
                 />
               </button>
               {mobileRangesOpen && (
-                <div className="ml-4 space-y-1 pt-1">
+                <div className="space-y-0 border-l-2 border-brand/20 pl-4 pb-2">
                   {ranges.map((item) => (
                     <Link
                       key={item.href}
                       href={item.href}
-                      className="block rounded-lg px-3 py-2 text-sm text-gray-600 transition-colors hover:bg-gray-50 hover:text-gray-900"
+                      className="block py-2 text-sm text-stone-500 transition-colors hover:text-stone-900"
                       onClick={() => setMobileOpen(false)}
                     >
                       {item.label}
@@ -159,38 +173,37 @@ export default function Header() {
 
             <Link
               href="/why-vinyl-tiles"
-              className="block rounded-lg px-3 py-2 text-sm font-medium text-gray-700 transition-colors hover:bg-gray-100"
+              className="block py-3 text-sm font-medium text-stone-800"
               onClick={() => setMobileOpen(false)}
             >
-              Why Vinyl Tiles?
+              Why Vinyl
             </Link>
 
             <Link
               href="/how-we-work"
-              className="block rounded-lg px-3 py-2 text-sm font-medium text-gray-700 transition-colors hover:bg-gray-100"
+              className="block py-3 text-sm font-medium text-stone-800"
               onClick={() => setMobileOpen(false)}
             >
-              How We Work
+              Process
             </Link>
 
-            {/* Solutions */}
             <div>
               <button
-                className="flex w-full items-center justify-between rounded-lg px-3 py-2 text-sm font-medium text-gray-700 transition-colors hover:bg-gray-100"
+                className="flex w-full items-center justify-between py-3 text-sm font-medium text-stone-800"
                 onClick={() => setMobileSolutionsOpen(!mobileSolutionsOpen)}
               >
-                Solutions
+                Sectors
                 <ChevronDown
-                  className={`size-4 transition-transform ${mobileSolutionsOpen ? "rotate-180" : ""}`}
+                  className={`size-4 text-stone-400 transition-transform ${mobileSolutionsOpen ? "rotate-180" : ""}`}
                 />
               </button>
               {mobileSolutionsOpen && (
-                <div className="ml-4 space-y-1 pt-1">
+                <div className="space-y-0 border-l-2 border-brand/20 pl-4 pb-2">
                   {solutions.map((item) => (
                     <Link
                       key={item.href}
                       href={item.href}
-                      className="block rounded-lg px-3 py-2 text-sm text-gray-600 transition-colors hover:bg-gray-50 hover:text-gray-900"
+                      className="block py-2 text-sm text-stone-500 transition-colors hover:text-stone-900"
                       onClick={() => setMobileOpen(false)}
                     >
                       {item.label}
@@ -202,26 +215,26 @@ export default function Header() {
 
             <Link
               href="/contact"
-              className="block rounded-lg px-3 py-2 text-sm font-medium text-gray-700 transition-colors hover:bg-gray-100"
+              className="block py-3 text-sm font-medium text-stone-800"
               onClick={() => setMobileOpen(false)}
             >
               Contact
             </Link>
 
-            <div className="border-t border-gray-200 pt-4">
+            <div className="mt-4 border-t border-stone-100 pt-6 space-y-3">
               <a
                 href="tel:1300207915"
-                className="mb-3 flex items-center gap-1.5 px-3 text-sm font-medium text-gray-700"
+                className="block text-sm text-stone-400"
               >
-                <Phone className="size-4" />
                 1300 207 915
               </a>
-              <Button
-                className="w-full"
-                render={<Link href="/contact" onClick={() => setMobileOpen(false)} />}
+              <Link
+                href="/contact"
+                className="block w-full bg-stone-950 py-3 text-center text-sm font-medium text-white"
+                onClick={() => setMobileOpen(false)}
               >
                 Get a Quote
-              </Button>
+              </Link>
             </div>
           </nav>
         </div>

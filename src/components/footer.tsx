@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { ArrowUpRight } from "lucide-react";
 
 const ranges = [
   { name: "Interface", slug: "interface" },
@@ -14,30 +15,64 @@ const resources = [
 ];
 
 const solutions = [
-  { name: "Office Flooring", href: "/office-flooring" },
-  { name: "Retail Flooring", href: "/retail-flooring" },
-  { name: "Healthcare Flooring", href: "/healthcare-flooring" },
-  { name: "Education Flooring", href: "/education-flooring" },
-  { name: "Hospitality Flooring", href: "/hospitality-flooring" },
+  { name: "Office", href: "/office-flooring" },
+  { name: "Retail", href: "/retail-flooring" },
+  { name: "Healthcare", href: "/healthcare-flooring" },
+  { name: "Education", href: "/education-flooring" },
+  { name: "Hospitality", href: "/hospitality-flooring" },
 ];
 
 export default function Footer() {
   return (
-    <footer className="bg-slate-900 text-white">
-      <div className="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8">
-        {/* Navigation columns */}
-        <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-4">
-          {/* Our Ranges */}
+    <footer className="bg-stone-950 text-stone-400">
+      {/* Main footer */}
+      <div className="mx-auto max-w-[1400px] px-6 pt-20 pb-12 lg:px-10">
+        {/* Brand + columns */}
+        <div className="grid grid-cols-1 gap-12 lg:grid-cols-[1.5fr_1fr_1fr_1fr_1fr] lg:gap-8">
+          {/* Brand column */}
+          <div className="lg:pr-12">
+            <Link href="/" className="inline-flex items-baseline gap-2">
+              <span className="text-xl font-bold tracking-[-0.04em] text-white">
+                Vinyl Tiles
+              </span>
+              <span className="text-editorial-caption text-brand-light tracking-[0.1em]">
+                Premrest
+              </span>
+            </Link>
+            <p className="mt-5 max-w-xs text-sm leading-relaxed text-stone-500">
+              Australia&apos;s commercial flooring specialists. Supply and
+              professional installation of luxury vinyl tile flooring.
+            </p>
+            <div className="mt-8 space-y-2">
+              <a
+                href="tel:1300207915"
+                className="block text-sm font-medium text-stone-300 transition-colors hover:text-white"
+              >
+                1300 207 915
+              </a>
+              <a
+                href="mailto:vinyl@premrest.com.au"
+                className="block text-sm text-stone-500 transition-colors hover:text-white"
+              >
+                vinyl@premrest.com.au
+              </a>
+              <p className="text-xs text-stone-600">
+                Mon&ndash;Fri 8:30am &ndash; 5:00pm AEST
+              </p>
+            </div>
+          </div>
+
+          {/* Ranges */}
           <div>
-            <h3 className="text-sm font-semibold uppercase tracking-wider">
-              Our Ranges
+            <h3 className="text-editorial-caption text-stone-500 mb-5">
+              Ranges
             </h3>
-            <ul className="mt-4 space-y-3">
+            <ul className="space-y-3">
               {ranges.map((range) => (
                 <li key={range.slug}>
                   <Link
                     href={`/ranges/${range.slug}`}
-                    className="text-sm text-slate-300 transition-colors hover:text-white"
+                    className="text-sm text-stone-400 transition-colors hover:text-white"
                   >
                     {range.name}
                   </Link>
@@ -46,36 +81,17 @@ export default function Footer() {
             </ul>
           </div>
 
-          {/* Resources */}
+          {/* Sectors */}
           <div>
-            <h3 className="text-sm font-semibold uppercase tracking-wider">
-              Resources
+            <h3 className="text-editorial-caption text-stone-500 mb-5">
+              Sectors
             </h3>
-            <ul className="mt-4 space-y-3">
-              {resources.map((resource) => (
-                <li key={resource.href}>
-                  <Link
-                    href={resource.href}
-                    className="text-sm text-slate-300 transition-colors hover:text-white"
-                  >
-                    {resource.name}
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </div>
-
-          {/* Solutions */}
-          <div>
-            <h3 className="text-sm font-semibold uppercase tracking-wider">
-              Solutions
-            </h3>
-            <ul className="mt-4 space-y-3">
+            <ul className="space-y-3">
               {solutions.map((solution) => (
                 <li key={solution.href}>
                   <Link
                     href={solution.href}
-                    className="text-sm text-slate-300 transition-colors hover:text-white"
+                    className="text-sm text-stone-400 transition-colors hover:text-white"
                   >
                     {solution.name}
                   </Link>
@@ -84,75 +100,66 @@ export default function Footer() {
             </ul>
           </div>
 
-          {/* Contact */}
+          {/* Resources */}
           <div>
-            <h3 className="text-sm font-semibold uppercase tracking-wider">
-              Contact
+            <h3 className="text-editorial-caption text-stone-500 mb-5">
+              Resources
             </h3>
-            <ul className="mt-4 space-y-3">
+            <ul className="space-y-3">
+              {resources.map((resource) => (
+                <li key={resource.href}>
+                  <Link
+                    href={resource.href}
+                    className="text-sm text-stone-400 transition-colors hover:text-white"
+                  >
+                    {resource.name}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          {/* Premrest family */}
+          <div>
+            <h3 className="text-editorial-caption text-stone-500 mb-5">
+              Premrest Group
+            </h3>
+            <ul className="space-y-3">
               <li>
                 <a
-                  href="tel:1300207915"
-                  className="text-sm text-slate-300 transition-colors hover:text-white"
+                  href="https://modularcarpet.com.au"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-1 text-sm text-stone-400 transition-colors hover:text-white"
                 >
-                  1300 207 915
+                  Modular Carpet
+                  <ArrowUpRight className="size-3 opacity-40" />
                 </a>
               </li>
               <li>
                 <a
-                  href="mailto:vinyl@premrest.com.au"
-                  className="text-sm text-slate-300 transition-colors hover:text-white"
+                  href="https://comcorkflooring.com.au"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-1 text-sm text-stone-400 transition-colors hover:text-white"
                 >
-                  vinyl@premrest.com.au
+                  ComCork Flooring
+                  <ArrowUpRight className="size-3 opacity-40" />
                 </a>
-              </li>
-              <li>
-                <p className="text-sm text-slate-300">
-                  Mon&ndash;Fri 8:30am &ndash; 5:00pm AEST
-                </p>
               </li>
             </ul>
           </div>
         </div>
 
-        {/* Divider */}
-        <div className="mt-12 border-t border-slate-700 pt-8">
-          {/* A Premrest Brand */}
-          <p className="text-sm text-slate-400">
-            Vinyl Tiles is proudly distributed by{" "}
-            <span className="font-semibold text-slate-300">Premrest</span>{" "}
-            &mdash; Premier Restorations Group.
-          </p>
-
-          {/* Cross-brand links */}
-          <div className="mt-4 space-y-2">
-            <p className="text-sm text-slate-400">
-              Looking for carpet tiles? Check out{" "}
-              <a
-                href="https://modularcarpet.com.au"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="font-medium text-slate-300 underline underline-offset-2 transition-colors hover:text-white"
-              >
-                Modular Carpet
-              </a>
-            </p>
-            <p className="text-sm text-slate-400">
-              Looking for cork flooring? Check out{" "}
-              <a
-                href="https://comcorkflooring.com.au"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="font-medium text-slate-300 underline underline-offset-2 transition-colors hover:text-white"
-              >
-                ComCork Flooring
-              </a>
-            </p>
-          </div>
-
-          {/* Copyright */}
-          <p className="mt-8 text-xs text-slate-500">
+        {/* Bottom bar */}
+        <div className="mt-16 flex flex-col items-start justify-between gap-4 border-t border-stone-800/60 pt-8 sm:flex-row sm:items-center">
+          <p className="text-xs text-stone-600">
             &copy; 2026 Premier Restorations Group Pty Ltd. All rights reserved.
+          </p>
+          <p className="text-xs text-stone-700">
+            A{" "}
+            <span className="font-medium text-stone-500">Premrest</span>{" "}
+            brand
           </p>
         </div>
       </div>
