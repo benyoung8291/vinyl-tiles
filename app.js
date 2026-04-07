@@ -7,28 +7,28 @@
 const products = {
     interface: [
         {
-            name: "Natural Woodgrains",
-            collection: "Level Set Collection",
+            name: "Natural Woodgrains 4.5mm",
+            collection: "Level Set — A002R",
             badge: "Best Seller",
-            specs: ["250×1000mm", "4.5mm", "Sound Choice™"],
+            specs: ["250×1000mm", "4.5mm", "0.55mm Wear"],
             colors: ["#c8a97e", "#8b6f47", "#a38b6d", "#d4b896", "#6b5340"],
             colorNames: ["Beech", "Chestnut", "Rustic Oak", "Washed Maple", "Walnut"],
             gradient: "linear-gradient(135deg, #c8a97e 0%, #8b6f47 50%, #a38b6d 100%)",
             url: "https://shop.interface.com/AU/en-AU/resilient/lvt/natural-woodgrains/A002R.html"
         },
         {
-            name: "Textured Woodgrains",
-            collection: "Level Set Collection",
+            name: "Textured Woodgrains 4.5mm",
+            collection: "Level Set — A004R",
             badge: "Popular",
             specs: ["250×1000mm", "4.5mm", "Ceramor™"],
-            colors: ["#b89b7a", "#7a6348", "#9c8060", "#d1b794", "#5e4a35"],
-            colorNames: ["Antique Oak", "Dark Walnut", "Distressed Hickory", "Blonde Maple", "Ebony"],
+            colors: ["#b89b7a", "#7a6348", "#d1b794", "#9c8060", "#5e4a35", "#c8b090", "#8a7050", "#bca88a"],
+            colorNames: ["Antique Oak", "Antique Dark Oak", "Antique Light Oak", "Ash Walnut", "Rustic Hickory", "Silver Dune", "Grey Dune", "White Wash"],
             gradient: "linear-gradient(135deg, #b89b7a 0%, #7a6348 50%, #5e4a35 100%)",
             url: "https://shop.interface.com/AU/en-AU/resilient/lvt/textured-woodgrains/A004R.html"
         },
         {
             name: "Textured Stones",
-            collection: "Level Set Collection",
+            collection: "Level Set — A003R",
             badge: "Stone Look",
             specs: ["500×500mm", "4.5mm", "39% Recycled"],
             colors: ["#c4bdb4", "#918a81", "#a89f96", "#d6cfc7", "#78716c"],
@@ -37,111 +37,180 @@ const products = {
             url: "https://shop.interface.com/AU/en-AU/resilient/lvt/textured-stones/A003R.html"
         },
         {
-            name: "Brushed Lines",
-            collection: "Level Set Collection",
+            name: "Studio Set 4.5mm",
+            collection: "Level Set — A007R",
             specs: ["250×1000mm", "4.5mm", "Sound Choice™"],
-            colors: ["#baa58c", "#947b60", "#a69078", "#cbb9a2", "#7d6650"],
-            colorNames: ["Almond", "Pecan", "Driftwood", "Birch", "Mocha"],
-            gradient: "linear-gradient(135deg, #baa58c 0%, #947b60 50%, #7d6650 100%)",
+            colors: ["#7c7a78", "#a09890", "#8c7468", "#b8b0a8", "#c4a888", "#686460"],
+            colorNames: ["Slate", "Pewter", "Mushroom", "Pepper", "Poppy", "Charcoal"],
+            gradient: "linear-gradient(135deg, #a09890 0%, #7c7a78 50%, #686460 100%)",
+            url: "https://shop.interface.com/AU/en-AU/resilient/lvt/studio-set/A007R.html"
+        },
+        {
+            name: "Brushed Lines",
+            collection: "Level Set — A016R",
+            specs: ["250×1000mm", "4.5mm", "Ceramor™"],
+            colors: ["#e8ddd0", "#b8a898", "#9c8c7c", "#d8c8b8", "#7c6c5c", "#c8b4a0", "#6c5c4c", "#a8947c"],
+            colorNames: ["Alabaster", "Sandalwood", "Galena", "Rouge", "Graphite", "Celadon", "Kohl", "Teal Oxide"],
+            gradient: "linear-gradient(135deg, #e8ddd0 0%, #9c8c7c 50%, #6c5c4c 100%)",
             url: "https://shop.interface.com/AU/en-AU/resilient/lvt/brushed-lines/A016R.html"
         },
         {
             name: "Northern Grain",
-            collection: "Level Set Collection",
-            specs: ["250×1000mm", "4.5mm", "Ceramor™"],
+            collection: "Level Set — A026R",
+            specs: ["250×1000mm", "4.5mm", "39% Recycled"],
             colors: ["#d4c4ad", "#a89279", "#c0ad95", "#e2d5c2", "#8c7660"],
             colorNames: ["Nordic Birch", "Tawny", "Oatmeal", "Whitewash", "Hazel"],
             gradient: "linear-gradient(135deg, #d4c4ad 0%, #a89279 50%, #8c7660 100%)",
             url: "https://shop.interface.com/AU/en-AU/resilient/lvt/northern-grain/A026R.html"
         },
         {
-            name: "Drawn Lines",
-            collection: "Level Set Collection",
-            specs: ["250×1000mm", "4.5mm", "39% Recycled"],
-            colors: ["#a09080", "#786858", "#8c7c6c", "#b4a494", "#665848"],
-            colorNames: ["Flax", "Umber", "Taupe", "Sand", "Cocoa"],
-            gradient: "linear-gradient(135deg, #a09080 0%, #786858 50%, #665848 100%)",
-            url: "https://shop.interface.com/AU/en-AU/resilient/lvt/drawn-lines/A009R.html"
+            name: "Raw Materials 4.5mm",
+            collection: "Level Set — A042R",
+            badge: "New",
+            specs: ["250×1000mm", "4.5mm", "Sound Choice™"],
+            colors: ["#b0a090", "#8c7c6c", "#a09080", "#c8b8a8", "#706050"],
+            colorNames: ["Raw Oak", "Raw Walnut", "Raw Elm", "Raw Birch", "Raw Teak"],
+            gradient: "linear-gradient(135deg, #b0a090 0%, #8c7c6c 50%, #706050 100%)",
+            url: "https://shop.interface.com/AU/en-AU/resilient/lvt/raw-materials/A042R.html"
         }
     ],
     karndean: [
         {
-            name: "Pure Fabric Oak",
-            collection: "LooseLay Longboard — LLP329",
+            name: "French Grey Oak",
+            collection: "LooseLay Longboard — LLP308",
             badge: "Best Seller",
-            specs: ["1500×250mm", "4.5mm", "0.55mm Wear"],
-            colors: ["#d4c4a8", "#b8a88c", "#c4b498", "#e0d0b8", "#a89880"],
-            colorNames: ["White", "Stone", "Grey", "Cappuccino", "Natural"],
-            gradient: "linear-gradient(135deg, #d4c4a8 0%, #b8a88c 50%, #a89880 100%)",
-            url: "https://www.karndean.com/en-au/floors/products/pure-fabric-oak-llp329/"
+            specs: ["1500×250mm", "4.5mm", "0.50mm Wear"],
+            colors: ["#a8a098", "#8c8480", "#989088", "#b8b0a8", "#787068"],
+            colorNames: ["Cool Grey", "Charcoal Wash", "Stone Grey", "Silver Mist", "Smoke"],
+            gradient: "linear-gradient(135deg, #a8a098 0%, #8c8480 50%, #787068 100%)",
+            url: "https://www.karndean.com/en-au/floors/products/french-grey-oak-llp308"
         },
         {
-            name: "Field Oak",
-            collection: "LooseLay Longboard — LLP356",
-            badge: "New",
-            specs: ["1500×250mm", "4.5mm", "0.55mm Wear"],
-            colors: ["#d8c8a0", "#c4b488", "#ccbc98", "#e4d8b8", "#b8a878"],
-            colorNames: ["Straw", "Golden", "Honey", "Limed", "Amber"],
-            gradient: "linear-gradient(135deg, #d8c8a0 0%, #c4b488 50%, #b8a878 100%)",
-            url: "https://www.karndean.com/en-au/floors/products/field-oak-llp356/"
+            name: "Pearl Oak",
+            collection: "LooseLay Longboard — LLP306",
+            badge: "Popular",
+            specs: ["1500×250mm", "4.5mm", "0.50mm Wear"],
+            colors: ["#d0c4b4", "#b8a898", "#c4b8a8", "#dcd0c4", "#a89888"],
+            colorNames: ["Pearl", "Taupe", "Beige", "Cream", "Warm Sand"],
+            gradient: "linear-gradient(135deg, #d0c4b4 0%, #b8a898 50%, #a89888 100%)",
+            url: "https://www.karndean.com/en-au/floors/products/pearl-oak-llp306"
         },
         {
-            name: "Pure Danish Oak",
-            collection: "LooseLay Longboard — LLP357",
-            specs: ["1500×250mm", "4.5mm", "0.55mm Wear"],
-            colors: ["#ddd0b8", "#c8b898", "#d0c0a8", "#e8dcc8", "#b8a888"],
-            colorNames: ["Blonde", "Burnished", "Natural", "Pale", "Warm"],
-            gradient: "linear-gradient(135deg, #ddd0b8 0%, #c8b898 50%, #b8a888 100%)",
-            url: "https://www.karndean.com/en-au/floors/products/pure-danish-oak-llp357/"
+            name: "Champagne Oak",
+            collection: "LooseLay Longboard — LLP310",
+            specs: ["1500×250mm", "4.5mm", "0.50mm Wear"],
+            colors: ["#dcd0b8", "#c8bc9c", "#d0c4ac", "#e4dcc8", "#bca88c"],
+            colorNames: ["Blonde", "Cross-sawn", "Golden", "Pale", "Honey"],
+            gradient: "linear-gradient(135deg, #dcd0b8 0%, #c8bc9c 50%, #bca88c 100%)",
+            url: "https://www.karndean.com/en-au/floors/products/champagne-oak-llp310"
         },
         {
             name: "Honey Ironbark",
             collection: "LooseLay Longboard — LLP325",
-            badge: "Popular",
-            specs: ["1500×250mm", "4.5mm", "0.55mm Wear"],
+            badge: "Australian Wood",
+            specs: ["1500×250mm", "4.5mm", "0.50mm Wear"],
             colors: ["#c8a468", "#a88848", "#b89858", "#d8b878", "#987838"],
             colorNames: ["Mustard", "Golden Caramel", "Coffee", "Blonde", "Amber"],
             gradient: "linear-gradient(135deg, #c8a468 0%, #a88848 50%, #987838 100%)",
             url: "https://www.karndean.com/en-au/floors/products/australian-woods/honey-ironbark-v"
         },
         {
-            name: "Tasmanian Oak",
-            collection: "LooseLay Longboard — LLP312",
-            specs: ["1500×250mm", "4.5mm", "0.55mm Wear"],
-            colors: ["#dcc8a0", "#c4b08c", "#d0bc98", "#e8d8b8", "#b4a078"],
-            colorNames: ["Soft Blonde", "Honey", "Natural", "Light", "Warm"],
-            gradient: "linear-gradient(135deg, #dcc8a0 0%, #c4b08c 50%, #b4a078 100%)",
-            url: "https://www.karndean.com/en-au/floors/products/our-ranges/loose-lay/looselay/tasmanian-oak-llp312"
+            name: "Character Walnut",
+            collection: "LooseLay Longboard — LLP315",
+            specs: ["1500×250mm", "4.5mm", "0.50mm Wear"],
+            colors: ["#8c6c50", "#6c5038", "#7c5c44", "#a07c5c", "#5c4430"],
+            colorNames: ["Deep Walnut", "Dark Chocolate", "Espresso", "Warm Amber", "Mocha"],
+            gradient: "linear-gradient(135deg, #8c6c50 0%, #6c5038 50%, #5c4430 100%)",
+            url: "https://www.karndean.com/en-au/floors/products/character-walnut-llp315"
         },
         {
             name: "Mountain Spotted Gum",
             collection: "LooseLay Longboard — LLP316",
-            specs: ["1500×250mm", "4.5mm", "0.55mm Wear"],
+            badge: "Australian Wood",
+            specs: ["1500×250mm", "4.5mm", "0.50mm Wear"],
             colors: ["#a07858", "#886048", "#946c50", "#b88868", "#785040"],
             colorNames: ["Rich Brown", "Deep Walnut", "Warm Chestnut", "Caramel", "Dark Cocoa"],
             gradient: "linear-gradient(135deg, #a07858 0%, #886048 50%, #785040 100%)",
             url: "https://www.karndean.com/en-au/floors/products/mountain-spotted-gum-llp316/"
         },
         {
+            name: "Sterling Oak",
+            collection: "LooseLay Longboard — LLP354",
+            badge: "New",
+            specs: ["1500×250mm", "4.5mm", "0.50mm Wear"],
+            colors: ["#989088", "#807870", "#8c8478", "#a89c94", "#706860"],
+            colorNames: ["Cool Silver", "Pewter", "Storm", "Mist", "Graphite"],
+            gradient: "linear-gradient(135deg, #989088 0%, #807870 50%, #706860 100%)",
+            url: "https://www.karndean.com/en-au/floors/products/sterling-oak-llp354"
+        },
+        {
             name: "Twilight Oak",
             collection: "LooseLay Longboard — LLP301",
-            specs: ["1500×250mm", "4.5mm", "0.55mm Wear"],
+            specs: ["1500×250mm", "4.5mm", "0.50mm Wear"],
             colors: ["#9c9490", "#847c78", "#908880", "#b0a8a0", "#787068"],
             colorNames: ["Mid Grey", "Charcoal", "Ash", "Silver", "Slate"],
             gradient: "linear-gradient(135deg, #9c9490 0%, #847c78 50%, #787068 100%)",
-            url: "https://www.karndean.com/en-us/floors/products/twilight-oak-llp301/"
+            url: "https://www.karndean.com/en-au/floors/products/twilight-oak-llp301/"
         }
     ],
     armstrong: [
         {
-            name: "Natural Creations",
-            collection: "Diamond 10® Technology",
+            name: "Galena Oak Timber",
+            collection: "Natural Creations Diamond 10® — NA183",
             badge: "Best Seller",
-            specs: ["Multiple Sizes", "3.2mm", "20mil Wear"],
-            colors: ["#c8a878", "#8c7050", "#a08860", "#dcc098", "#6c5440"],
-            colorNames: ["Maple", "Rustic Oak", "Pine", "Light Oak", "Dark Walnut"],
-            gradient: "linear-gradient(135deg, #c8a878 0%, #8c7050 50%, #6c5440 100%)",
-            url: "https://www.armstrongflooring.com/commercial/en-us/products/lvt-luxury-flooring/natural-creations-with-diamond-10.html"
+            specs: ["6\"×48\"", "3.2mm", "20mil Wear"],
+            colors: ["#b89870", "#987850", "#a88860", "#c8a880", "#886840"],
+            colorNames: ["Timber", "Wheat", "Rye", "Natural", "Aged"],
+            gradient: "linear-gradient(135deg, #b89870 0%, #987850 50%, #886840 100%)",
+            url: "https://www.armstrongflooring.com/commercial/en-us/products/lvt-luxury-flooring/natural-creations-with-diamond-10/item/na183.html"
+        },
+        {
+            name: "Ironwood Oak",
+            collection: "Natural Creations Diamond 10® — NA163",
+            badge: "Popular",
+            specs: ["6\"×48\"", "3.2mm", "20mil Wear"],
+            colors: ["#6c5844", "#585040", "#7c6850", "#8c7860", "#504030"],
+            colorNames: ["Iron Era", "Sands of Time", "Heritage", "Aged Bronze", "Dark Iron"],
+            gradient: "linear-gradient(135deg, #7c6850 0%, #585040 50%, #504030 100%)",
+            url: "https://www.armstrongflooring.com/commercial/en-us/products/lvt-luxury-flooring/natural-creations-with-diamond-10/item/na163.html"
+        },
+        {
+            name: "Weathered Arbor",
+            collection: "Natural Creations Diamond 10® — NA236",
+            specs: ["6\"×36\"", "3.2mm", "20mil Wear"],
+            colors: ["#c4a888", "#a89070", "#b49878", "#d4b898", "#988060"],
+            colorNames: ["Fawn", "Light Doe", "Driftwood", "Bleached", "Tawny"],
+            gradient: "linear-gradient(135deg, #c4a888 0%, #a89070 50%, #988060 100%)",
+            url: "https://www.armstrongflooring.com/commercial/en-us/products/lvt-luxury-flooring/natural-creations-with-diamond-10/item/na236.html"
+        },
+        {
+            name: "Delano Grey Mist",
+            collection: "Natural Creations Diamond 10® — NA343",
+            badge: "Stone Look",
+            specs: ["12\"×24\"", "3.2mm", "20mil Wear"],
+            colors: ["#b8b0a8", "#989088", "#a8a098", "#c8c0b8", "#888078"],
+            colorNames: ["Grey Mist", "Warm Grey", "Cool Stone", "Silver", "Charcoal"],
+            gradient: "linear-gradient(135deg, #b8b0a8 0%, #989088 50%, #888078 100%)",
+            url: "https://www.armstrongflooring.com/commercial/en-us/products/lvt-luxury-flooring/natural-creations-with-diamond-10/item/na343.html"
+        },
+        {
+            name: "Coastal Crafted Boardwalk",
+            collection: "Natural Creations Diamond 10® — NA121",
+            specs: ["9\"×48\"", "3.2mm", "20mil Wear"],
+            colors: ["#c0a888", "#a89070", "#b49878", "#d0b898", "#948060"],
+            colorNames: ["Boardwalk", "Driftwood", "Sandbar", "Pier", "Weathered"],
+            gradient: "linear-gradient(135deg, #c0a888 0%, #a89070 50%, #948060 100%)",
+            url: "https://www.armstrongflooring.com/commercial/en-us/products/lvt-luxury-flooring/natural-creations-with-diamond-10/item/na121.html"
+        },
+        {
+            name: "Duo Spettro",
+            collection: "Duo Collection — Diamond 10®",
+            badge: "Design Forward",
+            specs: ["6\"×36\"", "2.5mm", "20mil Wear"],
+            colors: ["#c0b0a0", "#a09080", "#b0a090", "#d0c0b0", "#908070"],
+            colorNames: ["Warm Neutral", "Cool Grey", "Blush", "Ivory", "Clay"],
+            gradient: "linear-gradient(135deg, #c0b0a0 0%, #a09080 50%, #908070 100%)",
+            url: "https://www.armstrongflooring.com/commercial/en-us/products/lvt-luxury-flooring/duo.html"
         },
         {
             name: "Biome",
@@ -152,50 +221,32 @@ const products = {
             colorNames: ["Earthen", "Forest Floor", "Canopy", "Savanna", "Woodland"],
             gradient: "linear-gradient(135deg, #b09878 0%, #8a7258 50%, #786048 100%)",
             url: "https://www.armstrongflooring.com/commercial/en-us/products/lvt-luxury-flooring/biome.html"
-        },
-        {
-            name: "Terra",
-            collection: "Diamond 10® — Stone Inspired",
-            specs: ["18\"×18\"", "2.5mm", "Diamond 10®"],
-            colors: ["#c4b8a8", "#a09488", "#b4a898", "#d4c8bc", "#908478"],
-            colorNames: ["Limestone", "Slate", "Sandstone", "Marble", "Granite"],
-            gradient: "linear-gradient(135deg, #c4b8a8 0%, #a09488 50%, #908478 100%)",
-            url: "https://www.armstrongflooring.com/commercial/en-us/products/lvt-luxury-flooring/terra.html"
-        },
-        {
-            name: "Coalesce",
-            collection: "Diamond 10® — Textile & Mosaic",
-            specs: ["12\"×24\"", "2.5mm", "Diamond 10®"],
-            colors: ["#b8a898", "#9c8c7c", "#a89888", "#c8b8a8", "#8c7c6c"],
-            colorNames: ["Woven", "Linen", "Canvas", "Sisal", "Burlap"],
-            gradient: "linear-gradient(135deg, #b8a898 0%, #9c8c7c 50%, #8c7c6c 100%)",
-            url: "https://www.armstrongflooring.com/commercial/en-us/products/lvt-luxury-flooring/coalesce.html"
-        },
-        {
-            name: "Exchange",
-            collection: "Diamond 10® — Contemporary",
-            badge: "Popular",
-            specs: ["Multiple Sizes", "2.5mm", "Diamond 10®"],
-            colors: ["#d4c4b0", "#948474", "#b8a894", "#e0d0c0", "#7c6c5c"],
-            colorNames: ["Pastel", "Neutral", "Saturated", "Cool", "Warm"],
-            gradient: "linear-gradient(135deg, #d4c4b0 0%, #948474 50%, #7c6c5c 100%)",
-            url: "https://www.armstrongflooring.com/commercial/en-us/products/lvt-luxury-flooring/exchange.html"
-        },
-        {
-            name: "Duo",
-            collection: "Diamond 10® — Neutral & Color",
-            specs: ["Multiple Sizes", "2.5mm", "Diamond 10®"],
-            colors: ["#c0b0a0", "#a09080", "#b0a090", "#d0c0b0", "#908070"],
-            colorNames: ["Warm Neutral", "Cool Grey", "Blush", "Ivory", "Clay"],
-            gradient: "linear-gradient(135deg, #c0b0a0 0%, #a09080 50%, #908070 100%)",
-            url: "https://www.armstrongflooring.com/commercial/en-us/products/lvt-luxury-flooring/duo.html"
         }
     ],
     tarkett: [
         {
-            name: "iD Inspiration Ultimate",
-            collection: "Rigid Composite Vinyl Tile",
+            name: "iD Latitude Wood",
+            collection: "33 Colours — Carbon Neutral",
+            badge: "Best Seller",
+            specs: ["6\"×48\"", "3.05mm", "20mil Wear"],
+            colors: ["#c8a878", "#a08858", "#b49868", "#d4b888", "#886848", "#c4a470", "#987848", "#b8a070"],
+            colorNames: ["Vintage Oak", "Urban Oak", "Chandler Oak", "Creme Oak", "Black Walnut", "Golden Oak", "English Walnut", "Pearl Maple"],
+            gradient: "linear-gradient(135deg, #c8a878 0%, #a08858 50%, #886848 100%)",
+            url: "https://commercial.tarkett.com/products/resilient/lvt/id-latitude-wood"
+        },
+        {
+            name: "Contour Wood",
+            collection: "Premium 32mil — True to Form",
             badge: "Premium",
+            specs: ["6\"×36\"", "3.05mm", "32mil Wear"],
+            colors: ["#b89c78", "#947c58", "#a48c68", "#ccb490", "#806848"],
+            colorNames: ["Natural Oak", "Warm Walnut", "Honey Pine", "Pale Birch", "Deep Teak"],
+            gradient: "linear-gradient(135deg, #b89c78 0%, #947c58 50%, #806848 100%)",
+            url: "https://commercial.tarkett.com/contour-lvt"
+        },
+        {
+            name: "iD Inspiration Ultimate",
+            collection: "Rigid Composite — Click Install",
             specs: ["Multiple Sizes", "Tru-Grain™", "Click Install"],
             colors: ["#c0a880", "#8c7458", "#a49068", "#d4bc98", "#746050"],
             colorNames: ["Classic Oak", "Vintage Walnut", "Rustic Elm", "Blonde Ash", "Smoked Oak"],
@@ -205,8 +256,8 @@ const products = {
         {
             name: "iD Comfort 19",
             collection: "Acoustic LVT — 0.55mm Wear",
-            badge: "Best Seller",
-            specs: ["Multiple Sizes", "0.55mm Wear", "Acoustic"],
+            badge: "Acoustic",
+            specs: ["Multiple Sizes", "0.55mm Wear", "22dB Reduction"],
             colors: ["#b89c78", "#947c58", "#a48c68", "#ccb490", "#806848"],
             colorNames: ["Natural Oak", "Warm Walnut", "Honey Pine", "Pale Birch", "Deep Teak"],
             gradient: "linear-gradient(135deg, #b89c78 0%, #947c58 50%, #806848 100%)",
@@ -214,7 +265,8 @@ const products = {
         },
         {
             name: "iD Naturals 70",
-            collection: "Heavy Traffic — Wood & Stone",
+            collection: "Heavy Traffic — 0.70mm Wear",
+            badge: "Heavy Duty",
             specs: ["Multiple Formats", "0.70mm Wear", "800kg Load"],
             colors: ["#c8b898", "#a89878", "#b8a888", "#d8c8a8", "#988868"],
             colorNames: ["Light Pine", "Heritage Oak", "Sandstone", "Travertine", "Slate"],
@@ -223,23 +275,13 @@ const products = {
         },
         {
             name: "Urban Naturals",
-            collection: "Timber & Concrete Designs",
+            collection: "Timber & Concrete — 10yr Warranty",
             badge: "Popular",
             specs: ["Plank Format", "10yr Warranty", "Glue Down"],
             colors: ["#a8947c", "#8c7860", "#98886c", "#bca48c", "#786450"],
             colorNames: ["Urban Oak", "Concrete Grey", "Reclaimed Pine", "Loft Timber", "Raw Steel"],
             gradient: "linear-gradient(135deg, #a8947c 0%, #8c7860 50%, #786450 100%)",
             url: "https://professionals.tarkett.com.au/en_AU/collection-C001592-urban-naturals"
-        },
-        {
-            name: "AU Locally Stocked",
-            collection: "Quick-Ship Collection",
-            badge: "In Stock",
-            specs: ["Ready to Ship", "Multiple Ranges", "Fast Delivery"],
-            colors: ["#c4b09c", "#a49080", "#b4a08c", "#d4c0ac", "#948070"],
-            colorNames: ["Selection 1", "Selection 2", "Selection 3", "Selection 4", "Selection 5"],
-            gradient: "linear-gradient(135deg, #c4b09c 0%, #a49080 50%, #948070 100%)",
-            url: "https://professionals.tarkett.com.au/en_AU/quickship/Resilient%20Flooring/au_C01006?category_name=Luxury+Vinyl+Tiles"
         }
     ]
 };
