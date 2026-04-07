@@ -149,71 +149,71 @@ export const ranges: Range[] = [
         name: "Art Select",
         slug: "art-select",
         description:
-          "Premium collection capturing the beauty of European oaks and Italian marble with unparalleled artistry, hand-crafted designs, and realistic embossed textures found in nature.",
-        format: "Plank & Tile",
+          "Premium 0.7mm wear layer collection inspired by globally sourced wood and stone. European oaks, Italian marble, and limestone with meticulous hand-crafted detail. 20-year commercial warranty.",
+        format: "Plank & Tile (Gluedown + Rigid Core)",
         style: "Wood & Stone",
         image:
-          "https://globalassets.karndean.com/karndean/b2c-blocks/b2c-dual-content-block/usa/collections/caliza-classico--lm39__akt-lm39--bathroom.jpg",
+          "https://www.karndean.com/globalassets/products/art-select/residential-roomsets/blended-oak-rl50_akp-rl50-dining-room.jpg",
       },
       {
         name: "Korlok Select",
         slug: "korlok-select",
         description:
-          "Rigid core collection with 5G locking mechanism for fast, easy installation. Wood and stone-inspired designs with built-in noise reduction and HoldFast lifetime warranty.",
-        format: "Rigid Core Plank",
+          "Premium rigid core with 5G click-lock for fast adhesive-free installation. 0.55mm wear layer with HoldFast lifetime warranty, InteGrout technology, and noise-reducing backing.",
+        format: "Rigid Core Plank (1420 x 225mm)",
         style: "Wood & Stone",
         image:
-          "https://globalassets.karndean.com/products/korlok-and-korlok-reserve/korlok/residential-roomsets/rkp8116-canadianurbanoak-livingroom-ls1_cm-range-page.jpg",
+          "https://www.karndean.com/globalassets/products/korlok-and-korlok-reserve/korlok/residential-roomsets/canadian-urban-oak--rkp8116--living-space--p_cm.jpg",
       },
       {
         name: "Van Gogh",
         slug: "van-gogh",
         description:
-          "Wide variety of stylish wood-inspired designs from clean prime-grade oak to rustic reclaimed redwood. Available in gluedown and rigid core formats.",
-        format: "Plank",
+          "Inspired by wood species worldwide including Australian timbers — Blackbutt, Spotted Gum. Each design lovingly crafted with unique origin story. 0.55mm wear layer, 15-year commercial warranty.",
+        format: "Plank (Gluedown + Rigid Core)",
         style: "Wood Look",
         image:
-          "https://globalassets.karndean.com/products/van-gogh-multi/residential-roomsets/vgw115t-natural-prime-oak-ds05-5mm-living-room-hallway-ls2_cm.jpg",
+          "https://www.karndean.com/globalassets/karndean/b2c-blocks/b2c-carousel-card-block/usa/smoked-school-cedar-vgw138t_scb138-kitchen.jpg",
       },
       {
         name: "Opus",
         slug: "opus",
         description:
-          "Modern and contemporary collection featuring wood, stone, abstract, and geometric designs. Compatible with design strips for creative floor patterns.",
-        format: "Tile & Plank",
-        style: "Contemporary / Abstract",
+          "Modern and contemporary designs spanning wood, stone, abstract, and geometric visuals. Compatible with design strips and borders for custom layouts. Single plank replacement capability.",
+        format: "Tile & Plank (Gluedown)",
+        style: "Wood, Stone & Abstract",
         image:
-          "https://globalassets.karndean.com/products/opus/residential-roomsets/sm-sp216-fumo-ds12-3mm-kitchen-p1_cm.jpg",
+          "https://www.karndean.com/globalassets/karndean/b2c-blocks/b2c-random-image-hero/usa/opus/vermeer-oak--wp427--kitchen---desktop.jpg",
       },
       {
-        name: "LooseLay",
-        slug: "looselay",
+        name: "LooseLay Longboard",
+        slug: "looselay-longboard",
         description:
-          "K-Wave friction-grip backing eliminates the need for full-spread adhesive. Reduces noise to lower floors and offers cushioned comfort underfoot for quick, easy installations.",
-        format: "LooseLay Plank",
-        style: "Wood & Stone",
+          "1.5m long planks with K-Wave friction-grip backing — no adhesive required. Featuring native Australian species including Spotted Gum and Blackbutt. 0.55mm wear layer with K-Guard+ protection.",
+        format: "Longboard Plank (1500 x 250mm)",
+        style: "Wood Look",
         image:
-          "https://globalassets.karndean.com/products/looselay-and-looselay-longboard/looselay/residential-roomsets/golden-danish-oak--llp359--kitchen--p2_cm.jpg",
+          "https://www.karndean.com/globalassets/products/looselay-and-looselay-longboard/looselay/residential-roomsets/field-oak--llp356--bedroom--p_cm2.jpg",
       },
       {
         name: "Knight Tile",
         slug: "knight-tile",
         description:
-          "Entry-level collection offering signature Karndean style in oak, pine, marble, slate, and limestone designs. Available in chevron planks, gluedown, and rigid core options.",
-        format: "Plank & Tile",
+          "Signature Karndean style at entry-level pricing in oak, pine, marble, slate, and limestone. Available in chevron planks, gluedown, and rigid core with 22dB acoustic reduction.",
+        format: "Plank & Tile (Gluedown + Rigid Core)",
         style: "Wood & Stone",
         image:
-          "https://globalassets.karndean.com/products/knight-tile-multi/residential-roomsets/scb-st31-g-rivermarble-kitchen-p1_cm.jpg",
+          "https://www.karndean.com/globalassets/karndean/b2c-blocks/b2c-carousel-card-block/usa/mid-limed-oak-ch-kp96_scb-ch-kp96-bedroom.jpg",
       },
       {
         name: "Korlok Reserve",
         slug: "korlok-reserve",
         description:
-          "Features oak, elm, maple and more in rigid core format for rapid installation. Stylish designs inspired by a variety of wood species with enhanced acoustic performance.",
-        format: "Rigid Core Plank",
+          "12 intricate wood designs enhanced through oiling, liming, and fuming techniques. Click-and-lock rigid core installs over most hard subfloors. Oak, elm, maple, and sycamore options.",
+        format: "Rigid Core Plank (1220 x 179mm)",
         style: "Wood Look",
         image:
-          "https://globalassets.karndean.com/products/korlok-and-korlok-reserve/korlok-reserve/residential-roomsets/rcp6546-millstonesycamore-homeoffice-ls1_cm.jpg",
+          "https://www.karndean.com/globalassets/products/korlok-and-korlok-reserve/korlok-reserve/residential-roomsets/rcp6546-millstonesycamore-homeoffice-ls1_cm.jpg",
       },
     ],
   },
