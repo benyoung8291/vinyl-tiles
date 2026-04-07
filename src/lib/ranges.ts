@@ -221,18 +221,18 @@ export const ranges: Range[] = [
         name: "Aspirations",
         slug: "aspirations",
         description:
-          "Premium luxury vinyl plank collection with sophisticated timber designs combining realistic wood visuals with scratch and stain resistance for demanding commercial environments.",
-        format: "Plank",
+          "Premium 4.5mm luxury vinyl plank with 0.55mm wear layer, featuring 12 authentic oak designs from light Chardonnay to rich Cocoa tones. Scratch, stain, and water resistant for demanding commercial environments.",
+        format: "Plank (1219 x 184mm)",
         style: "Wood Look",
         image:
-          "https://www.armstrongflooring.au/cdn/shop/files/Cocoa_Oak_190_Chesterfield_4.0_e98cffed-56c9-4a86-aff7-85c5d35d0d91_600x.jpg?v=1727852714",
+          "https://www.armstrongflooring.au/cdn/shop/files/Malt_Oak_175_Portrait_Aspirations.jpg?v=1727850062",
       },
       {
         name: "Chesterfield",
         slug: "chesterfield",
         description:
-          "Premium LVT planks designed for high-traffic commercial spaces featuring realistic timber grain patterns, enhanced durability, and easy-to-maintain waterproof surfaces.",
-        format: "Plank",
+          "12 timber designs including Australian hardwoods — Spotted Gum, Blackbutt, and Tassie Oak. 5-star acoustic rating (43dB) and GreenTag Level A certified. Waterproof with scratch and stain resistance.",
+        format: "Plank (1219 x 184mm)",
         style: "Wood Look",
         image:
           "https://www.armstrongflooring.au/cdn/shop/files/Chesterfield_2.0_Fortuna_Oak-tile_600x.jpg?v=1712904868",
@@ -241,41 +241,41 @@ export const ranges: Range[] = [
         name: "Natural Creations EarthCuts",
         slug: "natural-creations-earthcuts",
         description:
-          "Realistic stone, concrete, and terrazzo look tiles for healthcare, education, and aged care environments. Designed for heavy commercial traffic with superior infection control properties.",
+          "17 colours in authentic terrazzo, stone, and concrete visuals including Sandstone, Concrete Grey, and Firenze Terrazzo. Waterproof, 5-star acoustic rating for healthcare, education, and aged care.",
         format: "Tile",
-        style: "Stone & Concrete",
+        style: "Stone & Terrazzo",
         image:
-          "https://www.armstrongflooring.au/cdn/shop/files/Natural_Creations_EarthCuts_tile_600x.jpg?v=1712649744",
+          "https://www.armstrongflooring.au/cdn/shop/files/Sandstone3L233134_Landscape_NaturalCreationsEarthCuts.jpg?v=1732596599",
       },
       {
         name: "Natural Creations Longplank",
         slug: "natural-creations-longplank",
         description:
-          "Extended-length wood look planks offering a premium wide-plank aesthetic. Diamond 10 surface treatment ensures lasting scratch resistance in commercial installations.",
-        format: "Long Plank",
+          "Ultra-matte finish long-format planks in 18 designs including Lemon Scented Gum, Rose Gum, and Southern Blackbutt. 4.5mm thickness with 0.55mm wear layer for commercial durability.",
+        format: "Long Plank (1500 x 185mm)",
         style: "Wood Look",
         image:
-          "https://www.armstrongflooring.au/cdn/shop/files/Cocoa_Oak_190_Chesterfield_4.0_e98cffed-56c9-4a86-aff7-85c5d35d0d91_600x.jpg?v=1727852714",
+          "https://www.armstrongflooring.au/cdn/shop/files/LemonScentedGum215_Portrait_NCLongplank_895ef0c8-8ea3-4741-bb86-ae167e2fc61c.jpg?v=1729744853",
       },
       {
         name: "Natural Creations XL",
         slug: "natural-creations-xl",
         description:
-          "Extra-large format tiles and planks for expansive commercial spaces. Fewer joints create a seamless visual flow ideal for open-plan offices, retail, and hospitality.",
-        format: "XL Plank & Tile",
-        style: "Wood & Stone",
+          "The widest plank in the Natural Creations range at 230mm. 18 designs including Barnyard Grey, Riverland Limed, and Mount Barker Ironbark. 5.0mm thick with 5-star acoustic rating (42dB).",
+        format: "XL Plank (1500 x 230mm)",
+        style: "Wood Look",
         image:
-          "https://www.armstrongflooring.au/cdn/shop/files/Chesterfield_2.0_Fortuna_Oak-tile_600x.jpg?v=1712904868",
+          "https://www.armstrongflooring.au/cdn/shop/files/RiverlandLimed3X111907_Landscape_NaturalCreationsXL.jpg",
       },
       {
         name: "Natural Creations ArborArt",
         slug: "natural-creations-arborart",
         description:
-          "Artistically crafted wood visuals that capture the character of hand-selected timber. Designed for spaces where aesthetic impact and commercial durability must coexist.",
+          "22 classical and contemporary wood-grain designs including Ghost Gum, Summer Oak, and Limed Oak. 0.55mm wear layer with 5-star acoustic rating. GreenTag Level A certified.",
         format: "Plank",
         style: "Wood Look",
         image:
-          "https://www.armstrongflooring.au/cdn/shop/files/Natural_Creations_EarthCuts_tile_600x.jpg?v=1712649744",
+          "https://www.armstrongflooring.au/cdn/shop/files/GhostGum3L093606_Landscape_NaturalCreationsArborArt.jpg?v=1732595690",
       },
     ],
   },
