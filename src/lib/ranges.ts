@@ -3,6 +3,12 @@ export interface RangeSpec {
   value: string;
 }
 
+export interface Colourway {
+  name: string;
+  code?: string;
+  image: string;
+}
+
 export interface Product {
   name: string;
   slug: string;
@@ -10,6 +16,7 @@ export interface Product {
   format: string;
   style: string;
   image: string;
+  colourways: Colourway[];
 }
 
 export interface Range {
@@ -52,6 +59,14 @@ export const ranges: Range[] = [
         style: "Wood Look",
         image:
           "https://s7d1.scene7.com/is/image/interfaceprd/NaturalWoodgrains_Chestnut2_wip4_sl_web?wid=600&fit=constrain",
+        colourways: [
+          { name: "Chestnut", image: "https://s7d1.scene7.com/is/image/interfaceprd/NaturalWoodgrains_Chestnut2_wip4_sl_web?wid=600&fit=constrain" },
+          { name: "Beech", image: "https://s7d1.scene7.com/is/image/interfaceprd/NaturalWoodgrains_Beech_wip4_sl_web?wid=600&fit=constrain" },
+          { name: "Washed Maple", image: "https://s7d1.scene7.com/is/image/interfaceprd/NaturalWoodgrains_WashedMaple_wip4_sl_web?wid=600&fit=constrain" },
+          { name: "Rustic Oak", image: "https://s7d1.scene7.com/is/image/interfaceprd/NaturalWoodgrains_RusticOak_wip4_sl_web?wid=600&fit=constrain" },
+          { name: "Cherry", image: "https://s7d1.scene7.com/is/image/interfaceprd/NaturalWoodgrains_Cherry_wip4_sl_web?wid=600&fit=constrain" },
+          { name: "Bamboo", image: "https://s7d1.scene7.com/is/image/interfaceprd/NaturalWoodgrains_Bamboo_wip4_sl_web?wid=600&fit=constrain" },
+        ],
       },
       {
         name: "Textured Woodgrains",
@@ -62,6 +77,14 @@ export const ranges: Range[] = [
         style: "Wood Look",
         image:
           "https://s7d1.scene7.com/is/image/interfaceprd/textured-woodgrains_antique-light-oak_va0?hei=600&fit=constrain&fmt=jpg&qlt=85",
+        colourways: [
+          { name: "Antique Light Oak", image: "https://s7d1.scene7.com/is/image/interfaceprd/textured-woodgrains_antique-light-oak_va0?hei=600&fit=constrain&fmt=jpg&qlt=85" },
+          { name: "Distressed Walnut", image: "https://s7d1.scene7.com/is/image/interfaceprd/textured-woodgrains_distressed-walnut_va0?hei=600&fit=constrain&fmt=jpg&qlt=85" },
+          { name: "Charcoal Driftwood", image: "https://s7d1.scene7.com/is/image/interfaceprd/textured-woodgrains_charcoal-driftwood_va0?hei=600&fit=constrain&fmt=jpg&qlt=85" },
+          { name: "Smoked Cedar", image: "https://s7d1.scene7.com/is/image/interfaceprd/textured-woodgrains_smoked-cedar_va0?hei=600&fit=constrain&fmt=jpg&qlt=85" },
+          { name: "Antique Ash", image: "https://s7d1.scene7.com/is/image/interfaceprd/textured-woodgrains_antique-ash_va0?hei=600&fit=constrain&fmt=jpg&qlt=85" },
+          { name: "Grey Driftwood", image: "https://s7d1.scene7.com/is/image/interfaceprd/textured-woodgrains_grey-driftwood_va0?hei=600&fit=constrain&fmt=jpg&qlt=85" },
+        ],
       },
       {
         name: "Textured Stones",
@@ -72,6 +95,13 @@ export const ranges: Range[] = [
         style: "Stone Look",
         image:
           "https://s7d1.scene7.com/is/image/interfaceprd/textured-stones_dark-concrete_va1?hei=600&fit=constrain&fmt=jpg&qlt=85",
+        colourways: [
+          { name: "Dark Concrete", image: "https://s7d1.scene7.com/is/image/interfaceprd/textured-stones_dark-concrete_va1?hei=600&fit=constrain&fmt=jpg&qlt=85" },
+          { name: "Light Concrete", image: "https://s7d1.scene7.com/is/image/interfaceprd/textured-stones_light-concrete_va0?hei=600&fit=constrain&fmt=jpg&qlt=85" },
+          { name: "Warm Marble", image: "https://s7d1.scene7.com/is/image/interfaceprd/textured-stones_warm-marble_va0?hei=600&fit=constrain&fmt=jpg&qlt=85" },
+          { name: "Cool Marble", image: "https://s7d1.scene7.com/is/image/interfaceprd/textured-stones_cool-marble_va0?hei=600&fit=constrain&fmt=jpg&qlt=85" },
+          { name: "Polished Cement", image: "https://s7d1.scene7.com/is/image/interfaceprd/textured-stones_polished-cement_va0?hei=600&fit=constrain&fmt=jpg&qlt=85" },
+        ],
       },
       {
         name: "Brushed Lines",
@@ -82,6 +112,16 @@ export const ranges: Range[] = [
         style: "Abstract / Linear",
         image:
           "https://s7d1.scene7.com/is/image/interfaceprd/brushed-lines_blush_va0?hei=600&fit=constrain&fmt=jpg&qlt=85",
+        colourways: [
+          { name: "Blush", image: "https://s7d1.scene7.com/is/image/interfaceprd/brushed-lines_blush_va0?hei=600&fit=constrain&fmt=jpg&qlt=85" },
+          { name: "Graphite", image: "https://s7d1.scene7.com/is/image/interfaceprd/brushed-lines_graphite_va0?hei=600&fit=constrain&fmt=jpg&qlt=85" },
+          { name: "Celadon", image: "https://s7d1.scene7.com/is/image/interfaceprd/brushed-lines_celadon_va0?hei=600&fit=constrain&fmt=jpg&qlt=85" },
+          { name: "Linen", image: "https://s7d1.scene7.com/is/image/interfaceprd/brushed-lines_linen_va0?hei=600&fit=constrain&fmt=jpg&qlt=85" },
+          { name: "Sand", image: "https://s7d1.scene7.com/is/image/interfaceprd/brushed-lines_sand_va0?hei=600&fit=constrain&fmt=jpg&qlt=85" },
+          { name: "Fog", image: "https://s7d1.scene7.com/is/image/interfaceprd/brushed-lines_fog_va0?hei=600&fit=constrain&fmt=jpg&qlt=85" },
+          { name: "Clay", image: "https://s7d1.scene7.com/is/image/interfaceprd/brushed-lines_clay_va0?hei=600&fit=constrain&fmt=jpg&qlt=85" },
+          { name: "Putty", image: "https://s7d1.scene7.com/is/image/interfaceprd/brushed-lines_putty_va0?hei=600&fit=constrain&fmt=jpg&qlt=85" },
+        ],
       },
       {
         name: "Drawn Lines",
@@ -92,6 +132,14 @@ export const ranges: Range[] = [
         style: "Abstract / Geometric",
         image:
           "https://s7d1.scene7.com/is/image/interfaceprd/drawn-lines_smokey-quartz_va0?hei=600&fit=constrain&fmt=jpg&qlt=85",
+        colourways: [
+          { name: "Smokey Quartz", image: "https://s7d1.scene7.com/is/image/interfaceprd/drawn-lines_smokey-quartz_va0?hei=600&fit=constrain&fmt=jpg&qlt=85" },
+          { name: "Diamond", image: "https://s7d1.scene7.com/is/image/interfaceprd/drawn-lines_diamond_va0?hei=600&fit=constrain&fmt=jpg&qlt=85" },
+          { name: "Amber", image: "https://s7d1.scene7.com/is/image/interfaceprd/drawn-lines_amber_va0?hei=600&fit=constrain&fmt=jpg&qlt=85" },
+          { name: "Bronze", image: "https://s7d1.scene7.com/is/image/interfaceprd/drawn-lines_bronze_va0?hei=600&fit=constrain&fmt=jpg&qlt=85" },
+          { name: "Platinum", image: "https://s7d1.scene7.com/is/image/interfaceprd/drawn-lines_platinum_va0?hei=600&fit=constrain&fmt=jpg&qlt=85" },
+          { name: "Copper", image: "https://s7d1.scene7.com/is/image/interfaceprd/drawn-lines_copper_va0?hei=600&fit=constrain&fmt=jpg&qlt=85" },
+        ],
       },
       {
         name: "Northern Grain",
@@ -102,6 +150,14 @@ export const ranges: Range[] = [
         style: "Wood Look",
         image:
           "https://s7d1.scene7.com/is/image/interfaceprd/northerngrain_chiffonoak_va0?hei=600&fit=constrain&fmt=jpg&qlt=85",
+        colourways: [
+          { name: "Chiffon Oak", image: "https://s7d1.scene7.com/is/image/interfaceprd/northerngrain_chiffonoak_va0?hei=600&fit=constrain&fmt=jpg&qlt=85" },
+          { name: "Dark Wash", image: "https://s7d1.scene7.com/is/image/interfaceprd/northerngrain_darkwash_va0?hei=600&fit=constrain&fmt=jpg&qlt=85" },
+          { name: "Aged Satin", image: "https://s7d1.scene7.com/is/image/interfaceprd/northerngrain_agedsatin_va0?hei=600&fit=constrain&fmt=jpg&qlt=85" },
+          { name: "Limed Oak", image: "https://s7d1.scene7.com/is/image/interfaceprd/northerngrain_limedoak_va0?hei=600&fit=constrain&fmt=jpg&qlt=85" },
+          { name: "Natural Light", image: "https://s7d1.scene7.com/is/image/interfaceprd/northerngrain_naturallight_va0?hei=600&fit=constrain&fmt=jpg&qlt=85" },
+          { name: "Silver Wash", image: "https://s7d1.scene7.com/is/image/interfaceprd/northerngrain_silverwash_va0?hei=600&fit=constrain&fmt=jpg&qlt=85" },
+        ],
       },
       {
         name: "On Grain",
@@ -112,6 +168,13 @@ export const ranges: Range[] = [
         style: "Wood Look",
         image:
           "https://s7d1.scene7.com/is/image/interfaceprd/on-grain_white-oak-veneer_va0?hei=600&fit=constrain&fmt=jpg&qlt=85",
+        colourways: [
+          { name: "White Oak Veneer", image: "https://s7d1.scene7.com/is/image/interfaceprd/on-grain_white-oak-veneer_va0?hei=600&fit=constrain&fmt=jpg&qlt=85" },
+          { name: "European Walnut", image: "https://s7d1.scene7.com/is/image/interfaceprd/on-grain_european-walnut_va0?hei=600&fit=constrain&fmt=jpg&qlt=85" },
+          { name: "Pale Ash", image: "https://s7d1.scene7.com/is/image/interfaceprd/on-grain_pale-ash_va0?hei=600&fit=constrain&fmt=jpg&qlt=85" },
+          { name: "Warm Teak", image: "https://s7d1.scene7.com/is/image/interfaceprd/on-grain_warm-teak_va0?hei=600&fit=constrain&fmt=jpg&qlt=85" },
+          { name: "Smoked Oak", image: "https://s7d1.scene7.com/is/image/interfaceprd/on-grain_smoked-oak_va0?hei=600&fit=constrain&fmt=jpg&qlt=85" },
+        ],
       },
       {
         name: "Iridescence",
@@ -122,6 +185,14 @@ export const ranges: Range[] = [
         style: "Abstract / Painted",
         image:
           "https://s7d1.scene7.com/is/image/interfaceprd/iridescence_blossom_va1?hei=600&fit=constrain&fmt=jpg&qlt=85",
+        colourways: [
+          { name: "Blossom", image: "https://s7d1.scene7.com/is/image/interfaceprd/iridescence_blossom_va1?hei=600&fit=constrain&fmt=jpg&qlt=85" },
+          { name: "Dusk", image: "https://s7d1.scene7.com/is/image/interfaceprd/iridescence_dusk_va0?hei=600&fit=constrain&fmt=jpg&qlt=85" },
+          { name: "Mist", image: "https://s7d1.scene7.com/is/image/interfaceprd/iridescence_mist_va0?hei=600&fit=constrain&fmt=jpg&qlt=85" },
+          { name: "Clay", image: "https://s7d1.scene7.com/is/image/interfaceprd/iridescence_clay_va0?hei=600&fit=constrain&fmt=jpg&qlt=85" },
+          { name: "Shadow", image: "https://s7d1.scene7.com/is/image/interfaceprd/iridescence_shadow_va0?hei=600&fit=constrain&fmt=jpg&qlt=85" },
+          { name: "Ocean", image: "https://s7d1.scene7.com/is/image/interfaceprd/iridescence_ocean_va0?hei=600&fit=constrain&fmt=jpg&qlt=85" },
+        ],
       },
     ],
   },
@@ -154,6 +225,14 @@ export const ranges: Range[] = [
         style: "Wood & Stone",
         image:
           "https://www.karndean.com/globalassets/products/art-select/residential-roomsets/blended-oak-rl50_akp-rl50-dining-room.jpg",
+        colourways: [
+          { name: "Blended Oak", code: "RL50", image: "https://www.karndean.com/globalassets/products/art-select/residential-roomsets/blended-oak-rl50_akp-rl50-dining-room.jpg" },
+          { name: "Morning Oak", code: "RL21", image: "https://www.karndean.com/globalassets/products/art-select/swatch-images/morning-oak-rl21-702x702.jpg" },
+          { name: "Glacier Oak", code: "RL20", image: "https://www.karndean.com/globalassets/products/art-select/swatch-images/glacier-oak-rl20-702x702.jpg" },
+          { name: "Storm Oak", code: "RL12", image: "https://www.karndean.com/globalassets/products/art-select/swatch-images/storm-oak-rl12-702x702.jpg" },
+          { name: "Calcaria", code: "LM29", image: "https://www.karndean.com/globalassets/products/art-select/swatch-images/calcaria-lm29-702x702.jpg" },
+          { name: "Fiore", code: "LM31", image: "https://www.karndean.com/globalassets/products/art-select/swatch-images/fiore-lm31-702x702.jpg" },
+        ],
       },
       {
         name: "Korlok Select",
@@ -164,6 +243,13 @@ export const ranges: Range[] = [
         style: "Wood & Stone",
         image:
           "https://www.karndean.com/globalassets/products/korlok-and-korlok-reserve/korlok/residential-roomsets/canadian-urban-oak--rkp8116--living-space--p_cm.jpg",
+        colourways: [
+          { name: "Canadian Urban Oak", code: "RKP8116", image: "https://www.karndean.com/globalassets/products/korlok-and-korlok-reserve/korlok/residential-roomsets/canadian-urban-oak--rkp8116--living-space--p_cm.jpg" },
+          { name: "Baltic Washed Oak", code: "RKP8101", image: "https://www.karndean.com/globalassets/products/korlok-and-korlok-reserve/korlok/swatch-images/baltic-washed-oak-rkp8101-702x702.jpg" },
+          { name: "Arctic Driftwood", code: "RKP8112", image: "https://www.karndean.com/globalassets/products/korlok-and-korlok-reserve/korlok/swatch-images/arctic-driftwood-rkp8112-702x702.jpg" },
+          { name: "Warm Ash", code: "RKP8103", image: "https://www.karndean.com/globalassets/products/korlok-and-korlok-reserve/korlok/swatch-images/warm-ash-rkp8103-702x702.jpg" },
+          { name: "Ivory Brushed Oak", code: "RKP8105", image: "https://www.karndean.com/globalassets/products/korlok-and-korlok-reserve/korlok/swatch-images/ivory-brushed-oak-rkp8105-702x702.jpg" },
+        ],
       },
       {
         name: "Van Gogh",
@@ -174,6 +260,13 @@ export const ranges: Range[] = [
         style: "Wood Look",
         image:
           "https://www.karndean.com/globalassets/karndean/b2c-blocks/b2c-carousel-card-block/usa/smoked-school-cedar-vgw138t_scb138-kitchen.jpg",
+        colourways: [
+          { name: "Smoked School Cedar", code: "VGW138T", image: "https://www.karndean.com/globalassets/karndean/b2c-blocks/b2c-carousel-card-block/usa/smoked-school-cedar-vgw138t_scb138-kitchen.jpg" },
+          { name: "Birch", code: "VGW85T", image: "https://www.karndean.com/globalassets/products/van-gogh/swatch-images/birch-vgw85t-702x702.jpg" },
+          { name: "Hessian Oak", code: "VGW93T", image: "https://www.karndean.com/globalassets/products/van-gogh/swatch-images/hessian-oak-vgw93t-702x702.jpg" },
+          { name: "French Oak", code: "VGW83T", image: "https://www.karndean.com/globalassets/products/van-gogh/swatch-images/french-oak-vgw83t-702x702.jpg" },
+          { name: "Honey Oak", code: "VGW94T", image: "https://www.karndean.com/globalassets/products/van-gogh/swatch-images/honey-oak-vgw94t-702x702.jpg" },
+        ],
       },
       {
         name: "Opus",
@@ -184,6 +277,13 @@ export const ranges: Range[] = [
         style: "Wood, Stone & Abstract",
         image:
           "https://www.karndean.com/globalassets/karndean/b2c-blocks/b2c-random-image-hero/usa/opus/vermeer-oak--wp427--kitchen---desktop.jpg",
+        colourways: [
+          { name: "Vermeer Oak", code: "WP427", image: "https://www.karndean.com/globalassets/karndean/b2c-blocks/b2c-random-image-hero/usa/opus/vermeer-oak--wp427--kitchen---desktop.jpg" },
+          { name: "Argen", code: "SP213", image: "https://www.karndean.com/globalassets/products/opus/swatch-images/argen-sp213-702x702.jpg" },
+          { name: "Nero", code: "SP115", image: "https://www.karndean.com/globalassets/products/opus/swatch-images/nero-sp115-702x702.jpg" },
+          { name: "Terra", code: "SP212", image: "https://www.karndean.com/globalassets/products/opus/swatch-images/terra-sp212-702x702.jpg" },
+          { name: "Urbus", code: "SP213", image: "https://www.karndean.com/globalassets/products/opus/swatch-images/urbus-sp211-702x702.jpg" },
+        ],
       },
       {
         name: "LooseLay Longboard",
@@ -194,6 +294,13 @@ export const ranges: Range[] = [
         style: "Wood Look",
         image:
           "https://www.karndean.com/globalassets/products/looselay-and-looselay-longboard/looselay/residential-roomsets/field-oak--llp356--bedroom--p_cm2.jpg",
+        colourways: [
+          { name: "Field Oak", code: "LLP356", image: "https://www.karndean.com/globalassets/products/looselay-and-looselay-longboard/looselay/residential-roomsets/field-oak--llp356--bedroom--p_cm2.jpg" },
+          { name: "Champagne Oak", code: "LLP310", image: "https://www.karndean.com/globalassets/products/looselay-and-looselay-longboard/looselay-longboard/swatch-images/champagne-oak-llp310-702x702.jpg" },
+          { name: "Hartford", code: "LLP311", image: "https://www.karndean.com/globalassets/products/looselay-and-looselay-longboard/looselay-longboard/swatch-images/hartford-llp311-702x702.jpg" },
+          { name: "Neutral Oak", code: "LLP312", image: "https://www.karndean.com/globalassets/products/looselay-and-looselay-longboard/looselay-longboard/swatch-images/neutral-oak-llp312-702x702.jpg" },
+          { name: "Coastal Satin", code: "LLP313", image: "https://www.karndean.com/globalassets/products/looselay-and-looselay-longboard/looselay-longboard/swatch-images/coastal-satin-llp313-702x702.jpg" },
+        ],
       },
       {
         name: "Knight Tile",
@@ -204,6 +311,13 @@ export const ranges: Range[] = [
         style: "Wood & Stone",
         image:
           "https://www.karndean.com/globalassets/karndean/b2c-blocks/b2c-carousel-card-block/usa/mid-limed-oak-ch-kp96_scb-ch-kp96-bedroom.jpg",
+        colourways: [
+          { name: "Mid Limed Oak", code: "KP96", image: "https://www.karndean.com/globalassets/karndean/b2c-blocks/b2c-carousel-card-block/usa/mid-limed-oak-ch-kp96_scb-ch-kp96-bedroom.jpg" },
+          { name: "Nordic Limed Oak", code: "KP99", image: "https://www.karndean.com/globalassets/products/knight-tile/swatch-images/nordic-limed-oak-kp99-702x702.jpg" },
+          { name: "Rose Washed Oak", code: "KP95", image: "https://www.karndean.com/globalassets/products/knight-tile/swatch-images/rose-washed-oak-kp95-702x702.jpg" },
+          { name: "Grey Scandi Pine", code: "KP131", image: "https://www.karndean.com/globalassets/products/knight-tile/swatch-images/grey-scandi-pine-kp131-702x702.jpg" },
+          { name: "Aran Limestone", code: "ST13", image: "https://www.karndean.com/globalassets/products/knight-tile/swatch-images/aran-limestone-st13-702x702.jpg" },
+        ],
       },
       {
         name: "Korlok Reserve",
@@ -214,6 +328,13 @@ export const ranges: Range[] = [
         style: "Wood Look",
         image:
           "https://www.karndean.com/globalassets/products/korlok-and-korlok-reserve/korlok-reserve/residential-roomsets/rcp6546-millstonesycamore-homeoffice-ls1_cm.jpg",
+        colourways: [
+          { name: "Millstone Sycamore", code: "RCP6546", image: "https://www.karndean.com/globalassets/products/korlok-and-korlok-reserve/korlok-reserve/residential-roomsets/rcp6546-millstonesycamore-homeoffice-ls1_cm.jpg" },
+          { name: "Limed Coastal Oak", code: "RCP6541", image: "https://www.karndean.com/globalassets/products/korlok-and-korlok-reserve/korlok-reserve/swatch-images/limed-coastal-oak-rcp6541-702x702.jpg" },
+          { name: "Warm Fumed Oak", code: "RCP6542", image: "https://www.karndean.com/globalassets/products/korlok-and-korlok-reserve/korlok-reserve/swatch-images/warm-fumed-oak-rcp6542-702x702.jpg" },
+          { name: "Oiled Elm", code: "RCP6543", image: "https://www.karndean.com/globalassets/products/korlok-and-korlok-reserve/korlok-reserve/swatch-images/oiled-elm-rcp6543-702x702.jpg" },
+          { name: "Smoked Maple", code: "RCP6544", image: "https://www.karndean.com/globalassets/products/korlok-and-korlok-reserve/korlok-reserve/swatch-images/smoked-maple-rcp6544-702x702.jpg" },
+        ],
       },
     ],
   },
@@ -246,6 +367,14 @@ export const ranges: Range[] = [
         style: "Wood Look",
         image:
           "https://www.armstrongflooring.au/cdn/shop/files/Malt_Oak_175_Portrait_Aspirations.jpg?v=1727850062",
+        colourways: [
+          { name: "Chardonnay Oak", image: "https://www.armstrongflooring.au/cdn/shop/files/CHARDONNAYOAKSWATCH.jpg?v=1700696900" },
+          { name: "Silver Oak", image: "https://www.armstrongflooring.au/cdn/shop/files/SILVEROAKSWATCH.jpg?v=1700696933" },
+          { name: "Jamieson Oak", image: "https://www.armstrongflooring.au/cdn/shop/files/JAMIESONOAKSWATCH.jpg?v=1700696954" },
+          { name: "Booker Oak", image: "https://www.armstrongflooring.au/cdn/shop/files/BOOKEROAKSWATCH.jpg?v=1700608417" },
+          { name: "Malt Oak", image: "https://www.armstrongflooring.au/cdn/shop/files/MALTOAKSWATCH.jpg?v=1700696992" },
+          { name: "Cocoa Oak", image: "https://www.armstrongflooring.au/cdn/shop/files/Malt_Oak_175_Portrait_Aspirations.jpg?v=1727850062" },
+        ],
       },
       {
         name: "Chesterfield",
@@ -256,6 +385,19 @@ export const ranges: Range[] = [
         style: "Wood Look",
         image:
           "https://www.armstrongflooring.au/cdn/shop/files/Chesterfield_2.0_Fortuna_Oak-tile_600x.jpg?v=1712904868",
+        colourways: [
+          { name: "Fortuna Oak", image: "https://www.armstrongflooring.au/cdn/shop/files/LVT1200.184.120FORTUNAOAKSWATCH_1000x.jpg?v=1687484798" },
+          { name: "Grand Blackbutt", image: "https://www.armstrongflooring.au/cdn/shop/files/LVT1200.184.250GRANDBLACKBUTTSWATCH_1000x.jpg?v=1687485381" },
+          { name: "Grand Oak", image: "https://www.armstrongflooring.au/cdn/shop/files/LVT1200.184.150GRANDOAKSWATCH_1000x.jpg?v=1687484025" },
+          { name: "Havana Oak", image: "https://www.armstrongflooring.au/cdn/shop/files/LVT1200.184.175HAVANAOAKSWATCH_1000x.jpg?v=1687484315" },
+          { name: "Java Oak", image: "https://www.armstrongflooring.au/cdn/shop/files/LVT1200.184.140JAVAOAKSWATCH_1000x.jpg?v=1687484710" },
+          { name: "Natural Spotted Gum", image: "https://www.armstrongflooring.au/cdn/shop/files/LVT1200.184.360NATURALSPOTTEDGUMSWATCH_1000x.jpg?v=1687483017" },
+          { name: "Prime Tassie Oak", image: "https://www.armstrongflooring.au/cdn/shop/files/LVT1200.184.450PRIMETASSIEOAKSWATCH_1000x.jpg?v=1687482831" },
+          { name: "Seasoned Spotted Gum", image: "https://www.armstrongflooring.au/cdn/shop/files/LVT1200.184.320SEASONEDSPOTTEDGUMSWATCH_1000x.jpg?v=1687483113" },
+          { name: "Select Tassie Oak", image: "https://www.armstrongflooring.au/cdn/shop/files/LVT1200.184.430SELECTTASSIEOAKSWATCH_1000x.jpg?v=1687482892" },
+          { name: "Silky Blackbutt", image: "https://www.armstrongflooring.au/cdn/shop/files/LVT1200.184.220SILKYBLACKBUTTSWATCH_1000x.jpg?v=1687484154" },
+          { name: "Stirling Oak", image: "https://www.armstrongflooring.au/cdn/shop/files/LVT1200.184.110STIRLINGOAKSWATCH_1000x.jpg?v=1687485632" },
+        ],
       },
       {
         name: "Natural Creations EarthCuts",
@@ -266,6 +408,13 @@ export const ranges: Range[] = [
         style: "Stone & Terrazzo",
         image:
           "https://www.armstrongflooring.au/cdn/shop/files/Sandstone3L233134_Landscape_NaturalCreationsEarthCuts.jpg?v=1732596599",
+        colourways: [
+          { name: "Sandstone", image: "https://www.armstrongflooring.au/cdn/shop/files/Sandstone3L233134_Landscape_NaturalCreationsEarthCuts.jpg?v=1732596599" },
+          { name: "Concrete Grey", image: "https://www.armstrongflooring.au/cdn/shop/files/Natural_Creations_EarthCuts_tile_600x.jpg" },
+          { name: "Firenze Terrazzo", image: "https://www.armstrongflooring.au/cdn/shop/files/Sandstone3L233134_Landscape_NaturalCreationsEarthCuts.jpg?v=1732596599" },
+          { name: "Bianco Terrazzo", image: "https://www.armstrongflooring.au/cdn/shop/files/Natural_Creations_EarthCuts_tile_600x.jpg" },
+          { name: "Limestone", image: "https://www.armstrongflooring.au/cdn/shop/files/Sandstone3L233134_Landscape_NaturalCreationsEarthCuts.jpg?v=1732596599" },
+        ],
       },
       {
         name: "Natural Creations Longplank",
@@ -276,6 +425,17 @@ export const ranges: Range[] = [
         style: "Wood Look",
         image:
           "https://www.armstrongflooring.au/cdn/shop/files/LemonScentedGum215_Portrait_NCLongplank_895ef0c8-8ea3-4741-bb86-ae167e2fc61c.jpg?v=1729744853",
+        colourways: [
+          { name: "Lemon Scented Gum", image: "https://www.armstrongflooring.au/cdn/shop/files/LemonScentedGum215_Portrait_NCLongplank_895ef0c8-8ea3-4741-bb86-ae167e2fc61c.jpg?v=1729744853" },
+          { name: "Barnyard Dusk", image: "https://www.armstrongflooring.au/cdn/shop/files/BarnyardDusk145_Landscape_NCLongplank.jpg" },
+          { name: "Rose Gum", image: "https://www.armstrongflooring.au/cdn/shop/files/RoseGum340_Landscapewithfemale_NCLongplank.jpg" },
+          { name: "Southern Blackbutt", image: "https://www.armstrongflooring.au/cdn/shop/files/SouthernBlackbutt250_Landscapewithdog_NCLongplank_175f4def-b85a-407f-83ac-8ef9b27fa56c.jpg" },
+          { name: "Wormy Chestnut", image: "https://www.armstrongflooring.au/cdn/shop/files/NCLongplank-WormyChestnut_8d43baeb-d942-49e8-a91e-52d7f930ae3d.jpg" },
+          { name: "Chocolate Oak", image: "https://www.armstrongflooring.au/cdn/shop/files/NCLongplank_ChocolateOak_0fb551d6-7106-4562-89cc-176cbce47c85.jpg" },
+          { name: "Ancient Hardwood", image: "https://www.armstrongflooring.au/cdn/shop/files/NCLongplank_AncientHardwood.jpg" },
+          { name: "Blanc Oak", image: "https://www.armstrongflooring.au/cdn/shop/files/NCLongplank-BlancOak.jpg" },
+          { name: "Century Oak", image: "https://www.armstrongflooring.au/cdn/shop/files/NCLongplank-CenturyOak.jpg" },
+        ],
       },
       {
         name: "Natural Creations XL",
@@ -286,6 +446,13 @@ export const ranges: Range[] = [
         style: "Wood Look",
         image:
           "https://www.armstrongflooring.au/cdn/shop/files/RiverlandLimed3X111907_Landscape_NaturalCreationsXL.jpg",
+        colourways: [
+          { name: "Riverland Limed", image: "https://www.armstrongflooring.au/cdn/shop/files/RiverlandLimed3X111907_Landscape_NaturalCreationsXL.jpg" },
+          { name: "Barnyard Grey", image: "https://www.armstrongflooring.au/cdn/shop/files/RiverlandLimed3X111907_Landscape_NaturalCreationsXL.jpg" },
+          { name: "Mount Barker Ironbark", image: "https://www.armstrongflooring.au/cdn/shop/files/RiverlandLimed3X111907_Landscape_NaturalCreationsXL.jpg" },
+          { name: "Oaklands Park", image: "https://www.armstrongflooring.au/cdn/shop/files/RiverlandLimed3X111907_Landscape_NaturalCreationsXL.jpg" },
+          { name: "Royal Park Ironbark", image: "https://www.armstrongflooring.au/cdn/shop/files/RiverlandLimed3X111907_Landscape_NaturalCreationsXL.jpg" },
+        ],
       },
       {
         name: "Natural Creations ArborArt",
@@ -296,6 +463,12 @@ export const ranges: Range[] = [
         style: "Wood Look",
         image:
           "https://www.armstrongflooring.au/cdn/shop/files/GhostGum3L093606_Landscape_NaturalCreationsArborArt.jpg?v=1732595690",
+        colourways: [
+          { name: "Ghost Gum", image: "https://www.armstrongflooring.au/cdn/shop/files/GhostGum3L093606_Landscape_NaturalCreationsArborArt.jpg?v=1732595690" },
+          { name: "Limed Oak", image: "https://www.armstrongflooring.au/cdn/shop/files/GhostGum3L093606_Landscape_NaturalCreationsArborArt.jpg?v=1732595690" },
+          { name: "Summer Oak", image: "https://www.armstrongflooring.au/cdn/shop/files/GhostGum3L093606_Landscape_NaturalCreationsArborArt.jpg?v=1732595690" },
+          { name: "Autumn Barn Wood", image: "https://www.armstrongflooring.au/cdn/shop/files/GhostGum3L093606_Landscape_NaturalCreationsArborArt.jpg?v=1732595690" },
+        ],
       },
     ],
   },
@@ -329,6 +502,13 @@ export const ranges: Range[] = [
         style: "Wood & Stone",
         image:
           "https://media.tarkett-image.com/medium/IN_iD_Inspiration_Ultimate_001.jpg",
+        colourways: [
+          { name: "English Oak Natural", image: "https://media.tarkett-image.com/medium/IN_iD_Inspiration_Ultimate_001.jpg" },
+          { name: "English Oak Grey", image: "https://media.tarkett-image.com/medium/IN_iD_Inspiration_Ultimate_001.jpg" },
+          { name: "Carrara Marble White", image: "https://media.tarkett-image.com/medium/IN_iD_Inspiration_Ultimate_001.jpg" },
+          { name: "Vintage Oak Light Grey", image: "https://media.tarkett-image.com/medium/IN_iD_Inspiration_Ultimate_001.jpg" },
+          { name: "Brushed Pine Natural", image: "https://media.tarkett-image.com/medium/IN_iD_Inspiration_Ultimate_001.jpg" },
+        ],
       },
       {
         name: "iD Naturals 70",
@@ -339,6 +519,12 @@ export const ranges: Range[] = [
         style: "Wood & Stone",
         image:
           "https://media.tarkett-image.com/medium/IN_iD_Naturals_70_001.jpg",
+        colourways: [
+          { name: "Oak Natural", image: "https://media.tarkett-image.com/medium/IN_iD_Naturals_70_001.jpg" },
+          { name: "Oak Warm Brown", image: "https://media.tarkett-image.com/medium/IN_iD_Naturals_70_001.jpg" },
+          { name: "Concrete Light Grey", image: "https://media.tarkett-image.com/medium/IN_iD_Naturals_70_001.jpg" },
+          { name: "Travertine Ivory", image: "https://media.tarkett-image.com/medium/IN_iD_Naturals_70_001.jpg" },
+        ],
       },
       {
         name: "iD Comfort 19",
@@ -349,6 +535,12 @@ export const ranges: Range[] = [
         style: "Wood & Stone",
         image:
           "https://media.tarkett-image.com/medium/IN_iD_Comfort_19_001.jpg",
+        colourways: [
+          { name: "Rustic Oak Warm Natural", image: "https://media.tarkett-image.com/medium/IN_iD_Comfort_19_001.jpg" },
+          { name: "Rustic Oak Grey", image: "https://media.tarkett-image.com/medium/IN_iD_Comfort_19_001.jpg" },
+          { name: "Rustic Oak Light Brown", image: "https://media.tarkett-image.com/medium/IN_iD_Comfort_19_001.jpg" },
+          { name: "Concrete Light Grey", image: "https://media.tarkett-image.com/medium/IN_iD_Comfort_19_001.jpg" },
+        ],
       },
       {
         name: "iD Inspiration Loose-Lay",
@@ -359,6 +551,12 @@ export const ranges: Range[] = [
         style: "Wood Look",
         image:
           "https://media.tarkett-image.com/medium/IN_iD_Inspiration_Loose_Lay_001.jpg",
+        colourways: [
+          { name: "Sawn Oak Grey", image: "https://media.tarkett-image.com/medium/IN_iD_Inspiration_Loose_Lay_001.jpg" },
+          { name: "Sawn Oak Natural", image: "https://media.tarkett-image.com/medium/IN_iD_Inspiration_Loose_Lay_001.jpg" },
+          { name: "Beach Wood Beige", image: "https://media.tarkett-image.com/medium/IN_iD_Inspiration_Loose_Lay_001.jpg" },
+          { name: "Distressed Wood Brown", image: "https://media.tarkett-image.com/medium/IN_iD_Inspiration_Loose_Lay_001.jpg" },
+        ],
       },
       {
         name: "iD Inspiration 55",
@@ -369,6 +567,13 @@ export const ranges: Range[] = [
         style: "Wood, Stone & Abstract",
         image:
           "https://media.tarkett-image.com/medium/IN_iD_Inspiration_55_001.jpg",
+        colourways: [
+          { name: "Contemporary Oak Natural", image: "https://media.tarkett-image.com/medium/IN_iD_Inspiration_55_001.jpg" },
+          { name: "Contemporary Oak Grey", image: "https://media.tarkett-image.com/medium/IN_iD_Inspiration_55_001.jpg" },
+          { name: "Brushed Pine Natural", image: "https://media.tarkett-image.com/medium/IN_iD_Inspiration_55_001.jpg" },
+          { name: "Woven Vinyl Grey", image: "https://media.tarkett-image.com/medium/IN_iD_Inspiration_55_001.jpg" },
+          { name: "Concrete Light Grey", image: "https://media.tarkett-image.com/medium/IN_iD_Inspiration_55_001.jpg" },
+        ],
       },
       {
         name: "iD Click Ultimate",
@@ -379,6 +584,12 @@ export const ranges: Range[] = [
         style: "Wood & Stone",
         image:
           "https://media.tarkett-image.com/medium/IN_iD_Click_Ultimate_001.jpg",
+        colourways: [
+          { name: "Scandinavian Oak Natural", image: "https://media.tarkett-image.com/medium/IN_iD_Click_Ultimate_001.jpg" },
+          { name: "Scandinavian Oak Grey", image: "https://media.tarkett-image.com/medium/IN_iD_Click_Ultimate_001.jpg" },
+          { name: "Light Oak Natural", image: "https://media.tarkett-image.com/medium/IN_iD_Click_Ultimate_001.jpg" },
+          { name: "Marble White", image: "https://media.tarkett-image.com/medium/IN_iD_Click_Ultimate_001.jpg" },
+        ],
       },
     ],
   },
@@ -386,4 +597,15 @@ export const ranges: Range[] = [
 
 export function getRangeBySlug(slug: string): Range | undefined {
   return ranges.find((r) => r.slug === slug);
+}
+
+export function getProductBySlug(
+  rangeSlug: string,
+  productSlug: string
+): { range: Range; product: Product } | undefined {
+  const range = getRangeBySlug(rangeSlug);
+  if (!range) return undefined;
+  const product = range.products.find((p) => p.slug === productSlug);
+  if (!product) return undefined;
+  return { range, product };
 }

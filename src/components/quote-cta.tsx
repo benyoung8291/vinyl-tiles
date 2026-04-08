@@ -15,22 +15,20 @@ export function QuoteCta({
   buttonHref = "/contact",
 }: QuoteCtaProps) {
   return (
-    <section className="relative overflow-hidden bg-gradient-to-br from-brand via-brand to-brand-dark">
-      {/* Decorative warm glow */}
-      <div className="pointer-events-none absolute top-0 right-0 h-[300px] w-[300px] rounded-full bg-brand-light/20 blur-[80px]" />
-      <div className="pointer-events-none absolute bottom-0 left-0 h-[200px] w-[200px] rounded-full bg-white/5 blur-[60px]" />
-
-      <div className="mx-auto max-w-[1400px] px-6 py-20 md:py-28 lg:px-10">
-        <div className="grid items-center gap-8 lg:grid-cols-[1fr_auto]">
+    <section className="bg-brand">
+      <div className="mx-auto max-w-[1280px] px-6 py-16 md:py-20 lg:px-8">
+        <div className="flex flex-col items-start gap-8 lg:flex-row lg:items-center lg:justify-between">
           <div>
-            <h2 className="text-editorial-heading text-white">{title}</h2>
-            <p className="mt-4 max-w-lg text-[1.0625rem] leading-relaxed text-white/70">
+            <h2 className="text-2xl font-bold tracking-tight text-white md:text-3xl">
+              {title}
+            </h2>
+            <p className="mt-3 max-w-lg text-base leading-relaxed text-white/70">
               {description}
             </p>
           </div>
           <Link
             href={buttonHref}
-            className="inline-flex items-center gap-2 self-start rounded-full bg-white px-8 py-4 text-sm font-semibold tracking-[-0.01em] text-stone-950 shadow-lg shadow-black/10 transition-all hover:bg-stone-50 hover:-translate-y-0.5 hover:shadow-xl lg:self-center"
+            className="inline-flex items-center gap-2 rounded-md bg-white px-6 py-3 text-sm font-semibold text-stone-900 transition-colors hover:bg-stone-50"
           >
             {buttonText}
             <ArrowRight className="size-4" />
