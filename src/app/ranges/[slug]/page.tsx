@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import Link from "next/link";
-import { ArrowRight, ArrowUpRight, ExternalLink } from "lucide-react";
+import { ArrowRight, ExternalLink } from "lucide-react";
 import { QuoteCta } from "@/components/quote-cta";
 import { ranges, getRangeBySlug } from "@/lib/ranges";
 
@@ -40,37 +40,33 @@ export default async function RangePage({ params }: RangePageProps) {
   }
 
   const otherRanges = ranges.filter((r) => r.slug !== range.slug);
-
-  const introParagraph = range.description[0];
   const bodyParagraphs = range.description.slice(1);
 
   return (
     <>
-      {/* Hero — warm dark with brand glow */}
-      <section className="relative overflow-hidden bg-gradient-to-br from-stone-950 via-stone-900 to-stone-950 pt-[72px]">
-        <div className="pointer-events-none absolute top-0 right-0 h-[600px] w-[600px] rounded-full bg-brand/10 blur-[120px]" />
-
-        <div className="mx-auto max-w-[1400px] px-6 pb-20 pt-20 md:pb-28 md:pt-24 lg:px-10 lg:pt-28">
-          <div className="grid gap-12 lg:grid-cols-[1.3fr_1fr] lg:gap-20">
+      {/* Hero */}
+      <section className="bg-cream">
+        <div className="mx-auto max-w-[1280px] px-6 py-16 md:py-20 lg:px-8">
+          <div className="grid gap-10 lg:grid-cols-[1.2fr_1fr] lg:gap-16">
             <div>
-              <p className="text-editorial-caption text-brand-light mb-6">
+              <p className="text-xs font-semibold uppercase tracking-wider text-brand mb-3">
                 {range.name} Collection
               </p>
-              <h1 className="text-editorial-display text-white">
+              <h1 className="text-4xl font-bold tracking-tight text-stone-900 md:text-5xl">
                 {range.name}
               </h1>
-              <p className="mt-4 text-editorial-subheading bg-gradient-to-r from-stone-400 to-stone-500 bg-clip-text text-transparent">
+              <p className="mt-3 text-lg text-stone-500">
                 {range.tagline}
               </p>
             </div>
-            <div className="lg:pt-16">
-              <p className="text-lg leading-relaxed text-stone-400">
-                {introParagraph}
+            <div className="lg:pt-8">
+              <p className="text-base leading-relaxed text-stone-500">
+                {range.description[0]}
               </p>
-              <div className="mt-8 flex flex-wrap gap-3">
+              <div className="mt-6 flex flex-wrap gap-3">
                 <Link
                   href="/contact"
-                  className="inline-flex items-center justify-center rounded-full bg-brand px-7 py-3.5 text-sm font-semibold tracking-[-0.01em] text-white shadow-lg shadow-brand/25 transition-all hover:bg-brand-light hover:shadow-xl hover:-translate-y-0.5"
+                  className="inline-flex items-center justify-center rounded-md bg-brand px-5 py-2.5 text-sm font-semibold text-white transition-colors hover:bg-brand-dark"
                 >
                   Get a Quote
                 </Link>
@@ -78,7 +74,7 @@ export default async function RangePage({ params }: RangePageProps) {
                   href={range.manufacturerUrl}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center justify-center gap-2 rounded-full border border-stone-700 px-7 py-3.5 text-sm font-medium tracking-[-0.01em] text-stone-400 transition-all hover:border-brand/40 hover:text-white"
+                  className="inline-flex items-center justify-center gap-2 rounded-md border border-stone-200 px-5 py-2.5 text-sm font-medium text-stone-600 transition-colors hover:border-stone-300 hover:text-stone-900"
                 >
                   {range.name} Website
                   <ExternalLink className="size-3.5" />
@@ -89,43 +85,37 @@ export default async function RangePage({ params }: RangePageProps) {
         </div>
       </section>
 
-      {/* Technical Specifications — warm cards */}
-      <section className="bg-warm-white">
-        <div className="mx-auto max-w-[1400px] px-6 py-6 lg:px-10">
-          <div className="grid grid-cols-2 gap-3 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-[repeat(auto-fit,minmax(160px,1fr))]">
+      {/* Specs strip */}
+      <section className="border-y border-stone-200/60 bg-white">
+        <div className="mx-auto max-w-[1280px] px-6 py-4 lg:px-8">
+          <div className="flex flex-wrap gap-6 lg:gap-10">
             {range.specs.map((spec) => (
-              <div
-                key={spec.label}
-                className="rounded-xl bg-white p-5 shadow-sm"
-              >
-                <p className="text-xl font-bold tracking-[-0.02em] text-stone-900 md:text-2xl">
-                  {spec.value}
-                </p>
-                <p className="mt-1 text-xs text-stone-400">{spec.label}</p>
+              <div key={spec.label} className="flex items-baseline gap-2">
+                <span className="text-base font-bold text-stone-900">{spec.value}</span>
+                <span className="text-xs text-stone-400">{spec.label}</span>
               </div>
             ))}
           </div>
         </div>
       </section>
 
-      {/* Products — the main attraction */}
-      <section className="bg-warm-white">
-        <div className="mx-auto max-w-[1400px] px-6 py-24 md:py-32 lg:px-10">
-          <p className="text-editorial-caption text-brand mb-4">
-            Products
-          </p>
-          <h2 className="text-editorial-heading text-stone-950 mb-6">
+      {/* Products */}
+      <section className="bg-cream">
+        <div className="mx-auto max-w-[1280px] px-6 py-20 md:py-28 lg:px-8">
+          <p className="text-xs font-semibold uppercase tracking-wider text-brand mb-3">Products</p>
+          <h2 className="text-3xl font-bold tracking-tight text-stone-900 mb-3 md:text-4xl">
             {range.name} LVT Collection
           </h2>
-          <p className="mb-16 max-w-2xl text-[0.9375rem] leading-relaxed text-stone-500">
-            Explore the full range of {range.name} luxury vinyl tile products available for your commercial project.
+          <p className="mb-12 max-w-2xl text-sm leading-relaxed text-stone-500">
+            Explore the full range of {range.name} luxury vinyl tile products. Click any product to see all available colourways.
           </p>
 
-          <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+          <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
             {range.products.map((product) => (
-              <div
+              <Link
                 key={product.slug}
-                className="group overflow-hidden rounded-2xl border border-stone-200/60 bg-white shadow-sm transition-all hover:shadow-lg hover:-translate-y-1"
+                href={`/ranges/${range.slug}/${product.slug}`}
+                className="group overflow-hidden rounded-lg border border-stone-200/60 bg-white transition-all hover:border-brand/30 hover:shadow-md"
               >
                 {/* Product Image */}
                 <div className="relative aspect-[4/3] overflow-hidden bg-stone-100">
@@ -136,59 +126,48 @@ export default async function RangePage({ params }: RangePageProps) {
                     className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
                     loading="lazy"
                   />
-                  <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/40 to-transparent p-4">
-                    <span className="inline-block rounded-full bg-white/90 px-3 py-1 text-xs font-medium text-stone-800 backdrop-blur-sm">
-                      {product.style}
-                    </span>
-                  </div>
                 </div>
 
                 {/* Product Info */}
-                <div className="p-6">
-                  <h3 className="text-lg font-bold tracking-[-0.02em] text-stone-900">
-                    {product.name}
-                  </h3>
-                  <p className="mt-1 text-xs font-medium text-brand/70">
-                    {product.format}
-                  </p>
-                  <p className="mt-3 text-sm leading-relaxed text-stone-500">
+                <div className="p-5">
+                  <div className="flex items-start justify-between gap-2">
+                    <h3 className="text-base font-bold text-stone-900 transition-colors group-hover:text-brand">
+                      {product.name}
+                    </h3>
+                    <span className="shrink-0 rounded-full bg-stone-100 px-2 py-0.5 text-[0.6875rem] font-medium text-stone-500">
+                      {product.colourways.length} colours
+                    </span>
+                  </div>
+                  <p className="mt-1 text-xs text-stone-400">{product.format}</p>
+                  <p className="mt-2 text-sm leading-relaxed text-stone-500 line-clamp-2">
                     {product.description}
                   </p>
-                  <Link
-                    href="/contact"
-                    className="mt-4 inline-flex items-center gap-1.5 text-xs font-semibold uppercase tracking-wider text-brand transition-colors hover:text-brand-dark"
-                  >
-                    Enquire
-                    <ArrowRight className="size-3.5" />
-                  </Link>
+                  <span className="mt-3 inline-flex items-center gap-1.5 text-sm font-medium text-brand">
+                    View Colourways
+                    <ArrowRight className="size-3.5 transition-transform group-hover:translate-x-0.5" />
+                  </span>
                 </div>
-              </div>
+              </Link>
             ))}
           </div>
         </div>
       </section>
 
       {/* Editorial Content */}
-      <section className="bg-warm-white">
-        <div className="mx-auto max-w-[1400px] px-6 py-24 md:py-32 lg:px-10">
-          <div className="grid gap-16 lg:grid-cols-[1fr_1.8fr] lg:gap-24">
+      <section className="bg-white">
+        <div className="mx-auto max-w-[1280px] px-6 py-20 md:py-28 lg:px-8">
+          <div className="grid gap-12 lg:grid-cols-[1fr_1.8fr] lg:gap-20">
             <div>
-              <p className="text-editorial-caption text-brand mb-4">
+              <p className="text-xs font-semibold uppercase tracking-wider text-brand mb-3">
                 About {range.name}
               </p>
-              <h2 className="text-editorial-heading text-stone-950">
-                Why specify
-                <br />
-                {range.name}?
+              <h2 className="text-3xl font-bold tracking-tight text-stone-900 md:text-4xl">
+                Why specify {range.name}?
               </h2>
             </div>
-
-            <div className="space-y-6 border-t border-stone-200/60 pt-8 lg:border-t-0 lg:pt-0">
+            <div className="space-y-5">
               {bodyParagraphs.map((paragraph, index) => (
-                <p
-                  key={index}
-                  className="text-editorial-body text-stone-500"
-                >
+                <p key={index} className="text-base leading-relaxed text-stone-500">
                   {paragraph}
                 </p>
               ))}
@@ -197,41 +176,15 @@ export default async function RangePage({ params }: RangePageProps) {
         </div>
       </section>
 
-      {/* Key Features — warm cards */}
-      <section className="bg-gradient-to-b from-brand-50/30 to-warm-white">
-        <div className="mx-auto max-w-[1400px] px-6 py-24 md:py-32 lg:px-10">
-          <p className="text-editorial-caption text-brand mb-4">
-            Key Features
-          </p>
-          <h2 className="text-editorial-heading text-stone-950 mb-16">
-            Built for performance.
-          </h2>
-
-          <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-            {range.specs.map((spec) => (
-              <div
-                key={spec.label}
-                className="rounded-2xl border border-stone-200/60 bg-white p-6 shadow-sm"
-              >
-                <p className="text-3xl font-bold tracking-[-0.03em] text-stone-900">
-                  {spec.value}
-                </p>
-                <p className="mt-2 text-sm text-stone-500">{spec.label}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
       {/* Can't find your product */}
-      <section className="bg-warm-white">
-        <div className="mx-auto max-w-[1400px] px-6 py-24 md:py-32 lg:px-10">
-          <div className="grid items-center gap-8 rounded-2xl border border-stone-200/60 bg-white p-10 shadow-sm lg:grid-cols-[1fr_auto] lg:p-14">
+      <section className="bg-cream">
+        <div className="mx-auto max-w-[1280px] px-6 py-20 md:py-28 lg:px-8">
+          <div className="flex flex-col items-start gap-6 rounded-lg border border-stone-200/60 bg-white p-8 lg:flex-row lg:items-center lg:justify-between lg:p-10">
             <div>
-              <h2 className="text-editorial-subheading text-stone-900">
+              <h2 className="text-xl font-bold text-stone-900">
                 Can&apos;t find your product?
               </h2>
-              <p className="mt-3 max-w-xl text-[0.9375rem] leading-relaxed text-stone-500">
+              <p className="mt-2 max-w-xl text-sm leading-relaxed text-stone-500">
                 We source any product from any brand. If you need a specific
                 vinyl tile product not listed here, get in touch and we&apos;ll
                 find it for you.
@@ -239,7 +192,7 @@ export default async function RangePage({ params }: RangePageProps) {
             </div>
             <Link
               href="/contact"
-              className="inline-flex items-center gap-2 self-start rounded-full bg-brand px-7 py-3.5 text-sm font-semibold text-white shadow-sm shadow-brand/20 transition-all hover:bg-brand-dark hover:-translate-y-0.5"
+              className="inline-flex items-center gap-2 rounded-md bg-brand px-5 py-2.5 text-sm font-semibold text-white transition-colors hover:bg-brand-dark"
             >
               Get in Touch
               <ArrowRight className="size-4" />
@@ -255,32 +208,27 @@ export default async function RangePage({ params }: RangePageProps) {
       />
 
       {/* Explore Other Ranges */}
-      <section className="bg-warm-white">
-        <div className="mx-auto max-w-[1400px] px-6 py-24 md:py-32 lg:px-10">
-          <p className="text-editorial-caption text-brand mb-4">Also explore</p>
-          <h2 className="text-editorial-heading text-stone-950 mb-16">
+      <section className="bg-cream">
+        <div className="mx-auto max-w-[1280px] px-6 py-20 md:py-28 lg:px-8">
+          <p className="text-xs font-semibold uppercase tracking-wider text-brand mb-3">Also explore</p>
+          <h2 className="text-3xl font-bold tracking-tight text-stone-900 mb-8 md:text-4xl">
             Other ranges
           </h2>
 
-          <div className="space-y-3">
-            {otherRanges.map((other, i) => (
+          <div className="space-y-2">
+            {otherRanges.map((other) => (
               <Link
                 key={other.slug}
                 href={`/ranges/${other.slug}`}
-                className="group flex items-center justify-between rounded-xl border border-stone-200/60 bg-white px-6 py-5 shadow-sm transition-all hover:shadow-md hover:border-brand/20"
+                className="group flex items-center justify-between rounded-lg border border-stone-200/60 bg-white px-5 py-4 transition-all hover:border-brand/30 hover:shadow-md"
               >
-                <div className="flex items-baseline gap-4">
-                  <span className="text-editorial-caption text-stone-300">
-                    {String(i + 1).padStart(2, "0")}
-                  </span>
-                  <div>
-                    <h3 className="text-xl font-bold tracking-[-0.02em] text-stone-900 transition-colors group-hover:text-brand md:text-2xl">
-                      {other.name}
-                    </h3>
-                    <p className="mt-1 text-sm text-stone-400">{other.tagline}</p>
-                  </div>
+                <div>
+                  <h3 className="text-lg font-bold text-stone-900 transition-colors group-hover:text-brand">
+                    {other.name}
+                  </h3>
+                  <p className="mt-0.5 text-sm text-stone-400">{other.tagline}</p>
                 </div>
-                <ArrowUpRight className="size-5 text-stone-300 transition-all group-hover:translate-x-0.5 group-hover:-translate-y-0.5 group-hover:text-brand" />
+                <ArrowRight className="size-4 text-stone-300 transition-all group-hover:translate-x-0.5 group-hover:text-brand" />
               </Link>
             ))}
           </div>

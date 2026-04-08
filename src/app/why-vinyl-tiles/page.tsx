@@ -78,18 +78,15 @@ export default function WhyVinylTilesPage() {
       />
 
       {/* Hero */}
-      <section className="relative overflow-hidden bg-gradient-to-br from-stone-950 via-stone-900 to-stone-950 pt-[72px]">
-        <div className="pointer-events-none absolute top-0 right-0 h-[500px] w-[500px] rounded-full bg-brand/8 blur-[100px]" />
-        <div className="mx-auto max-w-[1400px] px-6 pb-20 pt-20 md:pb-28 md:pt-24 lg:px-10 lg:pt-28">
-          <p className="text-editorial-caption text-brand-light mb-6">
+      <section className="bg-cream">
+        <div className="mx-auto max-w-[1280px] px-6 py-16 md:py-20 lg:px-8">
+          <p className="text-xs font-semibold uppercase tracking-wider text-brand mb-3">
             The Complete Guide
           </p>
-          <h1 className="text-editorial-display text-white max-w-4xl">
-            Why choose
-            <br />
-            vinyl tile flooring?
+          <h1 className="text-4xl font-bold tracking-tight text-stone-900 max-w-4xl md:text-5xl">
+            Why choose vinyl tile flooring?
           </h1>
-          <p className="mt-6 max-w-xl text-lg leading-relaxed text-stone-400">
+          <p className="mt-4 max-w-xl text-lg leading-relaxed text-stone-500">
             The smart, durable, and cost-effective choice for commercial spaces
             across Australia.
           </p>
@@ -97,28 +94,26 @@ export default function WhyVinylTilesPage() {
       </section>
 
       {/* Why Vinyl Over Alternatives */}
-      <section className="bg-warm-white">
-        <div className="mx-auto max-w-[1400px] px-6 py-24 md:py-32 lg:px-10">
-          <div className="grid gap-16 lg:grid-cols-[1fr_1.8fr] lg:gap-24">
+      <section className="bg-white">
+        <div className="mx-auto max-w-[1280px] px-6 py-20 md:py-28 lg:px-8">
+          <div className="grid gap-12 lg:grid-cols-[1fr_1.8fr] lg:gap-20">
             <div>
-              <p className="text-editorial-caption text-brand mb-4">
+              <p className="text-xs font-semibold uppercase tracking-wider text-brand mb-3">
                 Vs. Alternatives
               </p>
-              <h2 className="text-editorial-heading text-stone-950">
-                The case for
-                <br />
-                vinyl tile.
+              <h2 className="text-3xl font-bold tracking-tight text-stone-900 md:text-4xl">
+                The case for vinyl tile.
               </h2>
             </div>
-            <div className="space-y-6 border-t border-stone-200/60 pt-8 lg:border-t-0 lg:pt-0">
-              <p className="text-editorial-body text-stone-500">
+            <div className="space-y-5">
+              <p className="text-base leading-relaxed text-stone-500">
                 When specifying flooring for a commercial project, the decision
                 often comes down to carpet, timber, polished concrete, or vinyl
                 tile. Each has its place, but vinyl tile consistently outperforms
                 the alternatives on the metrics that matter most: total lifecycle
                 cost, maintenance burden, installation speed, and design versatility.
               </p>
-              <p className="text-editorial-body text-stone-500">
+              <p className="text-base leading-relaxed text-stone-500">
                 <strong className="font-semibold text-stone-800">
                   Compared to commercial carpet,
                 </strong>{" "}
@@ -127,7 +122,7 @@ export default function WhyVinylTilesPage() {
                 replacement every 7 to 10 years. Vinyl tile needs only routine
                 mopping and can last 15 to 25 years with minimal upkeep.
               </p>
-              <p className="text-editorial-body text-stone-500">
+              <p className="text-base leading-relaxed text-stone-500">
                 <strong className="font-semibold text-stone-800">
                   Compared to engineered timber,
                 </strong>{" "}
@@ -137,7 +132,7 @@ export default function WhyVinylTilesPage() {
                 texture of timber with remarkable authenticity, while offering
                 superior water resistance and dimensional stability.
               </p>
-              <p className="text-editorial-body text-stone-500">
+              <p className="text-base leading-relaxed text-stone-500">
                 <strong className="font-semibold text-stone-800">
                   Compared to polished concrete,
                 </strong>{" "}
@@ -153,20 +148,20 @@ export default function WhyVinylTilesPage() {
       </section>
 
       {/* LVT vs VCT vs Vinyl Plank */}
-      <section className="bg-gradient-to-b from-brand-50/30 to-warm-white">
-        <div className="mx-auto max-w-[1400px] px-6 py-24 md:py-32 lg:px-10">
-          <p className="text-editorial-caption text-brand mb-4">
+      <section className="bg-cream">
+        <div className="mx-auto max-w-[1280px] px-6 py-20 md:py-28 lg:px-8">
+          <p className="text-xs font-semibold uppercase tracking-wider text-brand mb-3">
             Product Types
           </p>
-          <h2 className="text-editorial-heading text-stone-950 mb-6 max-w-2xl">
+          <h2 className="text-3xl font-bold tracking-tight text-stone-900 mb-3 max-w-2xl md:text-4xl">
             LVT vs VCT vs Vinyl Plank
           </h2>
-          <p className="mb-16 max-w-2xl text-[0.9375rem] leading-relaxed text-stone-500">
+          <p className="mb-12 max-w-2xl text-sm leading-relaxed text-stone-500">
             Not all vinyl flooring is the same. Understanding the differences
             helps you specify the right product for your application.
           </p>
 
-          <div className="grid gap-6 md:grid-cols-3">
+          <div className="grid gap-4 md:grid-cols-3">
             {[
               {
                 title: "LVT",
@@ -198,13 +193,13 @@ export default function WhyVinylTilesPage() {
             ].map((type) => (
               <div
                 key={type.title}
-                className="rounded-2xl border border-stone-200/60 bg-white p-8 shadow-sm lg:p-10"
+                className="rounded-lg border border-stone-200/60 bg-white p-6 lg:p-8"
               >
-                <h3 className="text-2xl font-bold tracking-[-0.03em] text-stone-900">
+                <h3 className="text-xl font-bold tracking-tight text-stone-900">
                   {type.title}
                 </h3>
                 <p className="mt-1 text-sm text-stone-400">{type.subtitle}</p>
-                <dl className="mt-8 space-y-5">
+                <dl className="mt-6 space-y-4">
                   {[
                     ["Best for", type.best],
                     ["Lifespan", type.lifespan],
@@ -229,21 +224,19 @@ export default function WhyVinylTilesPage() {
       </section>
 
       {/* Technical Specs */}
-      <section className="bg-warm-white">
-        <div className="mx-auto max-w-[1400px] px-6 py-24 md:py-32 lg:px-10">
-          <div className="grid gap-16 lg:grid-cols-[1fr_1.8fr] lg:gap-24">
+      <section className="bg-white">
+        <div className="mx-auto max-w-[1280px] px-6 py-20 md:py-28 lg:px-8">
+          <div className="grid gap-12 lg:grid-cols-[1fr_1.8fr] lg:gap-20">
             <div>
-              <p className="text-editorial-caption text-brand mb-4">
+              <p className="text-xs font-semibold uppercase tracking-wider text-brand mb-3">
                 Technical
               </p>
-              <h2 className="text-editorial-heading text-stone-950">
-                Commercial-grade
-                <br />
-                performance.
+              <h2 className="text-3xl font-bold tracking-tight text-stone-900 md:text-4xl">
+                Commercial-grade performance.
               </h2>
             </div>
 
-            <div className="space-y-16">
+            <div className="space-y-12">
               {[
                 {
                   title: "Wear Layers: 0.3mm to 0.7mm",
@@ -266,11 +259,11 @@ export default function WhyVinylTilesPage() {
                     "Cfl-s1 indicates satisfactory fire behaviour and low smoke production — suitable for most general commercial areas. Bfl-s1 is required for escape routes, public corridors, and high-risk building classifications. Always confirm requirements with your building certifier before specifying.",
                 },
               ].map((spec) => (
-                <div key={spec.title} className="border-t border-stone-200/60 pt-8">
-                  <h3 className="text-lg font-bold tracking-[-0.02em] text-stone-900">
+                <div key={spec.title} className="border-t border-stone-200/60 pt-6">
+                  <h3 className="text-base font-bold text-stone-900">
                     {spec.title}
                   </h3>
-                  <p className="mt-4 text-editorial-body text-stone-500">
+                  <p className="mt-3 text-base leading-relaxed text-stone-500">
                     {spec.content}
                   </p>
                 </div>
@@ -281,23 +274,23 @@ export default function WhyVinylTilesPage() {
       </section>
 
       {/* Sustainability + Lifecycle */}
-      <section className="relative overflow-hidden bg-gradient-to-br from-stone-950 via-stone-900 to-stone-950">
-        <div className="mx-auto max-w-[1400px] px-6 py-24 md:py-32 lg:px-10">
-          <div className="grid gap-16 lg:grid-cols-2 lg:gap-24">
+      <section className="bg-stone-900">
+        <div className="mx-auto max-w-[1280px] px-6 py-20 md:py-28 lg:px-8">
+          <div className="grid gap-12 lg:grid-cols-2 lg:gap-20">
             <div>
-              <p className="text-editorial-caption text-brand-light mb-4">
+              <p className="text-xs font-semibold uppercase tracking-wider text-brand-light mb-3">
                 Sustainability
               </p>
-              <h2 className="text-editorial-heading text-white mb-8">
+              <h2 className="text-3xl font-bold tracking-tight text-white mb-6 md:text-4xl">
                 Responsible by design.
               </h2>
-              <div className="space-y-5">
-                <p className="text-[0.9375rem] leading-relaxed text-stone-400">
+              <div className="space-y-4">
+                <p className="text-sm leading-relaxed text-stone-400">
                   Leading manufacturers now incorporate up to 30% recycled
                   content. Many products carry FloorScore certification for low
                   VOC emissions — essential for Green Star and WELL projects.
                 </p>
-                <p className="text-[0.9375rem] leading-relaxed text-stone-400">
+                <p className="text-sm leading-relaxed text-stone-400">
                   Circular economy programs are expanding. Cradle to Cradle
                   certified products demonstrate commitment to material health,
                   renewable energy, water stewardship, and social fairness.
@@ -306,20 +299,20 @@ export default function WhyVinylTilesPage() {
             </div>
 
             <div>
-              <p className="text-editorial-caption text-brand-light mb-4">
+              <p className="text-xs font-semibold uppercase tracking-wider text-brand-light mb-3">
                 Lifecycle Cost
               </p>
-              <h2 className="text-editorial-heading text-white mb-8">
+              <h2 className="text-3xl font-bold tracking-tight text-white mb-6 md:text-4xl">
                 The true cost of your floor.
               </h2>
-              <div className="space-y-5">
-                <p className="text-[0.9375rem] leading-relaxed text-stone-400">
+              <div className="space-y-4">
+                <p className="text-sm leading-relaxed text-stone-400">
                   Supply starts from <span className="font-semibold text-white">$45/m&sup2;</span>, with
                   installation from <span className="font-semibold text-white">$18/m&sup2;</span>. With
                   a 15–20 year service life, the annualised cost is remarkably
                   low.
                 </p>
-                <p className="text-[0.9375rem] leading-relaxed text-stone-400">
+                <p className="text-sm leading-relaxed text-stone-400">
                   Over 20 years, carpet often costs 40–60% more when all costs
                   are accounted for. Engineered timber sits at $80–$120/m&sup2; with
                   ongoing sanding and recoating costs. Vinyl tile delivers the
@@ -332,15 +325,13 @@ export default function WhyVinylTilesPage() {
       </section>
 
       {/* FAQ */}
-      <section className="bg-warm-white">
-        <div className="mx-auto max-w-[1400px] px-6 py-24 md:py-32 lg:px-10">
-          <div className="grid gap-16 lg:grid-cols-[1fr_1.8fr] lg:gap-24">
+      <section className="bg-cream">
+        <div className="mx-auto max-w-[1280px] px-6 py-20 md:py-28 lg:px-8">
+          <div className="grid gap-12 lg:grid-cols-[1fr_1.8fr] lg:gap-20">
             <div>
-              <p className="text-editorial-caption text-brand mb-4">FAQ</p>
-              <h2 className="text-editorial-heading text-stone-950">
-                Common
-                <br />
-                questions.
+              <p className="text-xs font-semibold uppercase tracking-wider text-brand mb-3">FAQ</p>
+              <h2 className="text-3xl font-bold tracking-tight text-stone-900 md:text-4xl">
+                Common questions.
               </h2>
             </div>
 
@@ -348,10 +339,10 @@ export default function WhyVinylTilesPage() {
               <Accordion className="divide-y divide-stone-200/80">
                 {faqItems.map((item, index) => (
                   <AccordionItem key={index} value={`faq-${index}`}>
-                    <AccordionTrigger className="py-6 text-[0.9375rem] font-semibold tracking-[-0.01em] text-stone-900 hover:text-brand">
+                    <AccordionTrigger className="py-5 text-sm font-semibold text-stone-900 hover:text-brand">
                       {item.question}
                     </AccordionTrigger>
-                    <AccordionContent className="pb-6 text-sm leading-relaxed text-stone-500">
+                    <AccordionContent className="pb-5 text-sm leading-relaxed text-stone-500">
                       <p>{item.answer}</p>
                     </AccordionContent>
                   </AccordionItem>

@@ -12,18 +12,15 @@ export default function ContactPage() {
   return (
     <>
       {/* Hero */}
-      <section className="relative overflow-hidden bg-gradient-to-br from-stone-950 via-stone-900 to-stone-950 pt-[72px]">
-        <div className="pointer-events-none absolute top-0 right-0 h-[500px] w-[500px] rounded-full bg-brand/8 blur-[100px]" />
-        <div className="mx-auto max-w-[1400px] px-6 pb-20 pt-20 md:pb-28 md:pt-24 lg:px-10 lg:pt-28">
-          <p className="text-editorial-caption text-brand-light mb-6">
+      <section className="bg-cream">
+        <div className="mx-auto max-w-[1280px] px-6 py-16 md:py-20 lg:px-8">
+          <p className="text-xs font-semibold uppercase tracking-wider text-brand mb-3">
             Contact
           </p>
-          <h1 className="text-editorial-display text-white max-w-3xl">
-            Let&apos;s discuss
-            <br />
-            your project.
+          <h1 className="text-4xl font-bold tracking-tight text-stone-900 max-w-3xl md:text-5xl">
+            Let&apos;s discuss your project.
           </h1>
-          <p className="mt-6 max-w-xl text-lg leading-relaxed text-stone-400">
+          <p className="mt-4 max-w-xl text-lg leading-relaxed text-stone-500">
             Fill out the form below and our team will be in touch within one
             business day. No obligation, no pressure.
           </p>
@@ -31,40 +28,40 @@ export default function ContactPage() {
       </section>
 
       {/* Content */}
-      <section className="bg-warm-white">
-        <div className="mx-auto max-w-[1400px] px-6 py-20 md:py-28 lg:px-10">
-          <div className="grid gap-16 lg:grid-cols-[1fr_340px] lg:gap-20">
+      <section className="bg-white">
+        <div className="mx-auto max-w-[1280px] px-6 py-16 md:py-20 lg:px-8">
+          <div className="grid gap-12 lg:grid-cols-[1fr_320px] lg:gap-16">
             {/* Form */}
             <div>
-              <h2 className="text-editorial-caption text-brand mb-8">
+              <h2 className="text-xs font-semibold uppercase tracking-wider text-brand mb-6">
                 Send an Enquiry
               </h2>
               <ContactForm />
             </div>
 
             {/* Sidebar */}
-            <aside className="space-y-6">
-              <div className="rounded-2xl border border-stone-200/60 bg-white p-6 shadow-sm">
-                <div className="mb-3 flex items-center gap-2.5">
-                  <div className="flex size-8 items-center justify-center rounded-full bg-brand/10">
-                    <Phone className="size-4 text-brand" />
+            <aside className="space-y-4">
+              <div className="rounded-lg border border-stone-200/60 bg-cream/50 p-5">
+                <div className="mb-2 flex items-center gap-2.5">
+                  <div className="flex size-7 items-center justify-center rounded-full bg-brand/10">
+                    <Phone className="size-3.5 text-brand" />
                   </div>
-                  <h3 className="text-editorial-caption text-stone-500">Phone</h3>
+                  <h3 className="text-xs font-semibold uppercase tracking-wider text-stone-500">Phone</h3>
                 </div>
                 <a
                   href="tel:1300207915"
-                  className="text-lg font-semibold tracking-[-0.02em] text-stone-900 transition-colors hover:text-brand"
+                  className="text-lg font-semibold text-stone-900 transition-colors hover:text-brand"
                 >
                   1300 207 915
                 </a>
               </div>
 
-              <div className="rounded-2xl border border-stone-200/60 bg-white p-6 shadow-sm">
-                <div className="mb-3 flex items-center gap-2.5">
-                  <div className="flex size-8 items-center justify-center rounded-full bg-brand/10">
-                    <Mail className="size-4 text-brand" />
+              <div className="rounded-lg border border-stone-200/60 bg-cream/50 p-5">
+                <div className="mb-2 flex items-center gap-2.5">
+                  <div className="flex size-7 items-center justify-center rounded-full bg-brand/10">
+                    <Mail className="size-3.5 text-brand" />
                   </div>
-                  <h3 className="text-editorial-caption text-stone-500">Email</h3>
+                  <h3 className="text-xs font-semibold uppercase tracking-wider text-stone-500">Email</h3>
                 </div>
                 <a
                   href="mailto:vinyl@premrest.com.au"
@@ -74,12 +71,12 @@ export default function ContactPage() {
                 </a>
               </div>
 
-              <div className="rounded-2xl border border-stone-200/60 bg-white p-6 shadow-sm">
-                <div className="mb-3 flex items-center gap-2.5">
-                  <div className="flex size-8 items-center justify-center rounded-full bg-brand/10">
-                    <Clock className="size-4 text-brand" />
+              <div className="rounded-lg border border-stone-200/60 bg-cream/50 p-5">
+                <div className="mb-2 flex items-center gap-2.5">
+                  <div className="flex size-7 items-center justify-center rounded-full bg-brand/10">
+                    <Clock className="size-3.5 text-brand" />
                   </div>
-                  <h3 className="text-editorial-caption text-stone-500">Hours</h3>
+                  <h3 className="text-xs font-semibold uppercase tracking-wider text-stone-500">Hours</h3>
                 </div>
                 <p className="text-sm text-stone-700">Monday &ndash; Friday</p>
                 <p className="text-sm font-medium text-stone-900">
@@ -87,12 +84,12 @@ export default function ContactPage() {
                 </p>
               </div>
 
-              <div className="rounded-2xl border border-stone-200/60 bg-white p-6 shadow-sm">
-                <div className="mb-3 flex items-center gap-2.5">
-                  <div className="flex size-8 items-center justify-center rounded-full bg-brand/10">
-                    <Building2 className="size-4 text-brand" />
+              <div className="rounded-lg border border-stone-200/60 bg-cream/50 p-5">
+                <div className="mb-2 flex items-center gap-2.5">
+                  <div className="flex size-7 items-center justify-center rounded-full bg-brand/10">
+                    <Building2 className="size-3.5 text-brand" />
                   </div>
-                  <h3 className="text-editorial-caption text-stone-500">
+                  <h3 className="text-xs font-semibold uppercase tracking-wider text-stone-500">
                     A Premrest Brand
                   </h3>
                 </div>

@@ -109,18 +109,15 @@ export default function HowWeWorkPage() {
   return (
     <>
       {/* Hero */}
-      <section className="relative overflow-hidden bg-gradient-to-br from-stone-950 via-stone-900 to-stone-950 pt-[72px]">
-        <div className="pointer-events-none absolute top-0 right-0 h-[500px] w-[500px] rounded-full bg-brand/8 blur-[100px]" />
-        <div className="mx-auto max-w-[1400px] px-6 pb-20 pt-20 md:pb-28 md:pt-24 lg:px-10 lg:pt-28">
-          <p className="text-editorial-caption text-brand-light mb-6">
+      <section className="bg-cream">
+        <div className="mx-auto max-w-[1280px] px-6 py-16 md:py-20 lg:px-8">
+          <p className="text-xs font-semibold uppercase tracking-wider text-brand mb-3">
             Our Process
           </p>
-          <h1 className="text-editorial-display text-white max-w-3xl">
-            From first call
-            <br />
-            to finished floor.
+          <h1 className="text-4xl font-bold tracking-tight text-stone-900 max-w-3xl md:text-5xl">
+            From first call to finished floor.
           </h1>
-          <p className="mt-6 max-w-xl text-lg leading-relaxed text-stone-400">
+          <p className="mt-4 max-w-xl text-lg leading-relaxed text-stone-500">
             Here&apos;s exactly what to expect when you work with Vinyl Tiles by
             Premrest.
           </p>
@@ -130,23 +127,23 @@ export default function HowWeWorkPage() {
       {/* Steps */}
       {steps.map((step, index) => {
         const Icon = step.icon;
-        const isDark = index % 2 === 1;
+        const isAlt = index % 2 === 1;
 
         return (
           <section
             key={step.number}
-            className={isDark ? "bg-gradient-to-b from-brand-50/30 to-warm-white" : "bg-warm-white"}
+            className={isAlt ? "bg-cream" : "bg-white"}
           >
-            <div className="mx-auto max-w-[1400px] px-6 py-24 md:py-32 lg:px-10">
+            <div className="mx-auto max-w-[1280px] px-6 py-20 md:py-28 lg:px-8">
               {/* Step header */}
-              <div className="grid gap-12 lg:grid-cols-[1fr_1.8fr] lg:gap-24">
+              <div className="grid gap-10 lg:grid-cols-[1fr_1.8fr] lg:gap-20">
                 <div>
-                  <span className="text-7xl font-bold leading-none tracking-[-0.04em] text-brand/15 sm:text-8xl">
+                  <span className="text-6xl font-bold leading-none tracking-tight text-brand/15 sm:text-7xl">
                     {step.number}
                   </span>
-                  <div className="mt-4 flex items-center gap-3">
+                  <div className="mt-3 flex items-center gap-3">
                     <Icon className="size-5 text-brand" />
-                    <h2 className="text-editorial-subheading text-stone-950">
+                    <h2 className="text-xl font-bold tracking-tight text-stone-900">
                       {step.title}
                     </h2>
                   </div>
@@ -154,11 +151,11 @@ export default function HowWeWorkPage() {
 
                 <div>
                   {/* Paragraphs */}
-                  <div className="space-y-5">
+                  <div className="space-y-4">
                     {step.paragraphs.map((paragraph, pIndex) => (
                       <p
                         key={pIndex}
-                        className="text-editorial-body text-stone-500"
+                        className="text-base leading-relaxed text-stone-500"
                       >
                         {paragraph}
                       </p>
@@ -166,12 +163,12 @@ export default function HowWeWorkPage() {
                   </div>
 
                   {/* Two columns */}
-                  <div className="mt-12 grid gap-8 sm:grid-cols-2">
-                    <div className="rounded-xl border border-stone-200/60 bg-white p-5 shadow-sm">
-                      <h3 className="text-editorial-caption text-brand mb-5">
+                  <div className="mt-10 grid gap-4 sm:grid-cols-2">
+                    <div className="rounded-lg border border-stone-200/60 bg-white p-5">
+                      <h3 className="text-xs font-semibold uppercase tracking-wider text-brand mb-4">
                         What to Expect
                       </h3>
-                      <ul className="space-y-3">
+                      <ul className="space-y-2.5">
                         {step.expectItems.map((item, eIndex) => (
                           <li
                             key={eIndex}
@@ -184,11 +181,11 @@ export default function HowWeWorkPage() {
                       </ul>
                     </div>
 
-                    <div className="rounded-xl border border-stone-200/60 bg-white p-5 shadow-sm">
-                      <h3 className="text-editorial-caption text-brand mb-5">
+                    <div className="rounded-lg border border-stone-200/60 bg-white p-5">
+                      <h3 className="text-xs font-semibold uppercase tracking-wider text-brand mb-4">
                         {index < 2 ? "What We\u2019ll Discuss" : "Key Details"}
                       </h3>
-                      <ul className="space-y-3">
+                      <ul className="space-y-2.5">
                         {step.discussItems.map((item, dIndex) => (
                           <li
                             key={dIndex}
@@ -209,17 +206,15 @@ export default function HowWeWorkPage() {
       })}
 
       {/* Why Work With Us */}
-      <section className="relative overflow-hidden bg-gradient-to-br from-stone-950 via-stone-900 to-stone-950">
-        <div className="mx-auto max-w-[1400px] px-6 py-24 md:py-32 lg:px-10">
-          <div className="grid gap-16 lg:grid-cols-[1fr_1.5fr]">
+      <section className="bg-stone-900">
+        <div className="mx-auto max-w-[1280px] px-6 py-20 md:py-28 lg:px-8">
+          <div className="grid gap-12 lg:grid-cols-[1fr_1.5fr]">
             <div>
-              <p className="text-editorial-caption text-brand-light mb-4">
+              <p className="text-xs font-semibold uppercase tracking-wider text-brand-light mb-3">
                 Why Choose Us
               </p>
-              <h2 className="text-editorial-heading text-white">
-                The right flooring
-                <br />
-                partner matters.
+              <h2 className="text-3xl font-bold tracking-tight text-white md:text-4xl">
+                The right flooring partner matters.
               </h2>
             </div>
 
@@ -230,11 +225,11 @@ export default function HowWeWorkPage() {
                 "Single point of contact from first enquiry to finished floor \u2014 no getting passed between departments",
                 "Australia-wide service \u2014 we supply and install in every state and territory",
               ].map((text, i) => (
-                <div key={i} className="border-t border-stone-800 py-6 pr-6 pt-8">
-                  <span className="text-editorial-caption text-brand-light">
+                <div key={i} className="border-t border-stone-800 py-5 pr-6">
+                  <span className="text-xs font-semibold text-brand-light">
                     {String(i + 1).padStart(2, "0")}
                   </span>
-                  <p className="mt-3 text-sm leading-relaxed text-stone-400">
+                  <p className="mt-2 text-sm leading-relaxed text-stone-400">
                     {text}
                   </p>
                 </div>

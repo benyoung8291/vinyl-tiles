@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { ArrowRight, ArrowUpRight } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 import { QuoteCta } from "@/components/quote-cta";
 import type { Solution } from "@/lib/solutions";
 import { solutions } from "@/lib/solutions";
@@ -14,41 +14,35 @@ export function SolutionPage({ solution }: SolutionPageProps) {
   return (
     <>
       {/* Hero */}
-      <section className="relative overflow-hidden bg-gradient-to-br from-stone-950 via-stone-900 to-stone-950 pt-[72px]">
-        <div className="pointer-events-none absolute top-0 right-0 h-[500px] w-[500px] rounded-full bg-brand/8 blur-[100px]" />
-        <div className="mx-auto max-w-[1400px] px-6 pb-20 pt-20 md:pb-28 md:pt-24 lg:px-10 lg:pt-28">
-          <p className="text-editorial-caption text-brand-light mb-6">
+      <section className="bg-cream">
+        <div className="mx-auto max-w-[1280px] px-6 py-16 md:py-20 lg:px-8">
+          <p className="text-xs font-semibold uppercase tracking-wider text-brand mb-3">
             Sector Solution
           </p>
-          <h1 className="text-editorial-display text-white max-w-3xl">
+          <h1 className="text-4xl font-bold tracking-tight text-stone-900 max-w-3xl md:text-5xl">
             {solution.title}
           </h1>
-          <p className="mt-6 max-w-2xl text-lg leading-relaxed text-stone-400">
+          <p className="mt-4 max-w-2xl text-lg leading-relaxed text-stone-500">
             {solution.subtitle}
           </p>
         </div>
       </section>
 
       {/* Content */}
-      <section className="bg-warm-white">
-        <div className="mx-auto max-w-[1400px] px-6 py-24 md:py-32 lg:px-10">
-          <div className="grid gap-16 lg:grid-cols-[1fr_1.8fr] lg:gap-24">
+      <section className="bg-white">
+        <div className="mx-auto max-w-[1280px] px-6 py-20 md:py-28 lg:px-8">
+          <div className="grid gap-12 lg:grid-cols-[1fr_1.8fr] lg:gap-20">
             <div>
-              <p className="text-editorial-caption text-brand mb-4">
+              <p className="text-xs font-semibold uppercase tracking-wider text-brand mb-3">
                 Overview
               </p>
-              <h2 className="text-editorial-heading text-stone-950">
-                The right floor
-                <br />
-                for the job.
+              <h2 className="text-3xl font-bold tracking-tight text-stone-900 md:text-4xl">
+                The right floor for the job.
               </h2>
             </div>
-            <div className="space-y-6 border-t border-stone-200/60 pt-8 lg:border-t-0 lg:pt-0">
+            <div className="space-y-5">
               {solution.content.map((paragraph, index) => (
-                <p
-                  key={index}
-                  className="text-editorial-body text-stone-500"
-                >
+                <p key={index} className="text-base leading-relaxed text-stone-500">
                   {paragraph}
                 </p>
               ))}
@@ -58,25 +52,25 @@ export function SolutionPage({ solution }: SolutionPageProps) {
       </section>
 
       {/* Key Requirements */}
-      <section className="bg-gradient-to-b from-brand-50/50 to-warm-white">
-        <div className="mx-auto max-w-[1400px] px-6 py-24 md:py-32 lg:px-10">
-          <p className="text-editorial-caption text-brand mb-4">
+      <section className="bg-cream">
+        <div className="mx-auto max-w-[1280px] px-6 py-20 md:py-28 lg:px-8">
+          <p className="text-xs font-semibold uppercase tracking-wider text-brand mb-3">
             Requirements
           </p>
-          <h2 className="text-editorial-heading text-stone-950 mb-16">
+          <h2 className="text-3xl font-bold tracking-tight text-stone-900 mb-10 md:text-4xl">
             What this sector demands.
           </h2>
 
-          <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+          <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
             {solution.requirements.map((requirement, i) => (
               <div
                 key={requirement}
-                className="rounded-2xl border border-stone-200/60 bg-white p-6 shadow-sm"
+                className="rounded-lg border border-stone-200/60 bg-white p-5"
               >
-                <span className="inline-flex size-8 items-center justify-center rounded-full bg-brand/10 text-xs font-bold text-brand">
+                <span className="text-xs font-semibold text-brand">
                   {String(i + 1).padStart(2, "0")}
                 </span>
-                <p className="mt-3 text-[0.9375rem] leading-relaxed text-stone-700">
+                <p className="mt-2 text-sm leading-relaxed text-stone-600">
                   {requirement}
                 </p>
               </div>
@@ -86,32 +80,32 @@ export function SolutionPage({ solution }: SolutionPageProps) {
       </section>
 
       {/* Recommended Products */}
-      <section className="bg-warm-white">
-        <div className="mx-auto max-w-[1400px] px-6 py-24 md:py-32 lg:px-10">
-          <p className="text-editorial-caption text-brand mb-4">
+      <section className="bg-white">
+        <div className="mx-auto max-w-[1280px] px-6 py-20 md:py-28 lg:px-8">
+          <p className="text-xs font-semibold uppercase tracking-wider text-brand mb-3">
             Recommended
           </p>
-          <h2 className="text-editorial-heading text-stone-950 mb-16">
+          <h2 className="text-3xl font-bold tracking-tight text-stone-900 mb-10 md:text-4xl">
             Products for this sector.
           </h2>
 
-          <div className="grid gap-6 sm:grid-cols-3">
+          <div className="grid gap-4 sm:grid-cols-3">
             {solution.recommendedProducts.map((product) => (
               <Link
                 key={product.slug}
                 href={`/ranges/${product.slug}`}
-                className="group overflow-hidden rounded-2xl border border-stone-200/60 bg-white p-8 shadow-sm transition-all hover:shadow-md hover:-translate-y-0.5 hover:border-brand/20 lg:p-10"
+                className="group rounded-lg border border-stone-200/60 bg-cream/50 p-6 transition-all hover:border-brand/30 hover:shadow-md"
               >
-                <h3 className="text-xl font-bold tracking-[-0.02em] text-stone-900 transition-colors group-hover:text-brand">
+                <h3 className="text-lg font-bold text-stone-900 transition-colors group-hover:text-brand">
                   {product.name}
                 </h3>
-                <p className="mt-3 text-sm leading-relaxed text-stone-500">
+                <p className="mt-2 text-sm leading-relaxed text-stone-500">
                   {product.reason}
                 </p>
-                <div className="mt-6 flex items-center gap-1.5 text-xs font-semibold uppercase tracking-wider text-brand/60 transition-colors group-hover:text-brand">
+                <span className="mt-4 inline-flex items-center gap-1.5 text-sm font-medium text-brand">
                   View Range
-                  <ArrowRight className="size-3.5" />
-                </div>
+                  <ArrowRight className="size-3.5 transition-transform group-hover:translate-x-0.5" />
+                </span>
               </Link>
             ))}
           </div>
@@ -125,31 +119,26 @@ export function SolutionPage({ solution }: SolutionPageProps) {
       />
 
       {/* Continue Exploring */}
-      <section className="bg-warm-white">
-        <div className="mx-auto max-w-[1400px] px-6 py-24 md:py-32 lg:px-10">
-          <p className="text-editorial-caption text-brand mb-4">
+      <section className="bg-cream">
+        <div className="mx-auto max-w-[1280px] px-6 py-20 md:py-28 lg:px-8">
+          <p className="text-xs font-semibold uppercase tracking-wider text-brand mb-3">
             Also explore
           </p>
-          <h2 className="text-editorial-heading text-stone-950 mb-16">
+          <h2 className="text-3xl font-bold tracking-tight text-stone-900 mb-8 md:text-4xl">
             Other sectors
           </h2>
 
-          <div className="space-y-3">
-            {otherSolutions.map((other, i) => (
+          <div className="space-y-2">
+            {otherSolutions.map((other) => (
               <Link
                 key={other.slug}
                 href={`/${other.slug}`}
-                className="group flex items-center justify-between rounded-xl border border-stone-200/60 bg-white px-6 py-5 shadow-sm transition-all hover:shadow-md hover:border-brand/20"
+                className="group flex items-center justify-between rounded-lg border border-stone-200/60 bg-white px-5 py-4 transition-all hover:border-brand/30 hover:shadow-md"
               >
-                <div className="flex items-baseline gap-4">
-                  <span className="text-editorial-caption text-stone-300">
-                    {String(i + 1).padStart(2, "0")}
-                  </span>
-                  <h3 className="text-lg font-bold tracking-[-0.02em] text-stone-900 transition-colors group-hover:text-brand md:text-xl">
-                    {other.title.replace(/^Vinyl Tile Flooring for /, "")}
-                  </h3>
-                </div>
-                <ArrowUpRight className="size-5 text-stone-300 transition-all group-hover:translate-x-0.5 group-hover:-translate-y-0.5 group-hover:text-brand" />
+                <h3 className="text-lg font-bold text-stone-900 transition-colors group-hover:text-brand">
+                  {other.title.replace(/^Vinyl Tile Flooring for /, "")}
+                </h3>
+                <ArrowRight className="size-4 text-stone-300 transition-all group-hover:translate-x-0.5 group-hover:text-brand" />
               </Link>
             ))}
           </div>
