@@ -23,32 +23,40 @@ export default function Header() {
   const [mobileOpen, setMobileOpen] = useState(false);
   const [mobileRangesOpen, setMobileRangesOpen] = useState(false);
   const [mobileSolutionsOpen, setMobileSolutionsOpen] = useState(false);
-  const [hasScrolled, setHasScrolled] = useState(false);
+  const [scrollState, setScrollState] = useState<"top" | "scrolled">("top");
 
   useEffect(() => {
     const handleScroll = () => {
-      setHasScrolled(window.scrollY > 0);
+      // Switch to solid header once we've scrolled past ~80% of the viewport (hero)
+      const threshold = window.innerHeight * 0.8;
+      setScrollState(window.scrollY > threshold ? "scrolled" : "top");
     };
 
-    window.addEventListener("scroll", handleScroll);
+    window.addEventListener("scroll", handleScroll, { passive: true });
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
   return (
     <>
       <header
-        className={`fixed top-0 right-0 left-0 z-50 bg-white transition-shadow duration-300 ${
-          hasScrolled ? "shadow-md shadow-gray-900/8" : ""
+        className={`fixed top-0 right-0 left-0 z-50 transition-all duration-500 ${
+          scrollState === "scrolled"
+            ? "bg-white shadow-md shadow-gray-900/8"
+            : "bg-white/10 backdrop-blur-md"
         }`}
         style={{ height: "56px" }}
       >
         <div className="mx-auto flex h-full max-w-[1728px] items-center justify-between px-[5%]">
           {/* Logo */}
           <Link href="/" className="flex items-baseline gap-1.5 flex-shrink-0">
-            <span className="text-base font-semibold tracking-tight text-gray-900">
+            <span className={`text-base font-semibold tracking-tight transition-colors duration-500 ${
+              scrollState === "scrolled" ? "text-gray-900" : "text-white"
+            }`}>
               Vinyl Tiles
             </span>
-            <span className="text-xs font-medium uppercase tracking-wider text-brand">
+            <span className={`text-xs font-medium uppercase tracking-wider transition-colors duration-500 ${
+              scrollState === "scrolled" ? "text-brand" : "text-white/70"
+            }`}>
               by Premrest
             </span>
           </Link>
@@ -57,7 +65,9 @@ export default function Header() {
           <nav className="hidden items-center lg:flex">
             {/* Ranges Dropdown */}
             <div className="group relative">
-              <button className="inline-flex items-center gap-1.5 px-6 py-3 text-xs font-medium text-gray-700 transition-colors hover:text-brand">
+              <button className={`inline-flex items-center gap-1.5 px-6 py-3 text-xs font-medium transition-colors duration-500 ${
+                scrollState === "scrolled" ? "text-gray-700 hover:text-brand" : "text-white/80 hover:text-white"
+              }`}>
                 Our Ranges
                 <ChevronDown className="size-3 transition-transform group-hover:rotate-180" />
               </button>
@@ -83,21 +93,27 @@ export default function Header() {
 
             <Link
               href="/why-vinyl-tiles"
-              className="px-6 py-3 text-xs font-medium text-gray-700 transition-colors hover:text-brand"
+              className={`px-6 py-3 text-xs font-medium transition-colors duration-500 ${
+                scrollState === "scrolled" ? "text-gray-700 hover:text-brand" : "text-white/80 hover:text-white"
+              }`}
             >
               Why Tiles?
             </Link>
 
             <Link
               href="/how-we-work"
-              className="px-6 py-3 text-xs font-medium text-gray-700 transition-colors hover:text-brand"
+              className={`px-6 py-3 text-xs font-medium transition-colors duration-500 ${
+                scrollState === "scrolled" ? "text-gray-700 hover:text-brand" : "text-white/80 hover:text-white"
+              }`}
             >
               How We Work
             </Link>
 
             {/* Solutions Dropdown */}
             <div className="group relative">
-              <button className="inline-flex items-center gap-1.5 px-6 py-3 text-xs font-medium text-gray-700 transition-colors hover:text-brand">
+              <button className={`inline-flex items-center gap-1.5 px-6 py-3 text-xs font-medium transition-colors duration-500 ${
+                scrollState === "scrolled" ? "text-gray-700 hover:text-brand" : "text-white/80 hover:text-white"
+              }`}>
                 Solutions
                 <ChevronDown className="size-3 transition-transform group-hover:rotate-180" />
               </button>
@@ -118,7 +134,9 @@ export default function Header() {
 
             <Link
               href="/contact"
-              className="px-6 py-3 text-xs font-medium text-gray-700 transition-colors hover:text-brand"
+              className={`px-6 py-3 text-xs font-medium transition-colors duration-500 ${
+                scrollState === "scrolled" ? "text-gray-700 hover:text-brand" : "text-white/80 hover:text-white"
+              }`}
             >
               Contact
             </Link>
@@ -128,22 +146,19 @@ export default function Header() {
           <div className="hidden items-center gap-5 lg:flex flex-shrink-0">
             <a
               href="tel:1300207915"
-              className="text-xs font-medium text-gray-600 transition-colors hover:text-gray-900"
+              className={`text-xs font-medium transition-colors duration-500 ${
+                scrollState === "scrolled" ? "text-gray-600 hover:text-gray-900" : "text-white/70 hover:text-white"
+              }`}
             >
               1300 207 915
             </a>
             <Link
               href="/contact"
-              className="rounded px-5 py-2 text-xs font-medium text-white transition-colors"
-              style={{
-                backgroundColor: "rgb(140, 84, 98)",
-              }}
-              onMouseEnter={(e) => {
-                e.currentTarget.style.backgroundColor = "rgb(120, 70, 85)";
-              }}
-              onMouseLeave={(e) => {
-                e.currentTarget.style.backgroundColor = "rgb(140, 84, 98)";
-              }}
+              className={`rounded px-5 py-2 text-xs font-medium transition-all duration-500 ${
+                scrollState === "scrolled"
+                  ? "bg-brand text-white hover:bg-brand-dark"
+                  : "bg-white/20 text-white backdrop-blur-sm hover:bg-white/30"
+              }`}
             >
               Get a Quote
             </Link>
@@ -151,7 +166,9 @@ export default function Header() {
 
           {/* Mobile Menu Button */}
           <button
-            className="inline-flex items-center justify-center p-2 text-gray-900 transition-colors hover:bg-gray-100 lg:hidden"
+            className={`inline-flex items-center justify-center p-2 transition-colors lg:hidden ${
+              scrollState === "scrolled" ? "text-gray-900 hover:bg-gray-100" : "text-white hover:bg-white/10"
+            }`}
             onClick={() => setMobileOpen(!mobileOpen)}
             aria-label={mobileOpen ? "Close menu" : "Open menu"}
           >
