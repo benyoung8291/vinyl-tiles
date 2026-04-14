@@ -23,15 +23,12 @@ export default function Header() {
   const [mobileOpen, setMobileOpen] = useState(false);
   const [mobileRangesOpen, setMobileRangesOpen] = useState(false);
   const [mobileSolutionsOpen, setMobileSolutionsOpen] = useState(false);
-  const [scrollState, setScrollState] = useState<"top" | "scrolled">("top");
+  const [scrolled, setScrolled] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
-      // Switch to solid header once we've scrolled past ~80% of the viewport (hero)
-      const threshold = window.innerHeight * 0.8;
-      setScrollState(window.scrollY > threshold ? "scrolled" : "top");
+      setScrolled(window.scrollY > 10);
     };
-
     window.addEventListener("scroll", handleScroll, { passive: true });
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
@@ -39,50 +36,44 @@ export default function Header() {
   return (
     <>
       <header
-        className={`fixed top-0 right-0 left-0 z-50 transition-all duration-500 ${
-          scrollState === "scrolled"
-            ? "bg-white shadow-md shadow-gray-900/8"
-            : "bg-white/10 backdrop-blur-md"
+        className={`fixed top-0 right-0 left-0 z-50 transition-all duration-300 ${
+          scrolled
+            ? "bg-[rgb(252,250,245)]/95 backdrop-blur-sm border-b border-[rgb(230,225,215)]"
+            : "bg-transparent"
         }`}
         style={{ height: "56px" }}
       >
-        <div className="mx-auto flex h-full max-w-[1728px] items-center justify-between px-[5%]">
+        <div className="mx-auto flex h-full max-w-[1440px] items-center justify-between px-6 lg:px-10">
           {/* Logo */}
-          <Link href="/" className="flex items-baseline gap-1.5 flex-shrink-0">
-            <span className={`text-base font-semibold tracking-tight transition-colors duration-500 ${
-              scrollState === "scrolled" ? "text-gray-900" : "text-white"
-            }`}>
+          <Link href="/" className="flex items-center gap-2 flex-shrink-0">
+            <span className="text-sm font-bold tracking-tight" style={{ color: "rgb(55, 50, 45)" }}>
               Vinyl Tiles
             </span>
-            <span className={`text-xs font-medium uppercase tracking-wider transition-colors duration-500 ${
-              scrollState === "scrolled" ? "text-brand" : "text-white/70"
-            }`}>
+            <span className="text-[10px] font-medium uppercase tracking-widest" style={{ color: "rgb(120, 110, 100)" }}>
               by Premrest
             </span>
           </Link>
 
-          {/* Desktop Nav */}
-          <nav className="hidden items-center lg:flex">
+          {/* Desktop Nav — clean horizontal links like microsoft.ai */}
+          <nav className="hidden items-center gap-1 lg:flex">
             {/* Ranges Dropdown */}
             <div className="group relative">
-              <button className={`inline-flex items-center gap-1.5 px-6 py-3 text-xs font-medium transition-colors duration-500 ${
-                scrollState === "scrolled" ? "text-gray-700 hover:text-brand" : "text-white/80 hover:text-white"
-              }`}>
-                Our Ranges
+              <button className="inline-flex items-center gap-1 px-4 py-2 text-[13px] font-medium text-[rgb(82,75,68)] transition-colors hover:text-[rgb(38,35,30)]">
+                Ranges
                 <ChevronDown className="size-3 transition-transform group-hover:rotate-180" />
               </button>
-              <div className="pointer-events-none absolute left-0 top-full -translate-y-2 opacity-0 transition-all duration-150 group-hover:pointer-events-auto group-hover:translate-y-0 group-hover:opacity-100">
-                <div className="mt-2 w-56 bg-white p-2 shadow-lg shadow-gray-900/10 rounded">
+              <div className="pointer-events-none absolute left-0 top-full -translate-y-1 opacity-0 transition-all duration-200 group-hover:pointer-events-auto group-hover:translate-y-0 group-hover:opacity-100">
+                <div className="mt-1 w-52 rounded-md border border-[rgb(230,225,215)] bg-[rgb(252,250,245)] p-1.5 shadow-lg shadow-black/5">
                   {ranges.map((item) => (
                     <Link
                       key={item.href}
                       href={item.href}
-                      className="group/item block px-4 py-2.5 transition-colors hover:bg-gray-50"
+                      className="block rounded px-3 py-2.5 transition-colors hover:bg-[rgb(242,238,228)]"
                     >
-                      <span className="block text-xs font-medium text-gray-900">
+                      <span className="block text-[13px] font-medium text-[rgb(55,50,45)]">
                         {item.label}
                       </span>
-                      <span className="block text-xs text-gray-500">
+                      <span className="block text-[11px] text-[rgb(120,110,100)]">
                         {item.detail}
                       </span>
                     </Link>
@@ -93,37 +84,31 @@ export default function Header() {
 
             <Link
               href="/why-vinyl-tiles"
-              className={`px-6 py-3 text-xs font-medium transition-colors duration-500 ${
-                scrollState === "scrolled" ? "text-gray-700 hover:text-brand" : "text-white/80 hover:text-white"
-              }`}
+              className="px-4 py-2 text-[13px] font-medium text-[rgb(82,75,68)] transition-colors hover:text-[rgb(38,35,30)]"
             >
-              Why Tiles?
+              Why Tiles
             </Link>
 
             <Link
               href="/how-we-work"
-              className={`px-6 py-3 text-xs font-medium transition-colors duration-500 ${
-                scrollState === "scrolled" ? "text-gray-700 hover:text-brand" : "text-white/80 hover:text-white"
-              }`}
+              className="px-4 py-2 text-[13px] font-medium text-[rgb(82,75,68)] transition-colors hover:text-[rgb(38,35,30)]"
             >
               How We Work
             </Link>
 
             {/* Solutions Dropdown */}
             <div className="group relative">
-              <button className={`inline-flex items-center gap-1.5 px-6 py-3 text-xs font-medium transition-colors duration-500 ${
-                scrollState === "scrolled" ? "text-gray-700 hover:text-brand" : "text-white/80 hover:text-white"
-              }`}>
+              <button className="inline-flex items-center gap-1 px-4 py-2 text-[13px] font-medium text-[rgb(82,75,68)] transition-colors hover:text-[rgb(38,35,30)]">
                 Solutions
                 <ChevronDown className="size-3 transition-transform group-hover:rotate-180" />
               </button>
-              <div className="pointer-events-none absolute left-0 top-full -translate-y-2 opacity-0 transition-all duration-150 group-hover:pointer-events-auto group-hover:translate-y-0 group-hover:opacity-100">
-                <div className="mt-2 w-48 bg-white p-2 shadow-lg shadow-gray-900/10 rounded">
+              <div className="pointer-events-none absolute left-0 top-full -translate-y-1 opacity-0 transition-all duration-200 group-hover:pointer-events-auto group-hover:translate-y-0 group-hover:opacity-100">
+                <div className="mt-1 w-44 rounded-md border border-[rgb(230,225,215)] bg-[rgb(252,250,245)] p-1.5 shadow-lg shadow-black/5">
                   {solutions.map((item) => (
                     <Link
                       key={item.href}
                       href={item.href}
-                      className="block px-4 py-2.5 text-xs font-medium text-gray-900 transition-colors hover:bg-gray-50"
+                      className="block rounded px-3 py-2 text-[13px] font-medium text-[rgb(55,50,45)] transition-colors hover:bg-[rgb(242,238,228)]"
                     >
                       {item.label}
                     </Link>
@@ -134,31 +119,23 @@ export default function Header() {
 
             <Link
               href="/contact"
-              className={`px-6 py-3 text-xs font-medium transition-colors duration-500 ${
-                scrollState === "scrolled" ? "text-gray-700 hover:text-brand" : "text-white/80 hover:text-white"
-              }`}
+              className="px-4 py-2 text-[13px] font-medium text-[rgb(82,75,68)] transition-colors hover:text-[rgb(38,35,30)]"
             >
               Contact
             </Link>
           </nav>
 
           {/* Desktop CTA */}
-          <div className="hidden items-center gap-5 lg:flex flex-shrink-0">
+          <div className="hidden items-center gap-4 lg:flex flex-shrink-0">
             <a
               href="tel:1300207915"
-              className={`text-xs font-medium transition-colors duration-500 ${
-                scrollState === "scrolled" ? "text-gray-600 hover:text-gray-900" : "text-white/70 hover:text-white"
-              }`}
+              className="text-[13px] font-medium text-[rgb(120,110,100)] transition-colors hover:text-[rgb(55,50,45)]"
             >
               1300 207 915
             </a>
             <Link
               href="/contact"
-              className={`rounded px-5 py-2 text-xs font-medium transition-all duration-500 ${
-                scrollState === "scrolled"
-                  ? "bg-brand text-white hover:bg-brand-dark"
-                  : "bg-white/20 text-white backdrop-blur-sm hover:bg-white/30"
-              }`}
+              className="rounded-md bg-[rgb(55,50,45)] px-5 py-2 text-[13px] font-medium text-[rgb(252,250,245)] transition-colors hover:bg-[rgb(38,35,30)]"
             >
               Get a Quote
             </Link>
@@ -166,9 +143,7 @@ export default function Header() {
 
           {/* Mobile Menu Button */}
           <button
-            className={`inline-flex items-center justify-center p-2 transition-colors lg:hidden ${
-              scrollState === "scrolled" ? "text-gray-900 hover:bg-gray-100" : "text-white hover:bg-white/10"
-            }`}
+            className="inline-flex items-center justify-center rounded-md p-2 text-[rgb(55,50,45)] transition-colors hover:bg-[rgb(242,238,228)] lg:hidden"
             onClick={() => setMobileOpen(!mobileOpen)}
             aria-label={mobileOpen ? "Close menu" : "Open menu"}
           >
@@ -177,33 +152,33 @@ export default function Header() {
         </div>
       </header>
 
-      {/* Mobile Nav - Full Screen Overlay */}
+      {/* Mobile Nav */}
       {mobileOpen && (
-        <div className="fixed inset-0 top-14 z-40 bg-white overflow-y-auto lg:hidden">
-          <nav className="mx-auto max-w-7xl space-y-0 px-6 py-6">
+        <div className="fixed inset-0 top-14 z-40 overflow-y-auto bg-[rgb(252,250,245)] lg:hidden">
+          <nav className="mx-auto max-w-lg space-y-0 px-6 py-6">
             <div>
               <button
-                className="flex w-full items-center justify-between py-3 text-xs font-medium text-gray-900"
+                className="flex w-full items-center justify-between py-3 text-[13px] font-medium text-[rgb(55,50,45)]"
                 onClick={() => setMobileRangesOpen(!mobileRangesOpen)}
               >
-                Our Ranges
+                Ranges
                 <ChevronDown
-                  className={`size-4 text-gray-600 transition-transform ${
+                  className={`size-4 text-[rgb(120,110,100)] transition-transform ${
                     mobileRangesOpen ? "rotate-180" : ""
                   }`}
                 />
               </button>
               {mobileRangesOpen && (
-                <div className="space-y-0 border-l border-brand/20 pl-4 pb-2">
+                <div className="space-y-0 border-l border-[rgb(230,225,215)] pl-4 pb-2">
                   {ranges.map((item) => (
                     <Link
                       key={item.href}
                       href={item.href}
-                      className="block py-2 text-xs text-gray-600 transition-colors hover:text-brand"
+                      className="block py-2 transition-colors"
                       onClick={() => setMobileOpen(false)}
                     >
-                      <span className="font-medium text-gray-900">{item.label}</span>
-                      <span className="block text-xs text-gray-500">{item.detail}</span>
+                      <span className="block text-[13px] font-medium text-[rgb(55,50,45)]">{item.label}</span>
+                      <span className="block text-[11px] text-[rgb(120,110,100)]">{item.detail}</span>
                     </Link>
                   ))}
                 </div>
@@ -212,15 +187,15 @@ export default function Header() {
 
             <Link
               href="/why-vinyl-tiles"
-              className="block py-3 text-xs font-medium text-gray-900"
+              className="block py-3 text-[13px] font-medium text-[rgb(55,50,45)]"
               onClick={() => setMobileOpen(false)}
             >
-              Why Tiles?
+              Why Tiles
             </Link>
 
             <Link
               href="/how-we-work"
-              className="block py-3 text-xs font-medium text-gray-900"
+              className="block py-3 text-[13px] font-medium text-[rgb(55,50,45)]"
               onClick={() => setMobileOpen(false)}
             >
               How We Work
@@ -228,23 +203,23 @@ export default function Header() {
 
             <div>
               <button
-                className="flex w-full items-center justify-between py-3 text-xs font-medium text-gray-900"
+                className="flex w-full items-center justify-between py-3 text-[13px] font-medium text-[rgb(55,50,45)]"
                 onClick={() => setMobileSolutionsOpen(!mobileSolutionsOpen)}
               >
                 Solutions
                 <ChevronDown
-                  className={`size-4 text-gray-600 transition-transform ${
+                  className={`size-4 text-[rgb(120,110,100)] transition-transform ${
                     mobileSolutionsOpen ? "rotate-180" : ""
                   }`}
                 />
               </button>
               {mobileSolutionsOpen && (
-                <div className="space-y-0 border-l border-brand/20 pl-4 pb-2">
+                <div className="space-y-0 border-l border-[rgb(230,225,215)] pl-4 pb-2">
                   {solutions.map((item) => (
                     <Link
                       key={item.href}
                       href={item.href}
-                      className="block py-2 text-xs font-medium text-gray-900 transition-colors hover:text-brand"
+                      className="block py-2 text-[13px] font-medium text-[rgb(55,50,45)] transition-colors hover:text-[rgb(82,75,68)]"
                       onClick={() => setMobileOpen(false)}
                     >
                       {item.label}
@@ -256,25 +231,22 @@ export default function Header() {
 
             <Link
               href="/contact"
-              className="block py-3 text-xs font-medium text-gray-900"
+              className="block py-3 text-[13px] font-medium text-[rgb(55,50,45)]"
               onClick={() => setMobileOpen(false)}
             >
               Contact
             </Link>
 
-            <div className="mt-6 border-t border-gray-200 pt-6 space-y-3">
+            <div className="mt-6 border-t border-[rgb(230,225,215)] pt-6 space-y-3">
               <a
                 href="tel:1300207915"
-                className="block text-xs font-medium text-gray-600"
+                className="block text-[13px] font-medium text-[rgb(120,110,100)]"
               >
                 1300 207 915
               </a>
               <Link
                 href="/contact"
-                className="block w-full rounded px-4 py-3 text-center text-xs font-medium text-white transition-colors"
-                style={{
-                  backgroundColor: "rgb(140, 84, 98)",
-                }}
+                className="block w-full rounded-md bg-[rgb(55,50,45)] px-4 py-3 text-center text-[13px] font-medium text-[rgb(252,250,245)] transition-colors hover:bg-[rgb(38,35,30)]"
                 onClick={() => setMobileOpen(false)}
               >
                 Get a Quote

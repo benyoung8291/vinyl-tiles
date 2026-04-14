@@ -41,14 +41,14 @@ export function ContactForm() {
 
   if (submitted) {
     return (
-      <div className="rounded-lg border border-border bg-brand-50 p-8 text-center">
-        <div className="mx-auto mb-4 flex size-12 items-center justify-center rounded-full bg-brand/10">
+      <div className="rounded-lg border border-[rgb(230,225,215)] p-8 text-center" style={{ backgroundColor: "rgb(248, 245, 237)" }}>
+        <div className="mx-auto mb-4 flex size-10 items-center justify-center rounded-full" style={{ backgroundColor: "rgb(240, 228, 210)" }}>
           <svg
-            className="size-6 text-brand"
+            className="size-5"
             fill="none"
             viewBox="0 0 24 24"
             strokeWidth={2}
-            stroke="currentColor"
+            stroke="rgb(55, 50, 45)"
           >
             <path
               strokeLinecap="round"
@@ -57,10 +57,10 @@ export function ContactForm() {
             />
           </svg>
         </div>
-        <h3 className="mb-2 text-lg font-semibold text-foreground">
+        <h3 className="mb-2 text-base font-semibold" style={{ color: "rgb(38, 35, 30)" }}>
           Thank you for your enquiry!
         </h3>
-        <p className="text-sm text-muted-foreground">
+        <p className="text-[14px]" style={{ color: "rgb(120, 110, 100)" }}>
           We&apos;ve received your message and will get back to you within 1
           business day.
         </p>
@@ -114,7 +114,7 @@ export function ContactForm() {
         <select
           id="projectType"
           name="projectType"
-          className="h-8 w-full rounded-lg border border-input bg-transparent px-2.5 text-sm outline-none transition-colors focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50"
+          className="h-8 w-full rounded-md border border-input bg-transparent px-2.5 text-sm outline-none transition-colors focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50"
           defaultValue=""
         >
           <option value="" disabled>

@@ -48,7 +48,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="h-full antialiased">
-      <body className="flex min-h-full flex-col font-sans">
+      <body className="flex min-h-full flex-col font-sans" style={{ backgroundColor: "rgb(252, 250, 245)" }}>
         <Header />
         <main className="flex-1 pt-14 pb-14 md:pb-0">{children}</main>
         <Footer />
