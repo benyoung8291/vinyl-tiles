@@ -12,87 +12,194 @@ export default function ContactPage() {
   return (
     <>
       {/* Hero */}
-      <section className="bg-cream">
-        <div className="mx-auto max-w-[1280px] px-6 py-16 md:py-20 lg:px-8">
-          <p className="text-xs font-semibold uppercase tracking-wider text-brand mb-3">
+      <section
+        className="py-24 md:py-32"
+        style={{ backgroundColor: "rgb(251, 211, 190)" }}
+      >
+        <div className="mx-auto max-w-[1728px] px-6 lg:px-8">
+          <p className="font-sans text-xs font-semibold uppercase tracking-widest mb-4 opacity-70">
             Get In Touch
           </p>
-          <h1 className="text-4xl font-bold tracking-tight text-stone-900 max-w-3xl md:text-5xl">
-            Tell us what you need.
+          <h1
+            className="font-heading text-5xl md:text-6xl lg:text-7xl max-w-3xl leading-tight font-bold tracking-tight mb-6"
+            style={{ color: "rgb(93, 82, 75)" }}
+          >
+            Let&apos;s talk flooring.
           </h1>
-          <p className="mt-4 max-w-xl text-lg leading-relaxed text-stone-500">
+          <p
+            className="font-sans text-lg md:text-xl max-w-2xl leading-relaxed"
+            style={{ color: "rgb(93, 82, 75)" }}
+          >
             Whether you&apos;re planning a commercial flooring project or just want to explore your options, we&apos;re here to listen. Our team will get back to you within one business day.
           </p>
         </div>
       </section>
 
       {/* Content */}
-      <section className="bg-white">
-        <div className="mx-auto max-w-[1280px] px-6 py-16 md:py-20 lg:px-8">
-          <div className="grid gap-12 lg:grid-cols-[1fr_320px] lg:gap-16">
-            {/* Form */}
+      <section style={{ backgroundColor: "rgb(254, 249, 237)" }}>
+        <div className="mx-auto max-w-[1728px] px-6 py-24 md:py-32 lg:px-8">
+          <div className="grid gap-16 lg:grid-cols-2 items-start">
+            {/* Form Section */}
             <div>
-              <h2 className="text-xs font-semibold uppercase tracking-wider text-brand mb-6">
+              <p
+                className="font-sans text-xs font-semibold uppercase tracking-widest mb-8"
+                style={{ color: "rgb(140, 84, 98)" }}
+              >
                 Your Project Details
-              </h2>
-              <ContactForm />
+              </p>
+
+              {/* Form with styled inputs */}
+              <div className="space-y-6">
+                <ContactForm />
+              </div>
             </div>
 
-            {/* Sidebar */}
-            <aside className="space-y-4">
-              <div className="rounded-lg border border-stone-200/60 bg-cream/50 p-5">
-                <div className="mb-2 flex items-center gap-2.5">
-                  <div className="flex size-7 items-center justify-center rounded-full bg-brand/10">
-                    <Phone className="size-3.5 text-brand" />
+            {/* Contact Info Section */}
+            <aside className="space-y-6">
+              {/* Phone */}
+              <div
+                className="rounded-lg p-8 border-2"
+                style={{
+                  backgroundColor: "rgb(254, 249, 237)",
+                  borderColor: "rgb(251, 211, 190)",
+                }}
+              >
+                <div className="flex items-start gap-4 mb-4">
+                  <div
+                    className="flex-shrink-0 w-10 h-10 rounded-full flex items-center justify-center"
+                    style={{ backgroundColor: "rgb(251, 211, 190)" }}
+                  >
+                    <Phone
+                      className="w-5 h-5"
+                      style={{ color: "rgb(140, 84, 98)" }}
+                    />
                   </div>
-                  <h3 className="text-xs font-semibold uppercase tracking-wider text-stone-500">Phone</h3>
+                  <div>
+                    <h3
+                      className="font-sans text-xs font-semibold uppercase tracking-wider"
+                      style={{ color: "rgb(140, 84, 98)" }}
+                    >
+                      Phone
+                    </h3>
+                  </div>
                 </div>
                 <a
                   href="tel:1300207915"
-                  className="text-lg font-semibold text-stone-900 transition-colors hover:text-brand"
+                  className="inline-block font-sans text-lg font-semibold transition-colors hover:opacity-80"
+                  style={{ color: "rgb(93, 82, 75)" }}
                 >
                   1300 207 915
                 </a>
               </div>
 
-              <div className="rounded-lg border border-stone-200/60 bg-cream/50 p-5">
-                <div className="mb-2 flex items-center gap-2.5">
-                  <div className="flex size-7 items-center justify-center rounded-full bg-brand/10">
-                    <Mail className="size-3.5 text-brand" />
+              {/* Email */}
+              <div
+                className="rounded-lg p-8 border-2"
+                style={{
+                  backgroundColor: "rgb(254, 249, 237)",
+                  borderColor: "rgb(251, 211, 190)",
+                }}
+              >
+                <div className="flex items-start gap-4 mb-4">
+                  <div
+                    className="flex-shrink-0 w-10 h-10 rounded-full flex items-center justify-center"
+                    style={{ backgroundColor: "rgb(251, 211, 190)" }}
+                  >
+                    <Mail
+                      className="w-5 h-5"
+                      style={{ color: "rgb(140, 84, 98)" }}
+                    />
                   </div>
-                  <h3 className="text-xs font-semibold uppercase tracking-wider text-stone-500">Email</h3>
+                  <div>
+                    <h3
+                      className="font-sans text-xs font-semibold uppercase tracking-wider"
+                      style={{ color: "rgb(140, 84, 98)" }}
+                    >
+                      Email
+                    </h3>
+                  </div>
                 </div>
                 <a
                   href="mailto:office@premrest.com.au"
-                  className="text-sm font-medium text-stone-900 transition-colors hover:text-brand"
+                  className="inline-block font-sans text-base font-medium transition-colors hover:opacity-80 break-all"
+                  style={{ color: "rgb(93, 82, 75)" }}
                 >
                   office@premrest.com.au
                 </a>
               </div>
 
-              <div className="rounded-lg border border-stone-200/60 bg-cream/50 p-5">
-                <div className="mb-2 flex items-center gap-2.5">
-                  <div className="flex size-7 items-center justify-center rounded-full bg-brand/10">
-                    <Clock className="size-3.5 text-brand" />
+              {/* Hours */}
+              <div
+                className="rounded-lg p-8 border-2"
+                style={{
+                  backgroundColor: "rgb(254, 249, 237)",
+                  borderColor: "rgb(251, 211, 190)",
+                }}
+              >
+                <div className="flex items-start gap-4 mb-4">
+                  <div
+                    className="flex-shrink-0 w-10 h-10 rounded-full flex items-center justify-center"
+                    style={{ backgroundColor: "rgb(251, 211, 190)" }}
+                  >
+                    <Clock
+                      className="w-5 h-5"
+                      style={{ color: "rgb(140, 84, 98)" }}
+                    />
                   </div>
-                  <h3 className="text-xs font-semibold uppercase tracking-wider text-stone-500">Hours</h3>
+                  <div>
+                    <h3
+                      className="font-sans text-xs font-semibold uppercase tracking-wider"
+                      style={{ color: "rgb(140, 84, 98)" }}
+                    >
+                      Hours
+                    </h3>
+                  </div>
                 </div>
-                <p className="text-sm text-stone-700">Monday &ndash; Friday</p>
-                <p className="text-sm font-medium text-stone-900">
-                  8:30am &ndash; 5:00pm AEST
+                <p
+                  className="font-sans text-base"
+                  style={{ color: "rgb(93, 82, 75)", opacity: 0.7 }}
+                >
+                  Monday – Friday
+                </p>
+                <p
+                  className="font-sans text-base font-semibold"
+                  style={{ color: "rgb(93, 82, 75)" }}
+                >
+                  8:30am – 5:00pm AEST
                 </p>
               </div>
 
-              <div className="rounded-lg border border-stone-200/60 bg-cream/50 p-5">
-                <div className="mb-2 flex items-center gap-2.5">
-                  <div className="flex size-7 items-center justify-center rounded-full bg-brand/10">
-                    <Building2 className="size-3.5 text-brand" />
+              {/* Service Areas */}
+              <div
+                className="rounded-lg p-8 border-2"
+                style={{
+                  backgroundColor: "rgb(254, 249, 237)",
+                  borderColor: "rgb(251, 211, 190)",
+                }}
+              >
+                <div className="flex items-start gap-4 mb-4">
+                  <div
+                    className="flex-shrink-0 w-10 h-10 rounded-full flex items-center justify-center"
+                    style={{ backgroundColor: "rgb(251, 211, 190)" }}
+                  >
+                    <Building2
+                      className="w-5 h-5"
+                      style={{ color: "rgb(140, 84, 98)" }}
+                    />
                   </div>
-                  <h3 className="text-xs font-semibold uppercase tracking-wider text-stone-500">
-                    Service Areas
-                  </h3>
+                  <div>
+                    <h3
+                      className="font-sans text-xs font-semibold uppercase tracking-wider"
+                      style={{ color: "rgb(140, 84, 98)" }}
+                    >
+                      Service Areas
+                    </h3>
+                  </div>
                 </div>
-                <p className="text-sm leading-relaxed text-stone-500">
+                <p
+                  className="font-sans text-base leading-relaxed"
+                  style={{ color: "rgb(93, 82, 75)", opacity: 0.8 }}
+                >
                   We serve Melbourne, Sydney, and Brisbane. Backed by Premrest, one of Australia&apos;s most trusted commercial flooring specialists with decades of industry experience.
                 </p>
               </div>

@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { ArrowRight, Layers, Shield, Truck, Wrench } from "lucide-react";
+import { ArrowRight, Layers, Shield, Truck, Wrench, CheckCircle2, Users, TrendingUp } from "lucide-react";
 import { QuoteCta } from "@/components/quote-cta";
 
 const rangeItems = [
@@ -61,35 +61,55 @@ const sectors = [
   },
 ];
 
+const personas = [
+  {
+    title: "Facility Managers",
+    icon: Wrench,
+    pain: "Managing replacements without shutting down operations. Sourcing and installing are two different headaches. You need one contractor who owns the whole job.",
+  },
+  {
+    title: "Building Managers",
+    icon: TrendingUp,
+    pain: "Compliance documentation, slip ratings, fire ratings, NCC sign-off. Budget blowouts when supply and install aren't coordinated. You need a partner who speaks the language of your certifier.",
+  },
+  {
+    title: "Business Owners",
+    icon: Users,
+    pain: "Downtime = lost revenue. You need a floor that looks professional on day one and a team that gets in, gets it done, and gets out. No surprises.",
+  },
+];
+
 export default function Home() {
   return (
     <>
       {/* Hero */}
-      <section className="bg-cream">
-        <div className="mx-auto max-w-[1280px] px-6 py-20 md:py-28 lg:px-8 lg:py-36">
-          <div className="max-w-2xl">
-            <h1 className="text-4xl font-bold tracking-tight text-stone-900 md:text-5xl lg:text-6xl">
-              Commercial vinyl flooring,{" "}
-              <span className="text-brand">sorted.</span>
+      <section style={{ backgroundColor: "rgb(251, 211, 190)" }} className="relative overflow-hidden">
+        <div className="mx-auto max-w-[1728px] px-6 py-24 lg:px-12 lg:py-40">
+          <div className="max-w-3xl">
+            <h1
+              style={{ fontFamily: "var(--font-heading, serif)", color: "rgb(93, 82, 75)" }}
+              className="text-5xl font-bold leading-tight md:text-6xl lg:text-8xl tracking-tight"
+            >
+              Commercial vinyl flooring, sorted.
             </h1>
-            <p className="mt-6 text-lg leading-relaxed text-stone-500 lg:max-w-lg">
-              You tell us what the space needs to do. We find the right vinyl tile,
-              get it to site, and lay it properly. Supply and install, one contractor,
-              no finger-pointing.
+            <p className="mt-8 text-lg leading-relaxed text-foreground/80 lg:max-w-2xl md:text-xl">
+              You tell us what the space needs to do. We find the right vinyl tile, get it to site, and lay it properly. Supply and install, one contractor, no finger-pointing.
             </p>
-            <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:items-center">
+            <div className="mt-10 flex flex-col gap-4 sm:flex-row sm:items-center">
               <Link
                 href="/contact"
-                className="inline-flex items-center justify-center rounded-md bg-brand px-6 py-3 text-sm font-semibold text-white transition-colors hover:bg-brand-dark"
+                className="inline-flex items-center justify-center rounded-md px-8 py-3 text-base font-semibold text-white transition-all duration-300 hover:shadow-lg"
+                style={{ backgroundColor: "rgb(140, 84, 98)" }}
               >
                 Get a Quote
               </Link>
               <Link
                 href="#ranges"
-                className="inline-flex items-center justify-center gap-2 px-6 py-3 text-sm font-medium text-stone-500 transition-colors hover:text-stone-900"
+                className="inline-flex items-center justify-center gap-2 px-8 py-3 text-base font-medium transition-colors duration-300 hover:opacity-70"
+                style={{ color: "rgb(140, 84, 98)" }}
               >
                 Explore Ranges
-                <ArrowRight className="size-4" />
+                <ArrowRight className="size-5" />
               </Link>
             </div>
           </div>
@@ -97,20 +117,20 @@ export default function Home() {
       </section>
 
       {/* Credibility strip */}
-      <section className="border-y border-stone-200/60 bg-white">
-        <div className="mx-auto max-w-[1280px] px-6 py-5 lg:px-8">
-          <div className="grid grid-cols-2 gap-6 lg:grid-cols-4">
+      <section style={{ backgroundColor: "rgb(254, 249, 237)" }}>
+        <div className="mx-auto max-w-[1728px] px-6 py-12 lg:px-12">
+          <div className="grid grid-cols-2 gap-8 lg:grid-cols-4 lg:gap-12">
             {[
               { icon: Shield, label: "Supply + Install", detail: "One call, one crew, done" },
               { icon: Layers, label: "Any manufacturer", detail: "We pick the right floor for the job" },
               { icon: Wrench, label: "We do both", detail: "Source it, lay it, own the result" },
               { icon: Truck, label: "Melbourne · Sydney · Brisbane", detail: "Local teams, national reach" },
             ].map((item) => (
-              <div key={item.label} className="flex items-start gap-3">
-                <item.icon className="mt-0.5 size-4 text-brand" />
+              <div key={item.label} className="flex items-start gap-4">
+                <item.icon className="mt-1 size-6 flex-shrink-0" style={{ color: "rgb(140, 84, 98)" }} />
                 <div>
-                  <p className="text-sm font-medium text-stone-800">{item.label}</p>
-                  <p className="text-xs text-stone-400">{item.detail}</p>
+                  <p className="text-base font-semibold" style={{ color: "rgb(93, 82, 75)" }}>{item.label}</p>
+                  <p className="mt-1 text-sm leading-relaxed text-muted-foreground">{item.detail}</p>
                 </div>
               </div>
             ))}
@@ -118,68 +138,114 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Ranges */}
-      <section id="ranges" className="bg-cream">
-        <div className="mx-auto max-w-[1280px] px-6 py-20 md:py-28 lg:px-8">
-          <div className="mb-12">
-            <p className="text-xs font-semibold uppercase tracking-wider text-brand mb-3">Our Ranges</p>
-            <h2 className="text-3xl font-bold tracking-tight text-stone-900 md:text-4xl">
+      {/* Who we work with section */}
+      <section style={{ backgroundColor: "rgb(247, 236, 217)" }}>
+        <div className="mx-auto max-w-[1728px] px-6 py-20 lg:px-12 lg:py-32">
+          <div className="mb-16">
+            <p className="text-sm font-semibold uppercase tracking-widest" style={{ color: "rgb(140, 84, 98)" }}>Who We Work With</p>
+            <h2
+              style={{ fontFamily: "var(--font-heading, serif)", color: "rgb(93, 82, 75)" }}
+              className="mt-4 text-4xl font-bold leading-tight md:text-5xl lg:text-6xl tracking-tight"
+            >
+              We get your pain points.
+            </h2>
+          </div>
+
+          <div className="grid gap-8 md:grid-cols-3 lg:gap-12">
+            {personas.map((persona) => (
+              <div
+                key={persona.title}
+                style={{ backgroundColor: "rgb(254, 249, 237)" }}
+                className="rounded-lg p-8 lg:p-10"
+              >
+                <div className="flex items-center gap-3 mb-6">
+                  <persona.icon className="size-8" style={{ color: "rgb(140, 84, 98)" }} />
+                  <h3
+                    style={{ fontFamily: "var(--font-heading, serif)", color: "rgb(93, 82, 75)" }}
+                    className="text-2xl font-bold"
+                  >
+                    {persona.title}
+                  </h3>
+                </div>
+                <p className="text-base leading-relaxed text-foreground/70">
+                  {persona.pain}
+                </p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Ranges section */}
+      <section id="ranges" style={{ backgroundColor: "rgb(254, 249, 237)" }}>
+        <div className="mx-auto max-w-[1728px] px-6 py-20 lg:px-12 lg:py-32">
+          <div className="mb-16">
+            <p className="text-sm font-semibold uppercase tracking-widest" style={{ color: "rgb(140, 84, 98)" }}>Our Ranges</p>
+            <h2
+              style={{ fontFamily: "var(--font-heading, serif)", color: "rgb(93, 82, 75)" }}
+              className="mt-4 text-4xl font-bold leading-tight md:text-5xl lg:text-6xl tracking-tight"
+            >
               Good floors start with good products.
             </h2>
           </div>
 
-          <div className="grid gap-4 md:grid-cols-2">
+          <div className="grid gap-6 md:grid-cols-2 lg:gap-8">
             {rangeItems.map((range) => (
               <Link
                 key={range.slug}
                 href={`/ranges/${range.slug}`}
-                className="group flex flex-col rounded-lg border border-stone-200/60 bg-white p-6 transition-all hover:border-brand/30 hover:shadow-md lg:p-8"
+                className="group flex flex-col rounded-lg p-8 lg:p-10 transition-all duration-300 hover:shadow-lg"
+                style={{ backgroundColor: "rgb(245, 238, 224)" }}
               >
-                <div className="flex items-start justify-between">
+                <div className="flex items-start justify-between mb-6">
                   <div>
-                    <h3 className="text-xl font-bold tracking-tight text-stone-900 transition-colors group-hover:text-brand">
+                    <h3
+                      style={{ fontFamily: "var(--font-heading, serif)", color: "rgb(93, 82, 75)" }}
+                      className="text-3xl font-bold tracking-tight"
+                    >
                       {range.name}
                     </h3>
-                    <span className="mt-1 inline-block text-sm text-brand/70">{range.tagline}</span>
+                    <p className="mt-2 text-base" style={{ color: "rgb(140, 84, 98)" }}>{range.tagline}</p>
                   </div>
-                  <span className="rounded-full bg-stone-100 px-2.5 py-0.5 text-xs font-medium text-stone-500">
+                  <span className="rounded-full px-4 py-2 text-sm font-medium" style={{ backgroundColor: "rgba(140, 84, 98, 0.1)", color: "rgb(140, 84, 98)" }}>
                     {range.productCount} products
                   </span>
                 </div>
-                <p className="mt-3 text-sm leading-relaxed text-stone-500">
+                <p className="text-base leading-relaxed text-foreground/70 mb-6">
                   {range.detail}
                 </p>
-                <span className="mt-4 inline-flex items-center gap-1.5 text-sm font-medium text-brand transition-colors group-hover:text-brand-dark">
+                <div className="mt-auto inline-flex items-center gap-2 text-base font-medium transition-all duration-300 group-hover:gap-3" style={{ color: "rgb(140, 84, 98)" }}>
                   View Collection
-                  <ArrowRight className="size-3.5 transition-transform group-hover:translate-x-0.5" />
-                </span>
+                  <ArrowRight className="size-5 transition-transform" />
+                </div>
               </Link>
             ))}
           </div>
         </div>
       </section>
 
-      {/* Process */}
-      <section className="bg-stone-900">
-        <div className="mx-auto max-w-[1280px] px-6 py-20 md:py-28 lg:px-8">
-          <div className="grid gap-12 lg:grid-cols-[1fr_1.5fr]">
+      {/* Process / How We Work section */}
+      <section style={{ backgroundColor: "rgb(93, 82, 75)" }}>
+        <div className="mx-auto max-w-[1728px] px-6 py-20 lg:px-12 lg:py-32">
+          <div className="grid gap-16 lg:grid-cols-[1fr_1.5fr]">
             <div>
-              <p className="text-xs font-semibold uppercase tracking-wider text-brand-light mb-3">
-                How We Work
-              </p>
-              <h2 className="text-3xl font-bold tracking-tight text-white md:text-4xl">
+              <p className="text-sm font-semibold uppercase tracking-widest text-white/60 mb-4">How We Work</p>
+              <h2
+                style={{ fontFamily: "var(--font-heading, serif)" }}
+                className="text-4xl font-bold leading-tight md:text-5xl lg:text-6xl tracking-tight text-white"
+              >
                 Four steps to a finished floor.
               </h2>
               <Link
                 href="/how-we-work"
-                className="mt-6 inline-flex items-center gap-2 text-sm font-medium text-stone-400 transition-colors hover:text-white"
+                className="mt-8 inline-flex items-center gap-2 text-base font-medium text-white/70 transition-colors hover:text-white"
               >
                 Learn about our process
-                <ArrowRight className="size-4" />
+                <ArrowRight className="size-5" />
               </Link>
             </div>
 
-            <div className="grid gap-3 sm:grid-cols-2">
+            <div className="grid gap-6 sm:grid-cols-2">
               {[
                 { n: "01", title: "Consult", text: "We come to you. Look at the space, talk it through." },
                 { n: "02", title: "Source", text: "Find the right floor for the job and the budget." },
@@ -188,11 +254,22 @@ export default function Home() {
               ].map((step) => (
                 <div
                   key={step.n}
-                  className="rounded-lg border border-stone-800 bg-stone-800/50 p-5"
+                  style={{ backgroundColor: "rgba(255, 255, 255, 0.08)" }}
+                  className="rounded-lg p-8 backdrop-blur-sm"
                 >
-                  <span className="text-xs font-semibold text-brand-light">{step.n}</span>
-                  <h3 className="mt-2 text-base font-bold text-white">{step.title}</h3>
-                  <p className="mt-1.5 text-sm leading-relaxed text-stone-400">{step.text}</p>
+                  <span
+                    style={{ fontFamily: "var(--font-heading, serif)", color: "rgb(251, 211, 190)" }}
+                    className="text-4xl font-bold"
+                  >
+                    {step.n}
+                  </span>
+                  <h3
+                    style={{ fontFamily: "var(--font-heading, serif)" }}
+                    className="mt-4 text-xl font-bold text-white"
+                  >
+                    {step.title}
+                  </h3>
+                  <p className="mt-2 text-base leading-relaxed text-white/70">{step.text}</p>
                 </div>
               ))}
             </div>
@@ -201,97 +278,126 @@ export default function Home() {
       </section>
 
       {/* Pricing guide */}
-      <section className="border-b border-stone-200/60 bg-white">
-        <div className="mx-auto max-w-[1280px] px-6 py-8 lg:px-8">
-          <div className="flex flex-wrap items-center justify-center gap-8 text-center lg:gap-16">
+      <section style={{ backgroundColor: "rgb(245, 238, 224)" }}>
+        <div className="mx-auto max-w-[1728px] px-6 py-12 lg:px-12">
+          <div className="flex flex-wrap items-center justify-center gap-12 text-center lg:gap-20">
             <div>
-              <p className="text-xl font-bold tracking-tight text-stone-900">
-                $45<span className="text-brand">/m²</span>
+              <p
+                style={{ fontFamily: "var(--font-heading, serif)", color: "rgb(93, 82, 75)" }}
+                className="text-3xl font-bold"
+              >
+                $45<span style={{ color: "rgb(140, 84, 98)" }}>/m²</span>
               </p>
-              <p className="mt-1 text-xs text-stone-500">Supply from (ex GST)</p>
+              <p className="mt-2 text-sm text-foreground/60">Supply from (ex GST)</p>
             </div>
-            <div className="hidden h-8 w-px bg-stone-200 sm:block" />
+            <div className="hidden h-10 w-px bg-foreground/10 sm:block" />
             <div>
-              <p className="text-xl font-bold tracking-tight text-stone-900">
-                $20<span className="text-brand">/m²</span>
+              <p
+                style={{ fontFamily: "var(--font-heading, serif)", color: "rgb(93, 82, 75)" }}
+                className="text-3xl font-bold"
+              >
+                $20<span style={{ color: "rgb(140, 84, 98)" }}>/m²</span>
               </p>
-              <p className="mt-1 text-xs text-stone-500">Install from (ex GST)</p>
+              <p className="mt-2 text-sm text-foreground/60">Install from (ex GST)</p>
             </div>
-            <div className="hidden h-8 w-px bg-stone-200 sm:block" />
+            <div className="hidden h-10 w-px bg-foreground/10 sm:block" />
             <div>
-              <p className="text-xl font-bold tracking-tight text-stone-900">
-                15<span className="text-brand"> yr</span>
+              <p
+                style={{ fontFamily: "var(--font-heading, serif)", color: "rgb(93, 82, 75)" }}
+                className="text-3xl font-bold"
+              >
+                15<span style={{ color: "rgb(140, 84, 98)" }}> yr</span>
               </p>
-              <p className="mt-1 text-xs text-stone-500">Commercial warranty</p>
+              <p className="mt-2 text-sm text-foreground/60">Commercial warranty</p>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Sectors */}
-      <section className="bg-cream">
-        <div className="mx-auto max-w-[1280px] px-6 py-20 md:py-28 lg:px-8">
-          <div className="mb-12">
-            <p className="text-xs font-semibold uppercase tracking-wider text-brand mb-3">
-              By Sector
-            </p>
-            <h2 className="text-3xl font-bold tracking-tight text-stone-900 md:text-4xl">
+      {/* Sectors section */}
+      <section style={{ backgroundColor: "rgb(247, 236, 217)" }}>
+        <div className="mx-auto max-w-[1728px] px-6 py-20 lg:px-12 lg:py-32">
+          <div className="mb-16">
+            <p className="text-sm font-semibold uppercase tracking-widest" style={{ color: "rgb(140, 84, 98)" }}>By Sector</p>
+            <h2
+              style={{ fontFamily: "var(--font-heading, serif)", color: "rgb(93, 82, 75)" }}
+              className="mt-4 text-4xl font-bold leading-tight md:text-5xl lg:text-6xl tracking-tight"
+            >
               Different spaces need different floors.
             </h2>
           </div>
 
-          <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
+          <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3 lg:gap-8">
             {sectors.map((sector) => (
               <Link
                 key={sector.href}
                 href={sector.href}
-                className="group rounded-lg border border-stone-200/60 bg-white p-6 transition-all hover:border-brand/30 hover:shadow-md"
+                className="group rounded-lg p-8 lg:p-10 transition-all duration-300 hover:shadow-lg"
+                style={{ backgroundColor: "rgb(254, 249, 237)" }}
               >
-                <h3 className="text-base font-bold text-stone-900 transition-colors group-hover:text-brand">
+                <h3
+                  style={{ fontFamily: "var(--font-heading, serif)", color: "rgb(93, 82, 75)" }}
+                  className="text-2xl font-bold tracking-tight"
+                >
                   {sector.title}
                 </h3>
-                <p className="mt-2 text-sm leading-relaxed text-stone-500">
+                <p className="mt-4 text-base leading-relaxed text-foreground/70">
                   {sector.description}
                 </p>
-                <span className="mt-4 inline-flex items-center gap-1.5 text-xs font-semibold uppercase tracking-wider text-brand/60 transition-colors group-hover:text-brand">
+                <div className="mt-6 inline-flex items-center gap-2 text-sm font-medium uppercase tracking-wide transition-all duration-300 group-hover:gap-3" style={{ color: "rgb(140, 84, 98)" }}>
                   Explore
-                  <ArrowRight className="size-3 transition-transform group-hover:translate-x-0.5" />
-                </span>
+                  <ArrowRight className="size-4 transition-transform" />
+                </div>
               </Link>
             ))}
           </div>
         </div>
       </section>
 
-      {/* Why us */}
-      <section className="bg-white">
-        <div className="mx-auto max-w-[1280px] px-6 py-20 md:py-28 lg:px-8">
-          <p className="text-xs font-semibold uppercase tracking-wider text-brand mb-3">Why Premrest</p>
-          <h2 className="text-3xl font-bold tracking-tight text-stone-900 mb-12 md:text-4xl">
-            We supply it. We install it. We own the result.
-          </h2>
+      {/* Why Premrest section */}
+      <section style={{ backgroundColor: "rgb(254, 249, 237)" }}>
+        <div className="mx-auto max-w-[1728px] px-6 py-20 lg:px-12 lg:py-32">
+          <div className="mb-16">
+            <p className="text-sm font-semibold uppercase tracking-widest" style={{ color: "rgb(140, 84, 98)" }}>Why Premrest</p>
+            <h2
+              style={{ fontFamily: "var(--font-heading, serif)", color: "rgb(93, 82, 75)" }}
+              className="mt-4 text-4xl font-bold leading-tight md:text-5xl lg:text-6xl tracking-tight"
+            >
+              We supply it. We install it. We own the result.
+            </h2>
+          </div>
 
-          <div className="grid gap-4 md:grid-cols-3">
+          <div className="grid gap-8 md:grid-cols-3 lg:gap-12">
             {[
               {
                 title: "One contractor",
-                text: "No coordination between the company that sold you the vinyl and the mob that laid it. If something\u2019s not right, it\u2019s on us.",
+                text: "No coordination between the company that sold you the vinyl and the mob that laid it. If something's not right, it's on us.",
+                icon: CheckCircle2,
               },
               {
                 title: "We start with your problem",
                 text: "Not a product catalogue. What does the space need to do? How much traffic? Wet areas? Wheelchairs? We work backwards from the answer.",
+                icon: Users,
               },
               {
                 title: "Compliance is built in",
-                text: "Slip ratings, fire ratings, acoustic requirements, NCC compliance \u2014 we specify to all of them. You get the documentation your certifier needs.",
+                text: "Slip ratings, fire ratings, acoustic requirements, NCC compliance — we specify to all of them. You get the documentation your certifier needs.",
+                icon: Shield,
               },
             ].map((item) => (
               <div
                 key={item.title}
-                className="rounded-lg border border-stone-200/60 bg-cream/50 p-6"
+                style={{ backgroundColor: "rgb(245, 238, 224)" }}
+                className="rounded-lg p-8 lg:p-10"
               >
-                <h3 className="text-base font-bold text-stone-900">{item.title}</h3>
-                <p className="mt-3 text-sm leading-relaxed text-stone-500">
+                <item.icon className="size-8 mb-4" style={{ color: "rgb(140, 84, 98)" }} />
+                <h3
+                  style={{ fontFamily: "var(--font-heading, serif)", color: "rgb(93, 82, 75)" }}
+                  className="text-2xl font-bold tracking-tight"
+                >
+                  {item.title}
+                </h3>
+                <p className="mt-4 text-base leading-relaxed text-foreground/70">
                   {item.text}
                 </p>
               </div>

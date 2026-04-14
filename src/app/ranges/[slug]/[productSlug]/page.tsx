@@ -1,8 +1,10 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import Link from "next/link";
+import Image from "next/image";
 import { ArrowLeft, ArrowRight, ExternalLink } from "lucide-react";
 import { QuoteCta } from "@/components/quote-cta";
+import { ColourwayGrid } from "@/components/colourway-grid";
 import { ranges, getProductBySlug } from "@/lib/ranges";
 
 interface ProductPageProps {
@@ -51,33 +53,37 @@ export default async function ProductPage({ params }: ProductPageProps) {
   return (
     <>
       {/* Breadcrumb */}
-      <section className="border-b border-stone-200/60 bg-white">
-        <div className="mx-auto max-w-[1280px] px-6 py-3 lg:px-8">
-          <nav className="flex items-center gap-1.5 text-xs text-stone-400">
-            <Link href="/" className="transition-colors hover:text-stone-700">Home</Link>
+      <section style={{ backgroundColor: "rgb(254, 249, 237)" }}>
+        <div className="mx-auto max-w-[1728px] px-6 py-4 lg:px-8">
+          <nav className="flex items-center gap-2 text-sm" style={{ color: "rgb(93, 82, 75)" }}>
+            <Link href="/" className="transition-opacity hover:opacity-70">
+              Home
+            </Link>
             <span>/</span>
-            <Link href={`/ranges/${range.slug}`} className="transition-colors hover:text-stone-700">{range.name}</Link>
+            <Link href={`/ranges/${range.slug}`} className="transition-opacity hover:opacity-70">
+              {range.name}
+            </Link>
             <span>/</span>
-            <span className="text-stone-700">{product.name}</span>
+            <span className="font-semibold">{product.name}</span>
           </nav>
         </div>
       </section>
 
       {/* Product header */}
-      <section className="bg-cream">
-        <div className="mx-auto max-w-[1280px] px-6 py-12 md:py-16 lg:px-8">
+      <section style={{ backgroundColor: "rgb(251, 211, 190)" }}>
+        <div className="mx-auto max-w-[1728px] px-6 py-24 md:py-32 lg:px-8">
           <Link
             href={`/ranges/${range.slug}`}
-            className="mb-6 inline-flex items-center gap-1.5 text-sm text-stone-400 transition-colors hover:text-stone-700"
+            className="mb-8 inline-flex items-center gap-2 text-base font-medium transition-opacity hover:opacity-70"
+            style={{ color: "rgb(93, 82, 75)" }}
           >
-            <ArrowLeft className="size-3.5" />
+            <ArrowLeft className="size-4" />
             Back to {range.name}
           </Link>
 
-          <div className="grid gap-8 lg:grid-cols-[1.3fr_1fr] lg:gap-16">
+          <div className="grid gap-12 lg:grid-cols-[1.3fr_1fr] lg:gap-16">
             {/* Hero image */}
-            <div className="overflow-hidden rounded-lg bg-stone-100">
-              {/* eslint-disable-next-line @next/next/no-img-element */}
+            <div className="overflow-hidden rounded-lg bg-gray-100">
               <img
                 src={product.image}
                 alt={`${product.name} by ${range.name}`}
@@ -87,33 +93,43 @@ export default async function ProductPage({ params }: ProductPageProps) {
 
             {/* Product info */}
             <div className="flex flex-col justify-center">
-              <p className="text-xs font-semibold uppercase tracking-wider text-brand mb-2">
+              <p className="mb-4 text-sm font-medium uppercase tracking-widest" style={{ color: "rgb(140, 84, 98)" }}>
                 {range.name}
               </p>
-              <h1 className="text-3xl font-bold tracking-tight text-stone-900 md:text-4xl">
+              <h1 className="font-heading text-5xl md:text-6xl tracking-tight mb-6" style={{ color: "rgb(93, 82, 75)" }}>
                 {product.name}
               </h1>
 
-              <div className="mt-3 flex flex-wrap gap-2">
-                <span className="rounded-full bg-stone-100 px-3 py-1 text-xs font-medium text-stone-600">
+              <div className="mb-8 flex flex-wrap gap-3">
+                <span
+                  className="rounded-sm px-4 py-2 text-sm font-medium"
+                  style={{ backgroundColor: "rgb(245, 238, 224)", color: "rgb(93, 82, 75)" }}
+                >
                   {product.style}
                 </span>
-                <span className="rounded-full bg-stone-100 px-3 py-1 text-xs font-medium text-stone-600">
+                <span
+                  className="rounded-sm px-4 py-2 text-sm font-medium"
+                  style={{ backgroundColor: "rgb(245, 238, 224)", color: "rgb(93, 82, 75)" }}
+                >
                   {product.format}
                 </span>
-                <span className="rounded-full bg-brand/10 px-3 py-1 text-xs font-medium text-brand">
+                <span
+                  className="rounded-sm px-4 py-2 text-sm font-medium"
+                  style={{ backgroundColor: "rgb(140, 84, 98)", color: "white" }}
+                >
                   {product.colourways.length} colourways
                 </span>
               </div>
 
-              <p className="mt-5 text-base leading-relaxed text-stone-500">
+              <p className="mb-8 text-lg leading-relaxed" style={{ color: "rgb(93, 82, 75)" }}>
                 {product.description}
               </p>
 
-              <div className="mt-6 flex flex-wrap gap-3">
+              <div className="flex flex-wrap gap-4">
                 <Link
                   href="/contact"
-                  className="inline-flex items-center justify-center rounded-md bg-brand px-5 py-2.5 text-sm font-semibold text-white transition-colors hover:bg-brand-dark"
+                  className="inline-flex items-center justify-center rounded-sm px-6 py-3 text-base font-semibold text-white transition-all hover:opacity-90"
+                  style={{ backgroundColor: "rgb(140, 84, 98)" }}
                 >
                   Request a Quote
                 </Link>
@@ -121,10 +137,11 @@ export default async function ProductPage({ params }: ProductPageProps) {
                   href={range.manufacturerUrl}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center justify-center gap-2 rounded-md border border-stone-200 px-5 py-2.5 text-sm font-medium text-stone-600 transition-colors hover:border-stone-300 hover:text-stone-900"
+                  className="inline-flex items-center justify-center gap-2 rounded-sm border-2 px-6 py-3 text-base font-medium transition-all hover:opacity-80"
+                  style={{ borderColor: "rgb(93, 82, 75)", color: "rgb(93, 82, 75)" }}
                 >
                   View on {range.name}
-                  <ExternalLink className="size-3.5" />
+                  <ExternalLink className="size-4" />
                 </a>
               </div>
             </div>
@@ -133,61 +150,47 @@ export default async function ProductPage({ params }: ProductPageProps) {
       </section>
 
       {/* Colourways grid */}
-      <section className="bg-white">
-        <div className="mx-auto max-w-[1280px] px-6 py-16 md:py-20 lg:px-8">
-          <div className="mb-10">
-            <p className="text-xs font-semibold uppercase tracking-wider text-brand mb-2">Colourways</p>
-            <h2 className="text-2xl font-bold tracking-tight text-stone-900 md:text-3xl">
+      <section style={{ backgroundColor: "rgb(245, 238, 224)" }}>
+        <div className="mx-auto max-w-[1728px] px-6 py-24 md:py-32 lg:px-8">
+          <div className="mb-16">
+            <p className="mb-4 text-sm font-medium uppercase tracking-widest" style={{ color: "rgb(140, 84, 98)" }}>
+              Colourways
+            </p>
+            <h2 className="font-heading text-4xl md:text-5xl mb-6 tracking-tight" style={{ color: "rgb(93, 82, 75)" }}>
               {product.colourways.length} colours available
             </h2>
-            <p className="mt-2 text-sm text-stone-500">
+            <p className="text-lg" style={{ color: "rgb(93, 82, 75)" }}>
               Click any colourway for a closer look. Contact us for samples.
             </p>
           </div>
 
-          <div className="grid grid-cols-2 gap-4 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5">
-            {product.colourways.map((colourway) => (
-              <div
-                key={colourway.name}
-                className="group cursor-pointer overflow-hidden rounded-lg border border-stone-200/60 bg-cream/50 transition-all hover:border-brand/30 hover:shadow-md"
-              >
-                <div className="aspect-square overflow-hidden bg-stone-100">
-                  {/* eslint-disable-next-line @next/next/no-img-element */}
-                  <img
-                    src={colourway.image}
-                    alt={`${colourway.name} colourway`}
-                    className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
-                    loading="lazy"
-                  />
-                </div>
-                <div className="p-3">
-                  <p className="text-sm font-medium text-stone-800">{colourway.name}</p>
-                  {colourway.code && (
-                    <p className="text-xs text-stone-400">{colourway.code}</p>
-                  )}
-                </div>
-              </div>
-            ))}
-          </div>
+          <ColourwayGrid colourways={product.colourways} />
         </div>
       </section>
 
       {/* Technical Specifications */}
-      <section className="border-t border-stone-200/60 bg-cream">
-        <div className="mx-auto max-w-[1280px] px-6 py-16 md:py-20 lg:px-8">
-          <p className="text-xs font-semibold uppercase tracking-wider text-brand mb-2">Specifications</p>
-          <h2 className="text-2xl font-bold tracking-tight text-stone-900 mb-8 md:text-3xl">
+      <section style={{ backgroundColor: "rgb(247, 236, 217)" }}>
+        <div className="mx-auto max-w-[1728px] px-6 py-24 md:py-32 lg:px-8">
+          <p className="mb-4 text-sm font-medium uppercase tracking-widest" style={{ color: "rgb(140, 84, 98)" }}>
+            Specifications
+          </p>
+          <h2 className="font-heading text-4xl md:text-5xl mb-12 tracking-tight" style={{ color: "rgb(93, 82, 75)" }}>
             Technical Details
           </h2>
 
-          <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
+          <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
             {range.specs.map((spec) => (
               <div
                 key={spec.label}
-                className="rounded-lg border border-stone-200/60 bg-white p-4"
+                className="rounded-lg p-6"
+                style={{ backgroundColor: "rgb(254, 249, 237)" }}
               >
-                <p className="text-lg font-bold text-stone-900">{spec.value}</p>
-                <p className="mt-0.5 text-xs text-stone-400">{spec.label}</p>
+                <p className="text-3xl font-bold" style={{ color: "rgb(93, 82, 75)" }}>
+                  {spec.value}
+                </p>
+                <p className="mt-3 text-sm uppercase tracking-wide" style={{ color: "rgb(140, 84, 98)" }}>
+                  {spec.label}
+                </p>
               </div>
             ))}
           </div>
@@ -195,23 +198,27 @@ export default async function ProductPage({ params }: ProductPageProps) {
       </section>
 
       {/* Request sample CTA */}
-      <section className="bg-white">
-        <div className="mx-auto max-w-[1280px] px-6 py-16 md:py-20 lg:px-8">
-          <div className="flex flex-col items-start gap-6 rounded-lg border border-stone-200/60 bg-cream p-8 lg:flex-row lg:items-center lg:justify-between lg:p-10">
+      <section style={{ backgroundColor: "rgb(254, 249, 237)" }}>
+        <div className="mx-auto max-w-[1728px] px-6 py-24 md:py-32 lg:px-8">
+          <div
+            className="flex flex-col items-start gap-8 rounded-lg p-12 lg:flex-row lg:items-center lg:justify-between"
+            style={{ backgroundColor: "rgb(245, 238, 224)" }}
+          >
             <div>
-              <h2 className="text-xl font-bold text-stone-900">
+              <h2 className="font-heading text-3xl mb-4" style={{ color: "rgb(93, 82, 75)" }}>
                 Need a sample?
               </h2>
-              <p className="mt-2 max-w-xl text-sm leading-relaxed text-stone-500">
+              <p className="max-w-2xl text-lg leading-relaxed" style={{ color: "rgb(93, 82, 75)" }}>
                 We can send you physical samples of {product.name} to help you make the right decision. Just let us know which colourways you&apos;re interested in.
               </p>
             </div>
             <Link
               href="/contact"
-              className="inline-flex items-center gap-2 rounded-md bg-brand px-5 py-2.5 text-sm font-semibold text-white transition-colors hover:bg-brand-dark"
+              className="inline-flex items-center gap-2 rounded-sm px-6 py-3 text-base font-semibold text-white transition-all hover:opacity-90"
+              style={{ backgroundColor: "rgb(140, 84, 98)" }}
             >
               Request Samples
-              <ArrowRight className="size-4" />
+              <ArrowRight className="size-5" />
             </Link>
           </div>
         </div>
@@ -225,22 +232,24 @@ export default async function ProductPage({ params }: ProductPageProps) {
 
       {/* Other products in this range */}
       {otherProducts.length > 0 && (
-        <section className="bg-cream">
-          <div className="mx-auto max-w-[1280px] px-6 py-16 md:py-20 lg:px-8">
-            <p className="text-xs font-semibold uppercase tracking-wider text-brand mb-2">Also in {range.name}</p>
-            <h2 className="text-2xl font-bold tracking-tight text-stone-900 mb-8 md:text-3xl">
+        <section style={{ backgroundColor: "rgb(247, 236, 217)" }}>
+          <div className="mx-auto max-w-[1728px] px-6 py-24 md:py-32 lg:px-8">
+            <p className="mb-4 text-sm font-medium uppercase tracking-widest" style={{ color: "rgb(140, 84, 98)" }}>
+              Also in {range.name}
+            </p>
+            <h2 className="font-heading text-4xl md:text-5xl mb-12 tracking-tight" style={{ color: "rgb(93, 82, 75)" }}>
               Other products
             </h2>
 
-            <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
+            <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
               {otherProducts.slice(0, 6).map((other) => (
                 <Link
                   key={other.slug}
                   href={`/ranges/${range.slug}/${other.slug}`}
-                  className="group flex items-center gap-4 rounded-lg border border-stone-200/60 bg-white p-4 transition-all hover:border-brand/30 hover:shadow-md"
+                  className="group flex items-center gap-4 rounded-lg p-6 transition-all duration-300 hover:-translate-y-1"
+                  style={{ backgroundColor: "rgb(254, 249, 237)" }}
                 >
-                  <div className="size-16 shrink-0 overflow-hidden rounded-md bg-stone-100">
-                    {/* eslint-disable-next-line @next/next/no-img-element */}
+                  <div className="size-20 shrink-0 overflow-hidden rounded-lg bg-gray-100">
                     <img
                       src={other.image}
                       alt={other.name}
@@ -249,10 +258,12 @@ export default async function ProductPage({ params }: ProductPageProps) {
                     />
                   </div>
                   <div className="min-w-0">
-                    <h3 className="text-sm font-bold text-stone-900 transition-colors group-hover:text-brand">
+                    <h3 className="font-heading text-lg transition-colors group-hover:" style={{ color: "rgb(93, 82, 75)" }}>
                       {other.name}
                     </h3>
-                    <p className="text-xs text-stone-400">{other.colourways.length} colourways</p>
+                    <p className="mt-1 text-sm" style={{ color: "rgb(140, 84, 98)" }}>
+                      {other.colourways.length} colourways
+                    </p>
                   </div>
                 </Link>
               ))}

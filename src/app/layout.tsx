@@ -1,13 +1,8 @@
 import type { Metadata } from "next";
-import { GeistSans } from "geist/font/sans";
-import { GeistMono } from "geist/font/mono";
 import Header from "@/components/header";
 import Footer from "@/components/footer";
 import { StickyMobileCTA } from "@/components/sticky-mobile-cta";
 import "./globals.css";
-
-const geistSans = GeistSans;
-const geistMono = GeistMono;
 
 export const metadata: Metadata = {
   title: {
@@ -52,13 +47,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html
-      lang="en"
-      className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
-    >
-      <body className="flex min-h-full flex-col">
+    <html lang="en" className="h-full antialiased">
+      <body className="flex min-h-full flex-col font-sans">
         <Header />
-        <main className="flex-1 pt-16 pb-14 md:pb-0">{children}</main>
+        <main className="flex-1 pt-14 pb-14 md:pb-0">{children}</main>
         <Footer />
         <StickyMobileCTA />
       </body>

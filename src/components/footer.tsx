@@ -36,44 +36,71 @@ const premrestSites = [
 
 export default function Footer() {
   return (
-    <footer className="bg-stone-900 text-stone-400">
+    <footer
+      className="border-t"
+      style={{
+        backgroundColor: "rgb(254, 249, 237)",
+        borderColor: "rgb(220, 210, 200)",
+      }}
+    >
       {/* Main footer */}
-      <div className="mx-auto max-w-[1280px] px-6 pt-16 pb-10 lg:px-8">
+      <div className="mx-auto max-w-[1728px] px-6 pt-16 pb-8 lg:px-8">
         {/* Brand + columns */}
-        <div className="grid grid-cols-1 gap-10 lg:grid-cols-[1.4fr_1fr_1fr_1fr_1fr] lg:gap-8">
+        <div className="grid grid-cols-1 gap-12 md:grid-cols-2 lg:grid-cols-[1.4fr_1fr_1fr_1fr_1fr] lg:gap-10">
           {/* Brand column */}
           <div className="lg:pr-8">
-            <Link href="/" className="inline-flex items-baseline gap-1.5">
-              <span className="text-lg font-bold tracking-tight text-white">
+            <Link href="/" className="inline-flex flex-col gap-2">
+              <span
+                className="font-serif text-base font-bold tracking-tight"
+                style={{ color: "rgb(93, 82, 75)" }}
+              >
                 Vinyl Tiles
               </span>
-              <span className="text-[0.6875rem] font-medium uppercase tracking-[0.12em] text-brand-light">
+              <span
+                className="text-xs font-normal uppercase tracking-[0.08em]"
+                style={{
+                  color: "rgb(140, 84, 98)",
+                  fontFamily: "'Red Hat Mono', monospace",
+                }}
+              >
                 by Premrest
               </span>
             </Link>
-            <p className="mt-4 max-w-xs text-sm leading-relaxed text-stone-500">
+            <p
+              className="mt-5 max-w-xs text-xs leading-relaxed"
+              style={{ color: "rgb(130, 115, 105)" }}
+            >
               Commercial vinyl tile flooring, supplied and installed. We find the
               right product, get it to site, and lay it properly. A{" "}
               <a
                 href="https://www.premrest.com.au"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-stone-400 underline decoration-stone-700 transition-colors hover:text-white"
+                className="transition-colors hover:underline"
+                style={{ color: "rgb(93, 82, 75)" }}
               >
                 Premrest
               </a>{" "}
               business.
             </p>
-            <div className="mt-6 space-y-1.5">
+            <div className="mt-6 space-y-2">
               <a
                 href="tel:1300207915"
-                className="block text-sm font-medium text-stone-300 transition-colors hover:text-white"
+                className="block text-xs transition-colors hover:opacity-70"
+                style={{
+                  color: "rgb(93, 82, 75)",
+                  fontFamily: "'Red Hat Mono', monospace",
+                }}
               >
                 1300 207 915
               </a>
               <a
                 href="mailto:office@premrest.com.au"
-                className="block text-sm text-stone-500 transition-colors hover:text-white"
+                className="block text-xs transition-colors hover:opacity-70"
+                style={{
+                  color: "rgb(130, 115, 105)",
+                  fontFamily: "'Red Hat Mono', monospace",
+                }}
               >
                 office@premrest.com.au
               </a>
@@ -82,15 +109,22 @@ export default function Footer() {
 
           {/* Ranges */}
           <div>
-            <h3 className="mb-4 text-xs font-semibold uppercase tracking-wider text-stone-500">
+            <h3
+              className="mb-5 text-xs font-normal uppercase tracking-[0.1em]"
+              style={{
+                color: "rgb(93, 82, 75)",
+                fontFamily: "'Red Hat Mono', monospace",
+              }}
+            >
               Ranges
             </h3>
-            <ul className="space-y-2.5">
+            <ul className="space-y-3">
               {ranges.map((range) => (
                 <li key={range.slug}>
                   <Link
                     href={`/ranges/${range.slug}`}
-                    className="text-sm text-stone-400 transition-colors hover:text-white"
+                    className="text-xs transition-colors hover:opacity-70"
+                    style={{ color: "rgb(93, 82, 75)" }}
                   >
                     {range.name}
                   </Link>
@@ -99,17 +133,24 @@ export default function Footer() {
             </ul>
           </div>
 
-          {/* Sectors */}
+          {/* Solutions */}
           <div>
-            <h3 className="mb-4 text-xs font-semibold uppercase tracking-wider text-stone-500">
+            <h3
+              className="mb-5 text-xs font-normal uppercase tracking-[0.1em]"
+              style={{
+                color: "rgb(93, 82, 75)",
+                fontFamily: "'Red Hat Mono', monospace",
+              }}
+            >
               Solutions
             </h3>
-            <ul className="space-y-2.5">
+            <ul className="space-y-3">
               {solutions.map((solution) => (
                 <li key={solution.href}>
                   <Link
                     href={solution.href}
-                    className="text-sm text-stone-400 transition-colors hover:text-white"
+                    className="text-xs transition-colors hover:opacity-70"
+                    style={{ color: "rgb(93, 82, 75)" }}
                   >
                     {solution.name}
                   </Link>
@@ -120,15 +161,22 @@ export default function Footer() {
 
           {/* Resources */}
           <div>
-            <h3 className="mb-4 text-xs font-semibold uppercase tracking-wider text-stone-500">
+            <h3
+              className="mb-5 text-xs font-normal uppercase tracking-[0.1em]"
+              style={{
+                color: "rgb(93, 82, 75)",
+                fontFamily: "'Red Hat Mono', monospace",
+              }}
+            >
               Resources
             </h3>
-            <ul className="space-y-2.5">
+            <ul className="space-y-3">
               {resources.map((resource) => (
                 <li key={resource.href}>
                   <Link
                     href={resource.href}
-                    className="text-sm text-stone-400 transition-colors hover:text-white"
+                    className="text-xs transition-colors hover:opacity-70"
+                    style={{ color: "rgb(93, 82, 75)" }}
                   >
                     {resource.name}
                   </Link>
@@ -137,22 +185,29 @@ export default function Footer() {
             </ul>
           </div>
 
-          {/* Premrest family */}
+          {/* Premrest Group */}
           <div>
-            <h3 className="mb-4 text-xs font-semibold uppercase tracking-wider text-stone-500">
+            <h3
+              className="mb-5 text-xs font-normal uppercase tracking-[0.1em]"
+              style={{
+                color: "rgb(93, 82, 75)",
+                fontFamily: "'Red Hat Mono', monospace",
+              }}
+            >
               Premrest Group
             </h3>
-            <ul className="space-y-2.5">
+            <ul className="space-y-3">
               {premrestSites.map((site) => (
                 <li key={site.url}>
                   <a
                     href={site.url}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-flex items-center gap-1 text-sm text-stone-400 transition-colors hover:text-white"
+                    className="inline-flex items-center gap-1.5 text-xs transition-colors hover:opacity-70"
+                    style={{ color: "rgb(93, 82, 75)" }}
                   >
                     {site.name}
-                    <ArrowUpRight className="size-3 opacity-40" />
+                    <ArrowUpRight className="size-3" style={{ opacity: 0.5 }} />
                   </a>
                 </li>
               ))}
@@ -161,19 +216,20 @@ export default function Footer() {
         </div>
 
         {/* Bottom bar */}
-        <div className="mt-12 flex flex-col items-start justify-between gap-3 border-t border-stone-800 pt-6 sm:flex-row sm:items-center">
-          <p className="text-xs text-stone-600">
-            &copy; 2026 Premier Restorations Group Pty Ltd trading as Premrest |
-            ABN 27 634 747 952 | All rights reserved.
-          </p>
-          <a
-            href="https://www.premrest.com.au"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-xs font-medium text-stone-500 transition-colors hover:text-white"
+        <div
+          className="mt-12 flex flex-col items-start justify-between gap-4 border-t pt-6 sm:flex-row sm:items-center"
+          style={{ borderColor: "rgb(220, 210, 200)" }}
+        >
+          <p
+            className="text-xs"
+            style={{
+              color: "rgb(130, 115, 105)",
+              fontFamily: "'Red Hat Mono', monospace",
+            }}
           >
-            premrest.com.au
-          </a>
+            &copy; 2026 Premier Restorations Group Pty Ltd trading as Premrest |
+            ABN 27 634 747 952
+          </p>
         </div>
       </div>
     </footer>

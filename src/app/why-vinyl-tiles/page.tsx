@@ -78,53 +78,44 @@ export default function WhyVinylTilesPage() {
       />
 
       {/* Hero */}
-      <section className="bg-cream">
-        <div className="mx-auto max-w-[1280px] px-6 py-16 md:py-20 lg:px-8">
-          <p className="text-xs font-semibold uppercase tracking-wider text-brand mb-3">
+      <section style={{ backgroundColor: "rgb(251, 211, 190)" }}>
+        <div className="mx-auto max-w-[1728px] px-6 py-24 md:py-32 lg:py-40 lg:px-8">
+          <p className="text-xs font-semibold uppercase tracking-wider mb-6" style={{ color: "rgb(140, 84, 98)" }}>
             The Complete Guide
           </p>
-          <h1 className="text-4xl font-bold tracking-tight text-stone-900 max-w-4xl md:text-5xl">
+          <h1 className="font-heading tracking-tight max-w-4xl mb-8" style={{ fontSize: "clamp(2.5rem, 6vw, 4.5rem)", color: "rgb(93, 82, 75)" }}>
             Why vinyl tile works.
           </h1>
-          <p className="mt-4 max-w-xl text-lg leading-relaxed text-stone-500">
+          <p className="font-sans max-w-xl text-lg leading-relaxed" style={{ color: "rgb(93, 82, 75)" }}>
             It's durable, easy to maintain, and the maths make sense. Here's what you need to know.
           </p>
         </div>
       </section>
 
       {/* Why Vinyl Over Alternatives */}
-      <section className="bg-white">
-        <div className="mx-auto max-w-[1280px] px-6 py-20 md:py-28 lg:px-8">
-          <div className="grid gap-12 lg:grid-cols-[1fr_1.8fr] lg:gap-20">
+      <section style={{ backgroundColor: "rgb(254, 249, 237)" }}>
+        <div className="mx-auto max-w-[1728px] px-6 py-24 md:py-32 lg:py-40 lg:px-8">
+          <div className="grid gap-16 lg:grid-cols-[1fr_1.8fr] lg:gap-24">
             <div>
-              <p className="text-xs font-semibold uppercase tracking-wider text-brand mb-3">
+              <p className="text-xs font-semibold uppercase tracking-wider mb-6" style={{ color: "rgb(140, 84, 98)" }}>
                 Vs. Alternatives
               </p>
-              <h2 className="text-3xl font-bold tracking-tight text-stone-900 md:text-4xl">
+              <h2 className="font-heading tracking-tight max-w-xl" style={{ fontSize: "clamp(1.875rem, 4vw, 3rem)", color: "rgb(93, 82, 75)" }}>
                 How it stacks up.
               </h2>
             </div>
-            <div className="space-y-5">
-              <p className="text-base leading-relaxed text-stone-500">
+            <div className="space-y-6 font-sans">
+              <p className="text-base leading-relaxed" style={{ color: "rgb(93, 82, 75)" }}>
                 Most commercial projects come down to carpet, timber, concrete, or vinyl. Vinyl wins on what matters: lifecycle cost, maintenance burden, speed of install, and design options.
               </p>
-              <p className="text-base leading-relaxed text-stone-500">
-                <strong className="font-semibold text-stone-800">
-                  Carpet:
-                </strong>{" "}
-                Traps dirt and allergens, needs regular deep cleaning, wears out in 7–10 years. Vinyl just needs mopping and lasts 15–25 years.
+              <p className="text-base leading-relaxed" style={{ color: "rgb(93, 82, 75)" }}>
+                <strong className="font-semibold">Carpet:</strong> Traps dirt and allergens, needs regular deep cleaning, wears out in 7–10 years. Vinyl just needs mopping and lasts 15–25 years.
               </p>
-              <p className="text-base leading-relaxed text-stone-500">
-                <strong className="font-semibold text-stone-800">
-                  Engineered timber:
-                </strong>{" "}
-                Looks good, but it scratches, doesn't handle moisture well, and costs more. Modern vinyl looks nearly identical and costs a fraction of the price. Plus it won't warp.
+              <p className="text-base leading-relaxed" style={{ color: "rgb(93, 82, 75)" }}>
+                <strong className="font-semibold">Engineered timber:</strong> Looks good, but it scratches, doesn't handle moisture well, and costs more. Modern vinyl looks nearly identical and costs a fraction of the price. Plus it won't warp.
               </p>
-              <p className="text-base leading-relaxed text-stone-500">
-                <strong className="font-semibold text-stone-800">
-                  Polished concrete:
-                </strong>{" "}
-                Feels cold and hard underfoot. Vinyl is warmer, quieter, and kinder to joints — important when people are on their feet all day. You can also change the look without ripping up the floor.
+              <p className="text-base leading-relaxed" style={{ color: "rgb(93, 82, 75)" }}>
+                <strong className="font-semibold">Polished concrete:</strong> Feels cold and hard underfoot. Vinyl is warmer, quieter, and kinder to joints — important when people are on their feet all day. You can also change the look without ripping up the floor.
               </p>
             </div>
           </div>
@@ -132,19 +123,19 @@ export default function WhyVinylTilesPage() {
       </section>
 
       {/* LVT vs VCT vs Vinyl Plank */}
-      <section className="bg-cream">
-        <div className="mx-auto max-w-[1280px] px-6 py-20 md:py-28 lg:px-8">
-          <p className="text-xs font-semibold uppercase tracking-wider text-brand mb-3">
+      <section style={{ backgroundColor: "rgb(247, 236, 217)" }}>
+        <div className="mx-auto max-w-[1728px] px-6 py-24 md:py-32 lg:py-40 lg:px-8">
+          <p className="text-xs font-semibold uppercase tracking-wider mb-6" style={{ color: "rgb(140, 84, 98)" }}>
             Product Types
           </p>
-          <h2 className="text-3xl font-bold tracking-tight text-stone-900 mb-3 max-w-2xl md:text-4xl">
+          <h2 className="font-heading tracking-tight mb-4 max-w-3xl" style={{ fontSize: "clamp(1.875rem, 4vw, 3rem)", color: "rgb(93, 82, 75)" }}>
             Three options. Pick the right one.
           </h2>
-          <p className="mb-12 max-w-2xl text-sm leading-relaxed text-stone-500">
+          <p className="font-sans mb-16 max-w-2xl text-base leading-relaxed" style={{ color: "rgb(93, 82, 75)" }}>
             LVT, VCT, or vinyl plank — each is built for different jobs.
           </p>
 
-          <div className="grid gap-4 md:grid-cols-3">
+          <div className="grid gap-8 md:grid-cols-3">
             {[
               {
                 title: "LVT",
@@ -153,7 +144,7 @@ export default function WhyVinylTilesPage() {
                 lifespan: "15–20 years",
                 visuals: "Photographic design layer with realistic reproductions",
                 cost: "Higher — premium finish and performance",
-                format: "Square tiles, 457\u00d7457mm or 500\u00d7500mm",
+                format: "Square tiles, 457×457mm or 500×500mm",
               },
               {
                 title: "VCT",
@@ -161,8 +152,8 @@ export default function WhyVinylTilesPage() {
                 best: "High-traffic utility — hospitals, schools, warehouses, corridors",
                 lifespan: "20–30 years",
                 visuals: "Solid colours and subtle patterns throughout the tile body",
-                cost: "Budget-friendly — lowest cost per m\u00B2",
-                format: "Square tiles, 305\u00d7305mm",
+                cost: "Budget-friendly — lowest cost per m²",
+                format: "Square tiles, 305×305mm",
               },
               {
                 title: "Vinyl Plank",
@@ -171,18 +162,24 @@ export default function WhyVinylTilesPage() {
                 lifespan: "15–20 years",
                 visuals: "Realistic timber grain with embossed-in-register textures",
                 cost: "Mid-range — strong value for the aesthetic outcome",
-                format: "Plank, 185\u00d71220mm or 228\u00d71219mm",
+                format: "Plank, 185×1220mm or 228×1219mm",
               },
             ].map((type) => (
               <div
                 key={type.title}
-                className="rounded-lg border border-stone-200/60 bg-white p-6 lg:p-8"
+                className="rounded-2xl border p-8 lg:p-10 font-sans"
+                style={{
+                  backgroundColor: "rgb(254, 249, 237)",
+                  borderColor: "rgba(140, 84, 98, 0.15)",
+                }}
               >
-                <h3 className="text-xl font-bold tracking-tight text-stone-900">
+                <h3 className="font-heading text-xl tracking-tight mb-2" style={{ color: "rgb(93, 82, 75)" }}>
                   {type.title}
                 </h3>
-                <p className="mt-1 text-sm text-stone-400">{type.subtitle}</p>
-                <dl className="mt-6 space-y-4">
+                <p className="text-sm mb-6" style={{ color: "rgb(140, 84, 98)" }}>
+                  {type.subtitle}
+                </p>
+                <dl className="space-y-5">
                   {[
                     ["Best for", type.best],
                     ["Lifespan", type.lifespan],
@@ -191,10 +188,10 @@ export default function WhyVinylTilesPage() {
                     ["Format", type.format],
                   ].map(([label, value]) => (
                     <div key={label}>
-                      <dt className="text-xs font-semibold uppercase tracking-wider text-stone-400">
+                      <dt className="text-xs font-semibold uppercase tracking-wider mb-2" style={{ color: "rgb(140, 84, 98)" }}>
                         {label}
                       </dt>
-                      <dd className="mt-1 text-sm leading-relaxed text-stone-700">
+                      <dd className="text-sm leading-relaxed" style={{ color: "rgb(93, 82, 75)" }}>
                         {value}
                       </dd>
                     </div>
@@ -207,19 +204,19 @@ export default function WhyVinylTilesPage() {
       </section>
 
       {/* Technical Specs */}
-      <section className="bg-white">
-        <div className="mx-auto max-w-[1280px] px-6 py-20 md:py-28 lg:px-8">
-          <div className="grid gap-12 lg:grid-cols-[1fr_1.8fr] lg:gap-20">
+      <section style={{ backgroundColor: "rgb(254, 249, 237)" }}>
+        <div className="mx-auto max-w-[1728px] px-6 py-24 md:py-32 lg:py-40 lg:px-8">
+          <div className="grid gap-16 lg:grid-cols-[1fr_1.8fr] lg:gap-24">
             <div>
-              <p className="text-xs font-semibold uppercase tracking-wider text-brand mb-3">
+              <p className="text-xs font-semibold uppercase tracking-wider mb-6" style={{ color: "rgb(140, 84, 98)" }}>
                 Technical
               </p>
-              <h2 className="text-3xl font-bold tracking-tight text-stone-900 md:text-4xl">
+              <h2 className="font-heading tracking-tight max-w-xl" style={{ fontSize: "clamp(1.875rem, 4vw, 3rem)", color: "rgb(93, 82, 75)" }}>
                 What you need to know.
               </h2>
             </div>
 
-            <div className="space-y-12">
+            <div className="space-y-12 font-sans">
               {[
                 {
                   title: "Wear Layers: 0.3mm to 0.7mm",
@@ -242,11 +239,11 @@ export default function WhyVinylTilesPage() {
                     "Cfl-s1 is fine for most commercial areas — offices, retail, healthcare. Bfl-s1 is required for escape routes and corridors. Always check with your building certifier on what your project needs.",
                 },
               ].map((spec) => (
-                <div key={spec.title} className="border-t border-stone-200/60 pt-6">
-                  <h3 className="text-base font-bold text-stone-900">
+                <div key={spec.title} className="pt-6 border-t" style={{ borderColor: "rgba(140, 84, 98, 0.15)" }}>
+                  <h3 className="font-heading text-base tracking-tight mb-4" style={{ color: "rgb(93, 82, 75)" }}>
                     {spec.title}
                   </h3>
-                  <p className="mt-3 text-base leading-relaxed text-stone-500">
+                  <p className="text-base leading-relaxed" style={{ color: "rgb(93, 82, 75)" }}>
                     {spec.content}
                   </p>
                 </div>
@@ -257,38 +254,38 @@ export default function WhyVinylTilesPage() {
       </section>
 
       {/* Sustainability + Lifecycle */}
-      <section className="bg-stone-900">
-        <div className="mx-auto max-w-[1280px] px-6 py-20 md:py-28 lg:px-8">
-          <div className="grid gap-12 lg:grid-cols-2 lg:gap-20">
+      <section style={{ backgroundColor: "rgb(93, 82, 75)" }}>
+        <div className="mx-auto max-w-[1728px] px-6 py-24 md:py-32 lg:py-40 lg:px-8">
+          <div className="grid gap-16 lg:grid-cols-2 lg:gap-24">
             <div>
-              <p className="text-xs font-semibold uppercase tracking-wider text-brand-light mb-3">
+              <p className="text-xs font-semibold uppercase tracking-wider mb-6" style={{ color: "rgb(251, 211, 190)" }}>
                 Sustainability
               </p>
-              <h2 className="text-3xl font-bold tracking-tight text-white mb-6 md:text-4xl">
+              <h2 className="font-heading tracking-tight mb-8" style={{ fontSize: "clamp(1.875rem, 4vw, 3rem)", color: "rgb(254, 249, 237)" }}>
                 Made better now.
               </h2>
-              <div className="space-y-4">
-                <p className="text-sm leading-relaxed text-stone-400">
+              <div className="space-y-4 font-sans">
+                <p className="text-base leading-relaxed" style={{ color: "rgb(254, 249, 237)" }}>
                   Most major manufacturers now include up to 30% recycled content. Many carry FloorScore certification for low VOC — essential if you're chasing Green Star or WELL.
                 </p>
-                <p className="text-sm leading-relaxed text-stone-400">
+                <p className="text-base leading-relaxed" style={{ color: "rgb(254, 249, 237)" }}>
                   Cradle to Cradle certified options are expanding. They demonstrate commitment to material health, renewable energy, water stewardship, and fair practices.
                 </p>
               </div>
             </div>
 
             <div>
-              <p className="text-xs font-semibold uppercase tracking-wider text-brand-light mb-3">
+              <p className="text-xs font-semibold uppercase tracking-wider mb-6" style={{ color: "rgb(251, 211, 190)" }}>
                 Lifecycle Cost
               </p>
-              <h2 className="text-3xl font-bold tracking-tight text-white mb-6 md:text-4xl">
+              <h2 className="font-heading tracking-tight mb-8" style={{ fontSize: "clamp(1.875rem, 4vw, 3rem)", color: "rgb(254, 249, 237)" }}>
                 The real number.
               </h2>
-              <div className="space-y-4">
-                <p className="text-sm leading-relaxed text-stone-400">
-                  Supply from <span className="font-semibold text-white">$45/m&sup2;</span>, installation from <span className="font-semibold text-white">$18/m&sup2;</span>. Over 15–20 years, the annual cost is genuinely low.
+              <div className="space-y-4 font-sans">
+                <p className="text-base leading-relaxed" style={{ color: "rgb(254, 249, 237)" }}>
+                  Supply from <span className="font-semibold">$45/m&sup2;</span>, installation from <span className="font-semibold">$18/m&sup2;</span>. Over 15–20 years, the annual cost is genuinely low.
                 </p>
-                <p className="text-sm leading-relaxed text-stone-400">
+                <p className="text-base leading-relaxed" style={{ color: "rgb(254, 249, 237)" }}>
                   Carpet costs 40–60% more over 20 years when you factor in replacement and maintenance. Engineered timber sits at $80–$120/m&sup2; plus ongoing sanding and refinishing. Vinyl gives you the look at a fraction of the cost.
                 </p>
               </div>
@@ -298,24 +295,29 @@ export default function WhyVinylTilesPage() {
       </section>
 
       {/* FAQ */}
-      <section className="bg-cream">
-        <div className="mx-auto max-w-[1280px] px-6 py-20 md:py-28 lg:px-8">
-          <div className="grid gap-12 lg:grid-cols-[1fr_1.8fr] lg:gap-20">
+      <section style={{ backgroundColor: "rgb(254, 249, 237)" }}>
+        <div className="mx-auto max-w-[1728px] px-6 py-24 md:py-32 lg:py-40 lg:px-8">
+          <div className="grid gap-16 lg:grid-cols-[1fr_1.8fr] lg:gap-24">
             <div>
-              <p className="text-xs font-semibold uppercase tracking-wider text-brand mb-3">FAQ</p>
-              <h2 className="text-3xl font-bold tracking-tight text-stone-900 md:text-4xl">
+              <p className="text-xs font-semibold uppercase tracking-wider mb-6" style={{ color: "rgb(140, 84, 98)" }}>
+                FAQ
+              </p>
+              <h2 className="font-heading tracking-tight max-w-xl" style={{ fontSize: "clamp(1.875rem, 4vw, 3rem)", color: "rgb(93, 82, 75)" }}>
                 Common questions.
               </h2>
             </div>
 
-            <div>
-              <Accordion className="divide-y divide-stone-200/80">
+            <div className="font-sans">
+              <Accordion className="divide-y" style={{ borderColor: "rgba(140, 84, 98, 0.15)" }}>
                 {faqItems.map((item, index) => (
                   <AccordionItem key={index} value={`faq-${index}`}>
-                    <AccordionTrigger className="py-5 text-sm font-semibold text-stone-900 hover:text-brand">
+                    <AccordionTrigger
+                      className="py-5 text-sm font-semibold hover:opacity-70"
+                      style={{ color: "rgb(93, 82, 75)" }}
+                    >
                       {item.question}
                     </AccordionTrigger>
-                    <AccordionContent className="pb-5 text-sm leading-relaxed text-stone-500">
+                    <AccordionContent className="pb-5 text-sm leading-relaxed" style={{ color: "rgb(93, 82, 75)" }}>
                       <p>{item.answer}</p>
                     </AccordionContent>
                   </AccordionItem>

@@ -15,23 +15,23 @@ export function QuoteCta({
   buttonHref = "/contact",
 }: QuoteCtaProps) {
   return (
-    <section className="bg-brand">
-      <div className="mx-auto max-w-[1280px] px-6 py-16 md:py-20 lg:px-8">
-        <div className="flex flex-col items-start gap-8 lg:flex-row lg:items-center lg:justify-between">
-          <div>
-            <h2 className="text-2xl font-bold tracking-tight text-white md:text-3xl">
+    <section style={{ backgroundColor: 'rgb(140, 84, 98)' }}>
+      <div className="mx-auto max-w-[1728px] px-6 py-20 md:py-28 lg:px-8">
+        <div className="flex flex-col items-start gap-12 lg:flex-row lg:items-center lg:justify-between">
+          <div className="flex-1">
+            <h2 className="font-heading text-4xl font-bold leading-tight text-white md:text-5xl">
               {title}
             </h2>
-            <p className="mt-3 max-w-lg text-base leading-relaxed text-white/70">
+            <p className="mt-5 max-w-xl text-lg leading-relaxed text-white/85">
               {description}
             </p>
           </div>
           <Link
             href={buttonHref}
-            className="inline-flex items-center gap-2 rounded-md bg-white px-6 py-3 text-sm font-semibold text-stone-900 transition-colors hover:bg-stone-50"
+            className="inline-flex items-center gap-3 rounded-lg bg-white px-8 py-4 text-base font-semibold text-stone-900 transition-all duration-500 hover:shadow-lg hover:scale-105 flex-shrink-0"
           >
             {buttonText}
-            <ArrowRight className="size-4" />
+            <ArrowRight className="size-5" />
           </Link>
         </div>
       </div>
