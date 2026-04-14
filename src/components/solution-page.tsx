@@ -14,16 +14,22 @@ export function SolutionPage({ solution }: SolutionPageProps) {
   return (
     <>
       {/* Hero Section */}
-      <section style={{ backgroundColor: 'rgb(254, 249, 237)' }}>
-        <div className="mx-auto max-w-[1728px] px-6 py-20 md:py-32 lg:px-8">
-          <div className="max-w-4xl">
-            <p className="text-xs font-semibold uppercase tracking-widest mb-4" style={{ color: 'rgb(140, 84, 98)' }}>
+      <section className="bg-subtle-lines" style={{ backgroundColor: "rgb(248, 245, 237)" }}>
+        <div className="mx-auto max-w-[1440px] px-6 pb-20 pt-28 md:pb-28 md:pt-36 lg:px-10">
+          <div className="max-w-3xl">
+            <p
+              className="text-[11px] font-medium uppercase tracking-widest mb-4"
+              style={{ color: "rgb(120, 110, 100)" }}
+            >
               Flooring Solution
             </p>
-            <h1 className="font-heading text-5xl md:text-6xl font-bold leading-tight mb-6" style={{ color: 'rgb(93, 82, 75)' }}>
+            <h1
+              className="text-[clamp(2.25rem,5vw,3.5rem)] font-bold leading-tight tracking-tight mb-5"
+              style={{ color: "rgb(38, 35, 30)" }}
+            >
               {solution.title.replace(/^Vinyl Tile Flooring for /, "")}
             </h1>
-            <p className="text-xl leading-relaxed max-w-3xl" style={{ color: 'rgb(93, 82, 75)' }}>
+            <p className="text-lg leading-relaxed max-w-2xl" style={{ color: "rgb(82, 75, 68)" }}>
               {solution.subtitle}
             </p>
           </div>
@@ -31,20 +37,26 @@ export function SolutionPage({ solution }: SolutionPageProps) {
       </section>
 
       {/* Intro Content Section */}
-      <section className="bg-white">
-        <div className="mx-auto max-w-[1728px] px-6 py-20 md:py-32 lg:px-8">
-          <div className="grid gap-16 lg:grid-cols-[1fr_1.5fr] lg:gap-24 items-start">
+      <section style={{ backgroundColor: "rgb(252, 250, 245)" }}>
+        <div className="mx-auto max-w-[1440px] px-6 py-20 md:py-28 lg:px-10">
+          <div className="grid gap-14 lg:grid-cols-[1fr_1.5fr] lg:gap-20 items-start">
             <div>
-              <p className="text-xs font-semibold uppercase tracking-widest mb-4" style={{ color: 'rgb(140, 84, 98)' }}>
+              <p
+                className="text-[11px] font-medium uppercase tracking-widest mb-4"
+                style={{ color: "rgb(120, 110, 100)" }}
+              >
                 Why This Matters
               </p>
-              <h2 className="font-heading text-4xl md:text-5xl font-bold leading-tight" style={{ color: 'rgb(93, 82, 75)' }}>
+              <h2
+                className="text-[clamp(1.75rem,4vw,2.5rem)] font-bold leading-tight tracking-tight"
+                style={{ color: "rgb(38, 35, 30)" }}
+              >
                 The right floor for the job.
               </h2>
             </div>
-            <div className="space-y-7">
+            <div className="space-y-6">
               {solution.content.map((paragraph, index) => (
-                <p key={index} className="text-lg leading-relaxed" style={{ color: 'rgb(93, 82, 75)' }}>
+                <p key={index} className="text-[16px] leading-relaxed" style={{ color: "rgb(82, 75, 68)" }}>
                   {paragraph}
                 </p>
               ))}
@@ -54,27 +66,34 @@ export function SolutionPage({ solution }: SolutionPageProps) {
       </section>
 
       {/* Challenges/Requirements Section */}
-      <section style={{ backgroundColor: 'rgb(254, 249, 237)' }}>
-        <div className="mx-auto max-w-[1728px] px-6 py-20 md:py-32 lg:px-8">
-          <div className="mb-16">
-            <p className="text-xs font-semibold uppercase tracking-widest mb-4" style={{ color: 'rgb(140, 84, 98)' }}>
+      <section style={{ backgroundColor: "rgb(248, 245, 237)" }}>
+        <div className="mx-auto max-w-[1440px] px-6 py-20 md:py-28 lg:px-10">
+          <div className="mb-14">
+            <p
+              className="text-[11px] font-medium uppercase tracking-widest mb-4"
+              style={{ color: "rgb(120, 110, 100)" }}
+            >
               Key Demands
             </p>
-            <h2 className="font-heading text-4xl md:text-5xl font-bold leading-tight" style={{ color: 'rgb(93, 82, 75)' }}>
+            <h2
+              className="text-[clamp(1.75rem,4vw,2.5rem)] font-bold leading-tight tracking-tight"
+              style={{ color: "rgb(38, 35, 30)" }}
+            >
               What this sector requires.
             </h2>
           </div>
 
-          <div className="grid gap-5 md:grid-cols-2 lg:grid-cols-3">
+          <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
             {solution.requirements.map((requirement, i) => (
               <div
                 key={requirement}
-                className="rounded-xl p-8 border border-stone-200/40 transition-all duration-500 hover:shadow-md bg-white"
+                className="rounded-lg border border-[rgb(230,225,215)] p-7 transition-all duration-200 hover:border-[rgb(200,195,185)]"
+                style={{ backgroundColor: "rgb(252, 250, 245)" }}
               >
-                <span className="text-sm font-semibold" style={{ color: 'rgb(140, 84, 98)' }}>
+                <span className="text-[12px] font-semibold" style={{ color: "rgb(120, 110, 100)" }}>
                   {String(i + 1).padStart(2, "0")}
                 </span>
-                <p className="mt-4 text-base leading-relaxed" style={{ color: 'rgb(93, 82, 75)' }}>
+                <p className="mt-3 text-[15px] leading-relaxed" style={{ color: "rgb(55, 50, 45)" }}>
                   {requirement}
                 </p>
               </div>
@@ -84,31 +103,41 @@ export function SolutionPage({ solution }: SolutionPageProps) {
       </section>
 
       {/* Recommended Products Section */}
-      <section className="bg-white">
-        <div className="mx-auto max-w-[1728px] px-6 py-20 md:py-32 lg:px-8">
-          <div className="mb-16">
-            <p className="text-xs font-semibold uppercase tracking-widest mb-4" style={{ color: 'rgb(140, 84, 98)' }}>
+      <section style={{ backgroundColor: "rgb(252, 250, 245)" }}>
+        <div className="mx-auto max-w-[1440px] px-6 py-20 md:py-28 lg:px-10">
+          <div className="mb-14">
+            <p
+              className="text-[11px] font-medium uppercase tracking-widest mb-4"
+              style={{ color: "rgb(120, 110, 100)" }}
+            >
               Solutions
             </p>
-            <h2 className="font-heading text-4xl md:text-5xl font-bold leading-tight" style={{ color: 'rgb(93, 82, 75)' }}>
+            <h2
+              className="text-[clamp(1.75rem,4vw,2.5rem)] font-bold leading-tight tracking-tight"
+              style={{ color: "rgb(38, 35, 30)" }}
+            >
               Recommended products.
             </h2>
           </div>
 
-          <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+          <div className="grid gap-5 md:grid-cols-2 lg:grid-cols-3">
             {solution.recommendedProducts.map((product) => (
               <Link
                 key={product.slug}
                 href={`/ranges/${product.slug}`}
-                className="group rounded-xl border border-stone-200/40 p-8 transition-all duration-500 hover:shadow-lg hover:border-stone-200/80 bg-white"
+                className="group rounded-lg border border-[rgb(230,225,215)] p-7 transition-all duration-200 hover:border-[rgb(200,195,185)] hover:shadow-sm"
+                style={{ backgroundColor: "rgb(248, 245, 237)" }}
               >
-                <h3 className="font-heading text-2xl font-bold transition-colors duration-500" style={{ color: 'rgb(93, 82, 75)' }}>
+                <h3 className="text-lg font-bold tracking-tight" style={{ color: "rgb(38, 35, 30)" }}>
                   {product.name}
                 </h3>
-                <p className="mt-4 text-base leading-relaxed" style={{ color: 'rgb(93, 82, 75)' }}>
+                <p className="mt-3 text-[15px] leading-relaxed" style={{ color: "rgb(82, 75, 68)" }}>
                   {product.reason}
                 </p>
-                <span className="mt-6 inline-flex items-center gap-2 text-sm font-semibold transition-all duration-500 group-hover:gap-3" style={{ color: 'rgb(140, 84, 98)' }}>
+                <span
+                  className="mt-5 inline-flex items-center gap-2 text-[13px] font-semibold transition-all duration-200 group-hover:gap-3"
+                  style={{ color: "rgb(55, 50, 45)" }}
+                >
                   View Range
                   <ArrowRight className="size-4" />
                 </span>
@@ -125,13 +154,19 @@ export function SolutionPage({ solution }: SolutionPageProps) {
       />
 
       {/* Explore Other Sectors */}
-      <section style={{ backgroundColor: 'rgb(254, 249, 237)' }}>
-        <div className="mx-auto max-w-[1728px] px-6 py-20 md:py-32 lg:px-8">
-          <div className="mb-16">
-            <p className="text-xs font-semibold uppercase tracking-widest mb-4" style={{ color: 'rgb(140, 84, 98)' }}>
+      <section style={{ backgroundColor: "rgb(248, 245, 237)" }}>
+        <div className="mx-auto max-w-[1440px] px-6 py-20 md:py-28 lg:px-10">
+          <div className="mb-14">
+            <p
+              className="text-[11px] font-medium uppercase tracking-widest mb-4"
+              style={{ color: "rgb(120, 110, 100)" }}
+            >
               Explore More
             </p>
-            <h2 className="font-heading text-4xl md:text-5xl font-bold leading-tight" style={{ color: 'rgb(93, 82, 75)' }}>
+            <h2
+              className="text-[clamp(1.75rem,4vw,2.5rem)] font-bold leading-tight tracking-tight"
+              style={{ color: "rgb(38, 35, 30)" }}
+            >
               Other sectors
             </h2>
           </div>
@@ -141,12 +176,13 @@ export function SolutionPage({ solution }: SolutionPageProps) {
               <Link
                 key={other.slug}
                 href={`/${other.slug}`}
-                className="group flex items-center justify-between rounded-lg border border-stone-200/40 bg-white px-8 py-5 transition-all duration-500 hover:border-stone-200/80 hover:shadow-md"
+                className="group flex items-center justify-between rounded-lg border border-[rgb(230,225,215)] px-7 py-5 transition-all duration-200 hover:border-[rgb(200,195,185)] hover:shadow-sm"
+                style={{ backgroundColor: "rgb(252, 250, 245)" }}
               >
-                <h3 className="text-lg font-semibold transition-colors duration-500" style={{ color: 'rgb(93, 82, 75)' }}>
+                <h3 className="text-[15px] font-semibold" style={{ color: "rgb(38, 35, 30)" }}>
                   {other.title.replace(/^Vinyl Tile Flooring for /, "")}
                 </h3>
-                <ArrowRight className="size-5 transition-all duration-500 group-hover:translate-x-1" style={{ color: 'rgb(140, 84, 98)' }} />
+                <ArrowRight className="size-4 transition-transform group-hover:translate-x-1" style={{ color: "rgb(82, 75, 68)" }} />
               </Link>
             ))}
           </div>

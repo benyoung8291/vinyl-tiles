@@ -110,22 +110,22 @@ export default function HowWeWorkPage() {
     <>
       {/* Hero */}
       <section
-        className="py-24 md:py-32"
-        style={{ backgroundColor: "rgb(251, 211, 190)" }}
+        className="bg-subtle-lines"
+        style={{ backgroundColor: "rgb(248, 245, 237)" }}
       >
-        <div className="mx-auto max-w-[1728px] px-6 lg:px-8">
-          <p className="text-xs font-semibold uppercase tracking-widest mb-4 opacity-70">
+        <div className="mx-auto max-w-[1440px] px-6 pb-20 pt-28 md:pb-24 md:pt-36 lg:px-10">
+          <p className="text-[11px] font-medium uppercase tracking-widest mb-4" style={{ color: "rgb(120, 110, 100)" }}>
             How We Work
           </p>
           <h1
-            className="font-heading text-5xl md:text-6xl lg:text-7xl max-w-4xl leading-tight font-bold tracking-tight mb-6"
-            style={{ color: "rgb(93, 82, 75)" }}
+            className="text-[clamp(2.25rem,5vw,3.5rem)] max-w-4xl leading-tight font-bold tracking-tight mb-5"
+            style={{ color: "rgb(38, 35, 30)" }}
           >
             From phone call to finished floor.
           </h1>
           <p
-            className="font-sans text-lg md:text-xl max-w-2xl leading-relaxed"
-            style={{ color: "rgb(93, 82, 75)" }}
+            className="text-lg md:text-xl max-w-2xl leading-relaxed"
+            style={{ color: "rgb(82, 75, 68)" }}
           >
             Four straightforward steps. No complexity, no surprises.
           </p>
@@ -135,70 +135,61 @@ export default function HowWeWorkPage() {
       {/* Steps */}
       {steps.map((step, index) => {
         const Icon = step.icon;
-        const bgColor =
-          index % 2 === 0 ? "rgb(247, 236, 217)" : "rgb(245, 238, 224)";
+        const isEven = index % 2 === 0;
 
         return (
-          <section key={step.number} style={{ backgroundColor: bgColor }}>
-            <div className="mx-auto max-w-[1728px] px-6 py-24 md:py-32 lg:px-8">
-              {/* Step header with editorial two-column */}
+          <section
+            key={step.number}
+            style={{ backgroundColor: isEven ? "rgb(252, 250, 245)" : "rgb(248, 245, 237)" }}
+          >
+            <div className="mx-auto max-w-[1440px] px-6 py-20 md:py-28 lg:px-10">
               <div className="grid gap-12 lg:grid-cols-[1fr_2fr] lg:gap-20">
                 {/* Left: Step number and title */}
                 <div>
                   <div
-                    className="font-heading text-8xl md:text-9xl font-bold leading-none mb-6"
-                    style={{ color: "rgb(140, 84, 98)", opacity: 0.15 }}
+                    className="text-7xl md:text-8xl font-bold leading-none mb-5"
+                    style={{ color: "rgb(230, 225, 215)" }}
                   >
                     {step.number}
                   </div>
-                  <div className="flex items-start gap-4">
+                  <div className="flex items-start gap-3">
                     <div
-                      className="flex-shrink-0 w-12 h-12 rounded-full flex items-center justify-center"
-                      style={{ backgroundColor: "rgb(251, 211, 190)" }}
+                      className="flex-shrink-0 w-10 h-10 rounded-full flex items-center justify-center"
+                      style={{ backgroundColor: "rgb(240, 228, 210)" }}
                     >
-                      <Icon
-                        className="w-5 h-5"
-                        style={{ color: "rgb(140, 84, 98)" }}
-                      />
+                      <Icon className="w-4 h-4" style={{ color: "rgb(82, 75, 68)" }} />
                     </div>
-                    <div>
-                      <h2
-                        className="font-heading text-2xl md:text-3xl font-bold"
-                        style={{ color: "rgb(93, 82, 75)" }}
-                      >
-                        {step.title}
-                      </h2>
-                    </div>
+                    <h2
+                      className="text-xl md:text-2xl font-bold tracking-tight"
+                      style={{ color: "rgb(38, 35, 30)" }}
+                    >
+                      {step.title}
+                    </h2>
                   </div>
                 </div>
 
                 {/* Right: Content and cards */}
                 <div>
-                  {/* Paragraphs */}
                   <div className="space-y-5 mb-10">
                     {step.paragraphs.map((paragraph, pIndex) => (
                       <p
                         key={pIndex}
-                        className="font-sans text-base md:text-lg leading-relaxed"
-                        style={{ color: "rgb(93, 82, 75)" }}
+                        className="text-[15px] md:text-[16px] leading-relaxed"
+                        style={{ color: "rgb(82, 75, 68)" }}
                       >
                         {paragraph}
                       </p>
                     ))}
                   </div>
 
-                  {/* Two-column cards */}
-                  <div className="grid gap-6 sm:grid-cols-2">
+                  <div className="grid gap-4 sm:grid-cols-2">
                     <div
-                      className="rounded-lg p-6 border-2"
-                      style={{
-                        backgroundColor: "rgb(254, 249, 237)",
-                        borderColor: "rgb(251, 211, 190)",
-                      }}
+                      className="rounded-lg border border-[rgb(230,225,215)] p-6"
+                      style={{ backgroundColor: isEven ? "rgb(248, 245, 237)" : "rgb(252, 250, 245)" }}
                     >
                       <h3
-                        className="font-heading text-xs font-semibold uppercase tracking-wider mb-5"
-                        style={{ color: "rgb(140, 84, 98)" }}
+                        className="text-[11px] font-medium uppercase tracking-widest mb-4"
+                        style={{ color: "rgb(120, 110, 100)" }}
                       >
                         What to Expect
                       </h3>
@@ -206,12 +197,12 @@ export default function HowWeWorkPage() {
                         {step.expectItems.map((item, eIndex) => (
                           <li
                             key={eIndex}
-                            className="flex items-start gap-3 font-sans text-sm"
-                            style={{ color: "rgb(93, 82, 75)" }}
+                            className="flex items-start gap-3 text-[13px]"
+                            style={{ color: "rgb(55, 50, 45)" }}
                           >
                             <Clock
-                              className="w-4 h-4 flex-shrink-0 mt-0.5"
-                              style={{ color: "rgb(140, 84, 98)" }}
+                              className="w-3.5 h-3.5 flex-shrink-0 mt-0.5"
+                              style={{ color: "rgb(120, 110, 100)" }}
                             />
                             <span>{item}</span>
                           </li>
@@ -220,15 +211,12 @@ export default function HowWeWorkPage() {
                     </div>
 
                     <div
-                      className="rounded-lg p-6 border-2"
-                      style={{
-                        backgroundColor: "rgb(254, 249, 237)",
-                        borderColor: "rgb(251, 211, 190)",
-                      }}
+                      className="rounded-lg border border-[rgb(230,225,215)] p-6"
+                      style={{ backgroundColor: isEven ? "rgb(248, 245, 237)" : "rgb(252, 250, 245)" }}
                     >
                       <h3
-                        className="font-heading text-xs font-semibold uppercase tracking-wider mb-5"
-                        style={{ color: "rgb(140, 84, 98)" }}
+                        className="text-[11px] font-medium uppercase tracking-widest mb-4"
+                        style={{ color: "rgb(120, 110, 100)" }}
                       >
                         {index < 2 ? "What We'll Discuss" : "Key Details"}
                       </h3>
@@ -236,12 +224,12 @@ export default function HowWeWorkPage() {
                         {step.discussItems.map((item, dIndex) => (
                           <li
                             key={dIndex}
-                            className="flex items-start gap-3 font-sans text-sm"
-                            style={{ color: "rgb(93, 82, 75)" }}
+                            className="flex items-start gap-3 text-[13px]"
+                            style={{ color: "rgb(55, 50, 45)" }}
                           >
                             <CheckCircle2
-                              className="w-4 h-4 flex-shrink-0 mt-0.5"
-                              style={{ color: "rgb(140, 84, 98)" }}
+                              className="w-3.5 h-3.5 flex-shrink-0 mt-0.5"
+                              style={{ color: "rgb(120, 110, 100)" }}
                             />
                             <span>{item}</span>
                           </li>
@@ -257,22 +245,19 @@ export default function HowWeWorkPage() {
       })}
 
       {/* Why Work With Us */}
-      <section
-        className="py-24 md:py-32"
-        style={{ backgroundColor: "rgb(93, 82, 75)" }}
-      >
-        <div className="mx-auto max-w-[1728px] px-6 lg:px-8">
-          <div className="grid gap-16 lg:grid-cols-[1fr_1.5fr]">
+      <section style={{ backgroundColor: "rgb(55, 50, 45)" }}>
+        <div className="mx-auto max-w-[1440px] px-6 py-20 md:py-28 lg:px-10">
+          <div className="grid gap-14 lg:grid-cols-[1fr_1.5fr]">
             <div>
-              <p className="font-sans text-xs font-semibold uppercase tracking-widest mb-4 opacity-70 text-white">
+              <p className="text-[11px] font-medium uppercase tracking-widest mb-4 text-white/40">
                 Why Premrest
               </p>
-              <h2 className="font-heading text-4xl md:text-5xl font-bold leading-tight text-white">
+              <h2 className="text-[clamp(1.75rem,4vw,2.5rem)] font-bold leading-tight tracking-tight text-white">
                 You get someone who knows their work.
               </h2>
             </div>
 
-            <div className="grid gap-0 sm:grid-cols-2 border-l-2" style={{ borderColor: "rgb(251, 211, 190)" }}>
+            <div className="grid gap-0 sm:grid-cols-2 border-l border-white/10">
               {[
                 "Part of Premrest — one of Australia's established commercial flooring companies",
                 "Commercial flooring specialists since 2010 — thousands of projects across every sector",
@@ -281,16 +266,12 @@ export default function HowWeWorkPage() {
               ].map((text, i) => (
                 <div
                   key={i}
-                  className="border-t-2 py-6 px-6 border-b-2 sm:border-b-0"
-                  style={{ borderColor: "rgb(251, 211, 190)" }}
+                  className="border-t border-white/10 py-6 px-6"
                 >
-                  <span
-                    className="font-sans text-xs font-semibold uppercase tracking-wider"
-                    style={{ color: "rgb(251, 211, 190)" }}
-                  >
+                  <span className="text-[12px] font-semibold text-white/30">
                     {String(i + 1).padStart(2, "0")}
                   </span>
-                  <p className="mt-3 font-sans text-sm leading-relaxed text-white opacity-90">
+                  <p className="mt-3 text-[14px] leading-relaxed text-white/70">
                     {text}
                   </p>
                 </div>

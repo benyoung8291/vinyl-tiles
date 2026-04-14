@@ -1,7 +1,6 @@
 import Link from "next/link";
-import { ArrowRight, Layers, Shield, Truck, Wrench, CheckCircle2, Users, TrendingUp } from "lucide-react";
+import { ArrowRight, ArrowUpRight } from "lucide-react";
 import { QuoteCta } from "@/components/quote-cta";
-import { AnimatedBackground } from "@/components/animated-background";
 
 const rangeItems = [
   {
@@ -62,177 +61,193 @@ const sectors = [
   },
 ];
 
-const personas = [
+const pillars = [
   {
-    title: "Facility Managers",
-    icon: Wrench,
-    pain: "Managing replacements without shutting down operations. Sourcing and installing are two different headaches. You need one contractor who owns the whole job.",
+    label: "Supply + Install",
+    heading: "One contractor, one result",
+    text: "No coordination between the company that sold you the vinyl and the mob that laid it. If something's not right, it's on us.",
   },
   {
-    title: "Building Managers",
-    icon: TrendingUp,
-    pain: "Compliance documentation, slip ratings, fire ratings, NCC sign-off. Budget blowouts when supply and install aren't coordinated. You need a partner who speaks the language of your certifier.",
+    label: "Problem-first approach",
+    heading: "We start with your space",
+    text: "Not a product catalogue. What does the space need to do? How much traffic? Wet areas? Wheelchairs? We work backwards from the answer.",
   },
   {
-    title: "Business Owners",
-    icon: Users,
-    pain: "Downtime = lost revenue. You need a floor that looks professional on day one and a team that gets in, gets it done, and gets out. No surprises.",
+    label: "Compliance built in",
+    heading: "Documentation your certifier needs",
+    text: "Slip ratings, fire ratings, acoustic requirements, NCC compliance — we specify to all of them. You get the documentation that matters.",
   },
 ];
 
 export default function Home() {
   return (
     <>
-      {/* Hero – full viewport with animated gradient background */}
-      <section className="relative -mt-14 flex min-h-[100svh] items-center justify-center overflow-hidden">
-        <AnimatedBackground />
-        {/* Subtle noise texture overlay */}
-        <div
-          className="pointer-events-none absolute inset-0 z-[1] opacity-[0.035]"
-          style={{
-            backgroundImage: `url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E")`,
-            backgroundRepeat: "repeat",
-            backgroundSize: "180px 180px",
-          }}
-        />
-        <div className="relative z-[2] mx-auto max-w-[1728px] px-6 text-center lg:px-12">
-          <h1
-            style={{ fontFamily: "var(--font-heading, serif)" }}
-            className="text-5xl font-bold leading-[0.95] tracking-tight text-white md:text-7xl lg:text-[6.5rem]"
-          >
-            <em className="not-italic font-bold italic">Commercial vinyl</em>
-            <br />
-            flooring, sorted.
-          </h1>
-          <p className="mx-auto mt-8 max-w-2xl text-lg leading-relaxed text-white/85 md:text-xl">
-            You tell us what the space needs to do. We find the right vinyl tile, get it to site, and lay it properly. Supply and install, one contractor, no finger-pointing.
-          </p>
-          <div className="mt-10 flex flex-col items-center gap-4 sm:flex-row sm:justify-center">
-            <Link
-              href="/contact"
-              className="inline-flex items-center justify-center rounded-md bg-white px-8 py-3 text-base font-semibold transition-all duration-300 hover:shadow-lg hover:scale-[1.02]"
-              style={{ color: "rgb(93, 82, 75)" }}
+      {/* Hero — microsoft.ai style: large statement text on clean background */}
+      <section className="relative bg-subtle-lines" style={{ backgroundColor: "rgb(248, 245, 237)" }}>
+        <div className="mx-auto max-w-[1440px] px-6 pb-20 pt-32 md:pb-28 md:pt-40 lg:px-10 lg:pb-36 lg:pt-48">
+          <div className="max-w-4xl">
+            <p
+              className="text-[13px] font-medium uppercase tracking-widest mb-6"
+              style={{ color: "rgb(120, 110, 100)" }}
             >
-              Get a Quote
-            </Link>
-            <Link
-              href="#ranges"
-              className="inline-flex items-center justify-center gap-2 px-8 py-3 text-base font-medium text-white/80 transition-colors duration-300 hover:text-white"
+              Commercial Vinyl Flooring
+            </p>
+            <h1
+              className="text-[clamp(2.5rem,6vw,4.5rem)] font-bold leading-[1.08] tracking-tight"
+              style={{ color: "rgb(38, 35, 30)" }}
             >
-              Explore Ranges
-              <ArrowRight className="size-5" />
-            </Link>
+              We find the right vinyl tile, get it to site, and lay it properly.
+            </h1>
+            <p
+              className="mt-8 max-w-2xl text-lg leading-relaxed"
+              style={{ color: "rgb(82, 75, 68)" }}
+            >
+              Supply and install, one contractor, no finger-pointing. You tell us what the space needs to do — we handle the rest.
+            </p>
+            <div className="mt-10 flex flex-wrap items-center gap-4">
+              <Link
+                href="/contact"
+                className="inline-flex items-center justify-center rounded-md bg-[rgb(55,50,45)] px-7 py-3 text-[15px] font-semibold text-[rgb(252,250,245)] transition-colors hover:bg-[rgb(38,35,30)]"
+              >
+                Get a Quote
+              </Link>
+              <Link
+                href="#ranges"
+                className="inline-flex items-center gap-2 px-4 py-3 text-[15px] font-medium text-[rgb(82,75,68)] transition-colors hover:text-[rgb(38,35,30)]"
+              >
+                Explore Ranges
+                <ArrowRight className="size-4" />
+              </Link>
+            </div>
           </div>
         </div>
-        {/* Scroll indicator */}
-        <div className="absolute bottom-8 left-1/2 z-[2] -translate-x-1/2 animate-bounce">
-          <div className="h-10 w-6 rounded-full border-2 border-white/40 p-1">
-            <div className="mx-auto h-2 w-1 rounded-full bg-white/60" />
+        {/* Subtle bottom border accent */}
+        <div className="h-px bg-gradient-to-r from-transparent via-[rgb(215,208,198)] to-transparent" />
+      </section>
+
+      {/* Three Pillars — microsoft.ai style: key values in clean cards */}
+      <section style={{ backgroundColor: "rgb(252, 250, 245)" }}>
+        <div className="mx-auto max-w-[1440px] px-6 py-20 lg:px-10 lg:py-28">
+          <div className="grid gap-8 md:grid-cols-3 lg:gap-12">
+            {pillars.map((pillar) => (
+              <div
+                key={pillar.label}
+                className="relative rounded-lg border border-[rgb(230,225,215)] p-8 lg:p-10"
+                style={{ backgroundColor: "rgb(248, 245, 237)" }}
+              >
+                <p
+                  className="text-[11px] font-medium uppercase tracking-widest mb-5"
+                  style={{ color: "rgb(120, 110, 100)" }}
+                >
+                  {pillar.label}
+                </p>
+                <h3
+                  className="text-xl font-bold tracking-tight mb-4"
+                  style={{ color: "rgb(38, 35, 30)" }}
+                >
+                  {pillar.heading}
+                </h3>
+                <p
+                  className="text-[15px] leading-relaxed"
+                  style={{ color: "rgb(82, 75, 68)" }}
+                >
+                  {pillar.text}
+                </p>
+              </div>
+            ))}
           </div>
         </div>
       </section>
 
       {/* Credibility strip */}
-      <section style={{ backgroundColor: "rgb(254, 249, 237)" }}>
-        <div className="mx-auto max-w-[1728px] px-6 py-12 lg:px-12">
-          <div className="grid grid-cols-2 gap-8 lg:grid-cols-4 lg:gap-12">
-            {[
-              { icon: Shield, label: "Supply + Install", detail: "One call, one crew, done" },
-              { icon: Layers, label: "Any manufacturer", detail: "We pick the right floor for the job" },
-              { icon: Wrench, label: "We do both", detail: "Source it, lay it, own the result" },
-              { icon: Truck, label: "Melbourne · Sydney · Brisbane", detail: "Local teams, national reach" },
-            ].map((item) => (
-              <div key={item.label} className="flex items-start gap-4">
-                <item.icon className="mt-1 size-6 flex-shrink-0" style={{ color: "rgb(140, 84, 98)" }} />
-                <div>
-                  <p className="text-base font-semibold" style={{ color: "rgb(93, 82, 75)" }}>{item.label}</p>
-                  <p className="mt-1 text-sm leading-relaxed text-muted-foreground">{item.detail}</p>
-                </div>
-              </div>
-            ))}
+      <section className="border-y border-[rgb(230,225,215)]" style={{ backgroundColor: "rgb(248, 245, 237)" }}>
+        <div className="mx-auto max-w-[1440px] px-6 py-10 lg:px-10">
+          <div className="flex flex-wrap items-center justify-center gap-10 lg:gap-16 text-center">
+            <div>
+              <p className="text-2xl font-bold tracking-tight" style={{ color: "rgb(38, 35, 30)" }}>
+                $45<span className="text-[rgb(120,110,100)]">/m&sup2;</span>
+              </p>
+              <p className="mt-1.5 text-[12px] text-[rgb(120,110,100)]">Supply from (ex GST)</p>
+            </div>
+            <div className="hidden h-8 w-px bg-[rgb(230,225,215)] sm:block" />
+            <div>
+              <p className="text-2xl font-bold tracking-tight" style={{ color: "rgb(38, 35, 30)" }}>
+                $20<span className="text-[rgb(120,110,100)]">/m&sup2;</span>
+              </p>
+              <p className="mt-1.5 text-[12px] text-[rgb(120,110,100)]">Install from (ex GST)</p>
+            </div>
+            <div className="hidden h-8 w-px bg-[rgb(230,225,215)] sm:block" />
+            <div>
+              <p className="text-2xl font-bold tracking-tight" style={{ color: "rgb(38, 35, 30)" }}>
+                15<span className="text-[rgb(120,110,100)]"> yr</span>
+              </p>
+              <p className="mt-1.5 text-[12px] text-[rgb(120,110,100)]">Commercial warranty</p>
+            </div>
+            <div className="hidden h-8 w-px bg-[rgb(230,225,215)] sm:block" />
+            <div>
+              <p className="text-2xl font-bold tracking-tight" style={{ color: "rgb(38, 35, 30)" }}>
+                3<span className="text-[rgb(120,110,100)]"> cities</span>
+              </p>
+              <p className="mt-1.5 text-[12px] text-[rgb(120,110,100)]">Melbourne, Sydney, Brisbane</p>
+            </div>
           </div>
         </div>
       </section>
 
-      {/* Who we work with section */}
-      <section style={{ backgroundColor: "rgb(247, 236, 217)" }}>
-        <div className="mx-auto max-w-[1728px] px-6 py-20 lg:px-12 lg:py-32">
-          <div className="mb-16">
-            <p className="text-sm font-semibold uppercase tracking-widest" style={{ color: "rgb(140, 84, 98)" }}>Who We Work With</p>
-            <h2
-              style={{ fontFamily: "var(--font-heading, serif)", color: "rgb(93, 82, 75)" }}
-              className="mt-4 text-4xl font-bold leading-tight md:text-5xl lg:text-6xl tracking-tight"
+      {/* Ranges section — microsoft.ai card grid */}
+      <section id="ranges" style={{ backgroundColor: "rgb(252, 250, 245)" }}>
+        <div className="mx-auto max-w-[1440px] px-6 py-20 lg:px-10 lg:py-28">
+          <div className="mb-14">
+            <p
+              className="text-[11px] font-medium uppercase tracking-widest mb-4"
+              style={{ color: "rgb(120, 110, 100)" }}
             >
-              We get your pain points.
-            </h2>
-          </div>
-
-          <div className="grid gap-8 md:grid-cols-3 lg:gap-12">
-            {personas.map((persona) => (
-              <div
-                key={persona.title}
-                style={{ backgroundColor: "rgb(254, 249, 237)" }}
-                className="rounded-lg p-8 lg:p-10"
-              >
-                <div className="flex items-center gap-3 mb-6">
-                  <persona.icon className="size-8" style={{ color: "rgb(140, 84, 98)" }} />
-                  <h3
-                    style={{ fontFamily: "var(--font-heading, serif)", color: "rgb(93, 82, 75)" }}
-                    className="text-2xl font-bold"
-                  >
-                    {persona.title}
-                  </h3>
-                </div>
-                <p className="text-base leading-relaxed text-foreground/70">
-                  {persona.pain}
-                </p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Ranges section */}
-      <section id="ranges" style={{ backgroundColor: "rgb(254, 249, 237)" }}>
-        <div className="mx-auto max-w-[1728px] px-6 py-20 lg:px-12 lg:py-32">
-          <div className="mb-16">
-            <p className="text-sm font-semibold uppercase tracking-widest" style={{ color: "rgb(140, 84, 98)" }}>Our Ranges</p>
+              Our Ranges
+            </p>
             <h2
-              style={{ fontFamily: "var(--font-heading, serif)", color: "rgb(93, 82, 75)" }}
-              className="mt-4 text-4xl font-bold leading-tight md:text-5xl lg:text-6xl tracking-tight"
+              className="text-[clamp(1.75rem,4vw,2.75rem)] font-bold leading-tight tracking-tight"
+              style={{ color: "rgb(38, 35, 30)" }}
             >
               Good floors start with good products.
             </h2>
           </div>
 
-          <div className="grid gap-6 md:grid-cols-2 lg:gap-8">
+          <div className="grid gap-5 md:grid-cols-2">
             {rangeItems.map((range) => (
               <Link
                 key={range.slug}
                 href={`/ranges/${range.slug}`}
-                className="group flex flex-col rounded-lg p-8 lg:p-10 transition-all duration-300 hover:shadow-lg"
-                style={{ backgroundColor: "rgb(245, 238, 224)" }}
+                className="group flex flex-col rounded-lg border border-[rgb(230,225,215)] p-8 lg:p-10 transition-all duration-200 hover:border-[rgb(200,195,185)] hover:shadow-sm"
+                style={{ backgroundColor: "rgb(248, 245, 237)" }}
               >
-                <div className="flex items-start justify-between mb-6">
+                <div className="flex items-start justify-between mb-5">
                   <div>
                     <h3
-                      style={{ fontFamily: "var(--font-heading, serif)", color: "rgb(93, 82, 75)" }}
-                      className="text-3xl font-bold tracking-tight"
+                      className="text-xl font-bold tracking-tight"
+                      style={{ color: "rgb(38, 35, 30)" }}
                     >
                       {range.name}
                     </h3>
-                    <p className="mt-2 text-base" style={{ color: "rgb(140, 84, 98)" }}>{range.tagline}</p>
+                    <p className="mt-1.5 text-[13px] font-medium" style={{ color: "rgb(120, 110, 100)" }}>
+                      {range.tagline}
+                    </p>
                   </div>
-                  <span className="rounded-full px-4 py-2 text-sm font-medium" style={{ backgroundColor: "rgba(140, 84, 98, 0.1)", color: "rgb(140, 84, 98)" }}>
+                  <span
+                    className="rounded-full border border-[rgb(230,225,215)] px-3 py-1 text-[11px] font-medium"
+                    style={{ color: "rgb(120, 110, 100)" }}
+                  >
                     {range.productCount} products
                   </span>
                 </div>
-                <p className="text-base leading-relaxed text-foreground/70 mb-6">
+                <p className="text-[15px] leading-relaxed mb-6" style={{ color: "rgb(82, 75, 68)" }}>
                   {range.detail}
                 </p>
-                <div className="mt-auto inline-flex items-center gap-2 text-base font-medium transition-all duration-300 group-hover:gap-3" style={{ color: "rgb(140, 84, 98)" }}>
+                <div
+                  className="mt-auto inline-flex items-center gap-2 text-[13px] font-semibold transition-all duration-200 group-hover:gap-3"
+                  style={{ color: "rgb(55, 50, 45)" }}
+                >
                   View Collection
-                  <ArrowRight className="size-5 transition-transform" />
+                  <ArrowRight className="size-4" />
                 </div>
               </Link>
             ))}
@@ -240,29 +255,29 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Process / How We Work section */}
-      <section className="relative overflow-hidden" style={{ backgroundColor: "rgb(93, 82, 75)" }}>
-        <AnimatedBackground variant="dark" />
-        <div className="relative z-[1] mx-auto max-w-[1728px] px-6 py-20 lg:px-12 lg:py-32">
-          <div className="grid gap-16 lg:grid-cols-[1fr_1.5fr]">
+      {/* Process / How We Work section — clean dark section */}
+      <section style={{ backgroundColor: "rgb(55, 50, 45)" }}>
+        <div className="mx-auto max-w-[1440px] px-6 py-20 lg:px-10 lg:py-28">
+          <div className="grid gap-14 lg:grid-cols-[1fr_1.5fr]">
             <div>
-              <p className="text-sm font-semibold uppercase tracking-widest text-white/60 mb-4">How We Work</p>
+              <p className="text-[11px] font-medium uppercase tracking-widest text-white/40 mb-4">
+                How We Work
+              </p>
               <h2
-                style={{ fontFamily: "var(--font-heading, serif)" }}
-                className="text-4xl font-bold leading-tight md:text-5xl lg:text-6xl tracking-tight text-white"
+                className="text-[clamp(1.75rem,4vw,2.75rem)] font-bold leading-tight tracking-tight text-white"
               >
                 Four steps to a finished floor.
               </h2>
               <Link
                 href="/how-we-work"
-                className="mt-8 inline-flex items-center gap-2 text-base font-medium text-white/70 transition-colors hover:text-white"
+                className="mt-8 inline-flex items-center gap-2 text-[13px] font-medium text-white/60 transition-colors hover:text-white"
               >
                 Learn about our process
-                <ArrowRight className="size-5" />
+                <ArrowRight className="size-4" />
               </Link>
             </div>
 
-            <div className="grid gap-6 sm:grid-cols-2">
+            <div className="grid gap-4 sm:grid-cols-2">
               {[
                 { n: "01", title: "Consult", text: "We come to you. Look at the space, talk it through." },
                 { n: "02", title: "Source", text: "Find the right floor for the job and the budget." },
@@ -271,22 +286,16 @@ export default function Home() {
               ].map((step) => (
                 <div
                   key={step.n}
-                  style={{ backgroundColor: "rgba(255, 255, 255, 0.08)" }}
-                  className="rounded-lg p-8 backdrop-blur-sm"
+                  className="rounded-lg border border-white/8 p-7"
+                  style={{ backgroundColor: "rgba(255, 255, 255, 0.04)" }}
                 >
-                  <span
-                    style={{ fontFamily: "var(--font-heading, serif)", color: "rgb(251, 211, 190)" }}
-                    className="text-4xl font-bold"
-                  >
+                  <span className="text-3xl font-bold text-white/15">
                     {step.n}
                   </span>
-                  <h3
-                    style={{ fontFamily: "var(--font-heading, serif)" }}
-                    className="mt-4 text-xl font-bold text-white"
-                  >
+                  <h3 className="mt-3 text-base font-bold text-white">
                     {step.title}
                   </h3>
-                  <p className="mt-2 text-base leading-relaxed text-white/70">{step.text}</p>
+                  <p className="mt-2 text-[14px] leading-relaxed text-white/55">{step.text}</p>
                 </div>
               ))}
             </div>
@@ -294,76 +303,47 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Pricing guide */}
-      <section style={{ backgroundColor: "rgb(245, 238, 224)" }}>
-        <div className="mx-auto max-w-[1728px] px-6 py-12 lg:px-12">
-          <div className="flex flex-wrap items-center justify-center gap-12 text-center lg:gap-20">
-            <div>
-              <p
-                style={{ fontFamily: "var(--font-heading, serif)", color: "rgb(93, 82, 75)" }}
-                className="text-3xl font-bold"
-              >
-                $45<span style={{ color: "rgb(140, 84, 98)" }}>/m²</span>
-              </p>
-              <p className="mt-2 text-sm text-foreground/60">Supply from (ex GST)</p>
-            </div>
-            <div className="hidden h-10 w-px bg-foreground/10 sm:block" />
-            <div>
-              <p
-                style={{ fontFamily: "var(--font-heading, serif)", color: "rgb(93, 82, 75)" }}
-                className="text-3xl font-bold"
-              >
-                $20<span style={{ color: "rgb(140, 84, 98)" }}>/m²</span>
-              </p>
-              <p className="mt-2 text-sm text-foreground/60">Install from (ex GST)</p>
-            </div>
-            <div className="hidden h-10 w-px bg-foreground/10 sm:block" />
-            <div>
-              <p
-                style={{ fontFamily: "var(--font-heading, serif)", color: "rgb(93, 82, 75)" }}
-                className="text-3xl font-bold"
-              >
-                15<span style={{ color: "rgb(140, 84, 98)" }}> yr</span>
-              </p>
-              <p className="mt-2 text-sm text-foreground/60">Commercial warranty</p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Sectors section */}
-      <section style={{ backgroundColor: "rgb(247, 236, 217)" }}>
-        <div className="mx-auto max-w-[1728px] px-6 py-20 lg:px-12 lg:py-32">
-          <div className="mb-16">
-            <p className="text-sm font-semibold uppercase tracking-widest" style={{ color: "rgb(140, 84, 98)" }}>By Sector</p>
+      {/* Sectors section — microsoft.ai clean card layout */}
+      <section className="bg-subtle-lines" style={{ backgroundColor: "rgb(248, 245, 237)" }}>
+        <div className="mx-auto max-w-[1440px] px-6 py-20 lg:px-10 lg:py-28">
+          <div className="mb-14">
+            <p
+              className="text-[11px] font-medium uppercase tracking-widest mb-4"
+              style={{ color: "rgb(120, 110, 100)" }}
+            >
+              By Sector
+            </p>
             <h2
-              style={{ fontFamily: "var(--font-heading, serif)", color: "rgb(93, 82, 75)" }}
-              className="mt-4 text-4xl font-bold leading-tight md:text-5xl lg:text-6xl tracking-tight"
+              className="text-[clamp(1.75rem,4vw,2.75rem)] font-bold leading-tight tracking-tight"
+              style={{ color: "rgb(38, 35, 30)" }}
             >
               Different spaces need different floors.
             </h2>
           </div>
 
-          <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3 lg:gap-8">
+          <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
             {sectors.map((sector) => (
               <Link
                 key={sector.href}
                 href={sector.href}
-                className="group rounded-lg p-8 lg:p-10 transition-all duration-300 hover:shadow-lg"
-                style={{ backgroundColor: "rgb(254, 249, 237)" }}
+                className="group rounded-lg border border-[rgb(230,225,215)] p-7 lg:p-8 transition-all duration-200 hover:border-[rgb(200,195,185)] hover:shadow-sm"
+                style={{ backgroundColor: "rgb(252, 250, 245)" }}
               >
                 <h3
-                  style={{ fontFamily: "var(--font-heading, serif)", color: "rgb(93, 82, 75)" }}
-                  className="text-2xl font-bold tracking-tight"
+                  className="text-base font-bold tracking-tight"
+                  style={{ color: "rgb(38, 35, 30)" }}
                 >
                   {sector.title}
                 </h3>
-                <p className="mt-4 text-base leading-relaxed text-foreground/70">
+                <p className="mt-3 text-[14px] leading-relaxed" style={{ color: "rgb(82, 75, 68)" }}>
                   {sector.description}
                 </p>
-                <div className="mt-6 inline-flex items-center gap-2 text-sm font-medium uppercase tracking-wide transition-all duration-300 group-hover:gap-3" style={{ color: "rgb(140, 84, 98)" }}>
+                <div
+                  className="mt-5 inline-flex items-center gap-2 text-[12px] font-semibold uppercase tracking-wide transition-all duration-200 group-hover:gap-3"
+                  style={{ color: "rgb(55, 50, 45)" }}
+                >
                   Explore
-                  <ArrowRight className="size-4 transition-transform" />
+                  <ArrowRight className="size-3.5" />
                 </div>
               </Link>
             ))}
@@ -371,54 +351,43 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Why Premrest section */}
-      <section style={{ backgroundColor: "rgb(254, 249, 237)" }}>
-        <div className="mx-auto max-w-[1728px] px-6 py-20 lg:px-12 lg:py-32">
-          <div className="mb-16">
-            <p className="text-sm font-semibold uppercase tracking-widest" style={{ color: "rgb(140, 84, 98)" }}>Why Premrest</p>
-            <h2
-              style={{ fontFamily: "var(--font-heading, serif)", color: "rgb(93, 82, 75)" }}
-              className="mt-4 text-4xl font-bold leading-tight md:text-5xl lg:text-6xl tracking-tight"
-            >
-              We supply it. We install it. We own the result.
-            </h2>
-          </div>
-
-          <div className="grid gap-8 md:grid-cols-3 lg:gap-12">
-            {[
-              {
-                title: "One contractor",
-                text: "No coordination between the company that sold you the vinyl and the mob that laid it. If something's not right, it's on us.",
-                icon: CheckCircle2,
-              },
-              {
-                title: "We start with your problem",
-                text: "Not a product catalogue. What does the space need to do? How much traffic? Wet areas? Wheelchairs? We work backwards from the answer.",
-                icon: Users,
-              },
-              {
-                title: "Compliance is built in",
-                text: "Slip ratings, fire ratings, acoustic requirements, NCC compliance — we specify to all of them. You get the documentation your certifier needs.",
-                icon: Shield,
-              },
-            ].map((item) => (
-              <div
-                key={item.title}
-                style={{ backgroundColor: "rgb(245, 238, 224)" }}
-                className="rounded-lg p-8 lg:p-10"
+      {/* About / Message section — microsoft.ai CEO message style */}
+      <section style={{ backgroundColor: "rgb(252, 250, 245)" }}>
+        <div className="mx-auto max-w-[1440px] px-6 py-20 lg:px-10 lg:py-28">
+          <div className="grid gap-14 lg:grid-cols-[1fr_1.5fr] lg:gap-20 items-start">
+            <div>
+              <p
+                className="text-[11px] font-medium uppercase tracking-widest mb-4"
+                style={{ color: "rgb(120, 110, 100)" }}
               >
-                <item.icon className="size-8 mb-4" style={{ color: "rgb(140, 84, 98)" }} />
-                <h3
-                  style={{ fontFamily: "var(--font-heading, serif)", color: "rgb(93, 82, 75)" }}
-                  className="text-2xl font-bold tracking-tight"
-                >
-                  {item.title}
-                </h3>
-                <p className="mt-4 text-base leading-relaxed text-foreground/70">
-                  {item.text}
-                </p>
-              </div>
-            ))}
+                About Premrest
+              </p>
+              <h2
+                className="text-[clamp(1.75rem,4vw,2.75rem)] font-bold leading-tight tracking-tight"
+                style={{ color: "rgb(38, 35, 30)" }}
+              >
+                We supply it. We install it. We own the result.
+              </h2>
+            </div>
+            <div className="space-y-6">
+              <p className="text-[16px] leading-relaxed" style={{ color: "rgb(82, 75, 68)" }}>
+                Vinyl Tiles is a division of Premrest — one of Australia&apos;s established commercial flooring companies. We&apos;ve been doing this since 2010, across thousands of projects in every sector.
+              </p>
+              <p className="text-[16px] leading-relaxed" style={{ color: "rgb(82, 75, 68)" }}>
+                The model is simple: you get one contact from day one through to completion. No finger-pointing between the company that sold you the product and the team that installed it. We do both, so if something&apos;s not right, it&apos;s on us.
+              </p>
+              <p className="text-[16px] leading-relaxed" style={{ color: "rgb(82, 75, 68)" }}>
+                We serve Melbourne, Sydney, and Brisbane with local teams. We work with Interface, Karndean, Armstrong, Tarkett, and others — not locked into one supplier, which means you get the right product for the job, not just what we stock.
+              </p>
+              <Link
+                href="/how-we-work"
+                className="inline-flex items-center gap-2 text-[13px] font-semibold transition-colors hover:text-[rgb(38,35,30)]"
+                style={{ color: "rgb(55, 50, 45)" }}
+              >
+                Learn how we work
+                <ArrowUpRight className="size-3.5" />
+              </Link>
+            </div>
           </div>
         </div>
       </section>
