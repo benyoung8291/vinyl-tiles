@@ -17,42 +17,42 @@ const faqItems = [
   {
     question: "What's the difference between LVT and VCT?",
     answer:
-      "LVT (Luxury Vinyl Tile) is a multi-layer product with a photographic design layer and clear wear layer, offering realistic stone and timber visuals. VCT (Vinyl Composition Tile) is a single-layer, through-body product made from a blend of vinyl resins, limestone, and plasticiser. LVT is the better choice when aesthetics are a priority — think reception areas, retail spaces, and aged care facilities. VCT excels in high-traffic utility environments such as hospitals, schools, and warehouses, where budget efficiency and extreme durability matter most. VCT can also be stripped and re-polished, extending its service life well beyond 20 years.",
+      "LVT (Luxury Vinyl Tile) has multiple layers with a photographic top and a protective wear layer — it looks like real stone or timber. VCT (Vinyl Composition Tile) is solid throughout, made from vinyl, limestone, and plasticiser. Use LVT when the look matters — reception areas, retail, aged care. Use VCT when you need maximum durability on a tighter budget and you don't mind solid colours — hospitals, schools, warehouses. The bonus? VCT can be stripped and re-polished, so it'll often last well past 20 years.",
   },
   {
     question: "How long does commercial vinyl flooring last?",
     answer:
-      "With proper installation and routine maintenance, commercial-grade vinyl tile flooring typically lasts 15 to 25 years. VCT products often exceed 25 years when maintained with regular stripping and polishing cycles. LVT and vinyl plank products with wear layers of 0.55mm or above generally achieve 15 to 20 years in heavy commercial traffic. The key factors are wear layer thickness, subfloor preparation quality, foot traffic volume, and adherence to the manufacturer's maintenance schedule.",
+      "Typically 15 to 25 years with proper installation and basic maintenance. VCT lasts longer — often exceeds 25 years if you keep up with stripping and polishing. LVT and vinyl plank depend mainly on the wear layer (we recommend minimum 0.55mm) and how well the subfloor was prepared. So really, longevity comes down to three things: decent thickness, solid prep work, and following the maintenance schedule.",
   },
   {
     question: "Is vinyl tile suitable for healthcare and aged care?",
     answer:
-      "Absolutely. Vinyl tile is one of the most widely specified flooring products in Australian healthcare and aged care facilities. It offers seamless hygiene — particularly when heat-welded — preventing bacteria and moisture from penetrating joints. Many commercial vinyl products carry slip ratings of R10 or higher, critical for wet areas and corridors. Acoustic-backed options reduce impact sound, improving comfort for residents and patients.",
+      "It's the default choice in Australian aged care and healthcare. It's hygienic — especially when heat-welded, which prevents bacteria and moisture getting into joints. Slip ratings of R10 or higher are standard, which matters in wet areas and corridors. And if acoustic properties matter to you (quieter is better for residents), many products have backing that cuts impact noise by up to 19dB.",
   },
   {
     question: "What subfloor preparation is needed?",
     answer:
-      "Subfloor preparation is the single most important factor in a successful vinyl tile installation. The subfloor must be structurally sound, dry, clean, and level. For concrete substrates, moisture testing (to AS 1884) is essential — relative humidity must typically be below 75% RH, or a moisture barrier must be applied. The surface should be free of cracks, ridges, and contaminants. Most installations require the application of a cementitious levelling compound to achieve the flatness tolerance required by the tile manufacturer.",
+      "This is non-negotiable. The subfloor has to be structurally sound, dry, clean, and level. For concrete, we test moisture levels to AS 1884 — relative humidity needs to sit below 75% RH. If it's higher, we apply a moisture barrier. The surface gets cleaned of cracks, ridges, and dirt, then usually levelled with a cementitious compound to meet the manufacturer's flatness tolerances. Skip this step and you're asking for trouble.",
   },
   {
     question: "Can vinyl tiles be installed over existing flooring?",
     answer:
-      "In some cases, yes. Vinyl tiles can be installed over existing vinyl, provided the old flooring is well-bonded, free of damage, and thoroughly cleaned. The existing floor must be assessed for moisture, adhesion integrity, and flatness. However, installing over carpet, ceramic tiles with deep grout lines, or damaged flooring is not recommended. A professional site assessment is always recommended.",
+      "Sometimes. If the old vinyl is firmly bonded, undamaged, and clean, we can install over it. But we'll assess moisture, adhesion, and flatness first — that's non-negotiable. Installing over carpet, deep-grouted ceramic, or damaged floors? No. We'll always recommend a proper site assessment before we commit to anything.",
   },
   {
     question: "What's the maintenance schedule for vinyl tile floors?",
     answer:
-      "For LVT and vinyl plank, daily dry mopping and periodic damp mopping with a neutral pH cleaner is sufficient. Most LVT products feature a factory-applied polyurethane surface treatment that eliminates the need for polish or wax. For VCT, the maintenance schedule includes daily sweeping, regular damp mopping, and periodic stripping and re-polishing (typically every 6 to 12 months depending on traffic).",
+      "LVT and vinyl plank are easy — dry mop daily, damp mop occasionally with neutral pH cleaner. Most LVT has a protective polyurethane layer already on it, so no wax or polish needed. VCT needs more attention: sweep daily, damp mop regularly, and re-polish every 6 to 12 months depending on traffic. But that's also why VCT lasts so long.",
   },
   {
     question: "Are vinyl tiles waterproof?",
     answer:
-      "Most commercial LVT and vinyl plank products are waterproof at the surface level — water will not penetrate the tile itself. However, the installation system matters. Standard glue-down installations with heat-welded seams offer the best moisture protection and are recommended for wet areas. Click-lock floating installations are water-resistant but not fully waterproof at the joints.",
+      "The tiles themselves are waterproof. Water won't get through the material. But installation method matters. Glue-down with heat-welded seams is your best bet for wet areas — solid protection. Click-lock floating floors are water-resistant but not completely sealed at the joints, so they're better for dry zones.",
   },
   {
     question: "What fire rating do commercial vinyl tiles need?",
     answer:
-      "Under the National Construction Code (NCC) and Australian Standard AS ISO 9239.1, commercial flooring must meet minimum critical radiant flux requirements. For most commercial applications including offices, retail, and healthcare, a Cfl-s1 rating is sufficient. Higher-risk environments such as escape routes generally require Bfl-s1 rated products. Always verify requirements with your building certifier.",
+      "The National Construction Code (NCC) sets the rules. For most projects — offices, retail, healthcare — Cfl-s1 meets requirements. Escape routes and high-risk areas usually need Bfl-s1. Always check with your building certifier before specifying; they'll tell you exactly what your project needs.",
   },
 ];
 
@@ -84,11 +84,10 @@ export default function WhyVinylTilesPage() {
             The Complete Guide
           </p>
           <h1 className="text-4xl font-bold tracking-tight text-stone-900 max-w-4xl md:text-5xl">
-            Why choose vinyl tile flooring?
+            Why vinyl tile works.
           </h1>
           <p className="mt-4 max-w-xl text-lg leading-relaxed text-stone-500">
-            The smart, durable, and cost-effective choice for commercial spaces
-            across Australia.
+            It's durable, easy to maintain, and the maths make sense. Here's what you need to know.
           </p>
         </div>
       </section>
@@ -102,45 +101,30 @@ export default function WhyVinylTilesPage() {
                 Vs. Alternatives
               </p>
               <h2 className="text-3xl font-bold tracking-tight text-stone-900 md:text-4xl">
-                The case for vinyl tile.
+                How it stacks up.
               </h2>
             </div>
             <div className="space-y-5">
               <p className="text-base leading-relaxed text-stone-500">
-                When specifying flooring for a commercial project, the decision
-                often comes down to carpet, timber, polished concrete, or vinyl
-                tile. Each has its place, but vinyl tile consistently outperforms
-                the alternatives on the metrics that matter most: total lifecycle
-                cost, maintenance burden, installation speed, and design versatility.
+                Most commercial projects come down to carpet, timber, concrete, or vinyl. Vinyl wins on what matters: lifecycle cost, maintenance burden, speed of install, and design options.
               </p>
               <p className="text-base leading-relaxed text-stone-500">
                 <strong className="font-semibold text-stone-800">
-                  Compared to commercial carpet,
+                  Carpet:
                 </strong>{" "}
-                vinyl tile is dramatically easier to maintain. Carpet traps dirt,
-                allergens, and moisture, requiring regular deep cleaning and
-                replacement every 7 to 10 years. Vinyl tile needs only routine
-                mopping and can last 15 to 25 years with minimal upkeep.
+                Traps dirt and allergens, needs regular deep cleaning, wears out in 7–10 years. Vinyl just needs mopping and lasts 15–25 years.
               </p>
               <p className="text-base leading-relaxed text-stone-500">
                 <strong className="font-semibold text-stone-800">
-                  Compared to engineered timber,
+                  Engineered timber:
                 </strong>{" "}
-                vinyl tile delivers comparable visual appeal at a fraction of the
-                cost. Timber floors are susceptible to scratching, water damage,
-                and expansion. Modern luxury vinyl tile replicates the look and
-                texture of timber with remarkable authenticity, while offering
-                superior water resistance and dimensional stability.
+                Looks good, but it scratches, doesn't handle moisture well, and costs more. Modern vinyl looks nearly identical and costs a fraction of the price. Plus it won't warp.
               </p>
               <p className="text-base leading-relaxed text-stone-500">
                 <strong className="font-semibold text-stone-800">
-                  Compared to polished concrete,
+                  Polished concrete:
                 </strong>{" "}
-                vinyl tile is warmer underfoot, quieter, and far more forgiving
-                on joints — an important consideration where staff stand for
-                extended periods. Vinyl tile offers acoustic benefits, integrated
-                comfort, and the ability to change the look of a space without
-                demolishing the floor.
+                Feels cold and hard underfoot. Vinyl is warmer, quieter, and kinder to joints — important when people are on their feet all day. You can also change the look without ripping up the floor.
               </p>
             </div>
           </div>
@@ -154,11 +138,10 @@ export default function WhyVinylTilesPage() {
             Product Types
           </p>
           <h2 className="text-3xl font-bold tracking-tight text-stone-900 mb-3 max-w-2xl md:text-4xl">
-            LVT vs VCT vs Vinyl Plank
+            Three options. Pick the right one.
           </h2>
           <p className="mb-12 max-w-2xl text-sm leading-relaxed text-stone-500">
-            Not all vinyl flooring is the same. Understanding the differences
-            helps you specify the right product for your application.
+            LVT, VCT, or vinyl plank — each is built for different jobs.
           </p>
 
           <div className="grid gap-4 md:grid-cols-3">
@@ -232,7 +215,7 @@ export default function WhyVinylTilesPage() {
                 Technical
               </p>
               <h2 className="text-3xl font-bold tracking-tight text-stone-900 md:text-4xl">
-                Commercial-grade performance.
+                What you need to know.
               </h2>
             </div>
 
@@ -241,22 +224,22 @@ export default function WhyVinylTilesPage() {
                 {
                   title: "Wear Layers: 0.3mm to 0.7mm",
                   content:
-                    "The wear layer is the transparent top coat that protects the design layer. A 0.3mm wear layer suits light commercial applications. A 0.55mm wear layer is the standard for general commercial use. A 0.7mm wear layer is recommended for heavy commercial and industrial environments. For most Australian projects, we recommend a minimum 0.55mm wear layer.",
+                    "This is the protective top coat. 0.3mm works for light traffic. 0.55mm is standard for commercial spaces. 0.7mm if you've got heavy traffic or industrial use. We recommend minimum 0.55mm for most Australian projects.",
                 },
                 {
-                  title: "Slip Ratings: R10, R11, and Beyond",
+                  title: "Slip Ratings: R10, R11, R12+",
                   content:
-                    "Slip resistance is classified under AS 4586 and is critical for compliance. R10 is the minimum for most dry commercial interiors. R11 is required where water or contaminants may be present — commercial kitchens, bathrooms, laundries, and entrance foyers. Some specialist environments may require R12 or higher.",
+                    "Under AS 4586, these matter for compliance. R10 covers dry interiors. R11 is mandatory where moisture is a factor — kitchens, bathrooms, entry foyers. Some environments need R12. Check with your building certifier.",
                 },
                 {
                   title: "Acoustic Properties",
                   content:
-                    "Many commercial vinyl tiles are available with integrated acoustic backing layers that reduce impact sound by up to 19dB. This reduces noise transfer between floors and creates a quieter environment. For projects with specific acoustic requirements, look for products tested to AS ISO 717-2 with a Delta Lw of 15dB or higher.",
+                    "Many tiles come with acoustic backing that cuts impact noise by up to 19dB — keeps floors quieter and noise from traveling between levels. If acoustics are critical, look for products tested to AS ISO 717-2 with a Delta Lw of 15dB or higher.",
                 },
                 {
                   title: "Fire Ratings: Bfl-s1 and Cfl-s1",
                   content:
-                    "Cfl-s1 indicates satisfactory fire behaviour and low smoke production — suitable for most general commercial areas. Bfl-s1 is required for escape routes, public corridors, and high-risk building classifications. Always confirm requirements with your building certifier before specifying.",
+                    "Cfl-s1 is fine for most commercial areas — offices, retail, healthcare. Bfl-s1 is required for escape routes and corridors. Always check with your building certifier on what your project needs.",
                 },
               ].map((spec) => (
                 <div key={spec.title} className="border-t border-stone-200/60 pt-6">
@@ -282,18 +265,14 @@ export default function WhyVinylTilesPage() {
                 Sustainability
               </p>
               <h2 className="text-3xl font-bold tracking-tight text-white mb-6 md:text-4xl">
-                Responsible by design.
+                Made better now.
               </h2>
               <div className="space-y-4">
                 <p className="text-sm leading-relaxed text-stone-400">
-                  Leading manufacturers now incorporate up to 30% recycled
-                  content. Many products carry FloorScore certification for low
-                  VOC emissions — essential for Green Star and WELL projects.
+                  Most major manufacturers now include up to 30% recycled content. Many carry FloorScore certification for low VOC — essential if you're chasing Green Star or WELL.
                 </p>
                 <p className="text-sm leading-relaxed text-stone-400">
-                  Circular economy programs are expanding. Cradle to Cradle
-                  certified products demonstrate commitment to material health,
-                  renewable energy, water stewardship, and social fairness.
+                  Cradle to Cradle certified options are expanding. They demonstrate commitment to material health, renewable energy, water stewardship, and fair practices.
                 </p>
               </div>
             </div>
@@ -303,20 +282,14 @@ export default function WhyVinylTilesPage() {
                 Lifecycle Cost
               </p>
               <h2 className="text-3xl font-bold tracking-tight text-white mb-6 md:text-4xl">
-                The true cost of your floor.
+                The real number.
               </h2>
               <div className="space-y-4">
                 <p className="text-sm leading-relaxed text-stone-400">
-                  Supply starts from <span className="font-semibold text-white">$45/m&sup2;</span>, with
-                  installation from <span className="font-semibold text-white">$18/m&sup2;</span>. With
-                  a 15–20 year service life, the annualised cost is remarkably
-                  low.
+                  Supply from <span className="font-semibold text-white">$45/m&sup2;</span>, installation from <span className="font-semibold text-white">$18/m&sup2;</span>. Over 15–20 years, the annual cost is genuinely low.
                 </p>
                 <p className="text-sm leading-relaxed text-stone-400">
-                  Over 20 years, carpet often costs 40–60% more when all costs
-                  are accounted for. Engineered timber sits at $80–$120/m&sup2; with
-                  ongoing sanding and recoating costs. Vinyl tile delivers the
-                  visual outcome at significantly lower lifecycle cost.
+                  Carpet costs 40–60% more over 20 years when you factor in replacement and maintenance. Engineered timber sits at $80–$120/m&sup2; plus ongoing sanding and refinishing. Vinyl gives you the look at a fraction of the cost.
                 </p>
               </div>
             </div>
@@ -355,8 +328,8 @@ export default function WhyVinylTilesPage() {
 
       {/* Quote CTA */}
       <QuoteCta
-        title="Ready to specify vinyl tile?"
-        description="Talk to our team about product selection, pricing, and professional installation."
+        title="Ready to talk vinyl?"
+        description="Get in touch and we'll walk you through options, pricing, and what installation looks like. Call 1300 207 915 or fill out the form below."
         buttonText="Get a Free Quote"
         buttonHref="/contact"
       />

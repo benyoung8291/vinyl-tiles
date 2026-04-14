@@ -19,23 +19,23 @@ const steps = [
   {
     number: "01",
     icon: MessageSquare,
-    title: "Tell Us About Your Project",
+    title: "You Tell Us What You Need",
     paragraphs: [
-      "Every project starts with a conversation. Whether you fill out our online enquiry form, give us a call on 1300 207 915, or send through an email, our team will get back to you within 24 hours to discuss your requirements. There\u2019s no obligation and no pressure \u2014 just a straightforward discussion about what you need.",
-      "For larger commercial fitouts, office refurbishments, or aged care and healthcare projects, we\u2019ll arrange a site visit at no cost. Our estimator will assess the existing floor, take measurements, check subfloor conditions, and discuss design options on the spot.",
-      "The goal at this stage is simple: understand your space, your requirements, and your timeline so we can recommend the right product and provide an accurate quote.",
+      "Start with a call to 1300 207 915, an email to office@premrest.com.au, or fill out the form on our site. You'll hear back within 24 hours. We're not pushy — just want to understand what you're working with.",
+      "For anything bigger than a small job — office refits, healthcare, aged care — we'll visit the site for free. We'll look at the existing floor, take measurements, check moisture levels, and talk through what you want the space to feel like.",
+      "The point is to figure out your space, your timeline, and what you actually need so we can recommend the right product.",
     ],
     expectItems: [
-      "Response within 24 hours of your enquiry",
-      "Free site visit for commercial projects (where required)",
-      "No-obligation discussion \u2014 no hard sell",
+      "We call within 24 hours",
+      "Free site visit for commercial projects",
+      "Straightforward conversation, zero pressure",
     ],
     discussItems: [
-      "Space type \u2014 office, retail, healthcare, aged care, education, hospitality",
-      "Traffic levels and durability requirements",
-      "Design preferences, colour schemes, and aesthetic goals",
-      "Budget range and any constraints",
-      "Project timeline and any critical deadlines",
+      "What the space is used for — office, retail, hospital, school, etc.",
+      "How much foot traffic and what it needs to withstand",
+      "How it should look and what colours work for you",
+      "What you want to spend",
+      "When it needs to be done",
     ],
   },
   {
@@ -43,42 +43,42 @@ const steps = [
     icon: FileText,
     title: "We Recommend & Quote",
     paragraphs: [
-      "Based on what we learn about your project, we\u2019ll recommend specific products that match your performance requirements, design brief, and budget. We work with all the major commercial vinyl tile manufacturers \u2014 including Interface, Karndean, Armstrong, and Tarkett \u2014 so we\u2019re not locked into a single supplier.",
-      "You\u2019ll receive a detailed, itemised quote within 48 hours of our site visit or consultation. Our quotes are transparent and comprehensive \u2014 no hidden fees, no surprise charges halfway through the job.",
-      "We\u2019re happy to provide multiple options at different price points, and we\u2019ll clearly explain the trade-offs so you can make an informed decision. Need samples before you commit? We\u2019ll have them sent directly to your site or office.",
+      "We'll suggest products that fit your budget, performance needs, and aesthetic. We work with Interface, Karndean, Armstrong, Tarkett, and others — we're not locked into one supplier, which means you get the right product, not just what we stock.",
+      "You'll get a detailed quote within 48 hours. No hidden charges, no surprises. If you want samples, we'll send them to you before you commit.",
+      "Want options at different price points? We can do that and explain what you're trading off.",
     ],
     expectItems: [
-      "Detailed, itemised quote within 48 hours",
-      "Product samples delivered to your door",
-      "Multiple options at different price points if requested",
+      "Detailed quote within 48 hours",
+      "Samples sent to your door",
+      "Options at different price points if you need them",
     ],
     discussItems: [
-      "Product cost \u2014 supply from $45/m\u00B2",
-      "Installation cost \u2014 from $18/m\u00B2",
-      "Subfloor preparation requirements and costs",
-      "Project timeline with key milestones",
-      "Warranty details and product specifications",
+      "Product cost — from $45/m² depending on the product",
+      "Installation cost — from $18/m²",
+      "What the subfloor needs and whether that's an extra cost",
+      "Timeline with key dates",
+      "Warranty and technical specs",
     ],
   },
   {
     number: "03",
     icon: Truck,
-    title: "We Source & Supply",
+    title: "We Source It & Deliver",
     paragraphs: [
-      "Once you\u2019ve approved the quote, we handle all product sourcing and logistics. We order directly from manufacturers through our established trade relationships, which means competitive pricing and reliable supply.",
-      "We coordinate delivery timing to align with your project schedule, whether that\u2019s a single delivery for a straightforward job or staged deliveries for a multi-phase fitout. All materials are delivered directly to site, inspected on arrival, and stored appropriately until installation begins.",
-      "If you have your own installation team and just need product supply, we\u2019re happy to work on a supply-only basis. You\u2019ll still benefit from our manufacturer relationships and competitive pricing, with supply from $45/m\u00B2 depending on the product selected.",
+      "Once you approve the quote, we order directly from manufacturers. That means competitive pricing and reliable supply — we've got the relationships.",
+      "We time delivery to suit your schedule. Single delivery, staged deliveries for a phased project — we work with you. Everything arrives at site, gets inspected, and is stored properly until we're ready to install.",
+      "Or if you've got your own installation team, we can supply only. You still get our pricing and manufacturer relationships — from $45/m² depending on product.",
     ],
     expectItems: [
-      "Direct manufacturer sourcing for best pricing",
-      "Coordinated delivery to site on your schedule",
-      "Supply-only option available if you have your own installers",
+      "Direct from manufacturers — no middlemen",
+      "Delivery scheduled around your project",
+      "Supply-only option available",
     ],
     discussItems: [
-      "Direct manufacturer relationships \u2014 no middlemen",
-      "Competitive pricing through Premrest buying power",
-      "Reliable delivery with tracking and confirmation",
-      "Quality guaranteed \u2014 all products supplied with full manufacturer warranty",
+      "Direct manufacturer relationships and pricing power",
+      "Delivery tracking and confirmation",
+      "All products come with full manufacturer warranty",
+      "Stock always arrives in good condition",
     ],
   },
   {
@@ -86,21 +86,21 @@ const steps = [
     icon: Hammer,
     title: "Professional Installation",
     paragraphs: [
-      "Our installation teams are licensed commercial flooring specialists with years of experience across offices, retail, healthcare, education, and aged care environments. Every installer on our team understands the standards required for commercial work.",
-      "Before a single tile goes down, we complete a thorough subfloor assessment. If moisture levels are too high, the surface is uneven, or old adhesive residue needs grinding back, we take care of it. Installation starts from $18/m\u00B2, and if you\u2019re replacing existing flooring, we handle takeup and removal from $6.50/m\u00B2.",
-      "Throughout the project, you\u2019ll have a single point of contact managing the job from start to finish. Once installation is complete, we conduct a post-install inspection with you to make sure everything meets our standards and yours.",
+      "Our installers are licensed commercial flooring specialists. They've done offices, retail, hospitals, schools, aged care — they know what commercial-grade work looks like.",
+      "Before any tile goes down, we assess the subfloor properly. High moisture? Uneven surface? Old adhesive gunk? We fix it. Installation from $18/m², takeup and removal from $6.50/m². One point of contact manages the whole job from start to finish.",
+      "When we're done, we walk through the installation with you. Everything gets inspected, documented, and warranted.",
     ],
     expectItems: [
       "Licensed commercial flooring installers",
-      "Full project management from start to finish",
-      "Post-installation inspection and sign-off",
+      "One project manager from start to finish",
+      "Final walkthrough and sign-off",
     ],
     discussItems: [
-      "Subfloor assessment and preparation included",
-      "Professional installation from $18/m\u00B2",
-      "Takeup and removal of existing flooring from $6.50/m\u00B2",
-      "Project management with a single point of contact",
-      "Post-install inspection and warranty documentation",
+      "Subfloor assessment and prep — we handle it",
+      "Installation from $18/m²",
+      "Takeup and disposal from $6.50/m² if needed",
+      "Project management and scheduling",
+      "Post-install warranty documentation",
     ],
   },
 ];
@@ -112,14 +112,13 @@ export default function HowWeWorkPage() {
       <section className="bg-cream">
         <div className="mx-auto max-w-[1280px] px-6 py-16 md:py-20 lg:px-8">
           <p className="text-xs font-semibold uppercase tracking-wider text-brand mb-3">
-            Our Process
+            How We Work
           </p>
           <h1 className="text-4xl font-bold tracking-tight text-stone-900 max-w-3xl md:text-5xl">
-            From first call to finished floor.
+            From phone call to finished floor.
           </h1>
           <p className="mt-4 max-w-xl text-lg leading-relaxed text-stone-500">
-            Here&apos;s exactly what to expect when you work with Vinyl Tiles by
-            Premrest.
+            Four straightforward steps. No complexity, no surprises.
           </p>
         </div>
       </section>
@@ -211,19 +210,19 @@ export default function HowWeWorkPage() {
           <div className="grid gap-12 lg:grid-cols-[1fr_1.5fr]">
             <div>
               <p className="text-xs font-semibold uppercase tracking-wider text-brand-light mb-3">
-                Why Choose Us
+                Why Premrest
               </p>
               <h2 className="text-3xl font-bold tracking-tight text-white md:text-4xl">
-                The right flooring partner matters.
+                You get someone who knows their work.
               </h2>
             </div>
 
             <div className="grid gap-px sm:grid-cols-2">
               {[
-                "A Premrest brand \u2014 backed by one of Australia\u2019s most established commercial flooring companies",
-                "Commercial flooring specialists since 2010, with thousands of projects completed across every sector",
-                "Single point of contact from first enquiry to finished floor \u2014 no getting passed between departments",
-                "Australia-wide service \u2014 we supply and install in every state and territory",
+                "Part of Premrest — one of Australia\u2019s established commercial flooring companies",
+                "Commercial flooring specialists since 2010 — thousands of projects across every sector",
+                "You get one contact from day one through to completion — not passed between departments",
+                "We work Australia-wide — supply and install in every state and territory",
               ].map((text, i) => (
                 <div key={i} className="border-t border-stone-800 py-5 pr-6">
                   <span className="text-xs font-semibold text-brand-light">
@@ -241,8 +240,8 @@ export default function HowWeWorkPage() {
 
       {/* CTA */}
       <QuoteCta
-        title="Ready to start your project?"
-        description="Get in touch for a free, no-obligation consultation. We'll provide a detailed quote within 48 hours."
+        title="Ready to talk flooring?"
+        description="Call 1300 207 915, email office@premrest.com.au, or fill out the form below. We'll get back to you within 24 hours with a detailed quote within 48."
         buttonText="Get a Free Quote"
         buttonHref="/contact"
       />

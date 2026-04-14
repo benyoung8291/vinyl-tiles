@@ -3,9 +3,9 @@ import { Phone, Mail, Clock, Building2 } from "lucide-react";
 import { ContactForm } from "@/components/contact-form";
 
 export const metadata: Metadata = {
-  title: "Contact Us & Get a Quote",
+  title: "Contact Premrest | Let's Talk Flooring",
   description:
-    "Get a free quote for commercial vinyl tile supply and installation. Contact Vinyl Tiles by Premrest — call 1300 207 915 or fill out our enquiry form.",
+    "Tell us about your flooring project. Premrest serves Melbourne, Sydney, and Brisbane with expert commercial flooring solutions. Call 1300 207 915 or get in touch.",
 };
 
 export default function ContactPage() {
@@ -15,14 +15,13 @@ export default function ContactPage() {
       <section className="bg-cream">
         <div className="mx-auto max-w-[1280px] px-6 py-16 md:py-20 lg:px-8">
           <p className="text-xs font-semibold uppercase tracking-wider text-brand mb-3">
-            Contact
+            Get In Touch
           </p>
           <h1 className="text-4xl font-bold tracking-tight text-stone-900 max-w-3xl md:text-5xl">
-            Let&apos;s discuss your project.
+            Tell us what you need.
           </h1>
           <p className="mt-4 max-w-xl text-lg leading-relaxed text-stone-500">
-            Fill out the form below and our team will be in touch within one
-            business day. No obligation, no pressure.
+            Whether you&apos;re planning a commercial flooring project or just want to explore your options, we&apos;re here to listen. Our team will get back to you within one business day.
           </p>
         </div>
       </section>
@@ -34,7 +33,7 @@ export default function ContactPage() {
             {/* Form */}
             <div>
               <h2 className="text-xs font-semibold uppercase tracking-wider text-brand mb-6">
-                Send an Enquiry
+                Your Project Details
               </h2>
               <ContactForm />
             </div>
@@ -64,10 +63,10 @@ export default function ContactPage() {
                   <h3 className="text-xs font-semibold uppercase tracking-wider text-stone-500">Email</h3>
                 </div>
                 <a
-                  href="mailto:vinyl@premrest.com.au"
+                  href="mailto:office@premrest.com.au"
                   className="text-sm font-medium text-stone-900 transition-colors hover:text-brand"
                 >
-                  vinyl@premrest.com.au
+                  office@premrest.com.au
                 </a>
               </div>
 
@@ -90,13 +89,11 @@ export default function ContactPage() {
                     <Building2 className="size-3.5 text-brand" />
                   </div>
                   <h3 className="text-xs font-semibold uppercase tracking-wider text-stone-500">
-                    A Premrest Brand
+                    Service Areas
                   </h3>
                 </div>
                 <p className="text-sm leading-relaxed text-stone-500">
-                  Vinyl Tiles is a division of Premrest &mdash; one of
-                  Australia&apos;s most trusted commercial flooring companies
-                  with decades of industry experience.
+                  We serve Melbourne, Sydney, and Brisbane. Backed by Premrest, one of Australia&apos;s most trusted commercial flooring specialists with decades of industry experience.
                 </p>
               </div>
             </aside>

@@ -1,34 +1,34 @@
 import Link from "next/link";
-import { ArrowRight, Layers, Leaf, Shield, Truck } from "lucide-react";
+import { ArrowRight, Layers, Shield, Truck, Wrench } from "lucide-react";
 import { QuoteCta } from "@/components/quote-cta";
 
 const rangeItems = [
   {
     name: "Interface",
     slug: "interface",
-    tagline: "Modular Flooring. Designed for Life.",
-    detail: "Carbon-neutral modular LVT with biophilic design for commercial environments that demand sustainability without compromise.",
+    tagline: "Modular LVT with biophilic design.",
+    detail: "Carbon-neutral modular vinyl tile. Wood and stone looks with acoustic backing. The sustainability benchmark for commercial projects.",
     productCount: 8,
   },
   {
     name: "Karndean",
     slug: "karndean",
-    tagline: "Design Flooring. Beautifully Crafted.",
-    detail: "Hand-crafted wood and stone visuals with LooseLay technology — adhesive-free installation that cuts project timelines in half.",
+    tagline: "Design-led. LooseLay option.",
+    detail: "Realistic wood and stone visuals with adhesive-free LooseLay technology. Fast install, easy replacement, great for fitouts on a timeline.",
     productCount: 7,
   },
   {
     name: "Armstrong",
     slug: "armstrong",
-    tagline: "Performance Flooring You Can Trust.",
-    detail: "Over a century of innovation in resilient flooring. Diamond 10 surface technology for scratch resistance without polish or wax.",
+    tagline: "Built for heavy commercial.",
+    detail: "Diamond 10 surface technology means no polish, no wax, and scratch resistance that actually holds up under trolleys and foot traffic.",
     productCount: 6,
   },
   {
     name: "Tarkett",
     slug: "tarkett",
-    tagline: "Good for People and Planet.",
-    detail: "Cradle to Cradle certified with integrated acoustic backing achieving up to 19dB impact sound reduction.",
+    tagline: "Acoustic backing. Cradle to Cradle.",
+    detail: "Integrated acoustic backing achieving up to 19dB impact sound reduction. Cradle to Cradle certified for projects chasing Green Star.",
     productCount: 6,
   },
 ];
@@ -37,48 +37,27 @@ const sectors = [
   {
     title: "Office",
     href: "/office-flooring",
-    description: "Acoustic performance meets design flexibility for the modern workplace.",
+    description: "Open plan, hot desks, meeting rooms — different zones, one consistent floor that handles all of it.",
   },
   {
     title: "Retail",
     href: "/retail-flooring",
-    description: "Heavy commercial-grade wear layers engineered for high-traffic environments.",
+    description: "Trolleys, foot traffic, seasonal layout changes. The floor needs to look good on day one thousand.",
   },
   {
     title: "Healthcare",
     href: "/healthcare-flooring",
-    description: "Hygienic, welded-seam flooring with antimicrobial surface treatments.",
+    description: "Infection control, slip resistance, welded seams. Flooring that meets the compliance requirements.",
   },
   {
     title: "Education",
     href: "/education-flooring",
-    description: "Impact-resistant, acoustic flooring built for budget-conscious projects.",
+    description: "Thousands of kids, tight budgets, decades of expected service life. Vinyl tile handles all three.",
   },
   {
     title: "Hospitality",
     href: "/hospitality-flooring",
-    description: "Designer aesthetics with waterproof construction and effortless maintenance.",
-  },
-];
-
-const testimonials = [
-  {
-    quote: "They handled everything from product selection to final install. Professional, on time, and the result looks fantastic.",
-    author: "Sarah Mitchell",
-    role: "Facilities Manager",
-    company: "Greenway Corporate Park",
-  },
-  {
-    quote: "We needed 2,000m\u00B2 of healthcare-grade flooring installed over a weekend. Delivered on budget and ahead of schedule.",
-    author: "David Nguyen",
-    role: "Project Manager",
-    company: "Westfield Medical Centre",
-  },
-  {
-    quote: "The vinyl plank they recommended for our school halls has held up perfectly after two years of heavy use.",
-    author: "Karen O'Brien",
-    role: "Business Manager",
-    company: "St Andrews College",
+    description: "Looks like timber or stone, handles water and spills, doesn't need the maintenance budget of either.",
   },
 ];
 
@@ -90,13 +69,13 @@ export default function Home() {
         <div className="mx-auto max-w-[1280px] px-6 py-20 md:py-28 lg:px-8 lg:py-36">
           <div className="max-w-2xl">
             <h1 className="text-4xl font-bold tracking-tight text-stone-900 md:text-5xl lg:text-6xl">
-              Beautiful floors,{" "}
+              Commercial vinyl flooring,{" "}
               <span className="text-brand">sorted.</span>
             </h1>
             <p className="mt-6 text-lg leading-relaxed text-stone-500 lg:max-w-lg">
-              Vinyl tile flooring for commercial spaces. We handle the
-              lot&nbsp;&mdash; find the right product, get it to site, lay it
-              properly. One call.
+              You tell us what the space needs to do. We find the right vinyl tile,
+              get it to site, and lay it properly. Supply and install, one contractor,
+              no finger-pointing.
             </p>
             <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:items-center">
               <Link
@@ -123,9 +102,9 @@ export default function Home() {
           <div className="grid grid-cols-2 gap-6 lg:grid-cols-4">
             {[
               { icon: Shield, label: "Supply + Install", detail: "One call, one crew, done" },
-              { icon: Layers, label: "Any manufacturer", detail: "We pick the right floor, fit for purpose" },
-              { icon: Leaf, label: "Est. 1986", detail: "Premrest" },
-              { icon: Truck, label: "Australia-wide", detail: "Every state and territory" },
+              { icon: Layers, label: "Any manufacturer", detail: "We pick the right floor for the job" },
+              { icon: Wrench, label: "We do both", detail: "Source it, lay it, own the result" },
+              { icon: Truck, label: "Melbourne · Sydney · Brisbane", detail: "Local teams, national reach" },
             ].map((item) => (
               <div key={item.label} className="flex items-start gap-3">
                 <item.icon className="mt-0.5 size-4 text-brand" />
@@ -284,39 +263,37 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Testimonials */}
+      {/* Why us */}
       <section className="bg-white">
         <div className="mx-auto max-w-[1280px] px-6 py-20 md:py-28 lg:px-8">
-          <p className="text-xs font-semibold uppercase tracking-wider text-brand mb-3">Testimonials</p>
+          <p className="text-xs font-semibold uppercase tracking-wider text-brand mb-3">Why Premrest</p>
           <h2 className="text-3xl font-bold tracking-tight text-stone-900 mb-12 md:text-4xl">
-            Don&apos;t take our word for it.
+            We supply it. We install it. We own the result.
           </h2>
 
           <div className="grid gap-4 md:grid-cols-3">
-            {testimonials.map((t, i) => (
+            {[
+              {
+                title: "One contractor",
+                text: "No coordination between the company that sold you the vinyl and the mob that laid it. If something\u2019s not right, it\u2019s on us.",
+              },
+              {
+                title: "We start with your problem",
+                text: "Not a product catalogue. What does the space need to do? How much traffic? Wet areas? Wheelchairs? We work backwards from the answer.",
+              },
+              {
+                title: "Compliance is built in",
+                text: "Slip ratings, fire ratings, acoustic requirements, NCC compliance \u2014 we specify to all of them. You get the documentation your certifier needs.",
+              },
+            ].map((item) => (
               <div
-                key={i}
+                key={item.title}
                 className="rounded-lg border border-stone-200/60 bg-cream/50 p-6"
               >
-                <div className="mb-3 flex gap-0.5">
-                  {[...Array(5)].map((_, j) => (
-                    <svg key={j} className="size-3.5 text-brand" viewBox="0 0 20 20" fill="currentColor">
-                      <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-                    </svg>
-                  ))}
-                </div>
-                <blockquote className="text-sm leading-relaxed text-stone-600">
-                  &ldquo;{t.quote}&rdquo;
-                </blockquote>
-                <div className="mt-4 flex items-center gap-3">
-                  <div className="flex size-8 items-center justify-center rounded-full bg-brand/10 text-xs font-bold text-brand">
-                    {t.author[0]}
-                  </div>
-                  <div>
-                    <p className="text-sm font-medium text-stone-800">{t.author}</p>
-                    <p className="text-xs text-stone-400">{t.role}, {t.company}</p>
-                  </div>
-                </div>
+                <h3 className="text-base font-bold text-stone-900">{item.title}</h3>
+                <p className="mt-3 text-sm leading-relaxed text-stone-500">
+                  {item.text}
+                </p>
               </div>
             ))}
           </div>

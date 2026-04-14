@@ -22,6 +22,18 @@ const solutions = [
   { name: "Hospitality", href: "/hospitality-flooring" },
 ];
 
+const premrestSites = [
+  { name: "Premrest", url: "https://www.premrest.com.au" },
+  { name: "Modular Carpet", url: "https://modularcarpet.com.au" },
+  { name: "ComCork Flooring", url: "https://comcorkflooring.com.au" },
+  { name: "Aged Care Flooring", url: "https://agedcareflooring.com.au" },
+  { name: "Medical Flooring", url: "https://medicalflooring.com.au" },
+  { name: "Retail Flooring", url: "https://retailflooring.com.au" },
+  { name: "Strata Flooring", url: "https://strataflooring.com.au" },
+  { name: "Flood Restoration", url: "https://floodrest.com.au" },
+  { name: "Carpet Cleaning", url: "https://localcarpetcleaning.com.au" },
+];
+
 export default function Footer() {
   return (
     <footer className="bg-stone-900 text-stone-400">
@@ -40,8 +52,17 @@ export default function Footer() {
               </span>
             </Link>
             <p className="mt-4 max-w-xs text-sm leading-relaxed text-stone-500">
-              Commercial vinyl tile flooring, supplied and installed across
-              Australia. A Premrest Group business, est.&nbsp;1986.
+              Commercial vinyl tile flooring, supplied and installed. We find the
+              right product, get it to site, and lay it properly. A{" "}
+              <a
+                href="https://www.premrest.com.au"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-stone-400 underline decoration-stone-700 transition-colors hover:text-white"
+              >
+                Premrest
+              </a>{" "}
+              business.
             </p>
             <div className="mt-6 space-y-1.5">
               <a
@@ -51,14 +72,11 @@ export default function Footer() {
                 1300 207 915
               </a>
               <a
-                href="mailto:vinyl@premrest.com.au"
+                href="mailto:office@premrest.com.au"
                 className="block text-sm text-stone-500 transition-colors hover:text-white"
               >
-                vinyl@premrest.com.au
+                office@premrest.com.au
               </a>
-              <p className="text-xs text-stone-600">
-                Mon&ndash;Fri 8:30am &ndash; 5:00pm AEST
-              </p>
             </div>
           </div>
 
@@ -125,28 +143,19 @@ export default function Footer() {
               Premrest Group
             </h3>
             <ul className="space-y-2.5">
-              <li>
-                <a
-                  href="https://modularcarpet.com.au"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center gap-1 text-sm text-stone-400 transition-colors hover:text-white"
-                >
-                  Modular Carpet
-                  <ArrowUpRight className="size-3 opacity-40" />
-                </a>
-              </li>
-              <li>
-                <a
-                  href="https://comcorkflooring.com.au"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center gap-1 text-sm text-stone-400 transition-colors hover:text-white"
-                >
-                  ComCork Flooring
-                  <ArrowUpRight className="size-3 opacity-40" />
-                </a>
-              </li>
+              {premrestSites.map((site) => (
+                <li key={site.url}>
+                  <a
+                    href={site.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-1 text-sm text-stone-400 transition-colors hover:text-white"
+                  >
+                    {site.name}
+                    <ArrowUpRight className="size-3 opacity-40" />
+                  </a>
+                </li>
+              ))}
             </ul>
           </div>
         </div>
@@ -154,13 +163,17 @@ export default function Footer() {
         {/* Bottom bar */}
         <div className="mt-12 flex flex-col items-start justify-between gap-3 border-t border-stone-800 pt-6 sm:flex-row sm:items-center">
           <p className="text-xs text-stone-600">
-            &copy; 2026 Premier Restorations Group Pty Ltd. All rights reserved.
+            &copy; 2026 Premier Restorations Group Pty Ltd trading as Premrest |
+            ABN 27 634 747 952 | All rights reserved.
           </p>
-          <p className="text-xs text-stone-700">
-            A{" "}
-            <span className="font-medium text-stone-500">Premrest</span>{" "}
-            brand
-          </p>
+          <a
+            href="https://www.premrest.com.au"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-xs font-medium text-stone-500 transition-colors hover:text-white"
+          >
+            premrest.com.au
+          </a>
         </div>
       </div>
     </footer>
