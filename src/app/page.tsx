@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { ArrowRight, Layers, Shield, Truck, Wrench, CheckCircle2, Users, TrendingUp } from "lucide-react";
 import { QuoteCta } from "@/components/quote-cta";
+import { AnimatedBackground } from "@/components/animated-background";
 
 const rangeItems = [
   {
@@ -82,36 +83,51 @@ const personas = [
 export default function Home() {
   return (
     <>
-      {/* Hero */}
-      <section style={{ backgroundColor: "rgb(251, 211, 190)" }} className="relative overflow-hidden">
-        <div className="mx-auto max-w-[1728px] px-6 py-24 lg:px-12 lg:py-40">
-          <div className="max-w-3xl">
-            <h1
-              style={{ fontFamily: "var(--font-heading, serif)", color: "rgb(93, 82, 75)" }}
-              className="text-5xl font-bold leading-tight md:text-6xl lg:text-8xl tracking-tight"
+      {/* Hero – full viewport with animated gradient background */}
+      <section className="relative -mt-14 flex min-h-[100svh] items-center justify-center overflow-hidden">
+        <AnimatedBackground />
+        {/* Subtle noise texture overlay */}
+        <div
+          className="pointer-events-none absolute inset-0 z-[1] opacity-[0.035]"
+          style={{
+            backgroundImage: `url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E")`,
+            backgroundRepeat: "repeat",
+            backgroundSize: "180px 180px",
+          }}
+        />
+        <div className="relative z-[2] mx-auto max-w-[1728px] px-6 text-center lg:px-12">
+          <h1
+            style={{ fontFamily: "var(--font-heading, serif)" }}
+            className="text-5xl font-bold leading-[0.95] tracking-tight text-white md:text-7xl lg:text-[6.5rem]"
+          >
+            <em className="not-italic font-bold italic">Commercial vinyl</em>
+            <br />
+            flooring, sorted.
+          </h1>
+          <p className="mx-auto mt-8 max-w-2xl text-lg leading-relaxed text-white/85 md:text-xl">
+            You tell us what the space needs to do. We find the right vinyl tile, get it to site, and lay it properly. Supply and install, one contractor, no finger-pointing.
+          </p>
+          <div className="mt-10 flex flex-col items-center gap-4 sm:flex-row sm:justify-center">
+            <Link
+              href="/contact"
+              className="inline-flex items-center justify-center rounded-md bg-white px-8 py-3 text-base font-semibold transition-all duration-300 hover:shadow-lg hover:scale-[1.02]"
+              style={{ color: "rgb(93, 82, 75)" }}
             >
-              Commercial vinyl flooring, sorted.
-            </h1>
-            <p className="mt-8 text-lg leading-relaxed text-foreground/80 lg:max-w-2xl md:text-xl">
-              You tell us what the space needs to do. We find the right vinyl tile, get it to site, and lay it properly. Supply and install, one contractor, no finger-pointing.
-            </p>
-            <div className="mt-10 flex flex-col gap-4 sm:flex-row sm:items-center">
-              <Link
-                href="/contact"
-                className="inline-flex items-center justify-center rounded-md px-8 py-3 text-base font-semibold text-white transition-all duration-300 hover:shadow-lg"
-                style={{ backgroundColor: "rgb(140, 84, 98)" }}
-              >
-                Get a Quote
-              </Link>
-              <Link
-                href="#ranges"
-                className="inline-flex items-center justify-center gap-2 px-8 py-3 text-base font-medium transition-colors duration-300 hover:opacity-70"
-                style={{ color: "rgb(140, 84, 98)" }}
-              >
-                Explore Ranges
-                <ArrowRight className="size-5" />
-              </Link>
-            </div>
+              Get a Quote
+            </Link>
+            <Link
+              href="#ranges"
+              className="inline-flex items-center justify-center gap-2 px-8 py-3 text-base font-medium text-white/80 transition-colors duration-300 hover:text-white"
+            >
+              Explore Ranges
+              <ArrowRight className="size-5" />
+            </Link>
+          </div>
+        </div>
+        {/* Scroll indicator */}
+        <div className="absolute bottom-8 left-1/2 z-[2] -translate-x-1/2 animate-bounce">
+          <div className="h-10 w-6 rounded-full border-2 border-white/40 p-1">
+            <div className="mx-auto h-2 w-1 rounded-full bg-white/60" />
           </div>
         </div>
       </section>
@@ -225,8 +241,9 @@ export default function Home() {
       </section>
 
       {/* Process / How We Work section */}
-      <section style={{ backgroundColor: "rgb(93, 82, 75)" }}>
-        <div className="mx-auto max-w-[1728px] px-6 py-20 lg:px-12 lg:py-32">
+      <section className="relative overflow-hidden" style={{ backgroundColor: "rgb(93, 82, 75)" }}>
+        <AnimatedBackground variant="dark" />
+        <div className="relative z-[1] mx-auto max-w-[1728px] px-6 py-20 lg:px-12 lg:py-32">
           <div className="grid gap-16 lg:grid-cols-[1fr_1.5fr]">
             <div>
               <p className="text-sm font-semibold uppercase tracking-widest text-white/60 mb-4">How We Work</p>

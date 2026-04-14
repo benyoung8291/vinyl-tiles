@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { ArrowRight } from "lucide-react";
+import { AnimatedBackground } from "@/components/animated-background";
 
 interface QuoteCtaProps {
   title?: string;
@@ -15,8 +16,9 @@ export function QuoteCta({
   buttonHref = "/contact",
 }: QuoteCtaProps) {
   return (
-    <section style={{ backgroundColor: 'rgb(140, 84, 98)' }}>
-      <div className="mx-auto max-w-[1728px] px-6 py-20 md:py-28 lg:px-8">
+    <section className="relative overflow-hidden" style={{ backgroundColor: 'rgb(140, 84, 98)' }}>
+      <AnimatedBackground variant="brand" />
+      <div className="relative z-[1] mx-auto max-w-[1728px] px-6 py-20 md:py-28 lg:px-8">
         <div className="flex flex-col items-start gap-12 lg:flex-row lg:items-center lg:justify-between">
           <div className="flex-1">
             <h2 className="font-heading text-4xl font-bold leading-tight text-white md:text-5xl">
