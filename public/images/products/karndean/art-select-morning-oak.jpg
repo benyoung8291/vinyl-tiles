@@ -1,0 +1,2085 @@
+
+
+<!doctype html>
+<html lang="en-US" class="h-full font-ubuntu text-secondary-mine-shaft">
+
+<head>
+  <meta charset="utf-8">
+  <link rel="dns-prefetch" href="//cdnjs.cloudflare.com">
+  <link rel="dns-prefetch" href="//hello.myfonts.net">
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <title>404 Not Found</title>
+    <meta property="og:title" content="404 Not Found">
+
+  
+
+
+<link rel="canonical" href="https://www.karndean.com/" />
+
+
+    <meta name="p:domain_verify" content="7371698af4d65598e01c144f11947a55" />
+
+        <link rel="alternate" href="https://www.karndean.com/en-us/floors/404-not-found/" hreflang="en-US" />
+        <link rel="alternate" href="https://www.karndean.com/en-gb/floors/404-not-found/" hreflang="en-GB" />
+        <link rel="alternate" href="https://www.karndean.com/en-nz/floors/404-not-found/" hreflang="en-NZ" />
+        <link rel="alternate" href="https://www.karndean.com/en-ca/floors/404-not-found/" hreflang="en-CA" />
+        <link rel="alternate" href="https://www.karndean.com/en-au/floors/404-not-found/" hreflang="en-AU" />
+        <link rel="alternate" href="https://www.karndean.com/en-gb/floors/404-not-found/" hreflang="x-default" />
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/noUiSlider/11.1.0/nouislider.min.css" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap" />
+  <link rel="stylesheet" href="/assets/b2c-redesign/css/style.css?version=639106525400000000" />
+
+  <link rel="icon" type="image/png" href="/assets/b2c-redesign/favicon-96x96.png" sizes="96x96" />
+  <link rel="icon" type="image/svg+xml" href="/assets/b2c-redesign/favicon.svg" />
+  <link rel="shortcut icon" href="/assets/b2c-redesign/favicon.ico" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/b2c-redesign/apple-touch-icon.png" />
+  <meta name="apple-mobile-web-app-title" content="Karndean" />
+  <link rel="manifest" href="/assets/b2c-redesign/site.webmanifest" />
+
+    <script>
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || []; w[l].push({
+          'gtm.start':
+            new Date().getTime(), event: 'gtm.js'
+        }); var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s), dl = l !== 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+            'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+      })(window, document, 'script', 'dataLayer', 'GTM-NFVT');</script>
+
+  <meta name="theme-color" content="#fafafa">
+  
+  
+  <!-- Cloudflare Turnstile -->
+  <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
+</head>
+
+<body class="antialiased selection:bg-selection bg-white relative pt-16 md:pt-[120px] flex flex-col h-full text-secondary-mine-shaft">
+  
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NFVT" height="0"
+        width="0" style="display: none; visibility: hidden"></iframe></noscript>
+
+
+
+<a class="sr-only btn btn-tertiary focus:not-sr-only focus:z-100 focus:top-4 focus:md:top-[51px] focus:left-4 focus:flex focus:absolute focus:px-6 focus:py-2.5 transition-none"
+   href="#main">Skip to content</a>
+
+    <header id="main-header" class="flex flex-col items-center w-full absolute left-0 right-0 top-0 bg-white z-90">
+
+
+        <div class="hidden md:block bg-gray w-full z-[120]">
+            <div class="container flex h-10 justify-between w-full">
+                <div class="flex items-center">
+                    <a href="https://www.karndeancommercial.com/en-us/commercial-flooring/" rel="nofollow"
+                       class="group btn-link-underline decoration-white !flex text-base text-white no-underline hover:no-underline ring-offset-transparent focus-visible:ring-offset-gray">
+                        <span class="pt-0.5 no-underline group-hover:underline group-hover:decoration-2 underline-offset-[4px]">Karndean For Commercial</span>
+                        <svg width="24" height="24" class="ml-2 icon-arrow-4" aria-hidden="true" focusable="false">
+                            <use href="/assets/b2c-redesign/img/svg-sprite.svg#icon-arrow-4"></use>
+                        </svg>
+                    </a>
+                </div>
+                <div class="flex items-center justify-end">
+                    <div class="js-dropdown-menu relative">
+        <button id="dropdown-country-trigger" type="button"
+                class="js-dropdown-trigger h-6 group flex items-center text-white outline-none ring-3 ring-transparent ring-offset-gray ring-offset-2 transition-all duration-500 focus-visible:ring-focus"
+                aria-haspopup="true" aria-expanded="false" aria-controls="dropdown-country">
+            <svg class="h-6 w-6 group-[&.is-open]:rotate-180 icon-arrow-5" aria-hidden="true" focusable="false">
+                <use href="/assets/b2c-redesign/img/svg-sprite.svg#icon-arrow-5"></use>
+            </svg>
+            <span class="underline decoration-transparent decoration-2 underline-offset-[4px] group-hover:decoration-white group-focus-visible:decoration-white group-focus-visible:decoration-2">
+                <span class="sr-only">Switch region, current region:</span>United Kingdom
+            </span>
+            <svg class="h-5 w-5 ml-2 icon-flag-uk" aria-hidden="true" focusable="false">
+                <use href="/assets/b2c-redesign/img/svg-sprite.svg#icon-flag-uk-round"></use>
+            </svg>
+        </button>
+        <ul id="dropdown-country" role="menu" aria-labelledby="dropdown-country-trigger" tabindex="-1"
+            class="js-dropdown-panel absolute top-6 right-0 bg-white rounded-[5px] border border-[#CFCFCF] py-2 px-2 space-y-2 z-100 shadow-lg hidden">
+                <li role="menuitem" tabindex="-1">
+                    <a href="/en-us/floors/404-not-found/?regionswitch=true" aria-current="true"
+                       class="flex items-center group outline-none ring-3 ring-transparent ring-offset-2 transition-all duration-500 focus-visible:ring-focus">
+                        <svg class="mr-2 h-6 w-9 shrink-0 icon-flag-usa" aria-hidden="true" focusable="false">
+                            <use href="/assets/b2c-redesign/img/svg-sprite.svg#icon-flag-usa"></use>
+                        </svg>
+                        <span class="whitespace-nowrap transition-colors duration-300 underline decoration-transparent decoration-2 underline-offset-[4px] group-hover:decoration-black group-focus-visible:decoration-black group-focus-visible:decoration-2">United States</span>
+                    </a>
+                </li>
+                <li role="menuitem" tabindex="-1">
+                    <a href="/en-au/floors/404-not-found/?regionswitch=true" aria-current="true"
+                       class="flex items-center group outline-none ring-3 ring-transparent ring-offset-2 transition-all duration-500 focus-visible:ring-focus">
+                        <svg class="mr-2 h-6 w-9 shrink-0 icon-flag-australia" aria-hidden="true" focusable="false">
+                            <use href="/assets/b2c-redesign/img/svg-sprite.svg#icon-flag-australia"></use>
+                        </svg>
+                        <span class="whitespace-nowrap transition-colors duration-300 underline decoration-transparent decoration-2 underline-offset-[4px] group-hover:decoration-black group-focus-visible:decoration-black group-focus-visible:decoration-2">Australia</span>
+                    </a>
+                </li>
+                <li role="menuitem" tabindex="-1">
+                    <a href="/en-nz/floors/404-not-found/?regionswitch=true" aria-current="true"
+                       class="flex items-center group outline-none ring-3 ring-transparent ring-offset-2 transition-all duration-500 focus-visible:ring-focus">
+                        <svg class="mr-2 h-6 w-9 shrink-0 icon-flag-new-zealand" aria-hidden="true" focusable="false">
+                            <use href="/assets/b2c-redesign/img/svg-sprite.svg#icon-flag-new-zealand"></use>
+                        </svg>
+                        <span class="whitespace-nowrap transition-colors duration-300 underline decoration-transparent decoration-2 underline-offset-[4px] group-hover:decoration-black group-focus-visible:decoration-black group-focus-visible:decoration-2">New Zealand</span>
+                    </a>
+                </li>
+                <li role="menuitem" tabindex="-1">
+                    <a href="/en-ca/floors/404-not-found/?regionswitch=true" aria-current="true"
+                       class="flex items-center group outline-none ring-3 ring-transparent ring-offset-2 transition-all duration-500 focus-visible:ring-focus">
+                        <svg class="mr-2 h-6 w-9 shrink-0 icon-flag-canada" aria-hidden="true" focusable="false">
+                            <use href="/assets/b2c-redesign/img/svg-sprite.svg#icon-flag-canada"></use>
+                        </svg>
+                        <span class="whitespace-nowrap transition-colors duration-300 underline decoration-transparent decoration-2 underline-offset-[4px] group-hover:decoration-black group-focus-visible:decoration-black group-focus-visible:decoration-2">Canada</span>
+                    </a>
+                </li>
+        </ul>
+</div>
+                </div>
+            </div>
+        </div>
+        <div class="container flex items-center h-16 md:h-20 z-[110] lg:z-0 bg-white">
+            <button type="button" id="mobile-menu-trigger" data-focus-trap-trigger="true"
+                    class="js-panel-trigger group lg:hidden h-12 flex items-center bg-white outline-none ring-3 ring-transparent ring-offset-2 transition-all duration-500 focus-visible:ring-focus -ml-4 sm:mr-2 px-4 focus-visible:z-10"
+                    data-controls-panel="dialog-mobile-nav" aria-label="Open site navigation Menu" data-close-label="Close site navigation Menu">
+                <svg width="24" height="24" class="group-[.is-open]:hidden icon-menu" aria-hidden="true" focusable="false">
+                    <use href="/assets/b2c-redesign/img/svg-sprite.svg#icon-menu"></use>
+                </svg>
+                <svg width="24" height="24" class="hidden group-[.is-open]:block icon-close-1" aria-hidden="true" focusable="false">
+                    <use href="/assets/b2c-redesign/img/svg-sprite.svg#icon-close-1"></use>
+                </svg>
+            </button>
+            <div class="mr-auto">
+                <a href="/en-us/floors/" class="flex shrink-0 outline-none ring-3 ring-transparent ring-offset-4 transition-all duration-500 focus-visible:ring-focus">
+                    <img src="/globalassets/all-kr-redesign-content---do-not-use/b2c-residential/redesign-images/unsorted-images/karndean-logo-inline.svg" alt="Karndean Designflooring logo" class="h-8 md:h-[42px]" />
+                </a>
+            </div>
+
+            
+    <div class="hidden mx-auto lg:flex items-center lg:space-x-6 2xl:space-x-12">
+        <nav id="primary-nav" aria-label="Main navigation" class="primary-nav flex items-center h-20" data-hover="on">
+            <ul class="dropdown-container flex space-x-4 2xl:space-x-12">
+                    <li class="dropdown">
+                        <button type="button" class="dropdown-trigger group h-20 flex items-center text-4 leading-tight outline-none relative after:transition-all after:duration-200 after:content-[''] after:h-1 after:bg-transparent after:w-full after:absolute after:bottom-0" aria-expanded="false" id="primary-sub-trigger-0" aria-controls="primary-sub-menu-0">
+                            <strong class="h-5 flex items-center pointer-events-none outline-none ring-3 ring-transparent ring-offset-2 transition-all duration-500 group-focus-visible:ring-focus">
+                                <span class="text-lg leading-tight font-medium pointer-events-none">Our Floors</span>
+                                <svg width="24" height="24" class="pointer-events-none transition-all duration-200 rotate-90 icon-chevron" aria-hidden="true" focusable="false">
+                                    <use href="/assets/b2c-redesign/img/svg-sprite.svg#icon-chevron"></use>
+                                </svg>
+                            </strong>
+                        </button>
+                        <div class="dropdown-panel bg-white absolute left-0 w-full py-12 overflow-hidden hidden lg:py-16" id="primary-sub-menu-0" role="region" aria-hidden="true" aria-labelledby="primary-sub-trigger-0">
+                            <div class="container motion-safe:animate-fadeinup">
+                                <div class="grid grid-cols-4 gap-x-4 xl:gap-x-8">
+                                    <div class="col-span-1">
+
+
+    <div class="pt-4 md:pt-0">
+        <span id="menu-label-browse-by-color" class="block text-base xl:text-lg font-medium leading-normal mb-2.5">Browse By Color</span>
+        <ul aria-labelledby="menu-label-browse-by-color" class="space-y-0.5">
+                <li class="block">
+                    <a href="/en-us/floors/products/colour/whitecream/" class="group text-base xl:text-lg inline-flex items-center xl:items-start outline-none ring-3 ring-transparent ring-offset-2 transition-all duration-500 focus-visible:ring-focus leading-relaxed">
+                        <span class="block rounded-full mr-2 h-8 w-8 object-fill shrink-0 overflow-hidden">
+                            <img class="w-full" src="/globalassets/karndean/retailers/colours/white-cream.jpg" alt="white cream"/>
+                        </span>
+                        <span class="block transition-colors duration-300 underline decoration-transparent decoration-2 underline-offset-[4px] group-hover:decoration-black group-focus-visible:decoration-black group-focus-visible:decoration-2 pt-1">White/Cream</span>
+                    </a>
+                </li>
+                <li class="block">
+                    <a href="/en-us/floors/products/colour/blondgoldenyellow/" class="group text-base xl:text-lg inline-flex items-center xl:items-start outline-none ring-3 ring-transparent ring-offset-2 transition-all duration-500 focus-visible:ring-focus leading-relaxed">
+                        <span class="block rounded-full mr-2 h-8 w-8 object-fill shrink-0 overflow-hidden">
+                            <img class="w-full" src="/globalassets/karndean/retailers/colours/yellow-gold.jpg" alt="yellow gold"/>
+                        </span>
+                        <span class="block transition-colors duration-300 underline decoration-transparent decoration-2 underline-offset-[4px] group-hover:decoration-black group-focus-visible:decoration-black group-focus-visible:decoration-2 pt-1">Blond/Golden/Yellow</span>
+                    </a>
+                </li>
+                <li class="block">
+                    <a href="/en-us/floors/products/colour/beigetaupe/" class="group text-base xl:text-lg inline-flex items-center xl:items-start outline-none ring-3 ring-transparent ring-offset-2 transition-all duration-500 focus-visible:ring-focus leading-relaxed">
+                        <span class="block rounded-full mr-2 h-8 w-8 object-fill shrink-0 overflow-hidden">
+                            <img class="w-full" src="/globalassets/karndean/retailers/colours/beige-taupe.jpg" alt="beige taupe"/>
+                        </span>
+                        <span class="block transition-colors duration-300 underline decoration-transparent decoration-2 underline-offset-[4px] group-hover:decoration-black group-focus-visible:decoration-black group-focus-visible:decoration-2 pt-1">Beige/Taupe</span>
+                    </a>
+                </li>
+                <li class="block">
+                    <a href="/en-us/floors/products/colour/brown/" class="group text-base xl:text-lg inline-flex items-center xl:items-start outline-none ring-3 ring-transparent ring-offset-2 transition-all duration-500 focus-visible:ring-focus leading-relaxed">
+                        <span class="block rounded-full mr-2 h-8 w-8 object-fill shrink-0 overflow-hidden">
+                            <img class="w-full" src="/globalassets/karndean/retailers/colours/brown.jpg" alt="brown"/>
+                        </span>
+                        <span class="block transition-colors duration-300 underline decoration-transparent decoration-2 underline-offset-[4px] group-hover:decoration-black group-focus-visible:decoration-black group-focus-visible:decoration-2 pt-1">Brown</span>
+                    </a>
+                </li>
+                <li class="block">
+                    <a href="/en-us/floors/products/colour/gray/" class="group text-base xl:text-lg inline-flex items-center xl:items-start outline-none ring-3 ring-transparent ring-offset-2 transition-all duration-500 focus-visible:ring-focus leading-relaxed">
+                        <span class="block rounded-full mr-2 h-8 w-8 object-fill shrink-0 overflow-hidden">
+                            <img class="w-full" src="/globalassets/karndean/retailers/colours/grey.jpg" alt="grey"/>
+                        </span>
+                        <span class="block transition-colors duration-300 underline decoration-transparent decoration-2 underline-offset-[4px] group-hover:decoration-black group-focus-visible:decoration-black group-focus-visible:decoration-2 pt-1">Gray</span>
+                    </a>
+                </li>
+                <li class="block">
+                    <a href="/en-us/floors/products/colour/black/" class="group text-base xl:text-lg inline-flex items-center xl:items-start outline-none ring-3 ring-transparent ring-offset-2 transition-all duration-500 focus-visible:ring-focus leading-relaxed">
+                        <span class="block rounded-full mr-2 h-8 w-8 object-fill shrink-0 overflow-hidden">
+                            <img class="w-full" src="/globalassets/karndean/retailers/colours/black.jpg" alt="black"/>
+                        </span>
+                        <span class="block transition-colors duration-300 underline decoration-transparent decoration-2 underline-offset-[4px] group-hover:decoration-black group-focus-visible:decoration-black group-focus-visible:decoration-2 pt-1">Black</span>
+                    </a>
+                </li>
+                <li class="block">
+                    <a href="/en-us/floors/products/colour/orangeredpink/" class="group text-base xl:text-lg inline-flex items-center xl:items-start outline-none ring-3 ring-transparent ring-offset-2 transition-all duration-500 focus-visible:ring-focus leading-relaxed">
+                        <span class="block rounded-full mr-2 h-8 w-8 object-fill shrink-0 overflow-hidden">
+                            <img class="w-full" src="/globalassets/karndean/retailers/colours/orange-red.jpg" alt="orange red"/>
+                        </span>
+                        <span class="block transition-colors duration-300 underline decoration-transparent decoration-2 underline-offset-[4px] group-hover:decoration-black group-focus-visible:decoration-black group-focus-visible:decoration-2 pt-1">Orange/Red/Pink</span>
+                    </a>
+                </li>
+                <li class="block">
+                    <a href="/en-us/floors/products/colour/bluegreen/" class="group text-base xl:text-lg inline-flex items-center xl:items-start outline-none ring-3 ring-transparent ring-offset-2 transition-all duration-500 focus-visible:ring-focus leading-relaxed">
+                        <span class="block rounded-full mr-2 h-8 w-8 object-fill shrink-0 overflow-hidden">
+                            <img class="w-full" src="/globalassets/karndean/retailers/colours/blue-green.jpg" alt="blue green"/>
+                        </span>
+                        <span class="block transition-colors duration-300 underline decoration-transparent decoration-2 underline-offset-[4px] group-hover:decoration-black group-focus-visible:decoration-black group-focus-visible:decoration-2 pt-1">Blue/Green</span>
+                    </a>
+                </li>
+                <li class="block">
+                    <a href="/en-us/floors/products?colour=60997" class="group text-base xl:text-lg inline-flex items-center xl:items-start outline-none ring-3 ring-transparent ring-offset-2 transition-all duration-500 focus-visible:ring-focus leading-relaxed">
+                        <span class="block rounded-full mr-2 h-8 w-8 object-fill shrink-0 overflow-hidden">
+                            <img class="w-full" src="/globalassets/karndean/retailers/colours/multicolour.jpg" alt="multicolour"/>
+                        </span>
+                        <span class="block transition-colors duration-300 underline decoration-transparent decoration-2 underline-offset-[4px] group-hover:decoration-black group-focus-visible:decoration-black group-focus-visible:decoration-2 pt-1">Multicolor</span>
+                    </a>
+                </li>
+        </ul>
+    </div>
+                                    </div>
+                                    <div class="col-span-1">
+
+
+    <div>
+        <span id="menu-label-browse-by-room" class="block text-base xl:text-lg font-medium leading-normal mb-2.5">Browse By Room</span>
+        <ul aria-labelledby="menu-label-browse-by-room" class="space-y-0.5">
+                <li class="block">
+                    <a href="/en-us/floors/inspiration/inspiration-by-room/kitchens/" class="group text-base xl:text-lg inline-flex items-center xl:items-start outline-none ring-3 ring-transparent ring-offset-2 transition-all duration-500 focus-visible:ring-focus leading-relaxed">
+                        <span class="block mr-2 h-8 w-8 object-fill shrink-0 overflow-hidden">
+                            <img class="w-full" src="/globalassets/karndean/retailers/rooms/kitchen.svg" alt="Logo which indicates a kitchen"/>
+                        </span>
+                        <span class="block transition-colors duration-300 underline decoration-transparent decoration-2 underline-offset-[4px] group-hover:decoration-black group-focus-visible:decoration-black group-focus-visible:decoration-2 pt-1">Kitchen flooring</span>
+                    </a>
+                </li>
+                <li class="block">
+                    <a href="/en-us/floors/inspiration/inspiration-by-room/bathroom/" class="group text-base xl:text-lg inline-flex items-center xl:items-start outline-none ring-3 ring-transparent ring-offset-2 transition-all duration-500 focus-visible:ring-focus leading-relaxed">
+                        <span class="block mr-2 h-8 w-8 object-fill shrink-0 overflow-hidden">
+                            <img class="w-full" src="/globalassets/karndean/retailers/rooms/bathroom.svg" alt="Logo which indicates a bathroom "/>
+                        </span>
+                        <span class="block transition-colors duration-300 underline decoration-transparent decoration-2 underline-offset-[4px] group-hover:decoration-black group-focus-visible:decoration-black group-focus-visible:decoration-2 pt-1">Bathroom flooring</span>
+                    </a>
+                </li>
+                <li class="block">
+                    <a href="/en-us/floors/inspiration/inspiration-by-room/hallway/" class="group text-base xl:text-lg inline-flex items-center xl:items-start outline-none ring-3 ring-transparent ring-offset-2 transition-all duration-500 focus-visible:ring-focus leading-relaxed">
+                        <span class="block mr-2 h-8 w-8 object-fill shrink-0 overflow-hidden">
+                            <img class="w-full" src="/globalassets/karndean/retailers/rooms/hallway.svg" alt="Logo which indicates a Hallway"/>
+                        </span>
+                        <span class="block transition-colors duration-300 underline decoration-transparent decoration-2 underline-offset-[4px] group-hover:decoration-black group-focus-visible:decoration-black group-focus-visible:decoration-2 pt-1">Entrance/Hallway flooring</span>
+                    </a>
+                </li>
+                <li class="block">
+                    <a href="/en-us/floors/inspiration/inspiration-by-room/living-room/" class="group text-base xl:text-lg inline-flex items-center xl:items-start outline-none ring-3 ring-transparent ring-offset-2 transition-all duration-500 focus-visible:ring-focus leading-relaxed">
+                        <span class="block mr-2 h-8 w-8 object-fill shrink-0 overflow-hidden">
+                            <img class="w-full" src="/globalassets/karndean/retailers/rooms/livingroom.svg" alt="Logo which indicates a living room"/>
+                        </span>
+                        <span class="block transition-colors duration-300 underline decoration-transparent decoration-2 underline-offset-[4px] group-hover:decoration-black group-focus-visible:decoration-black group-focus-visible:decoration-2 pt-1">Living Room flooring</span>
+                    </a>
+                </li>
+                <li class="block">
+                    <a href="/en-us/floors/inspiration/inspiration-by-room/dining-room/" class="group text-base xl:text-lg inline-flex items-center xl:items-start outline-none ring-3 ring-transparent ring-offset-2 transition-all duration-500 focus-visible:ring-focus leading-relaxed">
+                        <span class="block mr-2 h-8 w-8 object-fill shrink-0 overflow-hidden">
+                            <img class="w-full" src="/globalassets/karndean/retailers/rooms/diningroom.svg" alt="Logo which indicates a Dining room"/>
+                        </span>
+                        <span class="block transition-colors duration-300 underline decoration-transparent decoration-2 underline-offset-[4px] group-hover:decoration-black group-focus-visible:decoration-black group-focus-visible:decoration-2 pt-1">Dining room flooring</span>
+                    </a>
+                </li>
+                <li class="block">
+                    <a href="/en-us/floors/inspiration/inspiration-by-room/bedroom/" class="group text-base xl:text-lg inline-flex items-center xl:items-start outline-none ring-3 ring-transparent ring-offset-2 transition-all duration-500 focus-visible:ring-focus leading-relaxed">
+                        <span class="block mr-2 h-8 w-8 object-fill shrink-0 overflow-hidden">
+                            <img class="w-full" src="/globalassets/karndean/retailers/rooms/bedroom.svg" alt="Logo which indicates a basement"/>
+                        </span>
+                        <span class="block transition-colors duration-300 underline decoration-transparent decoration-2 underline-offset-[4px] group-hover:decoration-black group-focus-visible:decoration-black group-focus-visible:decoration-2 pt-1">Bedroom flooring</span>
+                    </a>
+                </li>
+                <li class="block">
+                    <a href="/en-us/floors/inspiration/inspiration-by-room/laundry-mudroom/" class="group text-base xl:text-lg inline-flex items-center xl:items-start outline-none ring-3 ring-transparent ring-offset-2 transition-all duration-500 focus-visible:ring-focus leading-relaxed">
+                        <span class="block mr-2 h-8 w-8 object-fill shrink-0 overflow-hidden">
+                            <img class="w-full" src="/globalassets/karndean/retailers/rooms/conservatory.svg" alt="Logo which indicates a conservatory"/>
+                        </span>
+                        <span class="block transition-colors duration-300 underline decoration-transparent decoration-2 underline-offset-[4px] group-hover:decoration-black group-focus-visible:decoration-black group-focus-visible:decoration-2 pt-1">Laundry room flooring</span>
+                    </a>
+                </li>
+                <li class="block">
+                    <a href="/en-us/floors/inspiration/inspiration-by-room/home-office/" class="group text-base xl:text-lg inline-flex items-center xl:items-start outline-none ring-3 ring-transparent ring-offset-2 transition-all duration-500 focus-visible:ring-focus leading-relaxed">
+                        <span class="block mr-2 h-8 w-8 object-fill shrink-0 overflow-hidden">
+                            <img class="w-full" src="/globalassets/karndean/retailers/rooms/home-office.svg" alt="Logo which indicates a home office"/>
+                        </span>
+                        <span class="block transition-colors duration-300 underline decoration-transparent decoration-2 underline-offset-[4px] group-hover:decoration-black group-focus-visible:decoration-black group-focus-visible:decoration-2 pt-1">Home office flooring</span>
+                    </a>
+                </li>
+        </ul>
+    </div>
+                                    </div>
+                                    <div class="col-span-1">
+
+
+    <div>
+        <span id="menu-label-browse-by-look" class="block text-base xl:text-lg font-medium leading-normal mb-2.5">Browse By Look</span>
+        <ul aria-labelledby="menu-label-browse-by-look" class="space-y-2 xl:space-y-0 xl:grid xl:grid-cols-2 xl:gap-6 xl:max-w-[260px]">
+                <li class="block">
+                    <a href="/en-us/floors/products/by-look/wood/" class="group text-base xl:text-lg inline-flex items-center xl:items-start outline-none ring-3 ring-transparent ring-offset-2 transition-all duration-500 focus-visible:ring-focus leading-relaxed xl:block">
+                        <span class="block rounded-lg mr-2 h-8 w-8 object-fill shrink-0 overflow-hidden xl:block xl:w-full xl:aspect-1/1 xl:rounded-lg xl:h-auto xl:mb-1">
+                            <img class="w-full" src="/globalassets/wood2.jpg" alt="Karndean wood lvp"/>
+                        </span>
+                        <span class="block transition-colors duration-300 underline decoration-transparent decoration-2 underline-offset-[4px] group-hover:decoration-black group-focus-visible:decoration-black group-focus-visible:decoration-2 pt-1">Wood</span>
+                    </a>
+                </li>
+                <li class="block">
+                    <a href="/en-us/floors/products/by-look/stone/" class="group text-base xl:text-lg inline-flex items-center xl:items-start outline-none ring-3 ring-transparent ring-offset-2 transition-all duration-500 focus-visible:ring-focus leading-relaxed xl:block">
+                        <span class="block rounded-lg mr-2 h-8 w-8 object-fill shrink-0 overflow-hidden xl:block xl:w-full xl:aspect-1/1 xl:rounded-lg xl:h-auto xl:mb-1">
+                            <img class="w-full" src="/globalassets/stone2.jpg" alt="Karndean stone lvt floors"/>
+                        </span>
+                        <span class="block transition-colors duration-300 underline decoration-transparent decoration-2 underline-offset-[4px] group-hover:decoration-black group-focus-visible:decoration-black group-focus-visible:decoration-2 pt-1">Stone</span>
+                    </a>
+                </li>
+                <li class="block">
+                    <a href="/en-us/floors/products/by-look/herringbone/" class="group text-base xl:text-lg inline-flex items-center xl:items-start outline-none ring-3 ring-transparent ring-offset-2 transition-all duration-500 focus-visible:ring-focus leading-relaxed xl:block">
+                        <span class="block rounded-lg mr-2 h-8 w-8 object-fill shrink-0 overflow-hidden xl:block xl:w-full xl:aspect-1/1 xl:rounded-lg xl:h-auto xl:mb-1">
+                            <img class="w-full" src="/globalassets/products/art-select/residential-roomsets/salon-oak-sm-rl13_akp-sm-rl13-laundry-room.jpg" alt="Laundry room with Salon Oak SM-RL13 | AKP-SM-RL13 herringbone floors"/>
+                        </span>
+                        <span class="block transition-colors duration-300 underline decoration-transparent decoration-2 underline-offset-[4px] group-hover:decoration-black group-focus-visible:decoration-black group-focus-visible:decoration-2 pt-1">Herringbone</span>
+                    </a>
+                </li>
+        </ul>
+    </div>
+                                    </div>
+                                    <div class="col-span-1">
+                                        
+
+    <div>
+        <!-- have to have unique ID / index for mobile vs desktop menus -->
+        <span id="menu-label-standard-1" class="block text-base xl:text-lg font-medium leading-normal mb-4 md:mb-2.5 xl:mb-3.5">Explore</span>
+        <ul aria-labelledby="menu-label-standard-1" class="space-y-[15px] md:space-y-2 xl:space-y-[15px]">
+                    <li class="block">
+                        <a href="/en-us/floors/products/our-ranges/" class="text-base xl:text-lg outline-none ring-3 ring-transparent ring-offset-2 focus-visible:ring-focus leading-relaxed transition-colors duration-300 underline decoration-transparent decoration-2 underline-offset-[4px] hover:decoration-black focus-visible:decoration-black focus-visible:decoration-2">
+                            Our Collections
+                        </a>
+                    </li>
+                    <li class="block">
+                        <a href="/en-us/floors/products/our-formats/" class="text-base xl:text-lg outline-none ring-3 ring-transparent ring-offset-2 focus-visible:ring-focus leading-relaxed transition-colors duration-300 underline decoration-transparent decoration-2 underline-offset-[4px] hover:decoration-black focus-visible:decoration-black focus-visible:decoration-2">
+                            Our Installation Formats
+                        </a>
+                    </li>
+                    <li class="block">
+                        <a href="/en-us/floors/inspiration/discover/why-choose-karndean/" class="text-base xl:text-lg outline-none ring-3 ring-transparent ring-offset-2 focus-visible:ring-focus leading-relaxed transition-colors duration-300 underline decoration-transparent decoration-2 underline-offset-[4px] hover:decoration-black focus-visible:decoration-black focus-visible:decoration-2">
+                            Floor Benefits
+                        </a>
+                    </li>
+                    <li class="block">
+                        <a href="/en-us/floors/products/floor-benefits/family-friendly-flooring/" class="text-base xl:text-lg outline-none ring-3 ring-transparent ring-offset-2 focus-visible:ring-focus leading-relaxed transition-colors duration-300 underline decoration-transparent decoration-2 underline-offset-[4px] hover:decoration-black focus-visible:decoration-black focus-visible:decoration-2">
+                            Family Friendly Flooring
+                        </a>
+                    </li>
+        </ul>
+            <a href="/en-us/floors/products/" class="btn btn-secondary btn-small md:inline-flex mt-4 px-6 md:px-4 xl:px-6">
+                <span>Browse all floors</span>
+                <svg width="24" height="24" class="icon-arrow-right" aria-hidden="true" focusable="false">
+                    <use href="/assets/b2c-redesign/img/svg-sprite.svg#icon-arrow-right"></use>
+                </svg>
+            </a>
+    </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                            <li class="dropdown">
+                                <button type="button" class="dropdown-trigger group h-20 flex items-center text-4 leading-tight outline-none relative after:transition-all after:duration-200 after:content-[''] after:h-1 after:bg-transparent after:w-full after:absolute after:bottom-0" aria-expanded="false" id="primary-sub-trigger-1" aria-controls="primary-sub-menu-1">
+                                    <strong class="h-5 flex items-center pointer-events-none outline-none ring-3 ring-transparent ring-offset-2 transition-all duration-500 group-focus-visible:ring-focus">
+                                        <span class="text-lg leading-tight font-medium pointer-events-none">Inspiration</span>
+                                        <svg width="24" height="24" class="pointer-events-none transition-all duration-200 rotate-90 icon-chevron" aria-hidden="true" focusable="false">
+                                            <use href="/assets/b2c-redesign/img/svg-sprite.svg#icon-chevron"></use>
+                                        </svg>
+                                    </strong>
+                                </button>
+                                <div class="dropdown-panel bg-white absolute left-0 w-full py-12 overflow-hidden hidden lg:py-16" id="primary-sub-menu-1" role="region" aria-hidden="true" aria-labelledby="primary-sub-trigger-1">
+                                    <div class="container motion-safe:animate-fadeinup">
+                                        <div class="grid grid-cols-4 gap-x-8">
+                                                    <div class="col-span-1">
+                                                        
+
+    <div>
+        <!-- have to have unique ID / index for mobile vs desktop menus -->
+        <span id="menu-label-standard-1" class="block text-base xl:text-lg font-medium leading-normal mb-4 md:mb-2.5 xl:mb-3.5">Get Inspired</span>
+        <ul aria-labelledby="menu-label-standard-1" class="space-y-[15px] md:space-y-2 xl:space-y-[15px]">
+                    <li class="block">
+                        <a href="/en-us/floors/inspiration/inspiration-by-room/" class="text-base xl:text-lg outline-none ring-3 ring-transparent ring-offset-2 focus-visible:ring-focus leading-relaxed transition-colors duration-300 underline decoration-transparent decoration-2 underline-offset-[4px] hover:decoration-black focus-visible:decoration-black focus-visible:decoration-2">
+                            Inspiration By Room
+                        </a>
+                    </li>
+                    <li class="block">
+                        <a href="/en-us/floors/inspiration/design-aesthetics/" class="text-base xl:text-lg outline-none ring-3 ring-transparent ring-offset-2 focus-visible:ring-focus leading-relaxed transition-colors duration-300 underline decoration-transparent decoration-2 underline-offset-[4px] hover:decoration-black focus-visible:decoration-black focus-visible:decoration-2">
+                            Karndean Design Aesthetics
+                        </a>
+                    </li>
+                    <li class="block">
+                        <a href="/en-us/floors/inspiration/discover/product-finder/" class="text-base xl:text-lg outline-none ring-3 ring-transparent ring-offset-2 focus-visible:ring-focus leading-relaxed transition-colors duration-300 underline decoration-transparent decoration-2 underline-offset-[4px] hover:decoration-black focus-visible:decoration-black focus-visible:decoration-2">
+                            Get Recommendations
+                        </a>
+                    </li>
+                    <li class="block">
+                        <a href="/en-us/floors/inspiration/discover/floorstyle-floor-designer/" class="text-base xl:text-lg outline-none ring-3 ring-transparent ring-offset-2 focus-visible:ring-focus leading-relaxed transition-colors duration-300 underline decoration-transparent decoration-2 underline-offset-[4px] hover:decoration-black focus-visible:decoration-black focus-visible:decoration-2">
+                            See Our Floors In Your Room
+                        </a>
+                    </li>
+                    <li class="block">
+                        <a href="/en-us/floors/inspiration/get-inspired/as-seen-on/karndean-on-tv/" class="text-base xl:text-lg outline-none ring-3 ring-transparent ring-offset-2 focus-visible:ring-focus leading-relaxed transition-colors duration-300 underline decoration-transparent decoration-2 underline-offset-[4px] hover:decoration-black focus-visible:decoration-black focus-visible:decoration-2">
+                            See Our Floors On TV
+                        </a>
+                    </li>
+        </ul>
+            <a title="Get tips from HGTV host Ty Pennington" href="/en-us/floors/inspiration/get-inspired/as-seen-on/ty-pennington/" class="btn btn-secondary btn-small md:inline-flex mt-4 px-6 md:px-4 xl:px-6">
+                <span>Tips From Ty Pennington</span>
+                <svg width="24" height="24" class="icon-arrow-right" aria-hidden="true" focusable="false">
+                    <use href="/assets/b2c-redesign/img/svg-sprite.svg#icon-arrow-right"></use>
+                </svg>
+            </a>
+    </div>
+
+                                                    </div>
+                                                    <div class="col-span-1">
+                                                        
+
+    <div>
+        <!-- have to have unique ID / index for mobile vs desktop menus -->
+        <span id="menu-label-standard-1" class="block text-base xl:text-lg font-medium leading-normal mb-4 md:mb-2.5 xl:mb-3.5">Discover</span>
+        <ul aria-labelledby="menu-label-standard-1" class="space-y-[15px] md:space-y-2 xl:space-y-[15px]">
+                    <li class="block">
+                        <a href="/en-us/floors/inspiration/discover/laying-patterns/" class="text-base xl:text-lg outline-none ring-3 ring-transparent ring-offset-2 focus-visible:ring-focus leading-relaxed transition-colors duration-300 underline decoration-transparent decoration-2 underline-offset-[4px] hover:decoration-black focus-visible:decoration-black focus-visible:decoration-2">
+                            Laying Patterns
+                        </a>
+                    </li>
+                    <li class="block">
+                        <a href="/en-us/floors/inspiration/design-components/decorative-borders/" class="text-base xl:text-lg outline-none ring-3 ring-transparent ring-offset-2 focus-visible:ring-focus leading-relaxed transition-colors duration-300 underline decoration-transparent decoration-2 underline-offset-[4px] hover:decoration-black focus-visible:decoration-black focus-visible:decoration-2">
+                            Decorative Borders
+                        </a>
+                    </li>
+                    <li class="block">
+                        <a href="/en-us/floors/inspiration/design-components/design-strips/" class="text-base xl:text-lg outline-none ring-3 ring-transparent ring-offset-2 focus-visible:ring-focus leading-relaxed transition-colors duration-300 underline decoration-transparent decoration-2 underline-offset-[4px] hover:decoration-black focus-visible:decoration-black focus-visible:decoration-2">
+                            Design Strips
+                        </a>
+                    </li>
+                    <li class="block">
+                        <a title="Discover our newest luxury vinyl designs" href="/en-us/floors/inspiration/discover/new-products/" class="text-base xl:text-lg outline-none ring-3 ring-transparent ring-offset-2 focus-visible:ring-focus leading-relaxed transition-colors duration-300 underline decoration-transparent decoration-2 underline-offset-[4px] hover:decoration-black focus-visible:decoration-black focus-visible:decoration-2">
+                            New Products
+                        </a>
+                    </li>
+        </ul>
+    </div>
+
+                                                    </div>
+                                                    <div class="col-span-1">
+                                                        
+
+    <div>
+        <!-- have to have unique ID / index for mobile vs desktop menus -->
+        <span id="menu-label-standard-1" class="block text-base xl:text-lg font-medium leading-normal mb-4 md:mb-2.5 xl:mb-3.5">Advice</span>
+        <ul aria-labelledby="menu-label-standard-1" class="space-y-[15px] md:space-y-2 xl:space-y-[15px]">
+                    <li class="block">
+                        <a href="/en-us/floors/products/floor-benefits/reasons-to-choose-karndean-flooring/" class="text-base xl:text-lg outline-none ring-3 ring-transparent ring-offset-2 focus-visible:ring-focus leading-relaxed transition-colors duration-300 underline decoration-transparent decoration-2 underline-offset-[4px] hover:decoration-black focus-visible:decoration-black focus-visible:decoration-2">
+                            Karndean LVT Vs Other Flooring
+                        </a>
+                    </li>
+                    <li class="block">
+                        <a href="/en-us/floors/inspiration/get-inspired/blog/" class="text-base xl:text-lg outline-none ring-3 ring-transparent ring-offset-2 focus-visible:ring-focus leading-relaxed transition-colors duration-300 underline decoration-transparent decoration-2 underline-offset-[4px] hover:decoration-black focus-visible:decoration-black focus-visible:decoration-2">
+                            Browse Our Blog
+                        </a>
+                    </li>
+                    <li class="block">
+                        <a href="/en-us/floors/services/downloadable-resources/" class="text-base xl:text-lg outline-none ring-3 ring-transparent ring-offset-2 focus-visible:ring-focus leading-relaxed transition-colors duration-300 underline decoration-transparent decoration-2 underline-offset-[4px] hover:decoration-black focus-visible:decoration-black focus-visible:decoration-2">
+                            Download Our Brochure
+                        </a>
+                    </li>
+                    <li class="block">
+                        <a href="/en-us/floors/helpful-information/contact-us/" class="text-base xl:text-lg outline-none ring-3 ring-transparent ring-offset-2 focus-visible:ring-focus leading-relaxed transition-colors duration-300 underline decoration-transparent decoration-2 underline-offset-[4px] hover:decoration-black focus-visible:decoration-black focus-visible:decoration-2">
+                            Talk To Us
+                        </a>
+                    </li>
+        </ul>
+    </div>
+
+                                                    </div>
+                                                <div class="col-span-1">
+                                                    
+    <div>
+        <a
+           title="View Karndean Design Aesthetics"
+           href="/en-us/floors/inspiration/design-aesthetics/"
+           class="group text-base xl:text-lg block outline-none ring-3 ring-transparent ring-offset-2 transition-all duration-500 focus-visible:ring-focus leading-relaxed">
+            <span class="block w-full rounded-lg object-fill overflow-hidden mb-2">
+                <img data-lazyload src="/globalassets/karndean/b2c-blocks/b2c-234-up-card-block/usa/aesthetics/2026/2026-kda-1600x1600-for-website.jpg?width=800"
+                     data-srcset="/globalassets/karndean/b2c-blocks/b2c-234-up-card-block/usa/aesthetics/2026/2026-kda-1600x1600-for-website.jpg?width=800 1x,/globalassets/karndean/b2c-blocks/b2c-234-up-card-block/usa/aesthetics/2026/2026-kda-1600x1600-for-website.jpg?width=1600 2x"
+                     alt="Karndean Design Aesthetics inspiration"
+                     class="block w-full"/>
+            </span>
+            <span class="block transition-colors duration-300 underline decoration-transparent decoration-2 underline-offset-[4px] group-hover:decoration-black group-focus-visible:decoration-black group-focus-visible:decoration-2">Karndean Design Aesthetics</span>
+        </a>
+    </div>
+
+                                                </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="dropdown">
+                                <button type="button" class="dropdown-trigger group h-20 flex items-center text-4 leading-tight outline-none relative after:transition-all after:duration-200 after:content-[''] after:h-1 after:bg-transparent after:w-full after:absolute after:bottom-0" aria-expanded="false" id="primary-sub-trigger-2" aria-controls="primary-sub-menu-2">
+                                    <strong class="h-5 flex items-center pointer-events-none outline-none ring-3 ring-transparent ring-offset-2 transition-all duration-500 group-focus-visible:ring-focus">
+                                        <span class="text-lg leading-tight font-medium pointer-events-none">Services</span>
+                                        <svg width="24" height="24" class="pointer-events-none transition-all duration-200 rotate-90 icon-chevron" aria-hidden="true" focusable="false">
+                                            <use href="/assets/b2c-redesign/img/svg-sprite.svg#icon-chevron"></use>
+                                        </svg>
+                                    </strong>
+                                </button>
+                                <div class="dropdown-panel bg-white absolute left-0 w-full py-12 overflow-hidden hidden lg:py-16" id="primary-sub-menu-2" role="region" aria-hidden="true" aria-labelledby="primary-sub-trigger-2">
+                                    <div class="container motion-safe:animate-fadeinup">
+                                        <div class="grid grid-cols-4 gap-x-8">
+                                                    <div class="col-span-1">
+                                                        
+
+    <div>
+        <!-- have to have unique ID / index for mobile vs desktop menus -->
+        <span id="menu-label-standard-2" class="block text-base xl:text-lg font-medium leading-normal mb-4 md:mb-2.5 xl:mb-3.5">Helpful Information</span>
+        <ul aria-labelledby="menu-label-standard-2" class="space-y-[15px] md:space-y-2 xl:space-y-[15px]">
+                    <li class="block">
+                        <a href="/en-us/floors/services/ordering-samples/" class="text-base xl:text-lg outline-none ring-3 ring-transparent ring-offset-2 focus-visible:ring-focus leading-relaxed transition-colors duration-300 underline decoration-transparent decoration-2 underline-offset-[4px] hover:decoration-black focus-visible:decoration-black focus-visible:decoration-2">
+                            Ordering Samples
+                        </a>
+                    </li>
+                    <li class="block">
+                        <a href="/en-us/floors/where-to-buy/find-a-retailer/" class="text-base xl:text-lg outline-none ring-3 ring-transparent ring-offset-2 focus-visible:ring-focus leading-relaxed transition-colors duration-300 underline decoration-transparent decoration-2 underline-offset-[4px] hover:decoration-black focus-visible:decoration-black focus-visible:decoration-2">
+                            Find A Retailer
+                        </a>
+                    </li>
+                    <li class="block">
+                        <a href="/en-us/floors/helpful-information/contact-us/Visit-our-showrooms/visit-our-showrooms/" class="text-base xl:text-lg outline-none ring-3 ring-transparent ring-offset-2 focus-visible:ring-focus leading-relaxed transition-colors duration-300 underline decoration-transparent decoration-2 underline-offset-[4px] hover:decoration-black focus-visible:decoration-black focus-visible:decoration-2">
+                            Visit Our Showroom
+                        </a>
+                    </li>
+                <li class="block">
+                    <a href="/en-us/floors/services/guarantee-and-warranty/" class="text-base xl:text-lg outline-none ring-3 ring-transparent ring-offset-2 focus-visible:ring-focus leading-relaxed transition-colors duration-300 underline decoration-1 underline-offset-[4px] hover:decoration-black focus-visible:decoration-black hover:decoration-2">
+                        Product warranties
+                    </a>
+                </li>
+        </ul>
+            <a href="/en-us/floors/about-us/frequently-asked-questions/" class="btn btn-secondary btn-small md:inline-flex mt-4 px-6 md:px-4 xl:px-6">
+                <span>Help &amp; FAQs</span>
+                <svg width="24" height="24" class="icon-arrow-right" aria-hidden="true" focusable="false">
+                    <use href="/assets/b2c-redesign/img/svg-sprite.svg#icon-arrow-right"></use>
+                </svg>
+            </a>
+    </div>
+
+                                                    </div>
+                                                    <div class="col-span-1">
+                                                        
+
+    <div>
+        <!-- have to have unique ID / index for mobile vs desktop menus -->
+        <span id="menu-label-standard-2" class="block text-base xl:text-lg font-medium leading-normal mb-4 md:mb-2.5 xl:mb-3.5">Useful Tools &amp; Guidance</span>
+        <ul aria-labelledby="menu-label-standard-2" class="space-y-[15px] md:space-y-2 xl:space-y-[15px]">
+                    <li class="block">
+                        <a href="/en-us/floors/inspiration/discover/floorstyle-floor-designer/" class="text-base xl:text-lg outline-none ring-3 ring-transparent ring-offset-2 focus-visible:ring-focus leading-relaxed transition-colors duration-300 underline decoration-transparent decoration-2 underline-offset-[4px] hover:decoration-black focus-visible:decoration-black focus-visible:decoration-2">
+                            See Our Floors In Your Room
+                        </a>
+                    </li>
+                    <li class="block">
+                        <a href="/en-us/floors/inspiration/discover/product-finder/" class="text-base xl:text-lg outline-none ring-3 ring-transparent ring-offset-2 focus-visible:ring-focus leading-relaxed transition-colors duration-300 underline decoration-transparent decoration-2 underline-offset-[4px] hover:decoration-black focus-visible:decoration-black focus-visible:decoration-2">
+                            Get Recommendations
+                        </a>
+                    </li>
+                    <li class="block">
+                        <a href="/en-us/floors/services/downloadable-resources/" class="text-base xl:text-lg outline-none ring-3 ring-transparent ring-offset-2 focus-visible:ring-focus leading-relaxed transition-colors duration-300 underline decoration-transparent decoration-2 underline-offset-[4px] hover:decoration-black focus-visible:decoration-black focus-visible:decoration-2">
+                            Read Our Brochures
+                        </a>
+                    </li>
+                    <li class="block">
+                        <a href="/en-us/floors/services/installation-guides/" class="text-base xl:text-lg outline-none ring-3 ring-transparent ring-offset-2 focus-visible:ring-focus leading-relaxed transition-colors duration-300 underline decoration-transparent decoration-2 underline-offset-[4px] hover:decoration-black focus-visible:decoration-black focus-visible:decoration-2">
+                            Download Our Installation Guides
+                        </a>
+                    </li>
+                    <li class="block">
+                        <a title="Recoursos En Espa&#xF1;ol" href="/en/floors/helpful-information/contact-us/recursos-en-espanol/" class="text-base xl:text-lg outline-none ring-3 ring-transparent ring-offset-2 focus-visible:ring-focus leading-relaxed transition-colors duration-300 underline decoration-transparent decoration-2 underline-offset-[4px] hover:decoration-black focus-visible:decoration-black focus-visible:decoration-2">
+                            Recoursos En Espa&#xF1;ol
+                        </a>
+                    </li>
+        </ul>
+    </div>
+
+                                                    </div>
+                                                    <div class="col-span-1">
+                                                        
+
+    <div>
+        <!-- have to have unique ID / index for mobile vs desktop menus -->
+        <span id="menu-label-standard-2" class="block text-base xl:text-lg font-medium leading-normal mb-4 md:mb-2.5 xl:mb-3.5">Cleaning &amp; Care</span>
+        <ul aria-labelledby="menu-label-standard-2" class="space-y-[15px] md:space-y-2 xl:space-y-[15px]">
+                    <li class="block">
+                        <a href="/en-us/floors/services/cleaning-care/" class="text-base xl:text-lg outline-none ring-3 ring-transparent ring-offset-2 focus-visible:ring-focus leading-relaxed transition-colors duration-300 underline decoration-transparent decoration-2 underline-offset-[4px] hover:decoration-black focus-visible:decoration-black focus-visible:decoration-2">
+                            How To Care For Our Products
+                        </a>
+                    </li>
+        </ul>
+    </div>
+
+                                                    </div>
+                                                <div class="col-span-1">
+                                                    
+    <div>
+        <a
+           title="Find a retailer"
+           href="/en-us/floors/where-to-buy/find-a-retailer/"
+           class="group text-base xl:text-lg block outline-none ring-3 ring-transparent ring-offset-2 transition-all duration-500 focus-visible:ring-focus leading-relaxed">
+            <span class="block w-full rounded-lg object-fill overflow-hidden mb-2">
+                <img data-lazyload src="/globalassets/karndean/b2c-blocks/b2c-zig-zag-v1-block-square/uk/contact-us/showroom-consultation-1280x1280.png?width=800"
+                     data-srcset="/globalassets/karndean/b2c-blocks/b2c-zig-zag-v1-block-square/uk/contact-us/showroom-consultation-1280x1280.png?width=800 1x,/globalassets/karndean/b2c-blocks/b2c-zig-zag-v1-block-square/uk/contact-us/showroom-consultation-1280x1280.png?width=1600 2x"
+                     alt="Book a free design consultation with a Karndean flooring expert"
+                     class="block w-full"/>
+            </span>
+            <span class="block transition-colors duration-300 underline decoration-transparent decoration-2 underline-offset-[4px] group-hover:decoration-black group-focus-visible:decoration-black group-focus-visible:decoration-2">Find a retailer</span>
+        </a>
+    </div>
+
+                                                </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="dropdown">
+                                <button type="button" class="dropdown-trigger group h-20 flex items-center text-4 leading-tight outline-none relative after:transition-all after:duration-200 after:content-[''] after:h-1 after:bg-transparent after:w-full after:absolute after:bottom-0" aria-expanded="false" id="primary-sub-trigger-3" aria-controls="primary-sub-menu-3">
+                                    <strong class="h-5 flex items-center pointer-events-none outline-none ring-3 ring-transparent ring-offset-2 transition-all duration-500 group-focus-visible:ring-focus">
+                                        <span class="text-lg leading-tight font-medium pointer-events-none">Where to buy</span>
+                                        <svg width="24" height="24" class="pointer-events-none transition-all duration-200 rotate-90 icon-chevron" aria-hidden="true" focusable="false">
+                                            <use href="/assets/b2c-redesign/img/svg-sprite.svg#icon-chevron"></use>
+                                        </svg>
+                                    </strong>
+                                </button>
+                                <div class="dropdown-panel bg-white absolute left-0 w-full py-12 overflow-hidden hidden lg:py-16" id="primary-sub-menu-3" role="region" aria-hidden="true" aria-labelledby="primary-sub-trigger-3">
+                                    <div class="container motion-safe:animate-fadeinup">
+                                        <div class="grid grid-cols-4 gap-x-8">
+                                                    <div class="col-span-1">
+                                                        
+
+    <div>
+        <!-- have to have unique ID / index for mobile vs desktop menus -->
+        <span id="menu-label-standard-3" class="block text-base xl:text-lg font-medium leading-normal mb-4 md:mb-2.5 xl:mb-3.5">Flooring</span>
+        <ul aria-labelledby="menu-label-standard-3" class="space-y-[15px] md:space-y-2 xl:space-y-[15px]">
+                    <li class="block">
+                        <a title="Find a retailer to purchase our luxury vinyl floors" href="/en-us/floors/where-to-buy/find-a-retailer/" class="text-base xl:text-lg outline-none ring-3 ring-transparent ring-offset-2 focus-visible:ring-focus leading-relaxed transition-colors duration-300 underline decoration-transparent decoration-2 underline-offset-[4px] hover:decoration-black focus-visible:decoration-black focus-visible:decoration-2">
+                            Find A Karndean Retailer
+                        </a>
+                    </li>
+        </ul>
+    </div>
+
+                                                    </div>
+                                                    <div class="col-span-1">
+                                                        
+
+    <div>
+        <!-- have to have unique ID / index for mobile vs desktop menus -->
+        <span id="menu-label-standard-3" class="block text-base xl:text-lg font-medium leading-normal mb-4 md:mb-2.5 xl:mb-3.5">Get In Touch</span>
+        <ul aria-labelledby="menu-label-standard-3" class="space-y-[15px] md:space-y-2 xl:space-y-[15px]">
+                    <li class="block">
+                        <a href="/en-us/floors/helpful-information/contact-us/" class="text-base xl:text-lg outline-none ring-3 ring-transparent ring-offset-2 focus-visible:ring-focus leading-relaxed transition-colors duration-300 underline decoration-transparent decoration-2 underline-offset-[4px] hover:decoration-black focus-visible:decoration-black focus-visible:decoration-2">
+                            Contact Us
+                        </a>
+                    </li>
+                    <li class="block">
+                        <a href="/en-us/floors/helpful-information/contact-us/recursos-en-espanol/formulario-de-contacto/" class="text-base xl:text-lg outline-none ring-3 ring-transparent ring-offset-2 focus-visible:ring-focus leading-relaxed transition-colors duration-300 underline decoration-transparent decoration-2 underline-offset-[4px] hover:decoration-black focus-visible:decoration-black focus-visible:decoration-2">
+                            Cont&#xE1;ctenos
+                        </a>
+                    </li>
+        </ul>
+    </div>
+
+                                                    </div>
+                                                    <div class="col-span-1">
+                                                        
+
+    <div>
+        <!-- have to have unique ID / index for mobile vs desktop menus -->
+        <span id="menu-label-standard-3" class="block text-base xl:text-lg font-medium leading-normal mb-4 md:mb-2.5 xl:mb-3.5">Samples</span>
+        <ul aria-labelledby="menu-label-standard-3" class="space-y-[15px] md:space-y-2 xl:space-y-[15px]">
+                    <li class="block">
+                        <a href="/en-us/floors/services/ordering-samples/" class="text-base xl:text-lg outline-none ring-3 ring-transparent ring-offset-2 focus-visible:ring-focus leading-relaxed transition-colors duration-300 underline decoration-transparent decoration-2 underline-offset-[4px] hover:decoration-black focus-visible:decoration-black focus-visible:decoration-2">
+                            Order Free Samples
+                        </a>
+                    </li>
+        </ul>
+    </div>
+
+                                                    </div>
+                                                <div class="col-span-1">
+                                                    
+    <div>
+        <a
+           href="/en-us/floors/where-to-buy/find-a-retailer/"
+           class="group text-base xl:text-lg block outline-none ring-3 ring-transparent ring-offset-2 transition-all duration-500 focus-visible:ring-focus leading-relaxed">
+            <span class="block w-full rounded-lg object-fill overflow-hidden mb-2">
+                <img data-lazyload src="/globalassets/karndean/b2c-blocks/b2c-zig-zag-v1-block-square/uk/helpful-information/showroom-consultation.png?width=800"
+                     data-srcset="/globalassets/karndean/b2c-blocks/b2c-zig-zag-v1-block-square/uk/helpful-information/showroom-consultation.png?width=800 1x,/globalassets/karndean/b2c-blocks/b2c-zig-zag-v1-block-square/uk/helpful-information/showroom-consultation.png?width=1600 2x"
+                     alt="Book a free design consultation with a Karndean flooring expert"
+                     class="block w-full"/>
+            </span>
+            <span class="block transition-colors duration-300 underline decoration-transparent decoration-2 underline-offset-[4px] group-hover:decoration-black group-focus-visible:decoration-black group-focus-visible:decoration-2">Find a local retailer</span>
+        </a>
+    </div>
+
+                                                </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+            </ul>
+        </nav>
+        <div>
+            <div class="search-trigger-container hidden lg:flex">
+                <button type="button" class="bg-white rounded-full flex flex-col items-center justify-center w-6 h-6 outline-none ring-3 ring-transparent ring-offset-2 transition-all duration-500 focus-visible:ring-focus" aria-expanded="false" id="search-trigger" aria-controls="search-panel" aria-label="Toggle site search">
+                    <svg width="24" height="24" class="pointer-events-none search-icon icon-search" aria-hidden="true" focusable="false">
+                        <use href="/assets/b2c-redesign/img/svg-sprite.svg#icon-search"></use>
+                    </svg>
+                </button>
+            </div>
+            <div class="dropdown-panel bg-white absolute top-[120px] right-0 left-0 w-full py-8 overflow-hidden hidden" id="search-panel" role="region" aria-hidden="true" aria-labelledby="search-trigger">
+                <div class="container relative motion-safe:animate-fadeinup">
+                    <div class="mx-auto w-[632px]">
+                        <form action="/en-us/floors/search-results/" method="post" role="search" class="w-full relative">
+                            <div>
+                                <label for="txtSearchTerm" class="sr-only">Search</label>
+                                <div class="relative flex items-stretch flex-grow">
+                                    <input type="search" name="searchTerm" id="txtSearchTerm" class="block w-full h-[52px] bg-gray-medium border-gray-medium placeholder:!text-secondary-smokey-grey" placeholder="Search Website">
+                                    <button type="button" class="flex items-center justify-center rounded-full outline-none ring-3 ring-transparent ring-offset-2 transition-all duration-500 focus-visible:ring-focus ring-offset-gray-medium focus-visible:ring-offset-gray-medium border-0 h-6 w-6 absolute top-3.5 right-14 hidden" aria-label="Clear search" id="clear-site-search">
+                                        <svg class="h-6 w-6 icon-close-2" aria-hidden="true" focusable="false">
+                                            <use href="/assets/b2c-redesign/img/svg-sprite.svg#icon-close-2"></use>
+                                        </svg>
+                                    </button>
+                                </div>
+                                <button type="submit" class="flex items-center justify-center rounded-full outline-none ring-3 ring-transparent ring-offset-gray-medium ring-offset-2 transition-all duration-500 focus-visible:ring-focus h-6 w-6 absolute top-3.5 right-6" aria-label="Search">
+                                    <svg class="h-6 w-6 icon-search" aria-hidden="true" focusable="false">
+                                        <use href="/assets/b2c-redesign/img/svg-sprite.svg#icon-search"></use>
+                                    </svg>
+                                </button>
+                            </div>
+                        </form>
+                        <button type="button" id="close-search-panel" class="btn-rounded-with-label ml-auto absolute top-0 right-8">
+                            <span class="icon">
+                                <svg class="h-6 icon-close-1" aria-hidden="true" focusable="false">
+                                    <use href="/assets/b2c-redesign/img/svg-sprite.svg#icon-close-1"></use>
+                                </svg>
+                            </span>
+                            <span class="label">Close <span class="sr-only">the dialog</span></span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+            <div class="flex items-end gap-6 shrink-0 ml-auto">
+                <button type="button" class="bg-white rounded-full flex lg:hidden flex-col items-center justify-center w-6 h-6 outline-none ring-3 ring-transparent ring-offset-2 transition-all duration-500 focus-visible:ring-focus js-mobile-search-btn" aria-expanded="false" aria-controls="search-panel" aria-label="Toggle mobile site search">
+                    <svg width="24" height="24" class="pointer-events-none search-icon icon-search" aria-hidden="true" focusable="false">
+                        <use href="/assets/b2c-redesign/img/svg-sprite.svg#icon-search"></use>
+                    </svg>
+                </button>
+
+                    <a href="/en-us/floors/login/"
+                       class="group hidden md:flex justify-center flex-col items-center gap-0.5 outline-none ring-3 ring-transparent ring-offset-2 transition-all duration-500 focus-visible:ring-focus">
+                        <div class="relative flex h-6 w-6">
+                            <svg class="h-6 w-6 icon-favorite icon-people" aria-hidden="true" focusable="false">
+                                <use href="/assets/b2c-redesign/img/svg-sprite.svg#icon-people"></use>
+                            </svg>
+                        </div>
+                        <span class="text-base leading-normal sr-only xl:not-sr-only transition-colors duration-300 underline decoration-transparent decoration-2 underline-offset-[4px] group-hover:decoration-black group-focus-visible:decoration-black group-focus-visible:decoration-2">My Login</span>
+                    </a>
+
+                <app-my-favourites data-get-favourites-api-url="/api/karndeanResidentialSaved/all" data-label="My Favorites" data-url="/en-us/floors/favorites/" data-page-id="94980">
+                </app-my-favourites>
+
+                <app-my-samples data-get-basket-api-url="/api/karndeanResidentialCart/get"
+                                data-update-basket-api-url="/api/karndeanResidentialCart/updateQuantity"
+                                data-label="My Samples"
+                                data-basket-label="Basket"
+                                data-subtitle="Order up to 6 FREE samples"
+                                data-close-label="Close"
+                                data-total-label="Total"
+                                data-subtotal-label="Subtotal"
+                                data-delivery-label="Delivery"
+                                data-basket-url="/en-us/floors/basket/"
+                                data-basket-button-text="Continue To Basket"
+                                data-page-id="94980"
+                                data-basket-items-price-label="Price"
+                                data-basket-item-qty-label="Quantity"
+                                data-basket-item-format-label="Format"
+                                data-basket-item-size-sample-label="size sample"
+                                data-basket-item-sample-size-label="sample size"
+                                data-basket-item-free-label="Free"
+                                data-basket-remove-label="Remove"
+                                data-order-more-samples-label="Order More Samples"
+                                data-order-more-samples-url="/en-us/floors/products/"
+                                data-sample-added-success-message="Sample added to my samples"
+                                data-samples-empty-image-one-times=""
+                                data-samples-empty-image-two-times=""
+                                data-samples-empty-image-alt="Product"
+                                data-samples-empty-title="You haven&#x27;t added any samples yet!"
+                                data-samples-empty-text="Samples are useful for getting a sense of how the floor will look and feel in your space. Browse our flooring."
+                                data-samples-empty-button-label="Browse Our Flooring"
+                                data-samples-empty-button-url="/en-us/floors/products/"
+                                data-basket-loading-title="Loading..."
+                                data-basket-loading-text="Loading..."
+                                data-api-error-text="Error adding sample"
+                                data-free-sample-single-limit-error-text="Sample Added Over Max Single Free Sample"
+                                data-free-sample-total-limit-error-text="Too many free samples have been added"
+                                data-paid-sample-single-limit-error-text="Too many paid samples have been added"
+                                data-paid-sample-total-limit-error-text="The requested number of samples exceeds the number allowed"
+                                data-max-single-paid-sample-amount="2"
+                                data-max-paid-sample-amount="4"
+                                data-max-free-single-sample-amount="1"
+                                data-max-free-sample-amount="6">
+                </app-my-samples>
+            </div>
+        </div>
+
+        
+    <div class="js-slide-in-panel slide-in-panel hidden"
+         role="dialog"
+         data-direction="right"
+         id="dialog-mobile-nav"
+         aria-labelledby="dialog-mobile-nav-label"
+         aria-modal="true">
+        <div class="flex flex-col h-full">
+
+                <h2 id="dialog-mobile-nav-label" class="sr-only">Mobile navigation</h2>
+
+            <div class="overflow-y-auto overflow-x-hidden flex flex-col h-full">
+
+    <nav id="mobile-nav" aria-label="Mobile navigation" class="pt-12 md:pt-[112px] mb-6 px-4 md:px-12">
+        <div class="js-accordion-block" data-animation="on" data-multi-items="on">
+
+
+<div class="js-accordion-item standard-accordion border-b-2 border-b-gray-border ">
+    <div>
+        <button id="mobile-menu-accordion-header-1" type="button" aria-controls="mobile-menu-accordion-content-1"
+                class="js-accordion-trigger group text-left w-full flex justify-between items-center outline-none pl-0 pr-2 py-6 relative focus:z-10 hover:z-10">
+            <strong class="font-ubuntu text-lg md:text-xl text-secondary-mine-shaft font-medium">Our Floors</strong>
+			
+                <span aria-hidden="true" class="ml-6 flex items-center justify-center text-secondary-mine-shaft w-8 h-8 rounded-full ring-3 ring-transparent ring-offset-2 group-focus-visible:ring-focus">
+                    <svg class="accordion-icon h-6 w-6 block transform rotate-90 icon-arrow-1" aria-hidden="true" focusable="false">
+                        <use href="/assets/b2c-redesign/img/svg-sprite.svg#icon-arrow-1"></use>
+                    </svg>
+                </span>
+        </button>
+    </div>
+    <div role="region" aria-labelledby="mobile-menu-accordion-header-1" id="mobile-menu-accordion-content-1" class="js-accordion-panel pb-6">
+        
+<div class="divide-y-2 divide-gray-border space-y-4">
+    <div>
+        
+
+    <div class="pt-4 md:pt-0">
+        <span id="mobile-menu-label-browse-by-color" class="block text-base xl:text-lg font-medium leading-normal mb-2.5">Browse By Color</span>
+        <ul aria-labelledby="mobile-menu-label-browse-by-color" class="space-y-0.5">
+                <li class="block">
+                    <a href="/en-us/floors/products/colour/whitecream/" class="group text-base xl:text-lg inline-flex items-center xl:items-start outline-none ring-3 ring-transparent ring-offset-2 transition-all duration-500 focus-visible:ring-focus leading-relaxed">
+                        <span class="block rounded-full mr-2 h-8 w-8 object-fill shrink-0 overflow-hidden">
+                            <img class="w-full" src="/globalassets/karndean/retailers/colours/white-cream.jpg" alt="white cream"/>
+                        </span>
+                        <span class="block transition-colors duration-300 underline decoration-transparent decoration-2 underline-offset-[4px] group-hover:decoration-black group-focus-visible:decoration-black group-focus-visible:decoration-2 pt-1">White/Cream</span>
+                    </a>
+                </li>
+                <li class="block">
+                    <a href="/en-us/floors/products/colour/blondgoldenyellow/" class="group text-base xl:text-lg inline-flex items-center xl:items-start outline-none ring-3 ring-transparent ring-offset-2 transition-all duration-500 focus-visible:ring-focus leading-relaxed">
+                        <span class="block rounded-full mr-2 h-8 w-8 object-fill shrink-0 overflow-hidden">
+                            <img class="w-full" src="/globalassets/karndean/retailers/colours/yellow-gold.jpg" alt="yellow gold"/>
+                        </span>
+                        <span class="block transition-colors duration-300 underline decoration-transparent decoration-2 underline-offset-[4px] group-hover:decoration-black group-focus-visible:decoration-black group-focus-visible:decoration-2 pt-1">Blond/Golden/Yellow</span>
+                    </a>
+                </li>
+                <li class="block">
+                    <a href="/en-us/floors/products/colour/beigetaupe/" class="group text-base xl:text-lg inline-flex items-center xl:items-start outline-none ring-3 ring-transparent ring-offset-2 transition-all duration-500 focus-visible:ring-focus leading-relaxed">
+                        <span class="block rounded-full mr-2 h-8 w-8 object-fill shrink-0 overflow-hidden">
+                            <img class="w-full" src="/globalassets/karndean/retailers/colours/beige-taupe.jpg" alt="beige taupe"/>
+                        </span>
+                        <span class="block transition-colors duration-300 underline decoration-transparent decoration-2 underline-offset-[4px] group-hover:decoration-black group-focus-visible:decoration-black group-focus-visible:decoration-2 pt-1">Beige/Taupe</span>
+                    </a>
+                </li>
+                <li class="block">
+                    <a href="/en-us/floors/products/colour/brown/" class="group text-base xl:text-lg inline-flex items-center xl:items-start outline-none ring-3 ring-transparent ring-offset-2 transition-all duration-500 focus-visible:ring-focus leading-relaxed">
+                        <span class="block rounded-full mr-2 h-8 w-8 object-fill shrink-0 overflow-hidden">
+                            <img class="w-full" src="/globalassets/karndean/retailers/colours/brown.jpg" alt="brown"/>
+                        </span>
+                        <span class="block transition-colors duration-300 underline decoration-transparent decoration-2 underline-offset-[4px] group-hover:decoration-black group-focus-visible:decoration-black group-focus-visible:decoration-2 pt-1">Brown</span>
+                    </a>
+                </li>
+                <li class="block">
+                    <a href="/en-us/floors/products/colour/gray/" class="group text-base xl:text-lg inline-flex items-center xl:items-start outline-none ring-3 ring-transparent ring-offset-2 transition-all duration-500 focus-visible:ring-focus leading-relaxed">
+                        <span class="block rounded-full mr-2 h-8 w-8 object-fill shrink-0 overflow-hidden">
+                            <img class="w-full" src="/globalassets/karndean/retailers/colours/grey.jpg" alt="grey"/>
+                        </span>
+                        <span class="block transition-colors duration-300 underline decoration-transparent decoration-2 underline-offset-[4px] group-hover:decoration-black group-focus-visible:decoration-black group-focus-visible:decoration-2 pt-1">Gray</span>
+                    </a>
+                </li>
+                <li class="block">
+                    <a href="/en-us/floors/products/colour/black/" class="group text-base xl:text-lg inline-flex items-center xl:items-start outline-none ring-3 ring-transparent ring-offset-2 transition-all duration-500 focus-visible:ring-focus leading-relaxed">
+                        <span class="block rounded-full mr-2 h-8 w-8 object-fill shrink-0 overflow-hidden">
+                            <img class="w-full" src="/globalassets/karndean/retailers/colours/black.jpg" alt="black"/>
+                        </span>
+                        <span class="block transition-colors duration-300 underline decoration-transparent decoration-2 underline-offset-[4px] group-hover:decoration-black group-focus-visible:decoration-black group-focus-visible:decoration-2 pt-1">Black</span>
+                    </a>
+                </li>
+                <li class="block">
+                    <a href="/en-us/floors/products/colour/orangeredpink/" class="group text-base xl:text-lg inline-flex items-center xl:items-start outline-none ring-3 ring-transparent ring-offset-2 transition-all duration-500 focus-visible:ring-focus leading-relaxed">
+                        <span class="block rounded-full mr-2 h-8 w-8 object-fill shrink-0 overflow-hidden">
+                            <img class="w-full" src="/globalassets/karndean/retailers/colours/orange-red.jpg" alt="orange red"/>
+                        </span>
+                        <span class="block transition-colors duration-300 underline decoration-transparent decoration-2 underline-offset-[4px] group-hover:decoration-black group-focus-visible:decoration-black group-focus-visible:decoration-2 pt-1">Orange/Red/Pink</span>
+                    </a>
+                </li>
+                <li class="block">
+                    <a href="/en-us/floors/products/colour/bluegreen/" class="group text-base xl:text-lg inline-flex items-center xl:items-start outline-none ring-3 ring-transparent ring-offset-2 transition-all duration-500 focus-visible:ring-focus leading-relaxed">
+                        <span class="block rounded-full mr-2 h-8 w-8 object-fill shrink-0 overflow-hidden">
+                            <img class="w-full" src="/globalassets/karndean/retailers/colours/blue-green.jpg" alt="blue green"/>
+                        </span>
+                        <span class="block transition-colors duration-300 underline decoration-transparent decoration-2 underline-offset-[4px] group-hover:decoration-black group-focus-visible:decoration-black group-focus-visible:decoration-2 pt-1">Blue/Green</span>
+                    </a>
+                </li>
+                <li class="block">
+                    <a href="/en-us/floors/products?colour=60997" class="group text-base xl:text-lg inline-flex items-center xl:items-start outline-none ring-3 ring-transparent ring-offset-2 transition-all duration-500 focus-visible:ring-focus leading-relaxed">
+                        <span class="block rounded-full mr-2 h-8 w-8 object-fill shrink-0 overflow-hidden">
+                            <img class="w-full" src="/globalassets/karndean/retailers/colours/multicolour.jpg" alt="multicolour"/>
+                        </span>
+                        <span class="block transition-colors duration-300 underline decoration-transparent decoration-2 underline-offset-[4px] group-hover:decoration-black group-focus-visible:decoration-black group-focus-visible:decoration-2 pt-1">Multicolor</span>
+                    </a>
+                </li>
+        </ul>
+    </div>
+
+    </div>
+    <div class="pt-4">
+        
+
+    <div>
+        <span id="mobile-menu-label-browse-by-room" class="block text-base xl:text-lg font-medium leading-normal mb-2.5">Browse By Room</span>
+        <ul aria-labelledby="mobile-menu-label-browse-by-room" class="space-y-0.5">
+                <li class="block">
+                    <a href="/en-us/floors/inspiration/inspiration-by-room/kitchens/" class="group text-base xl:text-lg inline-flex items-center xl:items-start outline-none ring-3 ring-transparent ring-offset-2 transition-all duration-500 focus-visible:ring-focus leading-relaxed">
+                        <span class="block mr-2 h-8 w-8 object-fill shrink-0 overflow-hidden">
+                            <img class="w-full" src="/globalassets/karndean/retailers/rooms/kitchen.svg" alt="Logo which indicates a kitchen"/>
+                        </span>
+                        <span class="block transition-colors duration-300 underline decoration-transparent decoration-2 underline-offset-[4px] group-hover:decoration-black group-focus-visible:decoration-black group-focus-visible:decoration-2 pt-1">Kitchen flooring</span>
+                    </a>
+                </li>
+                <li class="block">
+                    <a href="/en-us/floors/inspiration/inspiration-by-room/bathroom/" class="group text-base xl:text-lg inline-flex items-center xl:items-start outline-none ring-3 ring-transparent ring-offset-2 transition-all duration-500 focus-visible:ring-focus leading-relaxed">
+                        <span class="block mr-2 h-8 w-8 object-fill shrink-0 overflow-hidden">
+                            <img class="w-full" src="/globalassets/karndean/retailers/rooms/bathroom.svg" alt="Logo which indicates a bathroom "/>
+                        </span>
+                        <span class="block transition-colors duration-300 underline decoration-transparent decoration-2 underline-offset-[4px] group-hover:decoration-black group-focus-visible:decoration-black group-focus-visible:decoration-2 pt-1">Bathroom flooring</span>
+                    </a>
+                </li>
+                <li class="block">
+                    <a href="/en-us/floors/inspiration/inspiration-by-room/hallway/" class="group text-base xl:text-lg inline-flex items-center xl:items-start outline-none ring-3 ring-transparent ring-offset-2 transition-all duration-500 focus-visible:ring-focus leading-relaxed">
+                        <span class="block mr-2 h-8 w-8 object-fill shrink-0 overflow-hidden">
+                            <img class="w-full" src="/globalassets/karndean/retailers/rooms/hallway.svg" alt="Logo which indicates a Hallway"/>
+                        </span>
+                        <span class="block transition-colors duration-300 underline decoration-transparent decoration-2 underline-offset-[4px] group-hover:decoration-black group-focus-visible:decoration-black group-focus-visible:decoration-2 pt-1">Entrance/Hallway flooring</span>
+                    </a>
+                </li>
+                <li class="block">
+                    <a href="/en-us/floors/inspiration/inspiration-by-room/living-room/" class="group text-base xl:text-lg inline-flex items-center xl:items-start outline-none ring-3 ring-transparent ring-offset-2 transition-all duration-500 focus-visible:ring-focus leading-relaxed">
+                        <span class="block mr-2 h-8 w-8 object-fill shrink-0 overflow-hidden">
+                            <img class="w-full" src="/globalassets/karndean/retailers/rooms/livingroom.svg" alt="Logo which indicates a living room"/>
+                        </span>
+                        <span class="block transition-colors duration-300 underline decoration-transparent decoration-2 underline-offset-[4px] group-hover:decoration-black group-focus-visible:decoration-black group-focus-visible:decoration-2 pt-1">Living Room flooring</span>
+                    </a>
+                </li>
+                <li class="block">
+                    <a href="/en-us/floors/inspiration/inspiration-by-room/dining-room/" class="group text-base xl:text-lg inline-flex items-center xl:items-start outline-none ring-3 ring-transparent ring-offset-2 transition-all duration-500 focus-visible:ring-focus leading-relaxed">
+                        <span class="block mr-2 h-8 w-8 object-fill shrink-0 overflow-hidden">
+                            <img class="w-full" src="/globalassets/karndean/retailers/rooms/diningroom.svg" alt="Logo which indicates a Dining room"/>
+                        </span>
+                        <span class="block transition-colors duration-300 underline decoration-transparent decoration-2 underline-offset-[4px] group-hover:decoration-black group-focus-visible:decoration-black group-focus-visible:decoration-2 pt-1">Dining room flooring</span>
+                    </a>
+                </li>
+                <li class="block">
+                    <a href="/en-us/floors/inspiration/inspiration-by-room/bedroom/" class="group text-base xl:text-lg inline-flex items-center xl:items-start outline-none ring-3 ring-transparent ring-offset-2 transition-all duration-500 focus-visible:ring-focus leading-relaxed">
+                        <span class="block mr-2 h-8 w-8 object-fill shrink-0 overflow-hidden">
+                            <img class="w-full" src="/globalassets/karndean/retailers/rooms/bedroom.svg" alt="Logo which indicates a basement"/>
+                        </span>
+                        <span class="block transition-colors duration-300 underline decoration-transparent decoration-2 underline-offset-[4px] group-hover:decoration-black group-focus-visible:decoration-black group-focus-visible:decoration-2 pt-1">Bedroom flooring</span>
+                    </a>
+                </li>
+                <li class="block">
+                    <a href="/en-us/floors/inspiration/inspiration-by-room/laundry-mudroom/" class="group text-base xl:text-lg inline-flex items-center xl:items-start outline-none ring-3 ring-transparent ring-offset-2 transition-all duration-500 focus-visible:ring-focus leading-relaxed">
+                        <span class="block mr-2 h-8 w-8 object-fill shrink-0 overflow-hidden">
+                            <img class="w-full" src="/globalassets/karndean/retailers/rooms/conservatory.svg" alt="Logo which indicates a conservatory"/>
+                        </span>
+                        <span class="block transition-colors duration-300 underline decoration-transparent decoration-2 underline-offset-[4px] group-hover:decoration-black group-focus-visible:decoration-black group-focus-visible:decoration-2 pt-1">Laundry room flooring</span>
+                    </a>
+                </li>
+                <li class="block">
+                    <a href="/en-us/floors/inspiration/inspiration-by-room/home-office/" class="group text-base xl:text-lg inline-flex items-center xl:items-start outline-none ring-3 ring-transparent ring-offset-2 transition-all duration-500 focus-visible:ring-focus leading-relaxed">
+                        <span class="block mr-2 h-8 w-8 object-fill shrink-0 overflow-hidden">
+                            <img class="w-full" src="/globalassets/karndean/retailers/rooms/home-office.svg" alt="Logo which indicates a home office"/>
+                        </span>
+                        <span class="block transition-colors duration-300 underline decoration-transparent decoration-2 underline-offset-[4px] group-hover:decoration-black group-focus-visible:decoration-black group-focus-visible:decoration-2 pt-1">Home office flooring</span>
+                    </a>
+                </li>
+        </ul>
+    </div>
+
+    </div>
+    <div class="pt-4">
+        
+
+    <div>
+        <span id="mobile-menu-label-browse-by-look" class="block text-base xl:text-lg font-medium leading-normal mb-2.5">Browse By Look</span>
+        <ul aria-labelledby="mobile-menu-label-browse-by-look" class="space-y-2 xl:space-y-0 xl:grid xl:grid-cols-2 xl:gap-6 xl:max-w-[260px]">
+                <li class="block">
+                    <a href="/en-us/floors/products/by-look/wood/" class="group text-base xl:text-lg inline-flex items-center xl:items-start outline-none ring-3 ring-transparent ring-offset-2 transition-all duration-500 focus-visible:ring-focus leading-relaxed xl:block">
+                        <span class="block rounded-lg mr-2 h-8 w-8 object-fill shrink-0 overflow-hidden xl:block xl:w-full xl:aspect-1/1 xl:rounded-lg xl:h-auto xl:mb-1">
+                            <img class="w-full" src="/globalassets/wood2.jpg" alt="Karndean wood lvp"/>
+                        </span>
+                        <span class="block transition-colors duration-300 underline decoration-transparent decoration-2 underline-offset-[4px] group-hover:decoration-black group-focus-visible:decoration-black group-focus-visible:decoration-2 pt-1">Wood</span>
+                    </a>
+                </li>
+                <li class="block">
+                    <a href="/en-us/floors/products/by-look/stone/" class="group text-base xl:text-lg inline-flex items-center xl:items-start outline-none ring-3 ring-transparent ring-offset-2 transition-all duration-500 focus-visible:ring-focus leading-relaxed xl:block">
+                        <span class="block rounded-lg mr-2 h-8 w-8 object-fill shrink-0 overflow-hidden xl:block xl:w-full xl:aspect-1/1 xl:rounded-lg xl:h-auto xl:mb-1">
+                            <img class="w-full" src="/globalassets/stone2.jpg" alt="Karndean stone lvt floors"/>
+                        </span>
+                        <span class="block transition-colors duration-300 underline decoration-transparent decoration-2 underline-offset-[4px] group-hover:decoration-black group-focus-visible:decoration-black group-focus-visible:decoration-2 pt-1">Stone</span>
+                    </a>
+                </li>
+                <li class="block">
+                    <a href="/en-us/floors/products/by-look/herringbone/" class="group text-base xl:text-lg inline-flex items-center xl:items-start outline-none ring-3 ring-transparent ring-offset-2 transition-all duration-500 focus-visible:ring-focus leading-relaxed xl:block">
+                        <span class="block rounded-lg mr-2 h-8 w-8 object-fill shrink-0 overflow-hidden xl:block xl:w-full xl:aspect-1/1 xl:rounded-lg xl:h-auto xl:mb-1">
+                            <img class="w-full" src="/globalassets/products/art-select/residential-roomsets/salon-oak-sm-rl13_akp-sm-rl13-laundry-room.jpg" alt="Laundry room with Salon Oak SM-RL13 | AKP-SM-RL13 herringbone floors"/>
+                        </span>
+                        <span class="block transition-colors duration-300 underline decoration-transparent decoration-2 underline-offset-[4px] group-hover:decoration-black group-focus-visible:decoration-black group-focus-visible:decoration-2 pt-1">Herringbone</span>
+                    </a>
+                </li>
+        </ul>
+    </div>
+
+    </div>
+    <div class="pt-4">
+        
+
+    <div>
+        <!-- have to have unique ID / index for mobile vs desktop menus -->
+        <span id="mobile-menu-label-standard-1" class="block text-base xl:text-lg font-medium leading-normal mb-4 md:mb-2.5 xl:mb-3.5">Explore</span>
+        <ul aria-labelledby="mobile-menu-label-standard-1" class="space-y-[15px] md:space-y-2 xl:space-y-[15px]">
+                    <li class="block">
+                        <a href="/en-us/floors/products/our-ranges/" class="text-base xl:text-lg outline-none ring-3 ring-transparent ring-offset-2 focus-visible:ring-focus leading-relaxed transition-colors duration-300 underline decoration-transparent decoration-2 underline-offset-[4px] hover:decoration-black focus-visible:decoration-black focus-visible:decoration-2">
+                            Our Collections
+                        </a>
+                    </li>
+                    <li class="block">
+                        <a href="/en-us/floors/products/our-formats/" class="text-base xl:text-lg outline-none ring-3 ring-transparent ring-offset-2 focus-visible:ring-focus leading-relaxed transition-colors duration-300 underline decoration-transparent decoration-2 underline-offset-[4px] hover:decoration-black focus-visible:decoration-black focus-visible:decoration-2">
+                            Our Installation Formats
+                        </a>
+                    </li>
+                    <li class="block">
+                        <a href="/en-us/floors/inspiration/discover/why-choose-karndean/" class="text-base xl:text-lg outline-none ring-3 ring-transparent ring-offset-2 focus-visible:ring-focus leading-relaxed transition-colors duration-300 underline decoration-transparent decoration-2 underline-offset-[4px] hover:decoration-black focus-visible:decoration-black focus-visible:decoration-2">
+                            Floor Benefits
+                        </a>
+                    </li>
+                    <li class="block">
+                        <a href="/en-us/floors/products/floor-benefits/family-friendly-flooring/" class="text-base xl:text-lg outline-none ring-3 ring-transparent ring-offset-2 focus-visible:ring-focus leading-relaxed transition-colors duration-300 underline decoration-transparent decoration-2 underline-offset-[4px] hover:decoration-black focus-visible:decoration-black focus-visible:decoration-2">
+                            Family Friendly Flooring
+                        </a>
+                    </li>
+        </ul>
+            <a href="/en-us/floors/products/" class="btn btn-secondary btn-small md:inline-flex mt-4 px-6 md:px-4 xl:px-6">
+                <span>Browse all floors</span>
+                <svg width="24" height="24" class="icon-arrow-right" aria-hidden="true" focusable="false">
+                    <use href="/assets/b2c-redesign/img/svg-sprite.svg#icon-arrow-right"></use>
+                </svg>
+            </a>
+    </div>
+
+    </div>
+</div>
+    </div>
+</div>
+
+
+<div class="js-accordion-item standard-accordion border-b-2 border-b-gray-border ">
+    <div>
+        <button id="mobile-menu-accordion-header-2" type="button" aria-controls="mobile-menu-accordion-content-2"
+                class="js-accordion-trigger group text-left w-full flex justify-between items-center outline-none pl-0 pr-2 py-6 relative focus:z-10 hover:z-10">
+            <strong class="font-ubuntu text-lg md:text-xl text-secondary-mine-shaft font-medium">Inspiration</strong>
+			
+                <span aria-hidden="true" class="ml-6 flex items-center justify-center text-secondary-mine-shaft w-8 h-8 rounded-full ring-3 ring-transparent ring-offset-2 group-focus-visible:ring-focus">
+                    <svg class="accordion-icon h-6 w-6 block transform rotate-90 icon-arrow-1" aria-hidden="true" focusable="false">
+                        <use href="/assets/b2c-redesign/img/svg-sprite.svg#icon-arrow-1"></use>
+                    </svg>
+                </span>
+        </button>
+    </div>
+    <div role="region" aria-labelledby="mobile-menu-accordion-header-2" id="mobile-menu-accordion-content-2" class="js-accordion-panel pb-6">
+        
+    <div class="divide-y-2 divide-gray-border space-y-4">
+                <div class="pt-4">
+                    
+
+    <div>
+        <!-- have to have unique ID / index for mobile vs desktop menus -->
+        <span id="mobile-menu-label-standard-2" class="block text-base xl:text-lg font-medium leading-normal mb-4 md:mb-2.5 xl:mb-3.5">Get Inspired</span>
+        <ul aria-labelledby="mobile-menu-label-standard-2" class="space-y-[15px] md:space-y-2 xl:space-y-[15px]">
+                    <li class="block">
+                        <a href="/en-us/floors/inspiration/inspiration-by-room/" class="text-base xl:text-lg outline-none ring-3 ring-transparent ring-offset-2 focus-visible:ring-focus leading-relaxed transition-colors duration-300 underline decoration-transparent decoration-2 underline-offset-[4px] hover:decoration-black focus-visible:decoration-black focus-visible:decoration-2">
+                            Inspiration By Room
+                        </a>
+                    </li>
+                    <li class="block">
+                        <a href="/en-us/floors/inspiration/design-aesthetics/" class="text-base xl:text-lg outline-none ring-3 ring-transparent ring-offset-2 focus-visible:ring-focus leading-relaxed transition-colors duration-300 underline decoration-transparent decoration-2 underline-offset-[4px] hover:decoration-black focus-visible:decoration-black focus-visible:decoration-2">
+                            Karndean Design Aesthetics
+                        </a>
+                    </li>
+                    <li class="block">
+                        <a href="/en-us/floors/inspiration/discover/product-finder/" class="text-base xl:text-lg outline-none ring-3 ring-transparent ring-offset-2 focus-visible:ring-focus leading-relaxed transition-colors duration-300 underline decoration-transparent decoration-2 underline-offset-[4px] hover:decoration-black focus-visible:decoration-black focus-visible:decoration-2">
+                            Get Recommendations
+                        </a>
+                    </li>
+                    <li class="block">
+                        <a href="/en-us/floors/inspiration/discover/floorstyle-floor-designer/" class="text-base xl:text-lg outline-none ring-3 ring-transparent ring-offset-2 focus-visible:ring-focus leading-relaxed transition-colors duration-300 underline decoration-transparent decoration-2 underline-offset-[4px] hover:decoration-black focus-visible:decoration-black focus-visible:decoration-2">
+                            See Our Floors In Your Room
+                        </a>
+                    </li>
+                    <li class="block">
+                        <a href="/en-us/floors/inspiration/get-inspired/as-seen-on/karndean-on-tv/" class="text-base xl:text-lg outline-none ring-3 ring-transparent ring-offset-2 focus-visible:ring-focus leading-relaxed transition-colors duration-300 underline decoration-transparent decoration-2 underline-offset-[4px] hover:decoration-black focus-visible:decoration-black focus-visible:decoration-2">
+                            See Our Floors On TV
+                        </a>
+                    </li>
+        </ul>
+            <a title="Get tips from HGTV host Ty Pennington" href="/en-us/floors/inspiration/get-inspired/as-seen-on/ty-pennington/" class="btn btn-secondary btn-small md:inline-flex mt-4 px-6 md:px-4 xl:px-6">
+                <span>Tips From Ty Pennington</span>
+                <svg width="24" height="24" class="icon-arrow-right" aria-hidden="true" focusable="false">
+                    <use href="/assets/b2c-redesign/img/svg-sprite.svg#icon-arrow-right"></use>
+                </svg>
+            </a>
+    </div>
+
+                </div>
+                <div class="pt-4">
+                    
+
+    <div>
+        <!-- have to have unique ID / index for mobile vs desktop menus -->
+        <span id="mobile-menu-label-standard-2" class="block text-base xl:text-lg font-medium leading-normal mb-4 md:mb-2.5 xl:mb-3.5">Discover</span>
+        <ul aria-labelledby="mobile-menu-label-standard-2" class="space-y-[15px] md:space-y-2 xl:space-y-[15px]">
+                    <li class="block">
+                        <a href="/en-us/floors/inspiration/discover/laying-patterns/" class="text-base xl:text-lg outline-none ring-3 ring-transparent ring-offset-2 focus-visible:ring-focus leading-relaxed transition-colors duration-300 underline decoration-transparent decoration-2 underline-offset-[4px] hover:decoration-black focus-visible:decoration-black focus-visible:decoration-2">
+                            Laying Patterns
+                        </a>
+                    </li>
+                    <li class="block">
+                        <a href="/en-us/floors/inspiration/design-components/decorative-borders/" class="text-base xl:text-lg outline-none ring-3 ring-transparent ring-offset-2 focus-visible:ring-focus leading-relaxed transition-colors duration-300 underline decoration-transparent decoration-2 underline-offset-[4px] hover:decoration-black focus-visible:decoration-black focus-visible:decoration-2">
+                            Decorative Borders
+                        </a>
+                    </li>
+                    <li class="block">
+                        <a href="/en-us/floors/inspiration/design-components/design-strips/" class="text-base xl:text-lg outline-none ring-3 ring-transparent ring-offset-2 focus-visible:ring-focus leading-relaxed transition-colors duration-300 underline decoration-transparent decoration-2 underline-offset-[4px] hover:decoration-black focus-visible:decoration-black focus-visible:decoration-2">
+                            Design Strips
+                        </a>
+                    </li>
+                    <li class="block">
+                        <a title="Discover our newest luxury vinyl designs" href="/en-us/floors/inspiration/discover/new-products/" class="text-base xl:text-lg outline-none ring-3 ring-transparent ring-offset-2 focus-visible:ring-focus leading-relaxed transition-colors duration-300 underline decoration-transparent decoration-2 underline-offset-[4px] hover:decoration-black focus-visible:decoration-black focus-visible:decoration-2">
+                            New Products
+                        </a>
+                    </li>
+        </ul>
+    </div>
+
+                </div>
+                <div class="pt-4">
+                    
+
+    <div>
+        <!-- have to have unique ID / index for mobile vs desktop menus -->
+        <span id="mobile-menu-label-standard-2" class="block text-base xl:text-lg font-medium leading-normal mb-4 md:mb-2.5 xl:mb-3.5">Advice</span>
+        <ul aria-labelledby="mobile-menu-label-standard-2" class="space-y-[15px] md:space-y-2 xl:space-y-[15px]">
+                    <li class="block">
+                        <a href="/en-us/floors/products/floor-benefits/reasons-to-choose-karndean-flooring/" class="text-base xl:text-lg outline-none ring-3 ring-transparent ring-offset-2 focus-visible:ring-focus leading-relaxed transition-colors duration-300 underline decoration-transparent decoration-2 underline-offset-[4px] hover:decoration-black focus-visible:decoration-black focus-visible:decoration-2">
+                            Karndean LVT Vs Other Flooring
+                        </a>
+                    </li>
+                    <li class="block">
+                        <a href="/en-us/floors/inspiration/get-inspired/blog/" class="text-base xl:text-lg outline-none ring-3 ring-transparent ring-offset-2 focus-visible:ring-focus leading-relaxed transition-colors duration-300 underline decoration-transparent decoration-2 underline-offset-[4px] hover:decoration-black focus-visible:decoration-black focus-visible:decoration-2">
+                            Browse Our Blog
+                        </a>
+                    </li>
+                    <li class="block">
+                        <a href="/en-us/floors/services/downloadable-resources/" class="text-base xl:text-lg outline-none ring-3 ring-transparent ring-offset-2 focus-visible:ring-focus leading-relaxed transition-colors duration-300 underline decoration-transparent decoration-2 underline-offset-[4px] hover:decoration-black focus-visible:decoration-black focus-visible:decoration-2">
+                            Download Our Brochure
+                        </a>
+                    </li>
+                    <li class="block">
+                        <a href="/en-us/floors/helpful-information/contact-us/" class="text-base xl:text-lg outline-none ring-3 ring-transparent ring-offset-2 focus-visible:ring-focus leading-relaxed transition-colors duration-300 underline decoration-transparent decoration-2 underline-offset-[4px] hover:decoration-black focus-visible:decoration-black focus-visible:decoration-2">
+                            Talk To Us
+                        </a>
+                    </li>
+        </ul>
+    </div>
+
+                </div>
+        <div class="pt-4">
+            
+    <div>
+        <a
+           title="View Karndean Design Aesthetics"
+           href="/en-us/floors/inspiration/design-aesthetics/"
+           class="group text-base xl:text-lg block outline-none ring-3 ring-transparent ring-offset-2 transition-all duration-500 focus-visible:ring-focus leading-relaxed">
+            <span class="block w-full rounded-lg object-fill overflow-hidden mb-2">
+                <img data-lazyload src="/globalassets/karndean/b2c-blocks/b2c-234-up-card-block/usa/aesthetics/2026/2026-kda-1600x1600-for-website.jpg?width=800"
+                     data-srcset="/globalassets/karndean/b2c-blocks/b2c-234-up-card-block/usa/aesthetics/2026/2026-kda-1600x1600-for-website.jpg?width=800 1x,/globalassets/karndean/b2c-blocks/b2c-234-up-card-block/usa/aesthetics/2026/2026-kda-1600x1600-for-website.jpg?width=1600 2x"
+                     alt="Karndean Design Aesthetics inspiration"
+                     class="block w-full"/>
+            </span>
+            <span class="block transition-colors duration-300 underline decoration-transparent decoration-2 underline-offset-[4px] group-hover:decoration-black group-focus-visible:decoration-black group-focus-visible:decoration-2">Karndean Design Aesthetics</span>
+        </a>
+    </div>
+
+        </div>
+    </div>
+
+    </div>
+</div>
+
+
+<div class="js-accordion-item standard-accordion border-b-2 border-b-gray-border ">
+    <div>
+        <button id="mobile-menu-accordion-header-3" type="button" aria-controls="mobile-menu-accordion-content-3"
+                class="js-accordion-trigger group text-left w-full flex justify-between items-center outline-none pl-0 pr-2 py-6 relative focus:z-10 hover:z-10">
+            <strong class="font-ubuntu text-lg md:text-xl text-secondary-mine-shaft font-medium">Services</strong>
+			
+                <span aria-hidden="true" class="ml-6 flex items-center justify-center text-secondary-mine-shaft w-8 h-8 rounded-full ring-3 ring-transparent ring-offset-2 group-focus-visible:ring-focus">
+                    <svg class="accordion-icon h-6 w-6 block transform rotate-90 icon-arrow-1" aria-hidden="true" focusable="false">
+                        <use href="/assets/b2c-redesign/img/svg-sprite.svg#icon-arrow-1"></use>
+                    </svg>
+                </span>
+        </button>
+    </div>
+    <div role="region" aria-labelledby="mobile-menu-accordion-header-3" id="mobile-menu-accordion-content-3" class="js-accordion-panel pb-6">
+        
+    <div class="divide-y-2 divide-gray-border space-y-4">
+                <div class="pt-4">
+                    
+
+    <div>
+        <!-- have to have unique ID / index for mobile vs desktop menus -->
+        <span id="mobile-menu-label-standard-3" class="block text-base xl:text-lg font-medium leading-normal mb-4 md:mb-2.5 xl:mb-3.5">Helpful Information</span>
+        <ul aria-labelledby="mobile-menu-label-standard-3" class="space-y-[15px] md:space-y-2 xl:space-y-[15px]">
+                    <li class="block">
+                        <a href="/en-us/floors/services/ordering-samples/" class="text-base xl:text-lg outline-none ring-3 ring-transparent ring-offset-2 focus-visible:ring-focus leading-relaxed transition-colors duration-300 underline decoration-transparent decoration-2 underline-offset-[4px] hover:decoration-black focus-visible:decoration-black focus-visible:decoration-2">
+                            Ordering Samples
+                        </a>
+                    </li>
+                    <li class="block">
+                        <a href="/en-us/floors/where-to-buy/find-a-retailer/" class="text-base xl:text-lg outline-none ring-3 ring-transparent ring-offset-2 focus-visible:ring-focus leading-relaxed transition-colors duration-300 underline decoration-transparent decoration-2 underline-offset-[4px] hover:decoration-black focus-visible:decoration-black focus-visible:decoration-2">
+                            Find A Retailer
+                        </a>
+                    </li>
+                    <li class="block">
+                        <a href="/en-us/floors/helpful-information/contact-us/Visit-our-showrooms/visit-our-showrooms/" class="text-base xl:text-lg outline-none ring-3 ring-transparent ring-offset-2 focus-visible:ring-focus leading-relaxed transition-colors duration-300 underline decoration-transparent decoration-2 underline-offset-[4px] hover:decoration-black focus-visible:decoration-black focus-visible:decoration-2">
+                            Visit Our Showroom
+                        </a>
+                    </li>
+                <li class="block">
+                    <a href="/en-us/floors/services/guarantee-and-warranty/" class="text-base xl:text-lg outline-none ring-3 ring-transparent ring-offset-2 focus-visible:ring-focus leading-relaxed transition-colors duration-300 underline decoration-1 underline-offset-[4px] hover:decoration-black focus-visible:decoration-black hover:decoration-2">
+                        Product warranties
+                    </a>
+                </li>
+        </ul>
+            <a href="/en-us/floors/about-us/frequently-asked-questions/" class="btn btn-secondary btn-small md:inline-flex mt-4 px-6 md:px-4 xl:px-6">
+                <span>Help &amp; FAQs</span>
+                <svg width="24" height="24" class="icon-arrow-right" aria-hidden="true" focusable="false">
+                    <use href="/assets/b2c-redesign/img/svg-sprite.svg#icon-arrow-right"></use>
+                </svg>
+            </a>
+    </div>
+
+                </div>
+                <div class="pt-4">
+                    
+
+    <div>
+        <!-- have to have unique ID / index for mobile vs desktop menus -->
+        <span id="mobile-menu-label-standard-3" class="block text-base xl:text-lg font-medium leading-normal mb-4 md:mb-2.5 xl:mb-3.5">Useful Tools &amp; Guidance</span>
+        <ul aria-labelledby="mobile-menu-label-standard-3" class="space-y-[15px] md:space-y-2 xl:space-y-[15px]">
+                    <li class="block">
+                        <a href="/en-us/floors/inspiration/discover/floorstyle-floor-designer/" class="text-base xl:text-lg outline-none ring-3 ring-transparent ring-offset-2 focus-visible:ring-focus leading-relaxed transition-colors duration-300 underline decoration-transparent decoration-2 underline-offset-[4px] hover:decoration-black focus-visible:decoration-black focus-visible:decoration-2">
+                            See Our Floors In Your Room
+                        </a>
+                    </li>
+                    <li class="block">
+                        <a href="/en-us/floors/inspiration/discover/product-finder/" class="text-base xl:text-lg outline-none ring-3 ring-transparent ring-offset-2 focus-visible:ring-focus leading-relaxed transition-colors duration-300 underline decoration-transparent decoration-2 underline-offset-[4px] hover:decoration-black focus-visible:decoration-black focus-visible:decoration-2">
+                            Get Recommendations
+                        </a>
+                    </li>
+                    <li class="block">
+                        <a href="/en-us/floors/services/downloadable-resources/" class="text-base xl:text-lg outline-none ring-3 ring-transparent ring-offset-2 focus-visible:ring-focus leading-relaxed transition-colors duration-300 underline decoration-transparent decoration-2 underline-offset-[4px] hover:decoration-black focus-visible:decoration-black focus-visible:decoration-2">
+                            Read Our Brochures
+                        </a>
+                    </li>
+                    <li class="block">
+                        <a href="/en-us/floors/services/installation-guides/" class="text-base xl:text-lg outline-none ring-3 ring-transparent ring-offset-2 focus-visible:ring-focus leading-relaxed transition-colors duration-300 underline decoration-transparent decoration-2 underline-offset-[4px] hover:decoration-black focus-visible:decoration-black focus-visible:decoration-2">
+                            Download Our Installation Guides
+                        </a>
+                    </li>
+                    <li class="block">
+                        <a title="Recoursos En Espa&#xF1;ol" href="/en/floors/helpful-information/contact-us/recursos-en-espanol/" class="text-base xl:text-lg outline-none ring-3 ring-transparent ring-offset-2 focus-visible:ring-focus leading-relaxed transition-colors duration-300 underline decoration-transparent decoration-2 underline-offset-[4px] hover:decoration-black focus-visible:decoration-black focus-visible:decoration-2">
+                            Recoursos En Espa&#xF1;ol
+                        </a>
+                    </li>
+        </ul>
+    </div>
+
+                </div>
+                <div class="pt-4">
+                    
+
+    <div>
+        <!-- have to have unique ID / index for mobile vs desktop menus -->
+        <span id="mobile-menu-label-standard-3" class="block text-base xl:text-lg font-medium leading-normal mb-4 md:mb-2.5 xl:mb-3.5">Cleaning &amp; Care</span>
+        <ul aria-labelledby="mobile-menu-label-standard-3" class="space-y-[15px] md:space-y-2 xl:space-y-[15px]">
+                    <li class="block">
+                        <a href="/en-us/floors/services/cleaning-care/" class="text-base xl:text-lg outline-none ring-3 ring-transparent ring-offset-2 focus-visible:ring-focus leading-relaxed transition-colors duration-300 underline decoration-transparent decoration-2 underline-offset-[4px] hover:decoration-black focus-visible:decoration-black focus-visible:decoration-2">
+                            How To Care For Our Products
+                        </a>
+                    </li>
+        </ul>
+    </div>
+
+                </div>
+        <div class="pt-4">
+            
+    <div>
+        <a
+           title="Find a retailer"
+           href="/en-us/floors/where-to-buy/find-a-retailer/"
+           class="group text-base xl:text-lg block outline-none ring-3 ring-transparent ring-offset-2 transition-all duration-500 focus-visible:ring-focus leading-relaxed">
+            <span class="block w-full rounded-lg object-fill overflow-hidden mb-2">
+                <img data-lazyload src="/globalassets/karndean/b2c-blocks/b2c-zig-zag-v1-block-square/uk/contact-us/showroom-consultation-1280x1280.png?width=800"
+                     data-srcset="/globalassets/karndean/b2c-blocks/b2c-zig-zag-v1-block-square/uk/contact-us/showroom-consultation-1280x1280.png?width=800 1x,/globalassets/karndean/b2c-blocks/b2c-zig-zag-v1-block-square/uk/contact-us/showroom-consultation-1280x1280.png?width=1600 2x"
+                     alt="Book a free design consultation with a Karndean flooring expert"
+                     class="block w-full"/>
+            </span>
+            <span class="block transition-colors duration-300 underline decoration-transparent decoration-2 underline-offset-[4px] group-hover:decoration-black group-focus-visible:decoration-black group-focus-visible:decoration-2">Find a retailer</span>
+        </a>
+    </div>
+
+        </div>
+    </div>
+
+    </div>
+</div>
+
+
+<div class="js-accordion-item standard-accordion border-b-2 border-b-gray-border ">
+    <div>
+        <button id="mobile-menu-accordion-header-4" type="button" aria-controls="mobile-menu-accordion-content-4"
+                class="js-accordion-trigger group text-left w-full flex justify-between items-center outline-none pl-0 pr-2 py-6 relative focus:z-10 hover:z-10">
+            <strong class="font-ubuntu text-lg md:text-xl text-secondary-mine-shaft font-medium">Where to buy</strong>
+			
+                <span aria-hidden="true" class="ml-6 flex items-center justify-center text-secondary-mine-shaft w-8 h-8 rounded-full ring-3 ring-transparent ring-offset-2 group-focus-visible:ring-focus">
+                    <svg class="accordion-icon h-6 w-6 block transform rotate-90 icon-arrow-1" aria-hidden="true" focusable="false">
+                        <use href="/assets/b2c-redesign/img/svg-sprite.svg#icon-arrow-1"></use>
+                    </svg>
+                </span>
+        </button>
+    </div>
+    <div role="region" aria-labelledby="mobile-menu-accordion-header-4" id="mobile-menu-accordion-content-4" class="js-accordion-panel pb-6">
+        
+    <div class="divide-y-2 divide-gray-border space-y-4">
+                <div class="pt-4">
+                    
+
+    <div>
+        <!-- have to have unique ID / index for mobile vs desktop menus -->
+        <span id="mobile-menu-label-standard-4" class="block text-base xl:text-lg font-medium leading-normal mb-4 md:mb-2.5 xl:mb-3.5">Flooring</span>
+        <ul aria-labelledby="mobile-menu-label-standard-4" class="space-y-[15px] md:space-y-2 xl:space-y-[15px]">
+                    <li class="block">
+                        <a title="Find a retailer to purchase our luxury vinyl floors" href="/en-us/floors/where-to-buy/find-a-retailer/" class="text-base xl:text-lg outline-none ring-3 ring-transparent ring-offset-2 focus-visible:ring-focus leading-relaxed transition-colors duration-300 underline decoration-transparent decoration-2 underline-offset-[4px] hover:decoration-black focus-visible:decoration-black focus-visible:decoration-2">
+                            Find A Karndean Retailer
+                        </a>
+                    </li>
+        </ul>
+    </div>
+
+                </div>
+                <div class="pt-4">
+                    
+
+    <div>
+        <!-- have to have unique ID / index for mobile vs desktop menus -->
+        <span id="mobile-menu-label-standard-4" class="block text-base xl:text-lg font-medium leading-normal mb-4 md:mb-2.5 xl:mb-3.5">Get In Touch</span>
+        <ul aria-labelledby="mobile-menu-label-standard-4" class="space-y-[15px] md:space-y-2 xl:space-y-[15px]">
+                    <li class="block">
+                        <a href="/en-us/floors/helpful-information/contact-us/" class="text-base xl:text-lg outline-none ring-3 ring-transparent ring-offset-2 focus-visible:ring-focus leading-relaxed transition-colors duration-300 underline decoration-transparent decoration-2 underline-offset-[4px] hover:decoration-black focus-visible:decoration-black focus-visible:decoration-2">
+                            Contact Us
+                        </a>
+                    </li>
+                    <li class="block">
+                        <a href="/en-us/floors/helpful-information/contact-us/recursos-en-espanol/formulario-de-contacto/" class="text-base xl:text-lg outline-none ring-3 ring-transparent ring-offset-2 focus-visible:ring-focus leading-relaxed transition-colors duration-300 underline decoration-transparent decoration-2 underline-offset-[4px] hover:decoration-black focus-visible:decoration-black focus-visible:decoration-2">
+                            Cont&#xE1;ctenos
+                        </a>
+                    </li>
+        </ul>
+    </div>
+
+                </div>
+                <div class="pt-4">
+                    
+
+    <div>
+        <!-- have to have unique ID / index for mobile vs desktop menus -->
+        <span id="mobile-menu-label-standard-4" class="block text-base xl:text-lg font-medium leading-normal mb-4 md:mb-2.5 xl:mb-3.5">Samples</span>
+        <ul aria-labelledby="mobile-menu-label-standard-4" class="space-y-[15px] md:space-y-2 xl:space-y-[15px]">
+                    <li class="block">
+                        <a href="/en-us/floors/services/ordering-samples/" class="text-base xl:text-lg outline-none ring-3 ring-transparent ring-offset-2 focus-visible:ring-focus leading-relaxed transition-colors duration-300 underline decoration-transparent decoration-2 underline-offset-[4px] hover:decoration-black focus-visible:decoration-black focus-visible:decoration-2">
+                            Order Free Samples
+                        </a>
+                    </li>
+        </ul>
+    </div>
+
+                </div>
+        <div class="pt-4">
+            
+    <div>
+        <a
+           href="/en-us/floors/where-to-buy/find-a-retailer/"
+           class="group text-base xl:text-lg block outline-none ring-3 ring-transparent ring-offset-2 transition-all duration-500 focus-visible:ring-focus leading-relaxed">
+            <span class="block w-full rounded-lg object-fill overflow-hidden mb-2">
+                <img data-lazyload src="/globalassets/karndean/b2c-blocks/b2c-zig-zag-v1-block-square/uk/helpful-information/showroom-consultation.png?width=800"
+                     data-srcset="/globalassets/karndean/b2c-blocks/b2c-zig-zag-v1-block-square/uk/helpful-information/showroom-consultation.png?width=800 1x,/globalassets/karndean/b2c-blocks/b2c-zig-zag-v1-block-square/uk/helpful-information/showroom-consultation.png?width=1600 2x"
+                     alt="Book a free design consultation with a Karndean flooring expert"
+                     class="block w-full"/>
+            </span>
+            <span class="block transition-colors duration-300 underline decoration-transparent decoration-2 underline-offset-[4px] group-hover:decoration-black group-focus-visible:decoration-black group-focus-visible:decoration-2">Find a local retailer</span>
+        </a>
+    </div>
+
+        </div>
+    </div>
+
+    </div>
+</div>
+        </div>
+
+    </nav>
+    <div class="md:hidden bg-gray-light px-4 py-8 mt-auto">
+        <ul class="space-y-6">
+                <li>
+                    <a href="/en-us/floors/login/" class="group text-base inline-flex outline-none ring-3 ring-transparent ring-offset-gray-light ring-offset-2 transition-all duration-500 focus-visible:ring-focus leading-relaxed">
+                        <svg width="24" height="24" class="mr-2 icon-people" aria-hidden="true" focusable="false">
+                            <use href="/assets/b2c-redesign/img/svg-sprite.svg#icon-people"></use>
+                        </svg>
+                        <span class="block transition-colors duration-300 underline decoration-transparent decoration-2 underline-offset-[4px] group-hover:decoration-black group-focus-visible:decoration-black group-focus-visible:decoration-2">My Login</span>
+                    </a>
+                </li>
+            <li>
+                <a href="https://www.karndeancommercial.com/en-us/commercial-flooring/" rel="nofollow" class="group text-base inline-flex outline-none ring-3 ring-transparent ring-offset-gray-light ring-offset-2 transition-all duration-500 focus-visible:ring-focus leading-relaxed">
+                    <svg width="24" height="24" class="mr-2 icon-exit" aria-hidden="true" focusable="false">
+                        <use href="/assets/b2c-redesign/img/svg-sprite.svg#icon-exit"></use>
+                    </svg>
+                    <span class="block transition-colors duration-300 underline decoration-transparent decoration-2 underline-offset-[4px] group-hover:decoration-black group-focus-visible:decoration-black group-focus-visible:decoration-2">Karndean For Commercial</span>
+                </a>
+            </li>
+                <li>
+                    <div class="js-dropdown-menu relative">
+                            <button id="dropdown-country-trigger-mobile" type="button"
+                                    class="js-dropdown-trigger h-6 group flex items-center outline-none ring-3 ring-transparent ring-offset-gray-light ring-offset-2 transition-all duration-500 focus-visible:ring-focus"
+                                    aria-haspopup="true" aria-expanded="false" aria-controls="dropdown-country-mobile">
+                                <svg class="h-6 w-6 mr-2 icon-public" aria-hidden="true" focusable="false">
+                                    <use href="/assets/b2c-redesign/img/svg-sprite.svg#icon-public"></use>
+                                </svg>
+                                <span class="underline decoration-transparent decoration-2 underline-offset-[4px] group-hover:decoration-black group-focus-visible:decoration-black group-focus-visible:decoration-2">
+                                    <span class="sr-only">Switch region, current region:</span>United Kingdom
+                                </span>
+                                <svg class="h-5 w-5 ml-2 icon-flag-uk" aria-hidden="true" focusable="false">
+                                    <use href="/assets/b2c-redesign/img/svg-sprite.svg#icon-flag-uk"></use>
+                                </svg>
+                                <svg class="h-6 w-6 ml-2 group-[&.is-open]:rotate-180 icon-arrow-5" aria-hidden="true" focusable="false">
+                                    <use href="/assets/b2c-redesign/img/svg-sprite.svg#icon-arrow-5"></use>
+                                </svg>
+                            </button>
+                        <ul id="dropdown-country-mobile" role="menu" aria-labelledby="dropdown-country-trigger-mobile" tabindex="-1"
+                            class="js-dropdown-panel absolute bottom-6 left-0 bg-white rounded-[5px] border border-[#CFCFCF] py-2 px-2 space-y-2 z-100 shadow-lg hidden">
+                                    <li role="menuitem" tabindex="-1">
+                                        <a href="/en-us/floors/404-not-found/?regionswitch=true" aria-current="true"
+                                           class="flex items-center group outline-none ring-3 ring-transparent ring-offset-2 transition-all duration-500 focus-visible:ring-focus">
+                                            <svg class="mr-2 h-6 w-9 shrink-0 icon-flag-usa" aria-hidden="true" focusable="false">
+                                                <use href="/assets/b2c-redesign/img/svg-sprite.svg#icon-flag-usa"></use>
+                                            </svg>
+                                            <span class="whitespace-nowrap transition-colors duration-300 underline decoration-transparent decoration-2 underline-offset-[4px] group-hover:decoration-black group-focus-visible:decoration-black group-focus-visible:decoration-2">United States</span>
+                                        </a>
+                                    </li>
+                                    <li role="menuitem" tabindex="-1">
+                                        <a href="/en-au/floors/404-not-found/?regionswitch=true" aria-current="true"
+                                           class="flex items-center group outline-none ring-3 ring-transparent ring-offset-2 transition-all duration-500 focus-visible:ring-focus">
+                                            <svg class="mr-2 h-6 w-9 shrink-0 icon-flag-australia" aria-hidden="true" focusable="false">
+                                                <use href="/assets/b2c-redesign/img/svg-sprite.svg#icon-flag-australia"></use>
+                                            </svg>
+                                            <span class="whitespace-nowrap transition-colors duration-300 underline decoration-transparent decoration-2 underline-offset-[4px] group-hover:decoration-black group-focus-visible:decoration-black group-focus-visible:decoration-2">Australia</span>
+                                        </a>
+                                    </li>
+                                    <li role="menuitem" tabindex="-1">
+                                        <a href="/en-nz/floors/404-not-found/?regionswitch=true" aria-current="true"
+                                           class="flex items-center group outline-none ring-3 ring-transparent ring-offset-2 transition-all duration-500 focus-visible:ring-focus">
+                                            <svg class="mr-2 h-6 w-9 shrink-0 icon-flag-new-zealand" aria-hidden="true" focusable="false">
+                                                <use href="/assets/b2c-redesign/img/svg-sprite.svg#icon-flag-new-zealand"></use>
+                                            </svg>
+                                            <span class="whitespace-nowrap transition-colors duration-300 underline decoration-transparent decoration-2 underline-offset-[4px] group-hover:decoration-black group-focus-visible:decoration-black group-focus-visible:decoration-2">New Zealand</span>
+                                        </a>
+                                    </li>
+                                    <li role="menuitem" tabindex="-1">
+                                        <a href="/en-ca/floors/404-not-found/?regionswitch=true" aria-current="true"
+                                           class="flex items-center group outline-none ring-3 ring-transparent ring-offset-2 transition-all duration-500 focus-visible:ring-focus">
+                                            <svg class="mr-2 h-6 w-9 shrink-0 icon-flag-canada" aria-hidden="true" focusable="false">
+                                                <use href="/assets/b2c-redesign/img/svg-sprite.svg#icon-flag-canada"></use>
+                                            </svg>
+                                            <span class="whitespace-nowrap transition-colors duration-300 underline decoration-transparent decoration-2 underline-offset-[4px] group-hover:decoration-black group-focus-visible:decoration-black group-focus-visible:decoration-2">Canada</span>
+                                        </a>
+                                    </li>
+                        </ul>
+                    </div>
+                </li>
+        </ul>
+    </div>
+            </div>
+
+
+        </div>
+    </div>
+    <div id="dialog-mobile-nav-bg" class="js-slide-in-panel-bg slide-in-panel-bg hidden" aria-hidden="true"></div>
+
+
+    </header>
+    <div class="mobile-search-area hidden lg:!hidden">
+        <div class="py-4 pt-0 px-4 md:px-12">
+            <form action="/en-us/floors/search-results/" method="post" role="search" class="w-full relative">
+                <div>
+                    <label for="mobileSearchTerm" class="sr-only">Search</label>
+                    <div class="relative flex items-stretch flex-grow">
+                        <input type="search" name="searchTerm" id="mobileSearchTerm" class="block w-full h-[52px] bg-gray-medium border-gray-medium placeholder:!text-secondary-smokey-grey" placeholder="Search Website">
+                    </div>
+                    <button type="submit" class="flex items-center justify-center rounded-full outline-none ring-3 ring-transparent ring-offset-transparent ring-offset-2 transition-all duration-500 focus-visible:ring-focus h-6 w-6 absolute top-3.5 right-6 focus-visible:ring-offset-gray-medium" aria-label="Search">
+                        <svg class="h-6 w-6 icon-search" aria-hidden="true" focusable="false">
+                            <use href="/assets/b2c-redesign/img/svg-sprite.svg#icon-search"></use>
+                        </svg>
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div id="menu-background" class="z-80 fixed inset-0 w-full h-full motion-safe:animate-fadein hidden bg-black/70 backdrop-blur-sm"></div>
+
+
+  
+
+<div class="container py-6 text-center text-balance max-w-[796px]">
+	    <h1 class="text-primary text-display-sm md:text-display-md xl:text-display-lg mb-2 lg:mb-0">Oops!</h1>
+        <p class="text-strapline-sm leading-normal md:text-strapline-md xl:text-strapline-lg mb-4 lg:mb-2">The page you were looking for does not exist.</p>
+        <p class="text-base md:text-lg leading-normal">Sorry we could not find this page. But don&#x27;t worry, you can find plenty of other things on our homepage</p>
+    <div class="mb-6 pt-6 md:pt-12">
+		
+
+    <div class="not-wysiwyg button-block flex items-center justify-center">
+        <a href="/en-us/floors/" class="btn btn-primary text-center inline-flex">Home page</a>
+    </div>
+
+    </div>
+
+</div>
+
+<main id="main" class="main">
+    
+
+    <div class="py-6 md:py-12 first-of-type:pt-3.5 first-of-type:md:pt-6 block-container [.top-area_&]:!p-0 [.top-area_&]:!pt-3.5 [.top-area_&]:md:!pt-6 [.bottom-area_&]:!p-0">
+        <div class="space-y-8">
+            
+
+    <div class="flex flex-wrap justify-center -mx-2 w-[calc(100%+1rem)] md:-mx-3 md:w-[calc(100%+1.5rem)] -mt-2.5">
+            <div class="flex-none w-1/2 md:w-1/4 p-2 md:p-3">
+                <a href="/en-us/floors/products/by-look/wood/" title="Browse all wood LVP floors" class="group text-center block outline-none ring-3 ring-transparent ring-offset-2 transition-all duration-500 focus-visible:ring-focus leading-relaxed rounded-lg">
+                    <span class="block w-full rounded-lg object-fill aspect-1/1 overflow-hidden mb-2 shadow-none group-hover:hover-hover:shadow-hover">
+                        <img data-lazyload src="/globalassets/karndean/b2c-blocks/b2c-image-cta-block/usa/wood.jpg?width=50"
+                             data-srcset="/globalassets/karndean/b2c-blocks/b2c-image-cta-block/usa/wood.jpg?width=386 1x, /globalassets/karndean/b2c-blocks/b2c-image-cta-block/usa/wood.jpg?width=772 2x"
+                             alt="Canadian Urban Oak RKP116 in a living room"
+                             class="block w-full" />
+                    </span>
+                    <span class="block text-lg leading-relaxed transition-colors duration-300 underline decoration-transparent decoration-2 underline-offset-[4px] group-hover:decoration-black group-focus-visible:decoration-black group-focus-visible:decoration-2">Wood Designs</span>
+                </a>
+            </div>
+            <div class="flex-none w-1/2 md:w-1/4 p-2 md:p-3">
+                <a href="/en-us/floors/products/by-look/stone/" title="Browse all stone LVT floors" class="group text-center block outline-none ring-3 ring-transparent ring-offset-2 transition-all duration-500 focus-visible:ring-focus leading-relaxed rounded-lg">
+                    <span class="block w-full rounded-lg object-fill aspect-1/1 overflow-hidden mb-2 shadow-none group-hover:hover-hover:shadow-hover">
+                        <img data-lazyload src="/globalassets/karndean/b2c-blocks/b2c-zig-zag-v1-block-square/usa/collections/bianco-breccia-marble--rkt3021-g--kitchen.jpg?width=50"
+                             data-srcset="/globalassets/karndean/b2c-blocks/b2c-zig-zag-v1-block-square/usa/collections/bianco-breccia-marble--rkt3021-g--kitchen.jpg?width=386 1x, /globalassets/karndean/b2c-blocks/b2c-zig-zag-v1-block-square/usa/collections/bianco-breccia-marble--rkt3021-g--kitchen.jpg?width=772 2x"
+                             alt="Bianco Breccia Marble RKT3021-G floors from the Korlok Select collection in a black kitchen"
+                             class="block w-full" />
+                    </span>
+                    <span class="block text-lg leading-relaxed transition-colors duration-300 underline decoration-transparent decoration-2 underline-offset-[4px] group-hover:decoration-black group-focus-visible:decoration-black group-focus-visible:decoration-2">Stone Designs</span>
+                </a>
+            </div>
+            <div class="flex-none w-1/2 md:w-1/4 p-2 md:p-3">
+                <a href="/en-us/floors/products/colour/" title="Browse luxury vinyl floors based on color" class="group text-center block outline-none ring-3 ring-transparent ring-offset-2 transition-all duration-500 focus-visible:ring-focus leading-relaxed rounded-lg">
+                    <span class="block w-full rounded-lg object-fill aspect-1/1 overflow-hidden mb-2 shadow-none group-hover:hover-hover:shadow-hover">
+                        <img data-lazyload src="/globalassets/karndean/b2c-blocks/b2c-image-cta-block/usa/rose-onyx-lm36_akt-lm36-hallway.jpg?width=50"
+                             data-srcset="/globalassets/karndean/b2c-blocks/b2c-image-cta-block/usa/rose-onyx-lm36_akt-lm36-hallway.jpg?width=386 1x, /globalassets/karndean/b2c-blocks/b2c-image-cta-block/usa/rose-onyx-lm36_akt-lm36-hallway.jpg?width=772 2x"
+                             alt="Rose Onyx LM36 | AKT-LM36 in a hallway"
+                             class="block w-full" />
+                    </span>
+                    <span class="block text-lg leading-relaxed transition-colors duration-300 underline decoration-transparent decoration-2 underline-offset-[4px] group-hover:decoration-black group-focus-visible:decoration-black group-focus-visible:decoration-2">Color</span>
+                </a>
+            </div>
+            <div class="flex-none w-1/2 md:w-1/4 p-2 md:p-3">
+                <a href="/en-us/floors/products/by-look/herringbone/" title="Browse all herringbone luxury vinyl floors" class="group text-center block outline-none ring-3 ring-transparent ring-offset-2 transition-all duration-500 focus-visible:ring-focus leading-relaxed rounded-lg">
+                    <span class="block w-full rounded-lg object-fill aspect-1/1 overflow-hidden mb-2 shadow-none group-hover:hover-hover:shadow-hover">
+                        <img data-lazyload src="/globalassets/karndean/b2c-blocks/b2c-zig-zag-v1-block-square/usa/collections/golden-kent-ash--rl44--herringbone-cameo.jpg?width=50"
+                             data-srcset="/globalassets/karndean/b2c-blocks/b2c-zig-zag-v1-block-square/usa/collections/golden-kent-ash--rl44--herringbone-cameo.jpg?width=386 1x, /globalassets/karndean/b2c-blocks/b2c-zig-zag-v1-block-square/usa/collections/golden-kent-ash--rl44--herringbone-cameo.jpg?width=772 2x"
+                             alt="Golden Kent Ash gluedown RL44 wood lvt in a herringbone pattern"
+                             class="block w-full" />
+                    </span>
+                    <span class="block text-lg leading-relaxed transition-colors duration-300 underline decoration-transparent decoration-2 underline-offset-[4px] group-hover:decoration-black group-focus-visible:decoration-black group-focus-visible:decoration-2">Herringbone Designs</span>
+                </a>
+            </div>
+    </div>
+
+        </div>
+
+        
+    </div>
+
+</main>
+
+
+    <footer class="relative bg-secondary-smokey-grey text-white pt-12 pb-24 md:pt-14 md:pb-0 mt-auto">
+        <div class="container space-y-4 md:space-y-8">
+
+            <div class="grid grid-cols-1 md:grid-cols-12 xl:grid-cols-24 2xl:grid-cols-12 md:gap-4 xl:gap-6 2xl:gap-7">
+
+
+    <div class="col-span-1 md:col-span-12 lg:col-span-10 lg:col-start-2 xl:col-span-6 2xl:col-span-3 mb-4 md:mb-0">
+        <div class="mb-8 lg:mb-0">
+            <div class="flex items-start mb-2">
+                <svg width="55" height="55" class="mr-2 icon-location-pin" aria-hidden="true" focusable="false">
+                    <use href="/assets/b2c-redesign/img/svg-sprite.svg#icon-location-pin"></use>
+                </svg>
+                <h2 class="text-white text-display-sm leading-tighter">Find A Retailer</h2>
+            </div>
+            <p class="text-lg leading-relaxed">Visit one of our retail partners to see our floors in person and get help with layout ideas, installation information, pricing and more.</p>
+
+            <form action="/en-us/floors/where-to-buy/find-a-retailer/" method="get" role="search" class="js-far-form w-full pt-8 md:pt-6">
+                <label for="retailerSearchTerm" class="flex items-center text-lg font-medium leading-normal text-white mb-4">
+                    <svg width="24" height="24" class="mr-2 icon-location-1" aria-hidden="true" focusable="false">
+                        <use href="/assets/b2c-redesign/img/svg-sprite.svg#icon-location-1"></use>
+                    </svg>
+                    <span>Find Your Nearest Retailer</span>
+                </label>
+                <div class="relative mb-4">
+
+                    <input type="hidden" name="lat" class="js-far-latitude" readonly>
+                    <input type="hidden" name="lng" class="js-far-longitude" readonly>
+
+                    <div class="relative flex items-stretch flex-grow">
+                        <input type="search" name="postcode" id="retailerSearchTerm" class="block w-full h-[52px] bg-gray-light border-gray-light ring-offset-secondary-smokey-grey focus-visible:ring-offset-secondary-smokey-grey" placeholder="Enter Zip Code">
+                    </div>
+                    <button type="submit" class="flex items-center justify-center rounded-full outline-none ring-3 ring-transparent ring-offset-2 transition-all duration-500 focus-visible:ring-focus h-6 w-6 absolute top-3.5 right-6" aria-label="Search">
+                        <svg class="h-6 w-6 text-black icon-search" aria-hidden="true" focusable="false">
+                            <use href="/assets/b2c-redesign/img/svg-sprite.svg#icon-search"></use>
+                        </svg>
+                    </button>
+                </div>
+                <button class="js-get-location text-white text-lg flex items-center outline-none ring-3 ring-transparent ring-offset-2 ring-offset-secondary-smokey-grey transition-all focus-visible:ring-focus duration-300 underline  decoration-1 underline-offset-[4px] decoration-white hover:decoration-transparent md:hidden">
+                    <svg width="24" height="24" class="mr-2 icon-location-searching" aria-hidden="true" focusable="false">
+                        <use href="/assets/b2c-redesign/img/svg-sprite.svg#icon-location-searching"></use>
+                    </svg>
+                    <span class="block group-[.is-loading]:hidden">Use My Location</span>
+                    <span class="hidden group-[.is-loading]:block">Getting Location</span>
+                </button>
+            </form>
+        </div>
+    </div>
+
+                <div class="col-span-1 md:col-span-12 lg:col-span-10 lg:col-start-2 xl:col-span-4 xl:col-start-8 2xl:col-span-2 2xl:col-start-5">
+                    <h2 id="footer-menu-1" class="sr-only xl:not-sr-only xl:block text-xl font-medium !mb-6 font-sans">Our Floors</h2>
+                    <nav aria-labelledby="footer-menu-1" class="hidden xl:block">
+                            <ul class="space-y-2">
+                                    <li><a href="/en-us/floors/inspiration/discover/why-choose-karndean/" class="text-base 2xl:text-lg leading-relaxed text-white inline-flex outline-none relative focus-visible:z-10 ring-3 ring-transparent ring-offset-secondary-smokey-grey ring-offset-2 focus-visible:ring-focus transition-colors duration-300 no-underline hover:underline decoration-white decoration-0 underline-offset-[4px] hover:decoration-white focus-visible:decoration-white focus-visible:decoration-1">Why Karndean Floors?</a></li>
+                                    <li><a href="/en-us/floors/products/our-ranges/" class="text-base 2xl:text-lg leading-relaxed text-white inline-flex outline-none relative focus-visible:z-10 ring-3 ring-transparent ring-offset-secondary-smokey-grey ring-offset-2 focus-visible:ring-focus transition-colors duration-300 no-underline hover:underline decoration-white decoration-0 underline-offset-[4px] hover:decoration-white focus-visible:decoration-white focus-visible:decoration-1">Our Collections</a></li>
+                                    <li><a href="/en-us/floors/products/our-formats/" class="text-base 2xl:text-lg leading-relaxed text-white inline-flex outline-none relative focus-visible:z-10 ring-3 ring-transparent ring-offset-secondary-smokey-grey ring-offset-2 focus-visible:ring-focus transition-colors duration-300 no-underline hover:underline decoration-white decoration-0 underline-offset-[4px] hover:decoration-white focus-visible:decoration-white focus-visible:decoration-1">Our Installation Formats</a></li>
+                                    <li><a href="/en-us/floors/inspiration/design-components/" class="text-base 2xl:text-lg leading-relaxed text-white inline-flex outline-none relative focus-visible:z-10 ring-3 ring-transparent ring-offset-secondary-smokey-grey ring-offset-2 focus-visible:ring-focus transition-colors duration-300 no-underline hover:underline decoration-white decoration-0 underline-offset-[4px] hover:decoration-white focus-visible:decoration-white focus-visible:decoration-1">Design Details</a></li>
+                                    <li><a href="/en-us/floors/products/" class="text-base 2xl:text-lg leading-relaxed text-white inline-flex outline-none relative focus-visible:z-10 ring-3 ring-transparent ring-offset-secondary-smokey-grey ring-offset-2 focus-visible:ring-focus transition-colors duration-300 no-underline hover:underline decoration-white decoration-0 underline-offset-[4px] hover:decoration-white focus-visible:decoration-white focus-visible:decoration-1">Browse All Flooring</a></li>
+                            </ul>
+                    </nav>
+                    <div class="js-accordion-block" data-animation="on" data-multi-items="on">
+                        <div class="js-accordion-item standard-accordion border-b-2 border-b-gray-light xl:hidden">
+                            <div>
+                                <button id="footer-accordion-header-1" type="button" aria-controls="footer-accordion-content-1" aria-expanded="false"
+                                        class="js-accordion-trigger group text-left w-full flex justify-between items-center outline-none pl-0 pr-2 py-6 relative focus:z-10 hover:z-10">
+                                    <strong class="font-ubuntu text-xl text-white font-medium">Our Floors</strong>
+
+                                    <span aria-hidden="true" class="accordion-icon-container ml-6 flex items-center bg-trnasparent group-hover:bg-white justify-center text-white w-8 h-8 rounded-full ring-3 ring-offset-secondary-smokey-grey transition-colors ring-transparent ring-offset-2 group-focus-visible:ring-focus group-focus-visible:bg-white group-hover:text-secondary-smokey-grey group-focus-visible:text-secondary-smokey-grey">
+                                        <svg class="accordion-icon h-6 w-6 block transform rotate-90 icon-arrow-1" aria-hidden="true" focusable="false">
+                                            <use href="/assets/b2c-redesign/img/svg-sprite.svg#icon-arrow-1"></use>
+                                        </svg>
+                                    </span>
+                                </button>
+                            </div>
+                            <section aria-labelledby="footer-accordion-header-1" id="footer-accordion-content-1" class="js-accordion-panel pb-6">
+                                <nav aria-labelledby="footer-menu-1">
+                                        <ul class="space-y-2">
+                                                <li><a href="/en-us/floors/inspiration/discover/why-choose-karndean/" class="text-base lg:text-lg text-white inline-flex outline-none relative focus-visible:z-10 ring-3 ring-transparent ring-offset-secondary-smokey-grey ring-offset-2 focus-visible:ring-focus leading-relaxed transition-colors duration-300 no-underline decoration-2 underline-offset-[4px] hover:underline hover:decoration-white focus-visible:decoration-white focus-visible:decoration-1 decoration-white">Why Karndean Floors?</a></li>
+                                                <li><a href="/en-us/floors/products/our-ranges/" class="text-base lg:text-lg text-white inline-flex outline-none relative focus-visible:z-10 ring-3 ring-transparent ring-offset-secondary-smokey-grey ring-offset-2 focus-visible:ring-focus leading-relaxed transition-colors duration-300 no-underline decoration-2 underline-offset-[4px] hover:underline hover:decoration-white focus-visible:decoration-white focus-visible:decoration-1 decoration-white">Our Collections</a></li>
+                                                <li><a href="/en-us/floors/products/our-formats/" class="text-base lg:text-lg text-white inline-flex outline-none relative focus-visible:z-10 ring-3 ring-transparent ring-offset-secondary-smokey-grey ring-offset-2 focus-visible:ring-focus leading-relaxed transition-colors duration-300 no-underline decoration-2 underline-offset-[4px] hover:underline hover:decoration-white focus-visible:decoration-white focus-visible:decoration-1 decoration-white">Our Installation Formats</a></li>
+                                                <li><a href="/en-us/floors/inspiration/design-components/" class="text-base lg:text-lg text-white inline-flex outline-none relative focus-visible:z-10 ring-3 ring-transparent ring-offset-secondary-smokey-grey ring-offset-2 focus-visible:ring-focus leading-relaxed transition-colors duration-300 no-underline decoration-2 underline-offset-[4px] hover:underline hover:decoration-white focus-visible:decoration-white focus-visible:decoration-1 decoration-white">Design Details</a></li>
+                                                <li><a href="/en-us/floors/products/" class="text-base lg:text-lg text-white inline-flex outline-none relative focus-visible:z-10 ring-3 ring-transparent ring-offset-secondary-smokey-grey ring-offset-2 focus-visible:ring-focus leading-relaxed transition-colors duration-300 no-underline decoration-2 underline-offset-[4px] hover:underline hover:decoration-white focus-visible:decoration-white focus-visible:decoration-1 decoration-white">Browse All Flooring</a></li>
+                                        </ul>
+                                </nav>
+                            </section>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-span-1 md:col-span-12 lg:col-span-10 lg:col-start-2 xl:col-span-4 2xl:col-span-2">
+                    <h2 id="footer-menu-2" class="sr-only xl:not-sr-only xl:block text-xl font-medium !mb-6 font-sans">About Karndean</h2>
+                    <nav aria-labelledby="footer-menu-2" class="hidden xl:block">
+                            <ul class="space-y-2">
+                                    <li><a href="/en-us/floors/about-us/our-story/" class="text-base 2xl:text-lg leading-relaxed text-white inline-flex outline-none relative focus-visible:z-10 ring-3 ring-transparent ring-offset-secondary-smokey-grey ring-offset-2 focus-visible:ring-focus transition-colors duration-300 no-underline hover:underline decoration-white decoration-0 underline-offset-[4px] hover:decoration-white focus-visible:decoration-white focus-visible:decoration-1">Our Story</a></li>
+                                    <li><a href="/en-us/floors/about-us/careers-at-karndean/" class="text-base 2xl:text-lg leading-relaxed text-white inline-flex outline-none relative focus-visible:z-10 ring-3 ring-transparent ring-offset-secondary-smokey-grey ring-offset-2 focus-visible:ring-focus transition-colors duration-300 no-underline hover:underline decoration-white decoration-0 underline-offset-[4px] hover:decoration-white focus-visible:decoration-white focus-visible:decoration-1">Careers At Karndean</a></li>
+                                    <li><a href="/en-us/floors/about-us/karndean-evolve/" title=" Learn more about Karndean Designflooring&#x27;s sustainability " class="text-base 2xl:text-lg leading-relaxed text-white inline-flex outline-none relative focus-visible:z-10 ring-3 ring-transparent ring-offset-secondary-smokey-grey ring-offset-2 focus-visible:ring-focus transition-colors duration-300 no-underline hover:underline decoration-white decoration-0 underline-offset-[4px] hover:decoration-white focus-visible:decoration-white focus-visible:decoration-1">Karndean Sustainability</a></li>
+                                    <li><a href="/en-us/floors/about-us/environmental-certifications-standards/" title="See Karndean Designflooring environmental accreditations and certificates" class="text-base 2xl:text-lg leading-relaxed text-white inline-flex outline-none relative focus-visible:z-10 ring-3 ring-transparent ring-offset-secondary-smokey-grey ring-offset-2 focus-visible:ring-focus transition-colors duration-300 no-underline hover:underline decoration-white decoration-0 underline-offset-[4px] hover:decoration-white focus-visible:decoration-white focus-visible:decoration-1">Environmental Accreditations</a></li>
+                            </ul>
+                    </nav>
+                    <div class="js-accordion-block" data-animation="on" data-multi-items="on">
+                        <div class="js-accordion-item standard-accordion border-b-2 border-b-gray-light xl:hidden">
+                            <div>
+                                <button id="footer-accordion-header-2" type="button" aria-controls="footer-accordion-content-2" aria-expanded="false"
+                                        class="js-accordion-trigger group text-left w-full flex justify-between items-center outline-none pl-0 pr-2 py-6 relative focus:z-10 hover:z-10">
+                                    <strong class="font-ubuntu text-xl text-white font-medium">About Karndean</strong>
+
+                                    <span aria-hidden="true" class="accordion-icon-container ml-6 flex items-center bg-trnasparent group-hover:bg-white justify-center text-white w-8 h-8 rounded-full ring-3 ring-offset-secondary-smokey-grey transition-colors ring-transparent ring-offset-2 group-focus-visible:ring-focus group-focus-visible:bg-white group-hover:text-secondary-smokey-grey group-focus-visible:text-secondary-smokey-grey">
+                                        <svg class="accordion-icon h-6 w-6 block transform rotate-90 icon-arrow-1" aria-hidden="true" focusable="false">
+                                            <use href="/assets/b2c-redesign/img/svg-sprite.svg#icon-arrow-1"></use>
+                                        </svg>
+                                    </span>
+                                </button>
+                            </div>
+                            <section aria-labelledby="footer-accordion-header-2" id="footer-accordion-content-2" class="js-accordion-panel pb-6">
+                                <nav aria-labelledby="footer-menu-2">
+                                        <ul class="space-y-2">
+                                                <li><a href="/en-us/floors/about-us/our-story/" class="text-base lg:text-lg text-white inline-flex outline-none relative focus-visible:z-10 ring-3 ring-transparent ring-offset-secondary-smokey-grey ring-offset-2 focus-visible:ring-focus leading-relaxed transition-colors duration-300 no-underline decoration-2 underline-offset-[4px] hover:underline hover:decoration-white focus-visible:decoration-white focus-visible:decoration-1 decoration-white">Our Story</a></li>
+                                                <li><a href="/en-us/floors/about-us/careers-at-karndean/" class="text-base lg:text-lg text-white inline-flex outline-none relative focus-visible:z-10 ring-3 ring-transparent ring-offset-secondary-smokey-grey ring-offset-2 focus-visible:ring-focus leading-relaxed transition-colors duration-300 no-underline decoration-2 underline-offset-[4px] hover:underline hover:decoration-white focus-visible:decoration-white focus-visible:decoration-1 decoration-white">Careers At Karndean</a></li>
+                                                <li><a href="/en-us/floors/about-us/karndean-evolve/" title=" Learn more about Karndean Designflooring&#x27;s sustainability " class="text-base lg:text-lg text-white inline-flex outline-none relative focus-visible:z-10 ring-3 ring-transparent ring-offset-secondary-smokey-grey ring-offset-2 focus-visible:ring-focus leading-relaxed transition-colors duration-300 no-underline decoration-2 underline-offset-[4px] hover:underline hover:decoration-white focus-visible:decoration-white focus-visible:decoration-1 decoration-white">Karndean Sustainability</a></li>
+                                                <li><a href="/en-us/floors/about-us/environmental-certifications-standards/" title="See Karndean Designflooring environmental accreditations and certificates" class="text-base lg:text-lg text-white inline-flex outline-none relative focus-visible:z-10 ring-3 ring-transparent ring-offset-secondary-smokey-grey ring-offset-2 focus-visible:ring-focus leading-relaxed transition-colors duration-300 no-underline decoration-2 underline-offset-[4px] hover:underline hover:decoration-white focus-visible:decoration-white focus-visible:decoration-1 decoration-white">Environmental Accreditations</a></li>
+                                        </ul>
+                                </nav>
+                            </section>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-span-1 md:col-span-12 lg:col-span-10 lg:col-start-2 xl:col-span-4 2xl:col-span-2">
+                    <h2 id="footer-menu-3" class="sr-only xl:not-sr-only xl:block text-xl font-medium !mb-6 font-sans">Customer Services</h2>
+                    <nav aria-labelledby="footer-menu-3" class="hidden xl:block">
+                            <ul class="space-y-2">
+                                    <li><a href="/en-us/floors/about-us/frequently-asked-questions/" class="text-base 2xl:text-lg leading-relaxed text-white inline-flex outline-none relative focus-visible:z-10 ring-3 ring-transparent ring-offset-secondary-smokey-grey ring-offset-2 focus-visible:ring-focus transition-colors duration-300 no-underline hover:underline decoration-white decoration-0 underline-offset-[4px] hover:decoration-white focus-visible:decoration-white focus-visible:decoration-1">Help &amp; FAQs</a></li>
+                                    <li><a href="/en-us/floors/helpful-information/contact-us/" class="text-base 2xl:text-lg leading-relaxed text-white inline-flex outline-none relative focus-visible:z-10 ring-3 ring-transparent ring-offset-secondary-smokey-grey ring-offset-2 focus-visible:ring-focus transition-colors duration-300 no-underline hover:underline decoration-white decoration-0 underline-offset-[4px] hover:decoration-white focus-visible:decoration-white focus-visible:decoration-1">Contact Us</a></li>
+                                    <li><a href="/en-us/floors/helpful-information/contact-us/Visit-our-showrooms/visit-our-showrooms/" class="text-base 2xl:text-lg leading-relaxed text-white inline-flex outline-none relative focus-visible:z-10 ring-3 ring-transparent ring-offset-secondary-smokey-grey ring-offset-2 focus-visible:ring-focus transition-colors duration-300 no-underline hover:underline decoration-white decoration-0 underline-offset-[4px] hover:decoration-white focus-visible:decoration-white focus-visible:decoration-1">Visit Our Showroom</a></li>
+                                    <li><a href="/en-us/floors/services/guarantee-and-warranty/" class="text-base 2xl:text-lg leading-relaxed text-white inline-flex outline-none relative focus-visible:z-10 ring-3 ring-transparent ring-offset-secondary-smokey-grey ring-offset-2 focus-visible:ring-focus transition-colors duration-300 no-underline hover:underline decoration-white decoration-0 underline-offset-[4px] hover:decoration-white focus-visible:decoration-white focus-visible:decoration-1">Product Warranties</a></li>
+                                    <li><a href="/en-us/floors/services/installation-guides/" class="text-base 2xl:text-lg leading-relaxed text-white inline-flex outline-none relative focus-visible:z-10 ring-3 ring-transparent ring-offset-secondary-smokey-grey ring-offset-2 focus-visible:ring-focus transition-colors duration-300 no-underline hover:underline decoration-white decoration-0 underline-offset-[4px] hover:decoration-white focus-visible:decoration-white focus-visible:decoration-1">Installation Guides</a></li>
+                                    <li><a href="/en-us/floors/helpful-information/online-bill-pay/" class="text-base 2xl:text-lg leading-relaxed text-white inline-flex outline-none relative focus-visible:z-10 ring-3 ring-transparent ring-offset-secondary-smokey-grey ring-offset-2 focus-visible:ring-focus transition-colors duration-300 no-underline hover:underline decoration-white decoration-0 underline-offset-[4px] hover:decoration-white focus-visible:decoration-white focus-visible:decoration-1">Bill Pay</a></li>
+                            </ul>
+                    </nav>
+                    <div class="js-accordion-block" data-animation="on" data-multi-items="on">
+                        <div class="js-accordion-item standard-accordion border-b-2 border-b-gray-light xl:hidden">
+                            <div>
+                                <button id="footer-accordion-header-3" type="button" aria-controls="footer-accordion-content-3" aria-expanded="false"
+                                        class="js-accordion-trigger group text-left w-full flex justify-between items-center outline-none pl-0 pr-2 py-6 relative focus:z-10 hover:z-10">
+                                    <strong class="font-ubuntu text-xl text-white font-medium">Customer Services</strong>
+
+                                    <span aria-hidden="true" class="accordion-icon-container ml-6 flex items-center bg-trnasparent group-hover:bg-white justify-center text-white w-8 h-8 rounded-full ring-3 ring-offset-secondary-smokey-grey transition-colors ring-transparent ring-offset-2 group-focus-visible:ring-focus group-focus-visible:bg-white group-hover:text-secondary-smokey-grey group-focus-visible:text-secondary-smokey-grey">
+                                        <svg class="accordion-icon h-6 w-6 block transform rotate-90 icon-arrow-1" aria-hidden="true" focusable="false">
+                                            <use href="/assets/b2c-redesign/img/svg-sprite.svg#icon-arrow-1"></use>
+                                        </svg>
+                                    </span>
+                                </button>
+                            </div>
+                            <section aria-labelledby="footer-accordion-header-3" id="footer-accordion-content-3" class="js-accordion-panel pb-6">
+                                <nav aria-labelledby="footer-menu-3">
+                                        <ul class="space-y-2">
+                                                <li><a href="/en-us/floors/about-us/frequently-asked-questions/" class="text-base lg:text-lg text-white inline-flex outline-none relative focus-visible:z-10 ring-3 ring-transparent ring-offset-secondary-smokey-grey ring-offset-2 focus-visible:ring-focus leading-relaxed transition-colors duration-300 no-underline decoration-2 underline-offset-[4px] hover:underline hover:decoration-white focus-visible:decoration-white focus-visible:decoration-1 decoration-white">Help &amp; FAQs</a></li>
+                                                <li><a href="/en-us/floors/helpful-information/contact-us/" class="text-base lg:text-lg text-white inline-flex outline-none relative focus-visible:z-10 ring-3 ring-transparent ring-offset-secondary-smokey-grey ring-offset-2 focus-visible:ring-focus leading-relaxed transition-colors duration-300 no-underline decoration-2 underline-offset-[4px] hover:underline hover:decoration-white focus-visible:decoration-white focus-visible:decoration-1 decoration-white">Contact Us</a></li>
+                                                <li><a href="/en-us/floors/helpful-information/contact-us/Visit-our-showrooms/visit-our-showrooms/" class="text-base lg:text-lg text-white inline-flex outline-none relative focus-visible:z-10 ring-3 ring-transparent ring-offset-secondary-smokey-grey ring-offset-2 focus-visible:ring-focus leading-relaxed transition-colors duration-300 no-underline decoration-2 underline-offset-[4px] hover:underline hover:decoration-white focus-visible:decoration-white focus-visible:decoration-1 decoration-white">Visit Our Showroom</a></li>
+                                                <li><a href="/en-us/floors/services/guarantee-and-warranty/" class="text-base lg:text-lg text-white inline-flex outline-none relative focus-visible:z-10 ring-3 ring-transparent ring-offset-secondary-smokey-grey ring-offset-2 focus-visible:ring-focus leading-relaxed transition-colors duration-300 no-underline decoration-2 underline-offset-[4px] hover:underline hover:decoration-white focus-visible:decoration-white focus-visible:decoration-1 decoration-white">Product Warranties</a></li>
+                                                <li><a href="/en-us/floors/services/installation-guides/" class="text-base lg:text-lg text-white inline-flex outline-none relative focus-visible:z-10 ring-3 ring-transparent ring-offset-secondary-smokey-grey ring-offset-2 focus-visible:ring-focus leading-relaxed transition-colors duration-300 no-underline decoration-2 underline-offset-[4px] hover:underline hover:decoration-white focus-visible:decoration-white focus-visible:decoration-1 decoration-white">Installation Guides</a></li>
+                                                <li><a href="/en-us/floors/helpful-information/online-bill-pay/" class="text-base lg:text-lg text-white inline-flex outline-none relative focus-visible:z-10 ring-3 ring-transparent ring-offset-secondary-smokey-grey ring-offset-2 focus-visible:ring-focus leading-relaxed transition-colors duration-300 no-underline decoration-2 underline-offset-[4px] hover:underline hover:decoration-white focus-visible:decoration-white focus-visible:decoration-1 decoration-white">Bill Pay</a></li>
+                                        </ul>
+                                </nav>
+                            </section>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-span-1 md:col-span-12 lg:col-span-10 lg:col-start-2 xl:col-span-5 2xl:col-span-2 mt-4 md:mt-0">
+                    <h2 id="footer-menu-follow-us" class="sr-only xl:not-sr-only xl:block text-xl font-medium !mb-6 font-sans">Follow Us</h2>
+                    <div class="pt-4 lg:pt-0">
+                        <ul class="flex flex-wrap justify-center xl:justify-start gap-3 xl:gap-2 mb-12" aria-labelledby="footer-menu-follow-us">
+                                <li>
+                                    <a href="https://www.linkedin.com/company/karndean-designflooring-usa" aria-label="Follow us on Linked In" class="flex shrink-0 items-center justify-center outline-none ring-3 ring-transparent ring-offset-2 ring-offset-secondary-smokey-grey rounded-full transition-all duration-500 focus-visible:ring-focus text-white w-8 h-8 hover:bg-white hover:text-gray focus-visible:bg-white focus-visible:text-gray">
+                                        <svg width="24" height="24" class="icon-linkedin" aria-hidden="true" focusable="false">
+                                            <use href="/assets/b2c-redesign/img/svg-sprite.svg#icon-linkedin"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://www.facebook.com/KarndeanDesignflooringUSA" aria-label="Follow us on Facebook" class="flex shrink-0 items-center justify-center outline-none ring-3 ring-transparent ring-offset-2 ring-offset-secondary-smokey-grey rounded-full transition-all duration-500 focus-visible:ring-focus text-white w-8 h-8 hover:bg-white hover:text-gray focus-visible:bg-white focus-visible:text-gray">
+                                        <svg width="24" height="24" class="icon-facebook" aria-hidden="true" focusable="false">
+                                            <use href="/assets/b2c-redesign/img/svg-sprite.svg#icon-facebook"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://www.instagram.com/karndean_usa/" aria-label="Follow us on Instagram" class="flex shrink-0 items-center justify-center outline-none ring-3 ring-transparent ring-offset-2 ring-offset-secondary-smokey-grey rounded-full transition-all duration-500 focus-visible:ring-focus text-white w-8 h-8 hover:bg-white hover:text-gray focus-visible:bg-white focus-visible:text-gray">
+                                        <svg width="24" height="24" class="icon-instagram" aria-hidden="true" focusable="false">
+                                            <use href="/assets/b2c-redesign/img/svg-sprite.svg#icon-instagram"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://www.pinterest.com/karndeanusa/" aria-label="Follow us on Pinterest" class="flex shrink-0 items-center justify-center outline-none ring-3 ring-transparent ring-offset-2 ring-offset-secondary-smokey-grey rounded-full transition-all duration-500 focus-visible:ring-focus text-white w-8 h-8 hover:bg-white hover:text-gray focus-visible:bg-white focus-visible:text-gray">
+                                        <svg width="24" height="24" class="icon-pintrest" aria-hidden="true" focusable="false">
+                                            <use href="/assets/b2c-redesign/img/svg-sprite.svg#icon-pintrest"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://www.youtube.com/user/KarndeanDesignfloors" aria-label="Follow us on Youtube" class="flex shrink-0 items-center justify-center outline-none ring-3 ring-transparent ring-offset-2 ring-offset-secondary-smokey-grey rounded-full transition-all duration-500 focus-visible:ring-focus text-white w-8 h-8 hover:bg-white hover:text-gray focus-visible:bg-white focus-visible:text-gray">
+                                        <svg width="24" height="24" class="icon-youtube" aria-hidden="true" focusable="false">
+                                            <use href="/assets/b2c-redesign/img/svg-sprite.svg#icon-youtube"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                        </ul>
+                            <div class="flex justify-center xl:justify-start">
+                                    <div class="js-dropdown-menu relative">
+                                        <button id="dropdown-country-trigger-footer" type="button"
+                                                class="js-dropdown-trigger h-6 group flex items-center outline-none ring-3 ring-transparent ring-offset-secondary-smokey-grey ring-offset-2 transition-all duration-500 focus-visible:ring-focus"
+                                                aria-haspopup="true" aria-expanded="false" aria-controls="dropdown-country-footer">
+                                                <svg class="h-5 w-5 mr-2 icon-flag-uk" aria-hidden="true" focusable="false">
+                                                    <use href="/assets/b2c-redesign/img/svg-sprite.svg#icon-flag-uk"></use>
+                                                </svg>
+                                                <span class="underline decoration-transparent decoration-1 underline-offset-[4px] group-hover:decoration-white group-focus-visible:decoration-white group-focus-visible:decoration-1">
+                                                    <span class="sr-only">Switch region, current region:</span>United Kingdom
+                                                </span>
+                                            <svg class="h-6 w-6 ml-2 group-[&.is-open]:rotate-180 icon-arrow-5" aria-hidden="true" focusable="false">
+                                                <use href="/assets/b2c-redesign/img/svg-sprite.svg#icon-arrow-5"></use>
+                                            </svg>
+                                        </button>
+
+                                        <ul id="dropdown-country-footer" role="menu" aria-labelledby="dropdown-country-trigger-footer" tabindex="-1"
+                                            class="js-dropdown-panel absolute bottom-6 right-0 bg-white rounded-[5px] border border-[#CFCFCF] p-2 space-y-2 z-100 shadow-lg hidden">
+                                                <li role="menuitem" tabindex="-1">
+                                                    <a href="/en-us/floors/404-not-found/?regionswitch=true" aria-current="true"
+                                                       class="text-black flex items-center group outline-none ring-3 ring-transparent ring-offset-2 transition-all duration-500 focus-visible:ring-focus">
+                                                        <svg class="mr-2 h-6 w-9 shrink-0 icon-flag-usa" aria-hidden="true" focusable="false">
+                                                            <use href="/assets/b2c-redesign/img/svg-sprite.svg#icon-flag-usa"></use>
+                                                        </svg>
+                                                        <span class="whitespace-nowrap transition-colors duration-300 underline decoration-transparent decoration-2 underline-offset-[4px] group-hover:decoration-black group-focus-visible:decoration-black group-focus-visible:decoration-2">United States</span>
+                                                    </a>
+                                                </li>
+                                                <li role="menuitem" tabindex="-1">
+                                                    <a href="/en-au/floors/404-not-found/?regionswitch=true" aria-current="true"
+                                                       class="text-black flex items-center group outline-none ring-3 ring-transparent ring-offset-2 transition-all duration-500 focus-visible:ring-focus">
+                                                        <svg class="mr-2 h-6 w-9 shrink-0 icon-flag-australia" aria-hidden="true" focusable="false">
+                                                            <use href="/assets/b2c-redesign/img/svg-sprite.svg#icon-flag-australia"></use>
+                                                        </svg>
+                                                        <span class="whitespace-nowrap transition-colors duration-300 underline decoration-transparent decoration-2 underline-offset-[4px] group-hover:decoration-black group-focus-visible:decoration-black group-focus-visible:decoration-2">Australia</span>
+                                                    </a>
+                                                </li>
+                                                <li role="menuitem" tabindex="-1">
+                                                    <a href="/en-nz/floors/404-not-found/?regionswitch=true" aria-current="true"
+                                                       class="text-black flex items-center group outline-none ring-3 ring-transparent ring-offset-2 transition-all duration-500 focus-visible:ring-focus">
+                                                        <svg class="mr-2 h-6 w-9 shrink-0 icon-flag-new-zealand" aria-hidden="true" focusable="false">
+                                                            <use href="/assets/b2c-redesign/img/svg-sprite.svg#icon-flag-new-zealand"></use>
+                                                        </svg>
+                                                        <span class="whitespace-nowrap transition-colors duration-300 underline decoration-transparent decoration-2 underline-offset-[4px] group-hover:decoration-black group-focus-visible:decoration-black group-focus-visible:decoration-2">New Zealand</span>
+                                                    </a>
+                                                </li>
+                                                <li role="menuitem" tabindex="-1">
+                                                    <a href="/en-ca/floors/404-not-found/?regionswitch=true" aria-current="true"
+                                                       class="text-black flex items-center group outline-none ring-3 ring-transparent ring-offset-2 transition-all duration-500 focus-visible:ring-focus">
+                                                        <svg class="mr-2 h-6 w-9 shrink-0 icon-flag-canada" aria-hidden="true" focusable="false">
+                                                            <use href="/assets/b2c-redesign/img/svg-sprite.svg#icon-flag-canada"></use>
+                                                        </svg>
+                                                        <span class="whitespace-nowrap transition-colors duration-300 underline decoration-transparent decoration-2 underline-offset-[4px] group-hover:decoration-black group-focus-visible:decoration-black group-focus-visible:decoration-2">Canada</span>
+                                                    </a>
+                                                </li>
+                                        </ul>
+                                    </div>
+                            </div>
+                    </div>
+                </div>
+            </div>
+            <div class="flex justify-center">
+                <a href="https://www.karndeancommercial.com/en-us/commercial-flooring/" rel="nofollow" class="btn btn-white btn-small w-full sm:w-auto sm:inline-flex mt-4 px-6 mb-4 lg:my-0">
+                    <span>Commercial</span>
+                    <svg width="24" height="24" class="ml-2 icon-arrow-4" aria-hidden="true" focusable="false">
+                        <use href="/assets/b2c-redesign/img/svg-sprite.svg#icon-arrow-4"></use>
+                    </svg>
+                </a>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-12 md:gap-4">
+                <div class="col-span-1 md:col-span-12 lg:col-span-10 lg:col-start-2 xl:col-span-12 text-center xl:text-left xl:flex xl:justify-between py-4 border-t-2 border-gray-light space-y-4 xl:space-y-0 xl:space-x-4 footer-padding-right">
+                    <p class="block lg:shrink-0">&#xA9; Copyright 2026 Karndean Designflooring</p>
+                    <div>
+                            <ul class="flex flex-wrap gap-y-2 gap-x-4 justify-center xl:justify-end">
+                                    <li><a href="/en-us/floors/helpful-information/website-terms--conditions/" target="_blank" class="text-base text-white inline-flex outline-none ring-3 ring-transparent ring-offset-secondary-smokey-grey ring-offset-2 focus-visible:ring-focus leading-relaxed transition-colors duration-300 no-underline decoration-white hover:underline decoration-1 underline-offset-[4px] hover:decoration-white focus-visible:decoration-white focus-visible:decoration-1">Terms &amp; Conditions</a></li>
+                                    <li><a href="/en-us/floors/helpful-information/privacy-policy/" target="_blank" class="text-base text-white inline-flex outline-none ring-3 ring-transparent ring-offset-secondary-smokey-grey ring-offset-2 focus-visible:ring-focus leading-relaxed transition-colors duration-300 no-underline decoration-white hover:underline decoration-1 underline-offset-[4px] hover:decoration-white focus-visible:decoration-white focus-visible:decoration-1">Privacy Policy</a></li>
+                                    <li><a href="/en-us/floors/helpful-information/cookie-policy/" class="text-base text-white inline-flex outline-none ring-3 ring-transparent ring-offset-secondary-smokey-grey ring-offset-2 focus-visible:ring-focus leading-relaxed transition-colors duration-300 no-underline decoration-white hover:underline decoration-1 underline-offset-[4px] hover:decoration-white focus-visible:decoration-white focus-visible:decoration-1">Cookies Policy</a></li>
+                                    <li><a href="/en-gb/floors/about-us/modern-slavery-statement/" class="text-base text-white inline-flex outline-none ring-3 ring-transparent ring-offset-secondary-smokey-grey ring-offset-2 focus-visible:ring-focus leading-relaxed transition-colors duration-300 no-underline decoration-white hover:underline decoration-1 underline-offset-[4px] hover:decoration-white focus-visible:decoration-white focus-visible:decoration-1">Modern Slavery Statement</a></li>
+                            </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+  <input id="currentDomain" name="currentDomain" type="hidden" value="" />
+  <input id="currentLanguage" name="currentLanguage" type="hidden" value="en-GB" />
+
+  <script type="module"
+    src="/assets/b2c-redesign/js/index.a365585b.js"></script>
+  <script>
+    // only needed on episerver form pages 
+    var episerverFormWrapper = document.querySelector('.episerver-form-wrapper')
+    if (episerverFormWrapper) {
+      var script = document.createElement('script');
+      script.src = '/Util/EPiServer.Forms/jquery-3.5.1.min.js';
+      script.type = 'text/javascript';
+      document.body.appendChild(script);
+
+      script.onload = function () {
+
+        jQuery(document).ready(function () {
+          // recaptcha
+          window.reCaptchToken = null
+
+          window.onReCaptchaSubmit = function (token) {
+            reCaptchToken = token
+          }
+
+          window.initRecaptchaElements = function () {
+
+            const originalGetCustomElementValue = epi.EPiServer.Forms.Extension.getCustomElementValue;
+
+            jQuery.extend(true, epi.EPiServer.Forms, {
+              Validators: {
+                "Karndean.Features.Common.Helpers.Recaptcha.RecaptchaValidator": function (fieldName, fieldValue, validatorMetaData) {
+                  // validate recaptcha element
+                  if (fieldValue) {
+                    return { isValid: true };
+                  }
+                  return { isValid: false, message: validatorMetaData.model.message };
+                },
+                "Karndean.Features.Common.Helpers.Turnstile.TurnstileValidator": function (fieldName, fieldValue, validatorMetaData) {
+                  // validate turnstile element
+                  if (fieldValue) {
+                    return { isValid: true };
+                  }
+                  return { isValid: false, message: validatorMetaData.model.message };
+                }
+              },
+              Extension: {
+                getCustomElementValue: function ($element) {
+                  if ($element.hasClass("FormRecaptcha")) {
+                    if (typeof window.grecaptcha === "undefined" || typeof grecaptcha.execute !== "function") {
+                      return "";
+                    }
+
+                    if (window.reCaptchToken !== null && typeof window.reCaptchToken !== "undefined") {
+                      return window.reCaptchToken;
+                    }
+
+                    grecaptcha.ready(async () => {
+                      try {
+                        if (!$element.hasClass("validating")) {
+                          $element.addClass("validating");
+                          try {
+                            const token = await grecaptcha.execute({
+                              action: 'recaptchaAction',
+                            });
+                            if (token && !window.reCaptchToken) {
+                              window.reCaptchToken = token;
+                            }
+                          } catch (e) { }
+                        }
+
+                        const validationCheck = setInterval(function () {
+                          if (window.reCaptchToken) {
+                            $element.removeClass("validating");
+                            clearInterval(validationCheck);
+                          }
+                        }, 100);
+                      } catch (e) {
+                        console.log('Failed to get token', e);
+                      }
+                    });
+
+                    return "";
+                  }
+                  // if current element is not our job, let others process
+                  return originalGetCustomElementValue.apply(this, [$element]);
+                }
+              }
+            });
+          }
+          // recaptcha end
+        });
+      }
+    }
+
+  </script>
+  
+
+  
+  
+    <script type="text/javascript">
+        !function (T, l, y) { var S = T.location, u = "script", k = "instrumentationKey", D = "ingestionendpoint", C = "disableExceptionTracking", E = "ai.device.", I = "toLowerCase", b = "crossOrigin", w = "POST", e = "appInsightsSDK", t = y.name || "appInsights"; (y.name || T[e]) && (T[e] = t); var n = T[t] || function (d) { var g = !1, f = !1, m = { initialize: !0, queue: [], sv: "4", version: 2, config: d }; function v(e, t) { var n = {}, a = "Browser"; return n[E + "id"] = a[I](), n[E + "type"] = a, n["ai.operation.name"] = S && S.pathname || "_unknown_", n["ai.internal.sdkVersion"] = "javascript:snippet_" + (m.sv || m.version), { time: function () { var e = new Date; function t(e) { var t = "" + e; return 1 === t.length && (t = "0" + t), t } return e.getUTCFullYear() + "-" + t(1 + e.getUTCMonth()) + "-" + t(e.getUTCDate()) + "T" + t(e.getUTCHours()) + ":" + t(e.getUTCMinutes()) + ":" + t(e.getUTCSeconds()) + "." + ((e.getUTCMilliseconds() / 1e3).toFixed(3) + "").slice(2, 5) + "Z" }(), iKey: e, name: "Microsoft.ApplicationInsights." + e.replace(/-/g, "") + "." + t, sampleRate: 100, tags: n, data: { baseData: { ver: 2 } } } } var h = d.url || y.src; if (h) { function a(e) { var t, n, a, i, r, o, s, c, p, l, u; g = !0, m.queue = [], f || (f = !0, t = h, s = function () { var e = {}, t = d.connectionString; if (t) for (var n = t.split(";"), a = 0; a < n.length; a++) { var i = n[a].split("="); 2 === i.length && (e[i[0][I]()] = i[1]) } if (!e[D]) { var r = e.endpointsuffix, o = r ? e.location : null; e[D] = "https://" + (o ? o + "." : "") + "dc." + (r || "services.visualstudio.com") } return e }(), c = s[k] || d[k] || "", p = s[D], l = p ? p + "/v2/track" : config.endpointUrl, (u = []).push((n = "SDK LOAD Failure: Failed to load Application Insights SDK script (See stack for details)", a = t, i = l, (o = (r = v(c, "Exception")).data).baseType = "ExceptionData", o.baseData.exceptions = [{ typeName: "SDKLoadFailed", message: n.replace(/\./g, "-"), hasFullStack: !1, stack: n + "\nSnippet failed to load [" + a + "] -- Telemetry is disabled\nHelp Link: https://go.microsoft.com/fwlink/?linkid=2128109\nHost: " + (S && S.pathname || "_unknown_") + "\nEndpoint: " + i, parsedStack: [] }], r)), u.push(function (e, t, n, a) { var i = v(c, "Message"), r = i.data; r.baseType = "MessageData"; var o = r.baseData; return o.message = 'AI (Internal): 99 message:"' + ("SDK LOAD Failure: Failed to load Application Insights SDK script (See stack for details) (" + n + ")").replace(/\"/g, "") + '"', o.properties = { endpoint: a }, i }(0, 0, t, l)), function (e, t) { if (JSON) { var n = T.fetch; if (n && !y.useXhr) n(t, { method: w, body: JSON.stringify(e), mode: "cors" }); else if (XMLHttpRequest) { var a = new XMLHttpRequest; a.open(w, t), a.setRequestHeader("Content-type", "application/json"), a.send(JSON.stringify(e)) } } }(u, l)) } function i(e, t) { f || setTimeout(function () { !t && m.core || a() }, 500) } var e = function () { var n = l.createElement(u); n.src = h; var e = y[b]; return !e && "" !== e || "undefined" == n[b] || (n[b] = e), n.onload = i, n.onerror = a, n.onreadystatechange = function (e, t) { "loaded" !== n.readyState && "complete" !== n.readyState || i(0, t) }, n }(); y.ld < 0 ? l.getElementsByTagName("head")[0].appendChild(e) : setTimeout(function () { l.getElementsByTagName(u)[0].parentNode.appendChild(e) }, y.ld || 0) } try { m.cookie = l.cookie } catch (p) { } function t(e) { for (; e.length;)!function (t) { m[t] = function () { var e = arguments; g || m.queue.push(function () { m[t].apply(m, e) }) } }(e.pop()) } var n = "track", r = "TrackPage", o = "TrackEvent"; t([n + "Event", n + "PageView", n + "Exception", n + "Trace", n + "DependencyData", n + "Metric", n + "PageViewPerformance", "start" + r, "stop" + r, "start" + o, "stop" + o, "addTelemetryInitializer", "setAuthenticatedUserContext", "clearAuthenticatedUserContext", "flush"]), m.SeverityLevel = { Verbose: 0, Information: 1, Warning: 2, Error: 3, Critical: 4 }; var s = (d.extensionConfig || {}).ApplicationInsightsAnalytics || {}; if (!0 !== d[C] && !0 !== s[C]) { method = "onerror", t(["_" + method]); var c = T[method]; T[method] = function (e, t, n, a, i) { var r = c && c(e, t, n, a, i); return !0 !== r && m["_" + method]({ message: e, url: t, lineNumber: n, columnNumber: a, error: i }), r }, d.autoExceptionInstrumented = !0 } return m }(y.cfg); (T[t] = n).queue && 0 === n.queue.length && n.trackPageView({}) }(window, document, {
+            src: "https://az416426.vo.msecnd.net/scripts/b/ai.2.min.js",
+            crossOrigin: "anonymous",
+            cfg: {
+                instrumentationKey: "026fb3c1-519d-44f9-8152-5a23a399cd8b"
+            }
+        });
+    </script>
+
+</body>
+
+</html>

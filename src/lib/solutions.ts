@@ -8,6 +8,7 @@ export interface Solution {
   slug: string;
   title: string;
   subtitle: string;
+  heroImage: string;
   content: string[];
   requirements: string[];
   recommendedProducts: RecommendedProduct[];
@@ -19,6 +20,7 @@ export const solutions: Solution[] = [
   {
     slug: "office-flooring",
     title: "Vinyl Tile Flooring for Offices & Corporate Fitouts",
+    heroImage: "/images/products/interface/brushed-lines-linen.jpg",
     subtitle:
       "Open-plan offices are loud. Vinyl tile quiets them down and actually stays looking decent.",
     content: [
@@ -60,6 +62,7 @@ export const solutions: Solution[] = [
   {
     slug: "retail-flooring",
     title: "Vinyl Tile Flooring for Retail & Showrooms",
+    heroImage: "/images/products/karndean/korlok-select-canadian-urban-oak.jpg",
     subtitle:
       "Trolleys, spills, heavy foot traffic — your floor takes a beating. Vinyl tile keeps looking good.",
     content: [
@@ -101,6 +104,7 @@ export const solutions: Solution[] = [
   {
     slug: "healthcare-flooring",
     title: "Vinyl Tile Flooring for Healthcare, Aged Care & Medical",
+    heroImage: "/images/products/armstrong/earthcuts-sandstone.jpg",
     subtitle:
       "Hygiene, slip resistance, durability, and human comfort. Healthcare flooring has to nail all of them.",
     content: [
@@ -142,6 +146,7 @@ export const solutions: Solution[] = [
   {
     slug: "education-flooring",
     title: "Vinyl Tile Flooring for Schools & Universities",
+    heroImage: "/images/products/tarkett/id-comfort-19.jpg",
     subtitle:
       "Schools are loud, busy, and hard on floors. Vinyl tile handles it without destroying the maintenance budget.",
     content: [
@@ -183,6 +188,7 @@ export const solutions: Solution[] = [
   {
     slug: "hospitality-flooring",
     title: "Vinyl Tile Flooring for Hotels, Restaurants & Bars",
+    heroImage: "/images/products/karndean/van-gogh-smoked-school-cedar.jpg",
     subtitle:
       "Your floor is the first thing guests see. It needs to look intentional and handle genuine punishment.",
     content: [
