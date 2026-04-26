@@ -81,16 +81,16 @@ export default function WhyVinylTilesPage() {
       <section className="bg-subtle-lines" style={{ backgroundColor: "rgb(248, 245, 237)" }}>
         <div className="mx-auto max-w-[1440px] px-6 pb-20 pt-28 md:pb-24 md:pt-36 lg:px-10">
           <p className="text-[11px] font-medium uppercase tracking-widest mb-5" style={{ color: "rgb(120, 110, 100)" }}>
-            The Complete Guide
+            The Specifier&rsquo;s Guide
           </p>
           <h1
             className="text-[clamp(2.25rem,5vw,3.5rem)] max-w-4xl tracking-tight font-bold leading-tight mb-6"
             style={{ color: "rgb(38, 35, 30)" }}
           >
-            Why vinyl tile works.
+            Why premium vinyl tile works.
           </h1>
-          <p className="max-w-xl text-lg leading-relaxed" style={{ color: "rgb(82, 75, 68)" }}>
-            It&apos;s durable, easy to maintain, and the maths make sense. Here&apos;s what you need to know.
+          <p className="max-w-2xl text-lg leading-relaxed" style={{ color: "rgb(82, 75, 68)" }}>
+            Written for facility managers, property owners, and homeowners who want to specify a floor properly &mdash; not just buy the cheapest option. Compliance, lifecycle, sustainability, and the maintenance reality.
           </p>
         </div>
       </section>
@@ -283,10 +283,13 @@ export default function WhyVinylTilesPage() {
               </h2>
               <div className="space-y-4">
                 <p className="text-[15px] leading-relaxed text-white/65">
-                  Supply from <span className="font-semibold text-white/80">$45/m&sup2;</span>, installation from <span className="font-semibold text-white/80">$18/m&sup2;</span>. Over 15–20 years, the annual cost is genuinely low.
+                  Installation runs a guide of <span className="font-semibold text-white/80">$30&ndash;35/m&sup2;</span> for laying premium LVT &mdash; install only, before floor preparation, takeup, levelling, or trims. Product cost sits on top and varies by range. Over a 15&ndash;25 year life, the annualised cost is genuinely low.
                 </p>
                 <p className="text-[15px] leading-relaxed text-white/65">
-                  Carpet costs 40–60% more over 20 years when you factor in replacement and maintenance. Engineered timber sits at $80–$120/m&sup2; plus ongoing sanding and refinishing. Vinyl gives you the look at a fraction of the cost.
+                  Compared to alternatives, carpet costs 40&ndash;60% more over 20 years once you factor in replacement and maintenance. Engineered timber demands ongoing sanding and refinishing. Vinyl gives you the visual at a fraction of the lifecycle cost.
+                </p>
+                <p className="text-[15px] leading-relaxed text-white/65">
+                  Every quote we issue follows a free site inspection in Melbourne, Sydney, or Brisbane. We do not give phone quotes or &ldquo;from $X&rdquo; numbers we walk back later.
                 </p>
               </div>
             </div>
@@ -330,9 +333,9 @@ export default function WhyVinylTilesPage() {
 
       {/* Quote CTA */}
       <QuoteCta
-        title="Ready to talk vinyl?"
-        description="Get in touch and we'll walk you through options, pricing, and what installation looks like. Call 1300 207 915 or fill out the form below."
-        buttonText="Get a Free Quote"
+        title="Ready to specify a floor properly?"
+        description="Book a free site inspection in Melbourne, Sydney, or Brisbane. We will measure, assess the substrate, and walk you through specification, lifecycle, and a written quote. Call 1300 207 915 or fill out the form."
+        buttonText="Book a Site Inspection"
         buttonHref="/contact"
       />
     </>

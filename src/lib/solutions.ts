@@ -57,7 +57,7 @@ export const solutions: Solution[] = [
     ],
     ctaTitle: "Let's talk your office flooring",
     ctaDescription:
-      "New tenancy or refurb, we'll find the right product for your space and handle the install. Call 1300 207 915 or email office@premrest.com.au.",
+      "New tenancy, refurb, or multi-floor portfolio across Melbourne, Sydney, and Brisbane. Book a free site inspection and we will write a fixed quote. Call 1300 207 915 or email office@premrest.com.au.",
   },
   {
     slug: "retail-flooring",
@@ -99,7 +99,7 @@ export const solutions: Solution[] = [
     ],
     ctaTitle: "Let's spec your retail floor",
     ctaDescription:
-      "Flagship stores, supermarkets, pop-ups — we've done them all. Call 1300 207 915 or email office@premrest.com.au to discuss your space.",
+      "Flagship stores, supermarkets, multi-site rollouts &mdash; we have done them all. Book a free site inspection across Melbourne, Sydney, or Brisbane. Call 1300 207 915 or email office@premrest.com.au.",
   },
   {
     slug: "healthcare-flooring",
@@ -141,7 +141,7 @@ export const solutions: Solution[] = [
     ],
     ctaTitle: "Let's talk healthcare flooring",
     ctaDescription:
-      "Compliance, comfort, durability — we understand what healthcare facilities need. Call 1300 207 915 or email office@premrest.com.au to discuss your brief.",
+      "Compliance, comfort, durability &mdash; we understand what healthcare facilities need. Book a free site inspection in Melbourne, Sydney, or Brisbane. Call 1300 207 915 or email office@premrest.com.au.",
   },
   {
     slug: "education-flooring",
@@ -183,7 +183,7 @@ export const solutions: Solution[] = [
     ],
     ctaTitle: "Let's talk education flooring",
     ctaDescription:
-      "Primary schools, secondary, universities — we know what education spaces need. Call 1300 207 915 or email office@premrest.com.au.",
+      "Primary, secondary, and tertiary &mdash; we know what education spaces need. Book a free site inspection in Melbourne, Sydney, or Brisbane. Call 1300 207 915 or email office@premrest.com.au.",
   },
   {
     slug: "hospitality-flooring",
@@ -225,7 +225,7 @@ export const solutions: Solution[] = [
     ],
     ctaTitle: "Let's design your hospitality floor",
     ctaDescription:
-      "Boutique hotels, fine dining, bars, resorts — we've done them all and we understand the space. Call 1300 207 915 or email office@premrest.com.au.",
+      "Boutique hotels, fine dining, bars, resorts &mdash; we have done them all and we understand the space. Book a free site inspection in Melbourne, Sydney, or Brisbane. Call 1300 207 915 or email office@premrest.com.au.",
   },
 ];
 
