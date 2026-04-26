@@ -372,11 +372,10 @@ export default function Home() {
               From consult to completion.
             </h2>
           </div>
-          <div className="grid gap-5 md:grid-cols-3">
+          <div className="grid gap-5 md:grid-cols-2">
             {[
               { title: "Supply & Install", desc: "One contractor from specification through to handover. No coordination headaches.", image: "/images/hero/installs.webp" },
               { title: "Maintenance", desc: "Scheduled cleaning and care programs that keep your floors performing for years.", image: "/images/hero/cleaning.webp" },
-              { title: "Special Projects", desc: "Fitouts, refurbishments, and bespoke installations for unique commercial spaces.", image: "/images/hero/special-projects.webp" },
             ].map((service) => (
               <div
                 key={service.title}
