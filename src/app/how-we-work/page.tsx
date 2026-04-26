@@ -21,21 +21,21 @@ const steps = [
     icon: MessageSquare,
     title: "You Tell Us What You Need",
     paragraphs: [
-      "Start with a call to 1300 207 915, an email to office@premrest.com.au, or fill out the form on our site. You'll hear back within 24 hours. We're not pushy — just want to understand what you're working with.",
-      "For anything bigger than a small job — office refits, healthcare, aged care — we'll visit the site for free. We'll look at the existing floor, take measurements, check moisture levels, and talk through what you want the space to feel like.",
-      "The point is to figure out your space, your timeline, and what you actually need so we can recommend the right product.",
+      "Start with a call to 1300 207 915, an email to office@premrest.com.au, or fill out the form on our site. You will hear back within one business day. Whether you are a facility manager, property owner, or homeowner planning a renovation, we want to understand the building and the brief before we put anything in writing.",
+      "Every project — commercial or residential — gets a free site inspection in Melbourne, Sydney, or Brisbane. We measure, take photographs, test moisture levels in the substrate, and talk through what the space needs to do.",
+      "We do not give phone quotes or “from $X” numbers. The site inspection is the only way to write a number you can build a budget around.",
     ],
     expectItems: [
-      "We call within 24 hours",
-      "Free site visit for commercial projects",
-      "Straightforward conversation, zero pressure",
+      "Reply within one business day",
+      "Free site inspection — commercial and residential",
+      "No phone quotes, no high-pressure sales",
     ],
     discussItems: [
-      "What the space is used for — office, retail, hospital, school, etc.",
-      "How much foot traffic and what it needs to withstand",
-      "How it should look and what colours work for you",
-      "What you want to spend",
-      "When it needs to be done",
+      "What the space is used for — office, retail, hospital, school, home",
+      "Foot traffic, wet areas, accessibility, acoustic targets",
+      "Aesthetic direction and any designer specifications",
+      "Budget envelope and timeline",
+      "Multi-site or multi-floor portfolio considerations",
     ],
   },
   {
@@ -43,21 +43,21 @@ const steps = [
     icon: FileText,
     title: "We Recommend & Quote",
     paragraphs: [
-      "We'll suggest products that fit your budget, performance needs, and aesthetic. We work with Interface, Karndean, Armstrong, Tarkett, and others — we're not locked into one supplier, which means you get the right product, not just what we stock.",
-      "You'll get a detailed quote within 48 hours. No hidden charges, no surprises. If you want samples, we'll send them to you before you commit.",
-      "Want options at different price points? We can do that and explain what you're trading off.",
+      "Once we have walked the site, we recommend products that fit the brief. We work with Interface, Karndean, Armstrong, and Tarkett — we are not locked into one supplier, which means you get the right product, not just what we stock.",
+      "You will get a detailed written quote within 48 hours of the inspection. Every line is itemised: install, floor preparation, takeup, levelling, trims, and any access factors. No hidden charges. Samples sent before you commit.",
+      "Want options at different specification levels? We will lay them out and explain exactly what you are trading off.",
     ],
     expectItems: [
-      "Detailed quote within 48 hours",
-      "Samples sent to your door",
-      "Options at different price points if you need them",
+      "Detailed written quote within 48 hours of the site visit",
+      "Samples couriered before you commit",
+      "Options at different specification levels if you need them",
     ],
     discussItems: [
-      "Product cost — from $45/m² depending on the product",
-      "Installation cost — from $18/m²",
-      "What the subfloor needs and whether that's an extra cost",
-      "Timeline with key dates",
-      "Warranty and technical specs",
+      "Installation guide of $30–35/m² for laying premium LVT",
+      "Floor preparation, takeup, levelling, and trims quoted line-by-line",
+      "Product cost varies by range — we will spell it out",
+      "Programme, key dates, and access requirements",
+      "Manufacturer warranty and technical compliance documentation",
     ],
   },
   {
@@ -65,20 +65,20 @@ const steps = [
     icon: Truck,
     title: "We Source It & Deliver",
     paragraphs: [
-      "Once you approve the quote, we order directly from manufacturers. That means competitive pricing and reliable supply — we've got the relationships.",
-      "We time delivery to suit your schedule. Single delivery, staged deliveries for a phased project — we work with you. Everything arrives at site, gets inspected, and is stored properly until we're ready to install.",
-      "Or if you've got your own installation team, we can supply only. You still get our pricing and manufacturer relationships — from $45/m² depending on product.",
+      "Once you approve the quote, we order directly from the manufacturer. Direct relationships mean better pricing and reliable lead times across Melbourne, Sydney, and Brisbane.",
+      "Delivery is timed around your programme. Single delivery, staged deliveries for a phased fitout, or a multi-site rollout — whatever the brief requires. Everything arrives at site, is inspected for damage, and stored properly until install.",
+      "Have your own install crew? We can supply only. You get our pricing, our manufacturer relationships, and the technical specification.",
     ],
     expectItems: [
-      "Direct from manufacturers — no middlemen",
-      "Delivery scheduled around your project",
-      "Supply-only option available",
+      "Ordered direct from the manufacturer",
+      "Delivery scheduled around your programme",
+      "Supply-only option for property owners with in-house crews",
     ],
     discussItems: [
-      "Direct manufacturer relationships and pricing power",
-      "Delivery tracking and confirmation",
-      "All products come with full manufacturer warranty",
-      "Stock always arrives in good condition",
+      "Direct manufacturer relationships and pricing leverage",
+      "Delivery tracking and inspection on receipt",
+      "Full manufacturer warranty on every product",
+      "Attic stock and replacement tiles for ongoing maintenance",
     ],
   },
   {
@@ -86,21 +86,21 @@ const steps = [
     icon: Hammer,
     title: "Professional Installation",
     paragraphs: [
-      "Our installers are licensed commercial flooring specialists. They've done offices, retail, hospitals, schools, aged care — they know what commercial-grade work looks like.",
-      "Before any tile goes down, we assess the subfloor properly. High moisture? Uneven surface? Old adhesive gunk? We fix it. Installation from $18/m², takeup and removal from $6.50/m². One point of contact manages the whole job from start to finish.",
-      "When we're done, we walk through the installation with you. Everything gets inspected, documented, and warranted.",
+      "Our installers are licensed commercial flooring specialists. They lay floors in offices, retail, hospitals, schools, aged care, and premium homes — the same crews and the same standard regardless of the project.",
+      "Before any tile goes down, we prepare the subfloor properly. High moisture? Uneven? Old adhesive residue? We deal with it. Installation runs a guide of $30–35/m² for laying premium LVT, with floor preparation and takeup quoted separately. One project manager owns the job from start to finish.",
+      "When we are done, we walk through the installation with you. Everything is inspected, photographed, documented, and warranted.",
     ],
     expectItems: [
-      "Licensed commercial flooring installers",
+      "Licensed commercial flooring installers on every job",
       "One project manager from start to finish",
-      "Final walkthrough and sign-off",
+      "Final walkthrough and sign-off documentation",
     ],
     discussItems: [
-      "Subfloor assessment and prep — we handle it",
-      "Installation from $18/m²",
-      "Takeup and disposal from $6.50/m² if needed",
-      "Project management and scheduling",
-      "Post-install warranty documentation",
+      "Subfloor preparation handled in-house",
+      "Install guide of $30–35/m² for laying premium LVT",
+      "Floor preparation and takeup quoted line-by-line",
+      "Programme, scheduling, and access requirements",
+      "Post-install warranty and maintenance documentation",
     ],
   },
 ];
@@ -121,13 +121,13 @@ export default function HowWeWorkPage() {
             className="text-[clamp(2.25rem,5vw,3.5rem)] max-w-4xl leading-tight font-bold tracking-tight mb-5"
             style={{ color: "rgb(38, 35, 30)" }}
           >
-            From phone call to finished floor.
+            Site inspection first. Always.
           </h1>
           <p
             className="text-lg md:text-xl max-w-2xl leading-relaxed"
             style={{ color: "rgb(82, 75, 68)" }}
           >
-            Four straightforward steps. No complexity, no surprises.
+            Four straightforward steps. Every quote &mdash; commercial or residential &mdash; follows a free site inspection in Melbourne, Sydney, or Brisbane. No phone quotes, no &ldquo;from $X&rdquo; figures we walk back later.
           </p>
         </div>
       </section>
@@ -283,9 +283,9 @@ export default function HowWeWorkPage() {
 
       {/* CTA */}
       <QuoteCta
-        title="Ready to talk flooring?"
-        description="Call 1300 207 915, email office@premrest.com.au, or fill out the form below. We'll get back to you within 24 hours with a detailed quote within 48."
-        buttonText="Get a Free Quote"
+        title="Ready to start with a site visit?"
+        description="Call 1300 207 915, email office@premrest.com.au, or fill out the form. We respond within one business day, book your free site inspection in Melbourne, Sydney, or Brisbane, and follow up with a written quote within 48 hours of the visit."
+        buttonText="Book a Site Inspection"
         buttonHref="/contact"
       />
     </>
