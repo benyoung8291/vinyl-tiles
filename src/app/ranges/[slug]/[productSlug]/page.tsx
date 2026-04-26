@@ -33,8 +33,9 @@ export async function generateMetadata({
   const { range, product } = result;
 
   return {
-    title: `${product.name} by ${range.name} | Colourways & Specs`,
-    description: `${product.name} ${product.style} vinyl flooring by ${range.name}. ${product.colourways.length} colourways available. ${product.description}`,
+    title: `${product.name} by ${range.name} | ${product.colourways.length} Colourways | LVT Supply & Install`,
+    alternates: { canonical: `/ranges/${range.slug}/${product.slug}` },
+    description: `${product.name} ${product.style.toLowerCase()} vinyl tile flooring by ${range.name}. ${product.colourways.length} colourways. Commercial supply and install across Melbourne, Sydney, and Brisbane. ${product.description}`,
   };
 }
 
@@ -128,7 +129,7 @@ export default async function ProductPage({ params }: ProductPageProps) {
 
               <div className="flex flex-wrap gap-3">
                 <Link
-                  href="/contact"
+                  href={`/contact?product=${product.slug}&range=${range.slug}`}
                   className="inline-flex items-center justify-center rounded-md bg-[rgb(55,50,45)] px-6 py-3 text-[14px] font-semibold text-[rgb(252,250,245)] transition-colors hover:bg-[rgb(38,35,30)]"
                 >
                   Request a Quote
@@ -219,7 +220,7 @@ export default async function ProductPage({ params }: ProductPageProps) {
               </p>
             </div>
             <Link
-              href="/contact"
+              href={`/contact?product=${product.slug}&range=${range.slug}&intent=samples`}
               className="inline-flex items-center gap-2 rounded-md bg-[rgb(55,50,45)] px-6 py-3 text-[14px] font-semibold text-[rgb(252,250,245)] transition-colors hover:bg-[rgb(38,35,30)]"
             >
               Request Samples
@@ -232,7 +233,9 @@ export default async function ProductPage({ params }: ProductPageProps) {
       {/* Quote CTA */}
       <QuoteCta
         title={`Specify ${product.name} for your project`}
-        description={`Get expert advice and a no-obligation quote for ${product.name} by ${range.name}.`}
+        description={`Submit an enquiry. We'll send samples and a written quote for ${product.name} by ${range.name}, with a free site inspection across Melbourne, Sydney, or Brisbane.`}
+        buttonText="Submit an Enquiry"
+        buttonHref={`/contact?product=${product.slug}&range=${range.slug}`}
       />
 
       {/* Other products in this range */}

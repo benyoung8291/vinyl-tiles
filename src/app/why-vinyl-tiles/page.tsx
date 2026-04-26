@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import {
   Accordion,
   AccordionItem,
@@ -270,6 +271,9 @@ export default function WhyVinylTilesPage() {
                 </p>
                 <p className="text-[15px] leading-relaxed text-white/65">
                   Cradle to Cradle certified options are expanding. They demonstrate commitment to material health, renewable energy, water stewardship, and fair practices.
+                </p>
+                <p className="text-[15px] leading-relaxed text-white/65">
+                  Need a PVC-free option entirely? Two alternatives carry the same supply-and-install model: Comcork (Australian cork &amp; rubber composite) and Nora by Interface (German-engineered rubber). See our <Link href="/sustainable-alternative" className="underline decoration-white/30 underline-offset-4 transition-colors hover:text-white">sustainable alternatives page</Link> for both.
                 </p>
               </div>
             </div>

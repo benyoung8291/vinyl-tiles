@@ -1,11 +1,13 @@
 import type { Metadata } from "next";
+import { Suspense } from "react";
 import { Phone, Mail, Clock, Building2 } from "lucide-react";
 import { ContactForm } from "@/components/contact-form";
 
 export const metadata: Metadata = {
-  title: "Book a Site Inspection | Premium Vinyl Tile Quotes",
+  title: "Vinyl Tile Flooring Quotes | Book a Free Site Inspection",
+  alternates: { canonical: "/contact" },
   description:
-    "Book a free site inspection in Melbourne, Sydney, or Brisbane for premium LVT supply and install. Every quote follows a site visit. Call 1300 207 915 or fill out the form.",
+    "Get a written quote for commercial vinyl tile supply and install across Melbourne, Sydney, and Brisbane. Every quote follows a free site inspection. Call 1300 207 915 or submit an enquiry.",
 };
 
 export default function ContactPage() {
@@ -48,7 +50,9 @@ export default function ContactPage() {
                 Your Project Details
               </p>
               <div className="space-y-6">
-                <ContactForm />
+                <Suspense fallback={<div className="h-96" />}>
+                  <ContactForm />
+                </Suspense>
               </div>
             </div>
 

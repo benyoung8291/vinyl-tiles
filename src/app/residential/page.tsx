@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
-import { ArrowRight, ArrowUpRight } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 import { QuoteCta } from "@/components/quote-cta";
 
 export const metadata: Metadata = {
@@ -276,68 +276,6 @@ export default function ResidentialPage() {
                 Every quote starts with a free site inspection in Melbourne, Sydney, or Brisbane. We measure, test moisture levels, look at the existing substrate, and write a fixed quote you can build a budget around. No phone quotes, no guesswork, no &ldquo;from $X&rdquo; numbers we walk back later.
               </p>
             </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Other floor types */}
-      <section style={{ backgroundColor: "rgb(252, 250, 245)" }}>
-        <div className="mx-auto max-w-[1440px] px-6 py-20 lg:px-10 lg:py-28">
-          <div className="mb-12 max-w-3xl">
-            <p className="text-[11px] font-medium uppercase tracking-widest mb-4" style={{ color: "rgb(120, 110, 100)" }}>
-              Considering Other Floors?
-            </p>
-            <h2 className="text-[clamp(1.75rem,4vw,2.5rem)] font-bold leading-tight tracking-tight" style={{ color: "rgb(38, 35, 30)" }}>
-              Premium homes rarely use one floor type.
-            </h2>
-            <p className="mt-5 text-[16px] leading-relaxed" style={{ color: "rgb(82, 75, 68)" }}>
-              Bedrooms in carpet, kitchen and living in LVT, a cork-hybrid feature for the home office? Our sister brands cover the rest of the house with the same standard of work.
-            </p>
-          </div>
-          <div className="grid gap-5 md:grid-cols-3">
-            {[
-              {
-                name: "Modular Carpet",
-                tag: "Carpet Tile",
-                url: "https://modularcarpet.com.au",
-                desc: "Designer carpet tile for bedrooms, studies, and media rooms. Replace a single tile if it stains, instead of relaying the room.",
-              },
-              {
-                name: "Comcork Flooring",
-                tag: "Cork Hybrid",
-                url: "https://comcorkflooring.com.au",
-                desc: "Warmer and quieter than vinyl, with the resilience of a hybrid floor. Beautiful in studies, libraries, and yoga rooms.",
-              },
-              {
-                name: "Premrest",
-                tag: "Group Site",
-                url: "https://www.premrest.com.au",
-                desc: "The parent business and a starting point if your project covers more than one floor type or includes restoration work.",
-              },
-            ].map((brand) => (
-              <a
-                key={brand.url}
-                href={brand.url}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="group flex flex-col rounded-lg border border-[rgb(230,225,215)] p-7 transition-all duration-200 hover:border-[rgb(200,195,185)] hover:shadow-sm"
-                style={{ backgroundColor: "rgb(248, 245, 237)" }}
-              >
-                <p className="text-[11px] font-medium uppercase tracking-widest mb-3" style={{ color: "rgb(120, 110, 100)" }}>
-                  {brand.tag}
-                </p>
-                <h3 className="text-lg font-bold tracking-tight" style={{ color: "rgb(38, 35, 30)" }}>
-                  {brand.name}
-                </h3>
-                <p className="mt-3 flex-1 text-[14px] leading-relaxed" style={{ color: "rgb(82, 75, 68)" }}>
-                  {brand.desc}
-                </p>
-                <span className="mt-5 inline-flex items-center gap-2 text-[12px] font-semibold uppercase tracking-wide transition-all duration-200 group-hover:gap-3" style={{ color: "rgb(55, 50, 45)" }}>
-                  Visit site
-                  <ArrowUpRight className="size-3.5" />
-                </span>
-              </a>
-            ))}
           </div>
         </div>
       </section>

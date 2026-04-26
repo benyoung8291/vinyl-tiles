@@ -1,6 +1,7 @@
 "use client";
 
-import { useState, type FormEvent } from "react";
+import { useEffect, useState, type FormEvent } from "react";
+import { useSearchParams } from "next/navigation";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
@@ -22,15 +23,63 @@ const productOptions = [
   "Karndean",
   "Armstrong",
   "Tarkett",
+  "Comcork (cork & rubber)",
+  "Nora (rubber by Interface)",
   "Other",
   "Not Sure",
 ];
 
+const RANGE_TO_PRODUCTS: Record<string, string[]> = {
+  interface: ["Interface"],
+  karndean: ["Karndean"],
+  armstrong: ["Armstrong"],
+  tarkett: ["Tarkett"],
+  comcork: ["Comcork (cork & rubber)"],
+  nora: ["Nora (rubber by Interface)"],
+  alternatives: ["Comcork (cork & rubber)", "Nora (rubber by Interface)"],
+};
+
 export function ContactForm() {
+  const searchParams = useSearchParams();
   const [submitted, setSubmitted] = useState(false);
   const [submitting, setSubmitting] = useState(false);
   const [errorMessage, setErrorMessage] = useState<string | null>(null);
   const [products, setProducts] = useState<string[]>([]);
+  const [defaultMessage, setDefaultMessage] = useState("");
+
+  useEffect(() => {
+    const range = searchParams.get("range");
+    const product = searchParams.get("product");
+    const sector = searchParams.get("sector");
+    const audience = searchParams.get("audience");
+    const intent = searchParams.get("intent");
+
+    const mappedProducts = range ? RANGE_TO_PRODUCTS[range] : undefined;
+    if (mappedProducts) {
+      setProducts(mappedProducts);
+    }
+
+    const lines: string[] = [];
+    if (intent === "samples") {
+      lines.push("I'd like to request samples.");
+    }
+    if (product && range) {
+      lines.push(`Product of interest: ${product} by ${mappedProducts?.[0] ?? range}.`);
+    } else if (range === "alternatives") {
+      lines.push("Range of interest: PVC-free alternatives (Comcork and/or Nora).");
+    } else if (mappedProducts) {
+      lines.push(`Range of interest: ${mappedProducts.join(", ")}.`);
+    }
+    if (sector) {
+      lines.push(`Sector: ${sector.replace(/-flooring$/, "").replace(/-/g, " ")}.`);
+    }
+    if (audience) {
+      lines.push(`I'm a ${audience.replace(/-/g, " ")}.`);
+    }
+    if (lines.length > 0) {
+      setDefaultMessage(lines.join("\n") + "\n\n");
+    }
+  }, [searchParams]);
 
   function handleProductToggle(product: string, checked: boolean) {
     setProducts((prev) =>
@@ -230,6 +279,8 @@ export function ContactForm() {
           name="message"
           placeholder="Tell us about your project, timeline, or any questions you have..."
           className="min-h-28"
+          defaultValue={defaultMessage}
+          key={defaultMessage}
         />
       </div>
 
