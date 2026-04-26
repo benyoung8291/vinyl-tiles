@@ -37,7 +37,7 @@ export function SolutionPage({ solution }: SolutionPageProps) {
                 href="/contact"
                 className="mt-8 inline-flex items-center justify-center rounded-md bg-[rgb(55,50,45)] px-6 py-3 text-[14px] font-semibold text-[rgb(252,250,245)] transition-colors hover:bg-[rgb(38,35,30)]"
               >
-                Get a Quote
+                Book a Site Inspection
               </Link>
             </div>
             <div className="hidden lg:block">

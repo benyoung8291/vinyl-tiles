@@ -22,10 +22,25 @@ const solutions = [
   { name: "Hospitality", href: "/hospitality-flooring" },
 ];
 
+const featuredSites = [
+  {
+    name: "Premrest",
+    url: "https://www.premrest.com.au",
+    blurb: "The parent flooring and restoration group.",
+  },
+  {
+    name: "Modular Carpet",
+    url: "https://modularcarpet.com.au",
+    blurb: "Our carpet tile sister brand.",
+  },
+  {
+    name: "Comcork Flooring",
+    url: "https://comcorkflooring.com.au",
+    blurb: "Premium cork hybrid hardfloor.",
+  },
+];
+
 const premrestSites = [
-  { name: "Premrest", url: "https://www.premrest.com.au" },
-  { name: "Modular Carpet", url: "https://modularcarpet.com.au" },
-  { name: "ComCork Flooring", url: "https://comcorkflooring.com.au" },
   { name: "Aged Care Flooring", url: "https://agedcareflooring.com.au" },
   { name: "Medical Flooring", url: "https://medicalflooring.com.au" },
   { name: "Retail Flooring", url: "https://retailflooring.com.au" },
@@ -46,21 +61,35 @@ export default function Footer() {
         <div className="grid grid-cols-1 gap-10 md:grid-cols-2 lg:grid-cols-[1.4fr_1fr_1fr_1fr_1fr] lg:gap-8">
           {/* Brand column */}
           <div className="lg:pr-6">
-            <Link href="/" className="inline-flex flex-col gap-3">
+            <Link href="/" className="inline-block">
               <img src="/images/brand/premrest-logo.svg" alt="Premrest" className="h-6 w-auto" />
-              <span
-                className="text-[10px] font-medium uppercase tracking-widest"
-                style={{ color: "rgb(120, 110, 100)" }}
-              >
-                Vinyl Tiles Division
-              </span>
             </Link>
             <p
               className="mt-5 max-w-xs text-[13px] leading-relaxed"
               style={{ color: "rgb(120, 110, 100)" }}
             >
-              Commercial vinyl tile flooring, supplied and installed. We find the
-              right product, get it to site, and lay it properly. A{" "}
+              Premium LVT supplied and installed across Melbourne, Sydney, and
+              Brisbane. Carpet tile? Visit{" "}
+              <a
+                href="https://modularcarpet.com.au"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="transition-colors hover:text-[rgb(55,50,45)]"
+                style={{ color: "rgb(82, 75, 68)" }}
+              >
+                Modular Carpet
+              </a>
+              . Cork hybrid?{" "}
+              <a
+                href="https://comcorkflooring.com.au"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="transition-colors hover:text-[rgb(55,50,45)]"
+                style={{ color: "rgb(82, 75, 68)" }}
+              >
+                Comcork Flooring
+              </a>
+              . A{" "}
               <a
                 href="https://www.premrest.com.au"
                 target="_blank"
@@ -156,13 +185,39 @@ export default function Footer() {
             </ul>
           </div>
 
-          {/* Premrest Group */}
+          {/* Sister Brands */}
           <div>
             <h3
               className="mb-4 text-[11px] font-medium uppercase tracking-widest"
               style={{ color: "rgb(120, 110, 100)" }}
             >
-              Premrest Group
+              Sister Brands
+            </h3>
+            <ul className="space-y-3.5 mb-6">
+              {featuredSites.map((site) => (
+                <li key={site.url}>
+                  <a
+                    href={site.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="group inline-flex flex-col gap-0.5 text-[13px] text-[rgb(55,50,45)] transition-colors hover:text-[rgb(38,35,30)]"
+                  >
+                    <span className="inline-flex items-center gap-1 font-semibold">
+                      {site.name}
+                      <ArrowUpRight className="size-3 opacity-40" />
+                    </span>
+                    <span className="text-[11px]" style={{ color: "rgb(120, 110, 100)" }}>
+                      {site.blurb}
+                    </span>
+                  </a>
+                </li>
+              ))}
+            </ul>
+            <h3
+              className="mb-3 text-[11px] font-medium uppercase tracking-widest"
+              style={{ color: "rgb(120, 110, 100)" }}
+            >
+              Group Sites
             </h3>
             <ul className="space-y-2.5">
               {premrestSites.map((site) => (

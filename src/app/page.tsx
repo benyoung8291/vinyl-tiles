@@ -71,21 +71,27 @@ const sectors = [
   },
 ];
 
-const pillars = [
+const audiences = [
   {
-    label: "Supply + Install",
-    heading: "One contractor, one result",
-    text: "No coordination between the company that sold you the vinyl and the mob that laid it. If something's not right, it's on us.",
+    label: "Facility Managers",
+    heading: "Compliance, lifecycle, no surprises",
+    text: "Slip ratings, fire ratings, acoustic targets, NCC documentation. Spot-replacement strategy and a maintenance program that keeps the floor performing for 15+ years. One accountable contact, every site.",
+    cta: "Talk facility solutions",
+    href: "/contact?audience=facility-manager",
   },
   {
-    label: "Problem-first approach",
-    heading: "We start with your space",
-    text: "Not a product catalogue. What does the space need to do? How much traffic? Wet areas? Wheelchairs? We work backwards from the answer.",
+    label: "Property Owners",
+    heading: "A flooring partner across three cities",
+    text: "Multi-site portfolios, fitouts, refurbishments, and base-build upgrades across Melbourne, Sydney, and Brisbane. Direct manufacturer relationships, local install crews, consistent specification across every asset.",
+    cta: "Discuss your portfolio",
+    href: "/contact?audience=property-owner",
   },
   {
-    label: "Compliance built in",
-    heading: "Documentation your certifier needs",
-    text: "Slip ratings, fire ratings, acoustic requirements, NCC compliance — we specify to all of them. You get the documentation that matters.",
+    label: "Premium Homeowners",
+    heading: "Architect-grade LVT for your home",
+    text: "Designer-led wood and stone visuals from Karndean and Interface. Engineered for real life &mdash; pets, kids, hot Melbourne summers &mdash; and installed by commercial-grade crews. We are not the cheap option, and we will not pretend to be.",
+    cta: "Explore residential LVT",
+    href: "/residential",
   },
 ];
 
@@ -112,32 +118,32 @@ export default function Home() {
                 className="text-[13px] font-medium uppercase tracking-widest mb-6"
                 style={{ color: "rgb(120, 110, 100)" }}
               >
-                Commercial Vinyl Flooring
+                Premium LVT &middot; Melbourne &middot; Sydney &middot; Brisbane
               </p>
               <h1
                 className="text-[clamp(2.5rem,6vw,4.5rem)] font-bold leading-[1.08] tracking-tight"
                 style={{ color: "rgb(38, 35, 30)" }}
               >
-                We find the right vinyl tile, get it to site, and lay it properly.
+                Premium vinyl tile, specified properly and installed to last.
               </h1>
               <p
                 className="mt-8 max-w-2xl text-lg leading-relaxed"
                 style={{ color: "rgb(82, 75, 68)" }}
               >
-                Supply and install, one contractor, no finger-pointing. You tell us what the space needs to do — we handle the rest.
+                We supply and install premium LVT for facility managers, property owners, and discerning homeowners across Melbourne, Sydney, and Brisbane. One contractor, one accountable result &mdash; not the cheapest floor on the market, the right one.
               </p>
               <div className="mt-10 flex flex-wrap items-center gap-4">
                 <Link
                   href="/contact"
                   className="inline-flex items-center justify-center rounded-md bg-[rgb(55,50,45)] px-7 py-3 text-[15px] font-semibold text-[rgb(252,250,245)] transition-colors hover:bg-[rgb(38,35,30)]"
                 >
-                  Get a Quote
+                  Book a Site Inspection
                 </Link>
                 <Link
-                  href="#ranges"
+                  href="#audiences"
                   className="inline-flex items-center gap-2 px-4 py-3 text-[15px] font-medium text-[rgb(82,75,68)] transition-colors hover:text-[rgb(38,35,30)]"
                 >
-                  Explore Ranges
+                  Find Your Path
                   <ArrowRight className="size-4" />
                 </Link>
               </div>
@@ -188,34 +194,62 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Three Pillars */}
-      <section style={{ backgroundColor: "rgb(252, 250, 245)" }}>
-        <div className="mx-auto max-w-[1440px] px-6 py-16 lg:px-10 lg:py-24">
-          <div className="grid gap-8 md:grid-cols-3 lg:gap-12">
-            {pillars.map((pillar) => (
+      {/* Audiences */}
+      <section id="audiences" style={{ backgroundColor: "rgb(252, 250, 245)" }}>
+        <div className="mx-auto max-w-[1440px] px-6 py-20 lg:px-10 lg:py-28">
+          <div className="mb-14 max-w-3xl">
+            <p
+              className="text-[11px] font-medium uppercase tracking-widest mb-4"
+              style={{ color: "rgb(120, 110, 100)" }}
+            >
+              Who We Work With
+            </p>
+            <h2
+              className="text-[clamp(1.75rem,4vw,2.75rem)] font-bold leading-tight tracking-tight"
+              style={{ color: "rgb(38, 35, 30)" }}
+            >
+              Three audiences, one standard of work.
+            </h2>
+            <p
+              className="mt-5 text-[16px] leading-relaxed"
+              style={{ color: "rgb(82, 75, 68)" }}
+            >
+              We work with people who care about getting the floor right the first time. If you are shopping on price alone, we are probably not the right fit &mdash; and we will tell you that up front.
+            </p>
+          </div>
+
+          <div className="grid gap-5 md:grid-cols-3">
+            {audiences.map((aud) => (
               <div
-                key={pillar.label}
-                className="relative rounded-lg border border-[rgb(230,225,215)] p-8 lg:p-10"
+                key={aud.label}
+                className="relative flex flex-col rounded-lg border border-[rgb(230,225,215)] p-8 lg:p-10"
                 style={{ backgroundColor: "rgb(248, 245, 237)" }}
               >
                 <p
                   className="text-[11px] font-medium uppercase tracking-widest mb-5"
                   style={{ color: "rgb(120, 110, 100)" }}
                 >
-                  {pillar.label}
+                  {aud.label}
                 </p>
                 <h3
                   className="text-xl font-bold tracking-tight mb-4"
                   style={{ color: "rgb(38, 35, 30)" }}
                 >
-                  {pillar.heading}
+                  {aud.heading}
                 </h3>
                 <p
-                  className="text-[15px] leading-relaxed"
+                  className="flex-1 text-[15px] leading-relaxed"
                   style={{ color: "rgb(82, 75, 68)" }}
+                  dangerouslySetInnerHTML={{ __html: aud.text }}
+                />
+                <Link
+                  href={aud.href}
+                  className="mt-6 inline-flex items-center gap-2 text-[13px] font-semibold transition-colors hover:text-[rgb(38,35,30)]"
+                  style={{ color: "rgb(55, 50, 45)" }}
                 >
-                  {pillar.text}
-                </p>
+                  {aud.cta}
+                  <ArrowRight className="size-3.5" />
+                </Link>
               </div>
             ))}
           </div>
@@ -228,16 +262,9 @@ export default function Home() {
           <div className="flex flex-wrap items-center justify-center gap-10 lg:gap-16 text-center">
             <div>
               <p className="text-2xl font-bold tracking-tight" style={{ color: "rgb(38, 35, 30)" }}>
-                $45<span className="text-[rgb(120,110,100)]">/m&sup2;</span>
+                $30&ndash;35<span className="text-[rgb(120,110,100)]">/m&sup2;</span>
               </p>
-              <p className="mt-1.5 text-[12px] text-[rgb(120,110,100)]">Supply from (ex GST)</p>
-            </div>
-            <div className="hidden h-8 w-px bg-[rgb(230,225,215)] sm:block" />
-            <div>
-              <p className="text-2xl font-bold tracking-tight" style={{ color: "rgb(38, 35, 30)" }}>
-                $20<span className="text-[rgb(120,110,100)]">/m&sup2;</span>
-              </p>
-              <p className="mt-1.5 text-[12px] text-[rgb(120,110,100)]">Install from (ex GST)</p>
+              <p className="mt-1.5 text-[12px] text-[rgb(120,110,100)]">Install guide (ex GST, ex prep)</p>
             </div>
             <div className="hidden h-8 w-px bg-[rgb(230,225,215)] sm:block" />
             <div>
@@ -253,7 +280,17 @@ export default function Home() {
               </p>
               <p className="mt-1.5 text-[12px] text-[rgb(120,110,100)]">Melbourne, Sydney, Brisbane</p>
             </div>
+            <div className="hidden h-8 w-px bg-[rgb(230,225,215)] sm:block" />
+            <div>
+              <p className="text-2xl font-bold tracking-tight" style={{ color: "rgb(38, 35, 30)" }}>
+                100<span className="text-[rgb(120,110,100)]">%</span>
+              </p>
+              <p className="mt-1.5 text-[12px] text-[rgb(120,110,100)]">Site-inspected quotes</p>
+            </div>
           </div>
+          <p className="mx-auto mt-6 max-w-2xl text-center text-[12px] leading-relaxed" style={{ color: "rgb(120, 110, 100)" }}>
+            Installation guide pricing only &mdash; floor preparation, takeup, levelling, and access factors are quoted separately. Every quote follows a free site inspection.
+          </p>
         </div>
       </section>
 
@@ -488,14 +525,41 @@ export default function Home() {
                 className="text-[clamp(1.75rem,4vw,2.75rem)] font-bold leading-tight tracking-tight"
                 style={{ color: "rgb(38, 35, 30)" }}
               >
-                We supply it. We install it. We own the result.
+                Premium flooring. One accountable partner.
               </h2>
               <div className="mt-8 space-y-6">
                 <p className="text-[16px] leading-relaxed" style={{ color: "rgb(82, 75, 68)" }}>
-                  Vinyl Tiles is a division of Premrest — one of Australia&apos;s established commercial flooring companies. We&apos;ve been doing this since 2010, across thousands of projects in every sector.
+                  Vinyl Tiles is a division of{" "}
+                  <a
+                    href="https://www.premrest.com.au"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="underline decoration-[rgb(200,195,185)] underline-offset-4 transition-colors hover:text-[rgb(38,35,30)]"
+                  >
+                    Premrest
+                  </a>
+                  {" "}&mdash; one of Australia&apos;s established premium commercial flooring companies. We have been delivering specified, installed, and warranted floors since 2010 across Melbourne, Sydney, and Brisbane.
                 </p>
                 <p className="text-[16px] leading-relaxed" style={{ color: "rgb(82, 75, 68)" }}>
-                  The model is simple: you get one contact from day one through to completion. We serve Melbourne, Sydney, and Brisbane with local teams — not locked into one supplier, which means you get the right product for the job.
+                  Need carpet tile instead? Visit our sister brand{" "}
+                  <a
+                    href="https://modularcarpet.com.au"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="underline decoration-[rgb(200,195,185)] underline-offset-4 transition-colors hover:text-[rgb(38,35,30)]"
+                  >
+                    Modular Carpet
+                  </a>
+                  . Quieter, warmer hard floor? Our cork hybrid range lives at{" "}
+                  <a
+                    href="https://comcorkflooring.com.au"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="underline decoration-[rgb(200,195,185)] underline-offset-4 transition-colors hover:text-[rgb(38,35,30)]"
+                  >
+                    Comcork Flooring
+                  </a>
+                  . Three product specialisations, one team standing behind the work.
                 </p>
                 <Link
                   href="/how-we-work"
@@ -529,8 +593,75 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Sister brands */}
+      <section className="border-y border-[rgb(230,225,215)]" style={{ backgroundColor: "rgb(248, 245, 237)" }}>
+        <div className="mx-auto max-w-[1440px] px-6 py-20 lg:px-10 lg:py-24">
+          <div className="mb-12 max-w-3xl">
+            <p className="text-[11px] font-medium uppercase tracking-widest mb-4" style={{ color: "rgb(120, 110, 100)" }}>
+              Other Floor Types
+            </p>
+            <h2 className="text-[clamp(1.75rem,4vw,2.75rem)] font-bold leading-tight tracking-tight" style={{ color: "rgb(38, 35, 30)" }}>
+              Vinyl is one part of a bigger flooring offer.
+            </h2>
+            <p className="mt-5 text-[16px] leading-relaxed" style={{ color: "rgb(82, 75, 68)" }}>
+              Specifying a multi-floor project? Our sister brands cover carpet tile and cork hybrid, with the same supply-and-install model and the same Premrest team behind them.
+            </p>
+          </div>
+          <div className="grid gap-5 md:grid-cols-3">
+            {[
+              {
+                name: "Modular Carpet",
+                tag: "Carpet Tile",
+                url: "https://modularcarpet.com.au",
+                desc: "The Premrest carpet tile specialist. Office, hospitality, and education portfolios with the same supply-and-install accountability.",
+              },
+              {
+                name: "Comcork Flooring",
+                tag: "Cork Hybrid",
+                url: "https://comcorkflooring.com.au",
+                desc: "Quieter, warmer, and more forgiving than vinyl. Premium cork hybrid hardfloor for residences, wellness spaces, and acoustic-sensitive offices.",
+              },
+              {
+                name: "Premrest",
+                tag: "Group Site",
+                url: "https://www.premrest.com.au",
+                desc: "The parent business. Commercial flooring, restoration, and installation services across every state and territory.",
+              },
+            ].map((brand) => (
+              <a
+                key={brand.url}
+                href={brand.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group flex flex-col rounded-lg border border-[rgb(230,225,215)] p-7 transition-all duration-200 hover:border-[rgb(200,195,185)] hover:shadow-sm"
+                style={{ backgroundColor: "rgb(252, 250, 245)" }}
+              >
+                <p className="text-[11px] font-medium uppercase tracking-widest mb-3" style={{ color: "rgb(120, 110, 100)" }}>
+                  {brand.tag}
+                </p>
+                <h3 className="text-lg font-bold tracking-tight" style={{ color: "rgb(38, 35, 30)" }}>
+                  {brand.name}
+                </h3>
+                <p className="mt-3 flex-1 text-[14px] leading-relaxed" style={{ color: "rgb(82, 75, 68)" }}>
+                  {brand.desc}
+                </p>
+                <span className="mt-5 inline-flex items-center gap-2 text-[12px] font-semibold uppercase tracking-wide transition-all duration-200 group-hover:gap-3" style={{ color: "rgb(55, 50, 45)" }}>
+                  Visit site
+                  <ArrowUpRight className="size-3.5" />
+                </span>
+              </a>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* Quote CTA */}
-      <QuoteCta />
+      <QuoteCta
+        title="Every quote starts with a site visit."
+        description="Tell us about the building, the brief, and the timeline. We will book a free site inspection in Melbourne, Sydney, or Brisbane and come back with a specification and a written quote."
+        buttonText="Book a Site Inspection"
+        buttonHref="/contact"
+      />
     </>
   );
 }

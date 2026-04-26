@@ -3,9 +3,9 @@ import { Phone, Mail, Clock, Building2 } from "lucide-react";
 import { ContactForm } from "@/components/contact-form";
 
 export const metadata: Metadata = {
-  title: "Contact Premrest | Let's Talk Flooring",
+  title: "Book a Site Inspection | Premium Vinyl Tile Quotes",
   description:
-    "Tell us about your flooring project. Premrest serves Melbourne, Sydney, and Brisbane with expert commercial flooring solutions. Call 1300 207 915 or get in touch.",
+    "Book a free site inspection in Melbourne, Sydney, or Brisbane for premium LVT supply and install. Every quote follows a site visit. Call 1300 207 915 or fill out the form.",
 };
 
 export default function ContactPage() {
@@ -18,19 +18,19 @@ export default function ContactPage() {
       >
         <div className="mx-auto max-w-[1440px] px-6 pb-20 pt-28 md:pb-24 md:pt-36 lg:px-10">
           <p className="text-[11px] font-medium uppercase tracking-widest mb-4" style={{ color: "rgb(120, 110, 100)" }}>
-            Get In Touch
+            Book a Site Inspection
           </p>
           <h1
             className="text-[clamp(2.25rem,5vw,3.5rem)] max-w-3xl leading-tight font-bold tracking-tight mb-5"
             style={{ color: "rgb(38, 35, 30)" }}
           >
-            Let&apos;s talk flooring.
+            Every quote starts with a site visit.
           </h1>
           <p
             className="text-lg md:text-xl max-w-2xl leading-relaxed"
             style={{ color: "rgb(82, 75, 68)" }}
           >
-            Whether you&apos;re planning a commercial flooring project or just want to explore your options, we&apos;re here to listen. Our team will get back to you within one business day.
+            Tell us about the building, the brief, and the timeline. Whether you are a facility manager, property owner, or homeowner, we book a free site inspection in Melbourne, Sydney, or Brisbane and follow up with a written quote within 48 hours.
           </p>
         </div>
       </section>
@@ -153,8 +153,42 @@ export default function ContactPage() {
                   </div>
                 </div>
                 <p className="text-[15px] leading-relaxed" style={{ color: "rgb(82, 75, 68)" }}>
-                  We serve Melbourne, Sydney, and Brisbane. Backed by Premrest, one of Australia&apos;s most trusted commercial flooring specialists with decades of industry experience.
+                  Free site inspections across Melbourne, Sydney, and Brisbane. Backed by{" "}
+                  <a
+                    href="https://www.premrest.com.au"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="underline decoration-[rgb(200,195,185)] underline-offset-4 transition-colors hover:text-[rgb(38,35,30)]"
+                  >
+                    Premrest
+                  </a>
+                  , one of Australia&apos;s most trusted premium commercial flooring specialists.
                 </p>
+              </div>
+
+              {/* What happens next */}
+              <div
+                className="rounded-lg border border-[rgb(230,225,215)] p-7"
+                style={{ backgroundColor: "rgb(55, 50, 45)" }}
+              >
+                <h3 className="text-[11px] font-medium uppercase tracking-widest text-white/40 mb-4">
+                  What Happens Next
+                </h3>
+                <ol className="space-y-3">
+                  {[
+                    "We reply within one business day",
+                    "Free site inspection booked at a time that suits you",
+                    "Detailed written quote within 48 hours of the visit",
+                    "No phone quotes, no high-pressure sales",
+                  ].map((step, i) => (
+                    <li key={i} className="flex items-start gap-3 text-[13px] text-white/80">
+                      <span className="text-[11px] font-semibold text-white/40 pt-0.5">
+                        {String(i + 1).padStart(2, "0")}
+                      </span>
+                      <span>{step}</span>
+                    </li>
+                  ))}
+                </ol>
               </div>
             </aside>
           </div>

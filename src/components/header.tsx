@@ -12,6 +12,9 @@ const ranges = [
 ];
 
 const solutions = [
+  { label: "Facility Managers", href: "/contact?audience=facility-manager" },
+  { label: "Property Owners", href: "/contact?audience=property-owner" },
+  { label: "Premium Homeowners", href: "/residential" },
   { label: "Office", href: "/office-flooring" },
   { label: "Retail", href: "/retail-flooring" },
   { label: "Healthcare", href: "/healthcare-flooring" },
@@ -45,11 +48,8 @@ export default function Header() {
       >
         <div className="mx-auto flex h-full max-w-[1440px] items-center justify-between px-6 lg:px-10">
           {/* Logo */}
-          <Link href="/" className="flex items-center gap-3 flex-shrink-0">
-            <img src="/images/brand/premrest-logo.svg" alt="Premrest" className="h-5 w-auto" />
-            <span className="hidden sm:inline text-[10px] font-medium uppercase tracking-widest border-l border-[rgb(230,225,215)] pl-3" style={{ color: "rgb(120, 110, 100)" }}>
-              Vinyl Tiles
-            </span>
+          <Link href="/" className="flex items-center flex-shrink-0">
+            <img src="/images/brand/premrest-logo.svg" alt="Premrest" className="h-5 lg:h-6 w-auto" />
           </Link>
 
           {/* Desktop Nav — clean horizontal links like microsoft.ai */}
@@ -101,8 +101,24 @@ export default function Header() {
                 <ChevronDown className="size-3 transition-transform group-hover:rotate-180" />
               </button>
               <div className="pointer-events-none absolute left-0 top-full -translate-y-1 opacity-0 transition-all duration-200 group-hover:pointer-events-auto group-hover:translate-y-0 group-hover:opacity-100">
-                <div className="mt-1 w-44 rounded-md border border-[rgb(230,225,215)] bg-[rgb(252,250,245)] p-1.5 shadow-lg shadow-black/5">
-                  {solutions.map((item) => (
+                <div className="mt-1 w-56 rounded-md border border-[rgb(230,225,215)] bg-[rgb(252,250,245)] p-1.5 shadow-lg shadow-black/5">
+                  <p className="px-3 pt-1.5 pb-1 text-[10px] font-medium uppercase tracking-widest" style={{ color: "rgb(170, 163, 153)" }}>
+                    By Audience
+                  </p>
+                  {solutions.slice(0, 3).map((item) => (
+                    <Link
+                      key={item.href}
+                      href={item.href}
+                      className="block rounded px-3 py-2 text-[13px] font-medium text-[rgb(55,50,45)] transition-colors hover:bg-[rgb(242,238,228)]"
+                    >
+                      {item.label}
+                    </Link>
+                  ))}
+                  <div className="my-1.5 mx-3 h-px bg-[rgb(230,225,215)]" />
+                  <p className="px-3 pt-1 pb-1 text-[10px] font-medium uppercase tracking-widest" style={{ color: "rgb(170, 163, 153)" }}>
+                    By Sector
+                  </p>
+                  {solutions.slice(3).map((item) => (
                     <Link
                       key={item.href}
                       href={item.href}
@@ -135,7 +151,7 @@ export default function Header() {
               href="/contact"
               className="rounded-md bg-[rgb(55,50,45)] px-5 py-2 text-[13px] font-medium text-[rgb(252,250,245)] transition-colors hover:bg-[rgb(38,35,30)]"
             >
-              Get a Quote
+              Book a Site Inspection
             </Link>
           </div>
 
@@ -213,7 +229,23 @@ export default function Header() {
               </button>
               {mobileSolutionsOpen && (
                 <div className="space-y-0 border-l border-[rgb(230,225,215)] pl-4 pb-2">
-                  {solutions.map((item) => (
+                  <p className="pt-1 pb-1 text-[10px] font-medium uppercase tracking-widest" style={{ color: "rgb(170, 163, 153)" }}>
+                    By Audience
+                  </p>
+                  {solutions.slice(0, 3).map((item) => (
+                    <Link
+                      key={item.href}
+                      href={item.href}
+                      className="block py-2 text-[13px] font-medium text-[rgb(55,50,45)] transition-colors hover:text-[rgb(82,75,68)]"
+                      onClick={() => setMobileOpen(false)}
+                    >
+                      {item.label}
+                    </Link>
+                  ))}
+                  <p className="mt-2 pt-1 pb-1 text-[10px] font-medium uppercase tracking-widest" style={{ color: "rgb(170, 163, 153)" }}>
+                    By Sector
+                  </p>
+                  {solutions.slice(3).map((item) => (
                     <Link
                       key={item.href}
                       href={item.href}
@@ -247,7 +279,7 @@ export default function Header() {
                 className="block w-full rounded-md bg-[rgb(55,50,45)] px-4 py-3 text-center text-[13px] font-medium text-[rgb(252,250,245)] transition-colors hover:bg-[rgb(38,35,30)]"
                 onClick={() => setMobileOpen(false)}
               >
-                Get a Quote
+                Book a Site Inspection
               </Link>
             </div>
           </nav>

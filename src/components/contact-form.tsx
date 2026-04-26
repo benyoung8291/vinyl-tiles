@@ -7,6 +7,8 @@ import { Label } from "@/components/ui/label";
 import { Checkbox } from "@/components/ui/checkbox";
 import { Button } from "@/components/ui/button";
 
+const FORMSPREE_ENDPOINT = "https://formspree.io/f/mnjowgkl";
+
 const projectTypes = [
   "New Install",
   "Replacement",
@@ -26,6 +28,8 @@ const productOptions = [
 
 export function ContactForm() {
   const [submitted, setSubmitted] = useState(false);
+  const [submitting, setSubmitting] = useState(false);
+  const [errorMessage, setErrorMessage] = useState<string | null>(null);
   const [products, setProducts] = useState<string[]>([]);
 
   function handleProductToggle(product: string, checked: boolean) {
@@ -34,9 +38,44 @@ export function ContactForm() {
     );
   }
 
-  function handleSubmit(e: FormEvent<HTMLFormElement>) {
+  async function handleSubmit(e: FormEvent<HTMLFormElement>) {
     e.preventDefault();
-    setSubmitted(true);
+    if (submitting) return;
+
+    setSubmitting(true);
+    setErrorMessage(null);
+
+    const formEl = e.currentTarget;
+    const formData = new FormData(formEl);
+
+    try {
+      const response = await fetch(FORMSPREE_ENDPOINT, {
+        method: "POST",
+        body: formData,
+        headers: { Accept: "application/json" },
+      });
+
+      if (response.ok) {
+        setSubmitted(true);
+        formEl.reset();
+        setProducts([]);
+      } else {
+        const data = await response.json().catch(() => null);
+        const message =
+          (data &&
+            (data.error ||
+              (Array.isArray(data.errors) &&
+                data.errors.map((er: { message?: string }) => er.message).filter(Boolean).join(", ")))) ||
+          "Something went wrong submitting the form. Please try again or call 1300 207 915.";
+        setErrorMessage(message);
+      }
+    } catch {
+      setErrorMessage(
+        "We couldn't reach our form service. Please try again or call 1300 207 915."
+      );
+    } finally {
+      setSubmitting(false);
+    }
   }
 
   if (submitted) {
@@ -69,7 +108,26 @@ export function ContactForm() {
   }
 
   return (
-    <form onSubmit={handleSubmit} className="space-y-5">
+    <form
+      onSubmit={handleSubmit}
+      action={FORMSPREE_ENDPOINT}
+      method="POST"
+      className="space-y-5"
+    >
+      {/* Hidden Formspree subject */}
+      <input
+        type="hidden"
+        name="_subject"
+        value="New enquiry from vinyltiles.com.au"
+      />
+
+      {/* Hidden products list (Formspree-friendly comma list of selected) */}
+      <input
+        type="hidden"
+        name="productsOfInterest"
+        value={products.join(", ")}
+      />
+
       {/* Full Name */}
       <div className="space-y-1.5">
         <Label htmlFor="fullName">
@@ -175,9 +233,24 @@ export function ContactForm() {
         />
       </div>
 
+      {errorMessage && (
+        <p
+          className="rounded-md border border-destructive/30 bg-destructive/5 px-4 py-3 text-[13px]"
+          style={{ color: "rgb(160, 50, 40)" }}
+          role="alert"
+        >
+          {errorMessage}
+        </p>
+      )}
+
       {/* Submit */}
-      <Button type="submit" size="lg" className="w-full sm:w-auto">
-        Send Enquiry
+      <Button
+        type="submit"
+        size="lg"
+        className="w-full sm:w-auto"
+        disabled={submitting}
+      >
+        {submitting ? "Sending…" : "Send Enquiry"}
       </Button>
     </form>
   );
