@@ -297,7 +297,7 @@ export default function Home() {
       {/* Ranges section with images */}
       <section id="ranges" style={{ backgroundColor: "rgb(252, 250, 245)" }}>
         <div className="mx-auto max-w-[1440px] px-6 py-20 lg:px-10 lg:py-28">
-          <div className="mb-14">
+          <div className="mb-14 max-w-3xl">
             <p
               className="text-[11px] font-medium uppercase tracking-widest mb-4"
               style={{ color: "rgb(120, 110, 100)" }}
@@ -310,9 +310,15 @@ export default function Home() {
             >
               Good floors start with good products.
             </h2>
+            <p
+              className="mt-5 text-[16px] leading-relaxed"
+              style={{ color: "rgb(82, 75, 68)" }}
+            >
+              These four are what we install most often. We also source from every other vinyl manufacturer available in Australia &mdash; Shaw Contract, Forbo, Polyflor, Gerflor, Amtico, Mannington, Altro, Bolon, and the rest.
+            </p>
           </div>
 
-          <div className="grid gap-5 md:grid-cols-2">
+          <div className="mb-8 grid gap-5 md:grid-cols-2">
             {rangeItems.map((range) => (
               <Link
                 key={range.slug}
@@ -358,6 +364,27 @@ export default function Home() {
               </Link>
             ))}
           </div>
+
+          <Link
+            href="/manufacturers"
+            className="group flex flex-col items-start gap-3 rounded-lg border border-dashed border-[rgb(215,208,198)] p-8 transition-colors hover:bg-[rgb(248,245,237)] sm:flex-row sm:items-center sm:justify-between sm:gap-6 lg:p-10"
+          >
+            <div>
+              <h3 className="text-base font-bold tracking-tight" style={{ color: "rgb(38, 35, 30)" }}>
+                Browse all Australian vinyl manufacturers
+              </h3>
+              <p className="mt-2 text-[14px] leading-relaxed" style={{ color: "rgb(82, 75, 68)" }}>
+                Shaw Contract, Forbo, Polyflor, Gerflor, Amtico, Mannington, Altro, Bolon, Quick-Step, and more &mdash; the full directory we source from.
+              </p>
+            </div>
+            <span
+              className="inline-flex shrink-0 items-center gap-2 text-[13px] font-semibold transition-all duration-200 group-hover:gap-3"
+              style={{ color: "rgb(55, 50, 45)" }}
+            >
+              View Directory
+              <ArrowRight className="size-4" />
+            </span>
+          </Link>
         </div>
       </section>
 
@@ -528,7 +555,7 @@ export default function Home() {
               </h2>
               <div className="mt-8 space-y-6">
                 <p className="text-[16px] leading-relaxed" style={{ color: "rgb(82, 75, 68)" }}>
-                  We supply and install premium commercial vinyl tile flooring across Melbourne, Sydney, and Brisbane. Direct relationships with Interface, Karndean, Armstrong, and Tarkett. Local install crews. One project manager from site inspection through to handover.
+                  We supply and install premium commercial vinyl tile flooring across Melbourne, Sydney, and Brisbane. Direct relationships with Interface, Karndean, Armstrong, and Tarkett &mdash; and we source from every other vinyl manufacturer in Australia, from Shaw Contract and Forbo through to Polyflor, Gerflor, and the specialist brands. Local install crews. One project manager from site inspection through to handover.
                 </p>
                 <p className="text-[16px] leading-relaxed" style={{ color: "rgb(82, 75, 68)" }}>
                   Vinyl tile is all we do here, and we have been doing it for over a decade. If you want a floor specified properly, installed by people who lay vinyl every day, and warranted by a contractor who answers the phone &mdash; that is the offer.

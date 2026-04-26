@@ -70,7 +70,7 @@ export default function Header() {
                 <ChevronDown className="size-3 transition-transform group-hover:rotate-180" />
               </button>
               <div className="pointer-events-none absolute left-0 top-full -translate-y-1 opacity-0 transition-all duration-200 group-hover:pointer-events-auto group-hover:translate-y-0 group-hover:opacity-100">
-                <div className="mt-1 w-52 rounded-md border border-[rgb(230,225,215)] bg-[rgb(252,250,245)] p-1.5 shadow-lg shadow-black/5">
+                <div className="mt-1 w-56 rounded-md border border-[rgb(230,225,215)] bg-[rgb(252,250,245)] p-1.5 shadow-lg shadow-black/5">
                   {ranges.map((item) => (
                     <Link
                       key={item.href}
@@ -85,6 +85,18 @@ export default function Header() {
                       </span>
                     </Link>
                   ))}
+                  <div className="my-1.5 mx-3 h-px bg-[rgb(230,225,215)]" />
+                  <Link
+                    href="/manufacturers"
+                    className="block rounded px-3 py-2.5 transition-colors hover:bg-[rgb(242,238,228)]"
+                  >
+                    <span className="block text-[13px] font-medium text-[rgb(55,50,45)]">
+                      All Manufacturers
+                    </span>
+                    <span className="block text-[11px] text-[rgb(120,110,100)]">
+                      Australian vinyl directory
+                    </span>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -217,6 +229,14 @@ export default function Header() {
                       <span className="block text-[11px] text-[rgb(120,110,100)]">{item.detail}</span>
                     </Link>
                   ))}
+                  <Link
+                    href="/manufacturers"
+                    className="block border-t border-[rgb(230,225,215)] py-2 mt-1 pt-3 transition-colors"
+                    onClick={() => setMobileOpen(false)}
+                  >
+                    <span className="block text-[13px] font-medium text-[rgb(55,50,45)]">All Manufacturers</span>
+                    <span className="block text-[11px] text-[rgb(120,110,100)]">Australian vinyl directory</span>
+                  </Link>
                 </div>
               )}
             </div>

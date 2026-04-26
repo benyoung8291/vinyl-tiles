@@ -213,18 +213,26 @@ export default async function RangePage({ params }: RangePageProps) {
                 Can&apos;t find your product?
               </h2>
               <p className="mt-3 max-w-2xl text-[15px] leading-relaxed" style={{ color: "rgb(82, 75, 68)" }}>
-                We source any product from any brand. If you need a specific
-                vinyl tile product not listed here, get in touch and we&apos;ll
-                find it for you.
+                We source from every vinyl manufacturer available in Australia &mdash; Shaw Contract, Forbo, Polyflor, Gerflor, Amtico, and more. Browse the full directory or get in touch with a specific product in mind.
               </p>
             </div>
-            <Link
-              href="/contact"
-              className="inline-flex items-center gap-2 rounded-md bg-[rgb(55,50,45)] px-6 py-3 text-[14px] font-semibold text-[rgb(252,250,245)] transition-colors hover:bg-[rgb(38,35,30)]"
-            >
-              Submit an Enquiry
-              <ArrowRight className="size-4" />
-            </Link>
+            <div className="flex flex-wrap gap-3">
+              <Link
+                href="/manufacturers"
+                className="inline-flex items-center gap-2 rounded-md border border-[rgb(230,225,215)] bg-[rgb(252,250,245)] px-6 py-3 text-[14px] font-semibold transition-colors hover:bg-[rgb(242,238,228)]"
+                style={{ color: "rgb(55, 50, 45)" }}
+              >
+                Browse All Manufacturers
+                <ArrowRight className="size-4" />
+              </Link>
+              <Link
+                href="/contact"
+                className="inline-flex items-center gap-2 rounded-md bg-[rgb(55,50,45)] px-6 py-3 text-[14px] font-semibold text-[rgb(252,250,245)] transition-colors hover:bg-[rgb(38,35,30)]"
+              >
+                Submit an Enquiry
+                <ArrowRight className="size-4" />
+              </Link>
+            </div>
           </div>
         </div>
       </section>

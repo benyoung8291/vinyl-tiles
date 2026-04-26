@@ -2,10 +2,11 @@ import Link from "next/link";
 import { ArrowRight } from "lucide-react";
 
 const ranges = [
-  { name: "Interface", slug: "interface" },
-  { name: "Karndean", slug: "karndean" },
-  { name: "Armstrong", slug: "armstrong" },
-  { name: "Tarkett", slug: "tarkett" },
+  { name: "Interface", href: "/ranges/interface" },
+  { name: "Karndean", href: "/ranges/karndean" },
+  { name: "Armstrong", href: "/ranges/armstrong" },
+  { name: "Tarkett", href: "/ranges/tarkett" },
+  { name: "All Manufacturers", href: "/manufacturers" },
 ];
 
 const resources = [
@@ -43,7 +44,7 @@ export default function Footer() {
               className="mt-5 max-w-sm text-[13px] leading-relaxed"
               style={{ color: "rgb(120, 110, 100)" }}
             >
-              Commercial vinyl tile flooring supplied and installed across Melbourne, Sydney, and Brisbane. LVT, vinyl plank, and VCT from Interface, Karndean, Armstrong, and Tarkett &mdash; specified properly and installed to last.
+              Commercial vinyl tile flooring supplied and installed across Melbourne, Sydney, and Brisbane. LVT, vinyl plank, and VCT from Interface, Karndean, Armstrong, Tarkett, Shaw Contract, Forbo, Polyflor, Gerflor and every other manufacturer worth specifying in Australia &mdash; sourced properly and installed to last.
             </p>
             <div className="mt-5 space-y-1.5">
               <a
@@ -80,9 +81,9 @@ export default function Footer() {
             </h3>
             <ul className="space-y-2.5">
               {ranges.map((range) => (
-                <li key={range.slug}>
+                <li key={range.href}>
                   <Link
-                    href={`/ranges/${range.slug}`}
+                    href={range.href}
                     className="text-[13px] text-[rgb(82,75,68)] transition-colors hover:text-[rgb(38,35,30)]"
                   >
                     {range.name}
