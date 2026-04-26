@@ -12,6 +12,7 @@ const resources = [
   { name: "Why Vinyl Tiles?", href: "/why-vinyl-tiles" },
   { name: "How We Work", href: "/how-we-work" },
   { name: "Premium Residential", href: "/residential" },
+  { name: "Sustainable Alternative", href: "/sustainable-alternative" },
   { name: "Contact", href: "/contact" },
 ];
 

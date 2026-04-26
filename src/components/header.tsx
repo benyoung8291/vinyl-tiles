@@ -11,15 +11,22 @@ const ranges = [
   { label: "Tarkett", href: "/ranges/tarkett", detail: "Sustainable flooring" },
 ];
 
-const solutions = [
+const audienceSolutions = [
   { label: "Facility Managers", href: "/contact?audience=facility-manager" },
   { label: "Property Owners", href: "/contact?audience=property-owner" },
   { label: "Premium Homeowners", href: "/residential" },
+];
+
+const sectorSolutions = [
   { label: "Office", href: "/office-flooring" },
   { label: "Retail", href: "/retail-flooring" },
   { label: "Healthcare", href: "/healthcare-flooring" },
   { label: "Education", href: "/education-flooring" },
   { label: "Hospitality", href: "/hospitality-flooring" },
+];
+
+const alternativeSolutions = [
+  { label: "Sustainable Alternative (Cork)", href: "/sustainable-alternative" },
 ];
 
 export default function Header() {
@@ -101,11 +108,11 @@ export default function Header() {
                 <ChevronDown className="size-3 transition-transform group-hover:rotate-180" />
               </button>
               <div className="pointer-events-none absolute left-0 top-full -translate-y-1 opacity-0 transition-all duration-200 group-hover:pointer-events-auto group-hover:translate-y-0 group-hover:opacity-100">
-                <div className="mt-1 w-56 rounded-md border border-[rgb(230,225,215)] bg-[rgb(252,250,245)] p-1.5 shadow-lg shadow-black/5">
+                <div className="mt-1 w-60 rounded-md border border-[rgb(230,225,215)] bg-[rgb(252,250,245)] p-1.5 shadow-lg shadow-black/5">
                   <p className="px-3 pt-1.5 pb-1 text-[10px] font-medium uppercase tracking-widest" style={{ color: "rgb(170, 163, 153)" }}>
                     By Audience
                   </p>
-                  {solutions.slice(0, 3).map((item) => (
+                  {audienceSolutions.map((item) => (
                     <Link
                       key={item.href}
                       href={item.href}
@@ -118,7 +125,20 @@ export default function Header() {
                   <p className="px-3 pt-1 pb-1 text-[10px] font-medium uppercase tracking-widest" style={{ color: "rgb(170, 163, 153)" }}>
                     By Sector
                   </p>
-                  {solutions.slice(3).map((item) => (
+                  {sectorSolutions.map((item) => (
+                    <Link
+                      key={item.href}
+                      href={item.href}
+                      className="block rounded px-3 py-2 text-[13px] font-medium text-[rgb(55,50,45)] transition-colors hover:bg-[rgb(242,238,228)]"
+                    >
+                      {item.label}
+                    </Link>
+                  ))}
+                  <div className="my-1.5 mx-3 h-px bg-[rgb(230,225,215)]" />
+                  <p className="px-3 pt-1 pb-1 text-[10px] font-medium uppercase tracking-widest" style={{ color: "rgb(170, 163, 153)" }}>
+                    Alternatives
+                  </p>
+                  {alternativeSolutions.map((item) => (
                     <Link
                       key={item.href}
                       href={item.href}
@@ -232,7 +252,7 @@ export default function Header() {
                   <p className="pt-1 pb-1 text-[10px] font-medium uppercase tracking-widest" style={{ color: "rgb(170, 163, 153)" }}>
                     By Audience
                   </p>
-                  {solutions.slice(0, 3).map((item) => (
+                  {audienceSolutions.map((item) => (
                     <Link
                       key={item.href}
                       href={item.href}
@@ -245,7 +265,20 @@ export default function Header() {
                   <p className="mt-2 pt-1 pb-1 text-[10px] font-medium uppercase tracking-widest" style={{ color: "rgb(170, 163, 153)" }}>
                     By Sector
                   </p>
-                  {solutions.slice(3).map((item) => (
+                  {sectorSolutions.map((item) => (
+                    <Link
+                      key={item.href}
+                      href={item.href}
+                      className="block py-2 text-[13px] font-medium text-[rgb(55,50,45)] transition-colors hover:text-[rgb(82,75,68)]"
+                      onClick={() => setMobileOpen(false)}
+                    >
+                      {item.label}
+                    </Link>
+                  ))}
+                  <p className="mt-2 pt-1 pb-1 text-[10px] font-medium uppercase tracking-widest" style={{ color: "rgb(170, 163, 153)" }}>
+                    Alternatives
+                  </p>
+                  {alternativeSolutions.map((item) => (
                     <Link
                       key={item.href}
                       href={item.href}

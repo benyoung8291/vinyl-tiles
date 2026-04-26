@@ -23,6 +23,7 @@ const productOptions = [
   "Karndean",
   "Armstrong",
   "Tarkett",
+  "Comcork (cork & rubber)",
   "Other",
   "Not Sure",
 ];
@@ -32,6 +33,7 @@ const RANGE_TO_PRODUCT: Record<string, string> = {
   karndean: "Karndean",
   armstrong: "Armstrong",
   tarkett: "Tarkett",
+  comcork: "Comcork (cork & rubber)",
 };
 
 export function ContactForm() {
