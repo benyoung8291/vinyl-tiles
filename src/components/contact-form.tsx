@@ -24,16 +24,19 @@ const productOptions = [
   "Armstrong",
   "Tarkett",
   "Comcork (cork & rubber)",
+  "Nora (rubber by Interface)",
   "Other",
   "Not Sure",
 ];
 
-const RANGE_TO_PRODUCT: Record<string, string> = {
-  interface: "Interface",
-  karndean: "Karndean",
-  armstrong: "Armstrong",
-  tarkett: "Tarkett",
-  comcork: "Comcork (cork & rubber)",
+const RANGE_TO_PRODUCTS: Record<string, string[]> = {
+  interface: ["Interface"],
+  karndean: ["Karndean"],
+  armstrong: ["Armstrong"],
+  tarkett: ["Tarkett"],
+  comcork: ["Comcork (cork & rubber)"],
+  nora: ["Nora (rubber by Interface)"],
+  alternatives: ["Comcork (cork & rubber)", "Nora (rubber by Interface)"],
 };
 
 export function ContactForm() {
@@ -51,8 +54,9 @@ export function ContactForm() {
     const audience = searchParams.get("audience");
     const intent = searchParams.get("intent");
 
-    if (range && RANGE_TO_PRODUCT[range]) {
-      setProducts([RANGE_TO_PRODUCT[range]]);
+    const mappedProducts = range ? RANGE_TO_PRODUCTS[range] : undefined;
+    if (mappedProducts) {
+      setProducts(mappedProducts);
     }
 
     const lines: string[] = [];
@@ -60,9 +64,11 @@ export function ContactForm() {
       lines.push("I'd like to request samples.");
     }
     if (product && range) {
-      lines.push(`Product of interest: ${product} by ${RANGE_TO_PRODUCT[range] ?? range}.`);
-    } else if (range && RANGE_TO_PRODUCT[range]) {
-      lines.push(`Range of interest: ${RANGE_TO_PRODUCT[range]}.`);
+      lines.push(`Product of interest: ${product} by ${mappedProducts?.[0] ?? range}.`);
+    } else if (range === "alternatives") {
+      lines.push("Range of interest: PVC-free alternatives (Comcork and/or Nora).");
+    } else if (mappedProducts) {
+      lines.push(`Range of interest: ${mappedProducts.join(", ")}.`);
     }
     if (sector) {
       lines.push(`Sector: ${sector.replace(/-flooring$/, "").replace(/-/g, " ")}.`);

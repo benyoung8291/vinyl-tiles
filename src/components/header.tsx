@@ -26,7 +26,9 @@ const sectorSolutions = [
 ];
 
 const alternativeSolutions = [
-  { label: "Sustainable Alternative (Cork)", href: "/sustainable-alternative" },
+  { label: "Comcork (Cork & Rubber)", href: "/sustainable-alternative#comcork" },
+  { label: "Nora (Rubber by Interface)", href: "/sustainable-alternative#nora" },
+  { label: "Compare Alternatives", href: "/sustainable-alternative" },
 ];
 
 export default function Header() {
