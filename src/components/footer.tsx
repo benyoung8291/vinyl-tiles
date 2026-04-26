@@ -61,14 +61,8 @@ export default function Footer() {
         <div className="grid grid-cols-1 gap-10 md:grid-cols-2 lg:grid-cols-[1.4fr_1fr_1fr_1fr_1fr] lg:gap-8">
           {/* Brand column */}
           <div className="lg:pr-6">
-            <Link href="/" className="inline-flex flex-col gap-3">
+            <Link href="/" className="inline-block">
               <img src="/images/brand/premrest-logo.svg" alt="Premrest" className="h-6 w-auto" />
-              <span
-                className="text-[10px] font-medium uppercase tracking-widest"
-                style={{ color: "rgb(120, 110, 100)" }}
-              >
-                Vinyl Tiles Division
-              </span>
             </Link>
             <p
               className="mt-5 max-w-xs text-[13px] leading-relaxed"

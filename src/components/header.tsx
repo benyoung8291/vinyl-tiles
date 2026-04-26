@@ -48,11 +48,8 @@ export default function Header() {
       >
         <div className="mx-auto flex h-full max-w-[1440px] items-center justify-between px-6 lg:px-10">
           {/* Logo */}
-          <Link href="/" className="flex items-center gap-3 flex-shrink-0">
-            <img src="/images/brand/premrest-logo.svg" alt="Premrest" className="h-5 w-auto" />
-            <span className="hidden sm:inline text-[10px] font-medium uppercase tracking-widest border-l border-[rgb(230,225,215)] pl-3" style={{ color: "rgb(120, 110, 100)" }}>
-              Vinyl Tiles
-            </span>
+          <Link href="/" className="flex items-center flex-shrink-0">
+            <img src="/images/brand/premrest-logo.svg" alt="Premrest" className="h-5 lg:h-6 w-auto" />
           </Link>
 
           {/* Desktop Nav — clean horizontal links like microsoft.ai */}
