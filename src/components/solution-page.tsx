@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { ArrowRight } from "lucide-react";
+import { ArrowRight, Phone } from "lucide-react";
 import { QuoteCta } from "@/components/quote-cta";
 import type { Solution } from "@/lib/solutions";
 import { solutions } from "@/lib/solutions";
@@ -116,6 +116,39 @@ export function SolutionPage({ solution }: SolutionPageProps) {
                 </p>
               </div>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Inline enquiry strip */}
+      <section className="border-y border-[rgb(230,225,215)]" style={{ backgroundColor: "rgb(252, 250, 245)" }}>
+        <div className="mx-auto max-w-[1440px] px-6 py-10 md:py-12 lg:px-10">
+          <div className="flex flex-col items-start gap-5 md:flex-row md:items-center md:justify-between">
+            <div className="flex-1">
+              <p className="text-[11px] font-medium uppercase tracking-widest mb-2" style={{ color: "rgb(120, 110, 100)" }}>
+                Specifying for {solution.title.replace(/^Vinyl Tile Flooring for /, "").toLowerCase()}?
+              </p>
+              <p className="text-[16px] font-semibold tracking-tight" style={{ color: "rgb(38, 35, 30)" }}>
+                Tell us the building, the brief, the timeline. We respond within one business day.
+              </p>
+            </div>
+            <div className="flex flex-wrap items-center gap-3">
+              <a
+                href="tel:1300207915"
+                className="inline-flex items-center gap-2 rounded-md border border-[rgb(230,225,215)] px-5 py-2.5 text-[13px] font-medium transition-colors hover:bg-[rgb(248,245,237)]"
+                style={{ color: "rgb(55, 50, 45)" }}
+              >
+                <Phone className="size-3.5" />
+                1300 207 915
+              </a>
+              <Link
+                href={`/contact?sector=${solution.slug}`}
+                className="inline-flex items-center gap-2 rounded-md bg-[rgb(55,50,45)] px-5 py-2.5 text-[13px] font-semibold text-[rgb(252,250,245)] transition-colors hover:bg-[rgb(38,35,30)]"
+              >
+                Submit an Enquiry
+                <ArrowRight className="size-3.5" />
+              </Link>
+            </div>
           </div>
         </div>
       </section>

@@ -1,6 +1,7 @@
 "use client";
 
-import { useState, type FormEvent } from "react";
+import { useEffect, useState, type FormEvent } from "react";
+import { useSearchParams } from "next/navigation";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
@@ -26,11 +27,51 @@ const productOptions = [
   "Not Sure",
 ];
 
+const RANGE_TO_PRODUCT: Record<string, string> = {
+  interface: "Interface",
+  karndean: "Karndean",
+  armstrong: "Armstrong",
+  tarkett: "Tarkett",
+};
+
 export function ContactForm() {
+  const searchParams = useSearchParams();
   const [submitted, setSubmitted] = useState(false);
   const [submitting, setSubmitting] = useState(false);
   const [errorMessage, setErrorMessage] = useState<string | null>(null);
   const [products, setProducts] = useState<string[]>([]);
+  const [defaultMessage, setDefaultMessage] = useState("");
+
+  useEffect(() => {
+    const range = searchParams.get("range");
+    const product = searchParams.get("product");
+    const sector = searchParams.get("sector");
+    const audience = searchParams.get("audience");
+    const intent = searchParams.get("intent");
+
+    if (range && RANGE_TO_PRODUCT[range]) {
+      setProducts([RANGE_TO_PRODUCT[range]]);
+    }
+
+    const lines: string[] = [];
+    if (intent === "samples") {
+      lines.push("I'd like to request samples.");
+    }
+    if (product && range) {
+      lines.push(`Product of interest: ${product} by ${RANGE_TO_PRODUCT[range] ?? range}.`);
+    } else if (range && RANGE_TO_PRODUCT[range]) {
+      lines.push(`Range of interest: ${RANGE_TO_PRODUCT[range]}.`);
+    }
+    if (sector) {
+      lines.push(`Sector: ${sector.replace(/-flooring$/, "").replace(/-/g, " ")}.`);
+    }
+    if (audience) {
+      lines.push(`I'm a ${audience.replace(/-/g, " ")}.`);
+    }
+    if (lines.length > 0) {
+      setDefaultMessage(lines.join("\n") + "\n\n");
+    }
+  }, [searchParams]);
 
   function handleProductToggle(product: string, checked: boolean) {
     setProducts((prev) =>
@@ -230,6 +271,8 @@ export function ContactForm() {
           name="message"
           placeholder="Tell us about your project, timeline, or any questions you have..."
           className="min-h-28"
+          defaultValue={defaultMessage}
+          key={defaultMessage}
         />
       </div>
 

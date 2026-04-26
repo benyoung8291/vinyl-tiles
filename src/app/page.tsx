@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
-import { ArrowRight, ArrowUpRight } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 import { QuoteCta } from "@/components/quote-cta";
 
 const rangeItems = [
@@ -518,63 +518,45 @@ export default function Home() {
                 className="text-[11px] font-medium uppercase tracking-widest mb-4"
                 style={{ color: "rgb(120, 110, 100)" }}
               >
-                About Premrest
+                Who We Are
               </p>
               <h2
                 className="text-[clamp(1.75rem,4vw,2.75rem)] font-bold leading-tight tracking-tight"
                 style={{ color: "rgb(38, 35, 30)" }}
               >
-                Premium flooring. One accountable partner.
+                Vinyl tile specialists. One accountable partner.
               </h2>
               <div className="mt-8 space-y-6">
                 <p className="text-[16px] leading-relaxed" style={{ color: "rgb(82, 75, 68)" }}>
-                  Vinyl Tiles is a division of{" "}
-                  <a
-                    href="https://www.premrest.com.au"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="underline decoration-[rgb(200,195,185)] underline-offset-4 transition-colors hover:text-[rgb(38,35,30)]"
-                  >
-                    Premrest
-                  </a>
-                  {" "}&mdash; one of Australia&apos;s established premium commercial flooring companies. We have been delivering specified, installed, and warranted floors since 2010 across Melbourne, Sydney, and Brisbane.
+                  We supply and install premium commercial vinyl tile flooring across Melbourne, Sydney, and Brisbane. Direct relationships with Interface, Karndean, Armstrong, and Tarkett. Local install crews. One project manager from site inspection through to handover.
                 </p>
                 <p className="text-[16px] leading-relaxed" style={{ color: "rgb(82, 75, 68)" }}>
-                  Need carpet tile instead? Visit our sister brand{" "}
-                  <a
-                    href="https://modularcarpet.com.au"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="underline decoration-[rgb(200,195,185)] underline-offset-4 transition-colors hover:text-[rgb(38,35,30)]"
-                  >
-                    Modular Carpet
-                  </a>
-                  . Quieter, warmer hard floor? Our cork hybrid range lives at{" "}
-                  <a
-                    href="https://comcorkflooring.com.au"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="underline decoration-[rgb(200,195,185)] underline-offset-4 transition-colors hover:text-[rgb(38,35,30)]"
-                  >
-                    Comcork Flooring
-                  </a>
-                  . Three product specialisations, one team standing behind the work.
+                  Vinyl tile is all we do here, and we have been doing it for over a decade. If you want a floor specified properly, installed by people who lay vinyl every day, and warranted by a contractor who answers the phone &mdash; that is the offer.
                 </p>
-                <Link
-                  href="/how-we-work"
-                  className="inline-flex items-center gap-2 text-[13px] font-semibold transition-colors hover:text-[rgb(38,35,30)]"
-                  style={{ color: "rgb(55, 50, 45)" }}
-                >
-                  Learn how we work
-                  <ArrowUpRight className="size-3.5" />
-                </Link>
+                <div className="flex flex-wrap gap-3 pt-2">
+                  <Link
+                    href="/contact"
+                    className="inline-flex items-center justify-center gap-2 rounded-md bg-[rgb(55,50,45)] px-6 py-3 text-[14px] font-semibold text-[rgb(252,250,245)] transition-colors hover:bg-[rgb(38,35,30)]"
+                  >
+                    Book a Site Inspection
+                    <ArrowRight className="size-4" />
+                  </Link>
+                  <Link
+                    href="/how-we-work"
+                    className="inline-flex items-center gap-2 rounded-md border border-[rgb(230,225,215)] px-6 py-3 text-[14px] font-medium transition-colors hover:bg-[rgb(242,238,228)]"
+                    style={{ color: "rgb(55, 50, 45)" }}
+                  >
+                    Learn how we work
+                    <ArrowRight className="size-3.5" />
+                  </Link>
+                </div>
               </div>
             </div>
             <div className="relative hidden lg:block">
               <div className="relative aspect-[4/3] overflow-hidden rounded-xl">
                 <Image
                   src="/images/hero/sustainability-blob.webp"
-                  alt="Premrest team at work on a commercial flooring project"
+                  alt="Commercial vinyl tile install in progress"
                   fill
                   className="object-cover"
                 />
@@ -588,68 +570,6 @@ export default function Home() {
                 aria-hidden="true"
               />
             </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Sister brands */}
-      <section className="border-y border-[rgb(230,225,215)]" style={{ backgroundColor: "rgb(248, 245, 237)" }}>
-        <div className="mx-auto max-w-[1440px] px-6 py-20 lg:px-10 lg:py-24">
-          <div className="mb-12 max-w-3xl">
-            <p className="text-[11px] font-medium uppercase tracking-widest mb-4" style={{ color: "rgb(120, 110, 100)" }}>
-              Other Floor Types
-            </p>
-            <h2 className="text-[clamp(1.75rem,4vw,2.75rem)] font-bold leading-tight tracking-tight" style={{ color: "rgb(38, 35, 30)" }}>
-              Vinyl is one part of a bigger flooring offer.
-            </h2>
-            <p className="mt-5 text-[16px] leading-relaxed" style={{ color: "rgb(82, 75, 68)" }}>
-              Specifying a multi-floor project? Our sister brands cover carpet tile and cork hybrid, with the same supply-and-install model and the same Premrest team behind them.
-            </p>
-          </div>
-          <div className="grid gap-5 md:grid-cols-3">
-            {[
-              {
-                name: "Modular Carpet",
-                tag: "Carpet Tile",
-                url: "https://modularcarpet.com.au",
-                desc: "The Premrest carpet tile specialist. Office, hospitality, and education portfolios with the same supply-and-install accountability.",
-              },
-              {
-                name: "Comcork Flooring",
-                tag: "Cork Hybrid",
-                url: "https://comcorkflooring.com.au",
-                desc: "Quieter, warmer, and more forgiving than vinyl. Premium cork hybrid hardfloor for residences, wellness spaces, and acoustic-sensitive offices.",
-              },
-              {
-                name: "Premrest",
-                tag: "Group Site",
-                url: "https://www.premrest.com.au",
-                desc: "The parent business. Commercial flooring, restoration, and installation services across every state and territory.",
-              },
-            ].map((brand) => (
-              <a
-                key={brand.url}
-                href={brand.url}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="group flex flex-col rounded-lg border border-[rgb(230,225,215)] p-7 transition-all duration-200 hover:border-[rgb(200,195,185)] hover:shadow-sm"
-                style={{ backgroundColor: "rgb(252, 250, 245)" }}
-              >
-                <p className="text-[11px] font-medium uppercase tracking-widest mb-3" style={{ color: "rgb(120, 110, 100)" }}>
-                  {brand.tag}
-                </p>
-                <h3 className="text-lg font-bold tracking-tight" style={{ color: "rgb(38, 35, 30)" }}>
-                  {brand.name}
-                </h3>
-                <p className="mt-3 flex-1 text-[14px] leading-relaxed" style={{ color: "rgb(82, 75, 68)" }}>
-                  {brand.desc}
-                </p>
-                <span className="mt-5 inline-flex items-center gap-2 text-[12px] font-semibold uppercase tracking-wide transition-all duration-200 group-hover:gap-3" style={{ color: "rgb(55, 50, 45)" }}>
-                  Visit site
-                  <ArrowUpRight className="size-3.5" />
-                </span>
-              </a>
-            ))}
           </div>
         </div>
       </section>

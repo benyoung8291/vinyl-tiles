@@ -6,9 +6,10 @@ import { notFound } from "next/navigation";
 const solution = getSolutionBySlug("retail-flooring");
 
 export const metadata: Metadata = {
-  title: solution?.title,
+  title: "Retail Vinyl Tile Flooring Australia | Showroom & Store LVT Supply & Install",
+  alternates: { canonical: "/retail-flooring" },
   description:
-    "High-traffic vinyl tile flooring for retail stores and showrooms. Scratch-resistant, design-led, and quick to install. Commercial supply and installation Australia-wide.",
+    "Heavy-commercial vinyl tile flooring for retail stores, showrooms, and supermarkets. Scratch resistant, design-led, fast install. Supply and install across Melbourne, Sydney, and Brisbane.",
 };
 
 export default function RetailFlooringPage() {

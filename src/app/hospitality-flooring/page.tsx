@@ -6,9 +6,10 @@ import { notFound } from "next/navigation";
 const solution = getSolutionBySlug("hospitality-flooring");
 
 export const metadata: Metadata = {
-  title: solution?.title,
+  title: "Hotel, Restaurant & Bar Vinyl Tile Flooring Australia | Hospitality LVT Supply & Install",
+  alternates: { canonical: "/hospitality-flooring" },
   description:
-    "Stylish, durable vinyl tile flooring for hotels, restaurants, and bars. Water-resistant, design-led, and acoustically comfortable. Supply and installation Australia-wide.",
+    "Designer vinyl tile flooring for hotels, restaurants, bars, and resorts. Waterproof, slip-rated, and acoustically comfortable. Supply and install across Melbourne, Sydney, and Brisbane.",
 };
 
 export default function HospitalityFlooringPage() {

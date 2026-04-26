@@ -25,9 +25,16 @@ export async function generateMetadata({
     return { title: "Range Not Found" };
   }
 
+  const productCount = range.products.length;
+  const colourCount = range.products.reduce(
+    (n, p) => n + p.colourways.length,
+    0,
+  );
+
   return {
-    title: `${range.name} Commercial Vinyl Flooring`,
-    description: `${range.name} luxury vinyl tile flooring — ${range.tagline} Explore specs, features, and get a free quote for your commercial project.`,
+    title: `${range.name} Vinyl Tile Flooring Australia | LVT Supply & Install`,
+    alternates: { canonical: `/ranges/${range.slug}` },
+    description: `${range.name} commercial vinyl tile flooring — ${productCount} ranges, ${colourCount}+ colourways. Supplied and installed across Melbourne, Sydney, and Brisbane. Free site inspection on every quote.`,
   };
 }
 
@@ -68,10 +75,10 @@ export default async function RangePage({ params }: RangePageProps) {
               </p>
               <div className="flex flex-wrap gap-3">
                 <Link
-                  href="/contact"
+                  href={`/contact?range=${range.slug}`}
                   className="inline-flex items-center justify-center rounded-md bg-[rgb(55,50,45)] px-6 py-3 text-[14px] font-semibold text-[rgb(252,250,245)] transition-colors hover:bg-[rgb(38,35,30)]"
                 >
-                  Get a Quote
+                  Request a Quote
                 </Link>
                 <a
                   href={range.manufacturerUrl}
@@ -215,7 +222,7 @@ export default async function RangePage({ params }: RangePageProps) {
               href="/contact"
               className="inline-flex items-center gap-2 rounded-md bg-[rgb(55,50,45)] px-6 py-3 text-[14px] font-semibold text-[rgb(252,250,245)] transition-colors hover:bg-[rgb(38,35,30)]"
             >
-              Get in Touch
+              Submit an Enquiry
               <ArrowRight className="size-4" />
             </Link>
           </div>
@@ -225,7 +232,9 @@ export default async function RangePage({ params }: RangePageProps) {
       {/* Quote CTA */}
       <QuoteCta
         title={`Specify ${range.name} for your project`}
-        description={`Get expert advice and a no-obligation quote for ${range.name} commercial vinyl tile flooring.`}
+        description={`Submit an enquiry and we'll come back with samples, a written quote, and a free site inspection across Melbourne, Sydney, or Brisbane.`}
+        buttonText="Submit an Enquiry"
+        buttonHref={`/contact?range=${range.slug}`}
       />
 
       {/* Explore Other Ranges */}

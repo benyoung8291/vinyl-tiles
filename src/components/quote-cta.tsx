@@ -10,8 +10,8 @@ interface QuoteCtaProps {
 
 export function QuoteCta({
   title = "Let\u2019s sort your floor out.",
-  description = "Tell us what you need. We\u2019ll come back with a quote and a plan.",
-  buttonText = "Get a Quote",
+  description = "Submit an enquiry. We respond within one business day, book a free site inspection in Melbourne, Sydney, or Brisbane, and follow up with a written quote.",
+  buttonText = "Submit an Enquiry",
   buttonHref = "/contact",
 }: QuoteCtaProps) {
   return (

@@ -6,9 +6,10 @@ import { notFound } from "next/navigation";
 const solution = getSolutionBySlug("education-flooring");
 
 export const metadata: Metadata = {
-  title: solution?.title,
+  title: "School & University Vinyl Tile Flooring Australia | Education LVT Supply & Install",
+  alternates: { canonical: "/education-flooring" },
   description:
-    "Safe, durable vinyl tile flooring for schools and universities. Acoustic performance, slip safety, and budget-friendly lifecycle cost. Supply and installation Australia-wide.",
+    "Heavy-commercial vinyl tile flooring for schools, universities, and TAFEs. Acoustic backing, R10 slip rating, low lifecycle cost. Supply and install across Melbourne, Sydney, and Brisbane.",
 };
 
 export default function EducationFlooringPage() {

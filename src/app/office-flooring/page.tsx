@@ -6,9 +6,10 @@ import { notFound } from "next/navigation";
 const solution = getSolutionBySlug("office-flooring");
 
 export const metadata: Metadata = {
-  title: solution?.title,
+  title: "Office Vinyl Tile Flooring Melbourne, Sydney & Brisbane | Commercial LVT",
+  alternates: { canonical: "/office-flooring" },
   description:
-    "Durable, professional vinyl tile flooring for offices and corporate fitouts. Acoustic performance, design flexibility, and low lifecycle cost. Supply and installation Australia-wide.",
+    "Acoustic, durable vinyl tile flooring for offices and corporate fitouts. Supply and install across Melbourne, Sydney, and Brisbane. Free site inspection on every quote.",
 };
 
 export default function OfficeFlooringPage() {
