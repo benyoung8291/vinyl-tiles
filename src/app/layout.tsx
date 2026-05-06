@@ -83,10 +83,38 @@ const localBusinessJsonLd = {
     "@type": "OfferCatalog",
     name: "Commercial Vinyl Tile Ranges",
     itemListElement: [
-      { "@type": "Offer", itemOffered: { "@type": "Product", name: "Interface LVT" } },
-      { "@type": "Offer", itemOffered: { "@type": "Product", name: "Karndean LVT" } },
-      { "@type": "Offer", itemOffered: { "@type": "Product", name: "Armstrong Vinyl Flooring" } },
-      { "@type": "Offer", itemOffered: { "@type": "Product", name: "Tarkett iD Collection" } },
+      {
+        "@type": "Offer",
+        itemOffered: {
+          "@type": "Service",
+          name: "Interface LVT Supply & Installation",
+          serviceType: "Commercial Flooring Supply and Installation",
+        },
+      },
+      {
+        "@type": "Offer",
+        itemOffered: {
+          "@type": "Service",
+          name: "Karndean LVT Supply & Installation",
+          serviceType: "Commercial Flooring Supply and Installation",
+        },
+      },
+      {
+        "@type": "Offer",
+        itemOffered: {
+          "@type": "Service",
+          name: "Armstrong Vinyl Flooring Supply & Installation",
+          serviceType: "Commercial Flooring Supply and Installation",
+        },
+      },
+      {
+        "@type": "Offer",
+        itemOffered: {
+          "@type": "Service",
+          name: "Tarkett iD Collection Supply & Installation",
+          serviceType: "Commercial Flooring Supply and Installation",
+        },
+      },
     ],
   },
 };
