@@ -8,11 +8,13 @@ import {
   CheckCircle2,
 } from "lucide-react";
 import { QuoteCta } from "@/components/quote-cta";
+import { selfCanonical } from "@/lib/seo";
 
 export const metadata: Metadata = {
   title: "How We Work | Our Process from Consultation to Installation",
   description:
     "From enquiry to finished floor — discover how Vinyl Tiles by Premrest delivers commercial vinyl tile supply and installation across Australia. Free consultation, competitive pricing, professional results.",
+  ...selfCanonical("/how-we-work"),
 };
 
 const steps = [
