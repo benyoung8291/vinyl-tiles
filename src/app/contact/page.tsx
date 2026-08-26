@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
-import { Suspense } from "react";
 import { Phone, Mail, Clock, Building2 } from "lucide-react";
-import { ContactForm } from "@/components/contact-form";
+import { ContactForm, type ContactQuery } from "@/components/contact-form";
 
 export const metadata: Metadata = {
   title: "Vinyl Tile Flooring Quotes | Book a Free Site Inspection",
@@ -10,7 +9,33 @@ export const metadata: Metadata = {
     "Get a written quote for commercial vinyl tile supply and install across Melbourne, Sydney, and Brisbane. Every quote follows a free site inspection. Call 1300 207 915 or submit an enquiry.",
 };
 
-export default function ContactPage() {
+type ContactSearchParams = {
+  range?: string | string[];
+  product?: string | string[];
+  sector?: string | string[];
+  audience?: string | string[];
+  intent?: string | string[];
+};
+
+function firstParam(value: string | string[] | undefined): string | undefined {
+  if (Array.isArray(value)) return value[0];
+  return value || undefined;
+}
+
+export default async function ContactPage({
+  searchParams,
+}: {
+  searchParams: Promise<ContactSearchParams>;
+}) {
+  const raw = await searchParams;
+  const query: ContactQuery = {
+    range: firstParam(raw.range),
+    product: firstParam(raw.product),
+    sector: firstParam(raw.sector),
+    audience: firstParam(raw.audience),
+    intent: firstParam(raw.intent),
+  };
+
   return (
     <>
       {/* Hero */}
@@ -26,13 +51,16 @@ export default function ContactPage() {
             className="text-[clamp(2.25rem,5vw,3.5rem)] max-w-3xl leading-tight font-bold tracking-tight mb-5"
             style={{ color: "rgb(38, 35, 30)" }}
           >
-            Every quote starts with a site visit.
+            Get a vinyl tile quote. Book a free site inspection.
           </h1>
           <p
             className="text-lg md:text-xl max-w-2xl leading-relaxed"
             style={{ color: "rgb(82, 75, 68)" }}
           >
-            Tell us about the building, the brief, and the timeline. Whether you are a facility manager, property owner, or homeowner, we book a free site inspection in Melbourne, Sydney, or Brisbane and follow up with a written quote within 48 hours.
+            Tell us the building, the brief, and the timeline. We inspect in Melbourne, Sydney, or Brisbane and send a written quote within 48 hours. Or call{" "}
+            <a href="tel:1300207915" className="underline decoration-[rgb(200,195,185)] underline-offset-4 transition-colors hover:text-[rgb(38,35,30)]">
+              1300 207 915
+            </a>.
           </p>
         </div>
       </section>
@@ -47,12 +75,10 @@ export default function ContactPage() {
                 className="text-[11px] font-medium uppercase tracking-widest mb-8"
                 style={{ color: "rgb(120, 110, 100)" }}
               >
-                Your Project Details
+                Your project details
               </p>
               <div className="space-y-6">
-                <Suspense fallback={<div className="h-96" />}>
-                  <ContactForm />
-                </Suspense>
+                <ContactForm query={query} />
               </div>
             </div>
 

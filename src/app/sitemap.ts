@@ -2,7 +2,7 @@ import type { MetadataRoute } from "next";
 import { ranges } from "@/lib/ranges";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = "https://vinyltiles.com.au";
+  const baseUrl = "https://www.vinyltiles.com.au";
   const lastModified = new Date();
 
   const staticPages: MetadataRoute.Sitemap = [

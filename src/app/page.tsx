@@ -124,7 +124,7 @@ export default function Home() {
                 className="text-[clamp(2.5rem,6vw,4.5rem)] font-bold leading-[1.08] tracking-tight"
                 style={{ color: "rgb(38, 35, 30)" }}
               >
-                Premium vinyl tile, specified properly and installed to last.
+                Commercial vinyl tile flooring for Melbourne, Sydney and Brisbane.
               </h1>
               <p
                 className="mt-8 max-w-2xl text-lg leading-relaxed"

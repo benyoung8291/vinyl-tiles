@@ -25,12 +25,12 @@ export const metadata: Metadata = {
     "Armstrong vinyl flooring",
     "Tarkett iD Inspiration",
   ],
-  metadataBase: new URL("https://vinyltiles.com.au"),
+  metadataBase: new URL("https://www.vinyltiles.com.au"),
   alternates: { canonical: "/" },
   openGraph: {
     type: "website",
     locale: "en_AU",
-    url: "https://vinyltiles.com.au",
+    url: "https://www.vinyltiles.com.au",
     siteName: "Vinyl Tiles Australia",
     title: "Commercial Vinyl Tile Flooring Australia | LVT Supply & Install",
     description:
@@ -53,8 +53,8 @@ const localBusinessJsonLd = {
   "@type": "FlooringContractor",
   name: "Vinyl Tiles Australia",
   alternateName: "Vinyl Tiles by Premrest",
-  url: "https://vinyltiles.com.au",
-  logo: "https://vinyltiles.com.au/images/brand/premrest-logo.svg",
+  url: "https://www.vinyltiles.com.au",
+  logo: "https://www.vinyltiles.com.au/images/brand/premrest-logo.svg",
   telephone: "+61-1300-207-915",
   email: "office@premrest.com.au",
   description:

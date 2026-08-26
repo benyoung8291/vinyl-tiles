@@ -1,11 +1,9 @@
 "use client";
 
 import { useEffect, useState, type FormEvent } from "react";
-import { useSearchParams } from "next/navigation";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
-import { Checkbox } from "@/components/ui/checkbox";
 import { Button } from "@/components/ui/button";
 
 const FORMSPREE_ENDPOINT = "https://formspree.io/f/mnjowgkl";
@@ -39,47 +37,82 @@ const RANGE_TO_PRODUCTS: Record<string, string[]> = {
   alternatives: ["Comcork (cork & rubber)", "Nora (rubber by Interface)"],
 };
 
-export function ContactForm() {
-  const searchParams = useSearchParams();
+export type ContactQuery = {
+  range?: string;
+  product?: string;
+  sector?: string;
+  audience?: string;
+  intent?: string;
+};
+
+function firstParam(value: string | string[] | undefined): string | undefined {
+  if (Array.isArray(value)) return value[0];
+  return value || undefined;
+}
+
+function readQueryFromSearch(search: string): ContactQuery {
+  const params = new URLSearchParams(search.startsWith("?") ? search : `?${search}`);
+  return {
+    range: firstParam(params.get("range") ?? undefined),
+    product: firstParam(params.get("product") ?? undefined),
+    sector: firstParam(params.get("sector") ?? undefined),
+    audience: firstParam(params.get("audience") ?? undefined),
+    intent: firstParam(params.get("intent") ?? undefined),
+  };
+}
+
+function hasQueryValues(query: ContactQuery | undefined): boolean {
+  if (!query) return false;
+  return Boolean(query.range || query.product || query.sector || query.audience || query.intent);
+}
+
+export function buildContactPrefill(query: ContactQuery | undefined): {
+  products: string[];
+  message: string;
+} {
+  if (!query) return { products: [], message: "" };
+
+  const mappedProducts = query.range ? RANGE_TO_PRODUCTS[query.range] : undefined;
+  const lines: string[] = [];
+
+  if (query.intent === "samples") {
+    lines.push("I'd like to request samples.");
+  }
+  if (query.product && query.range) {
+    lines.push(`Product of interest: ${query.product} by ${mappedProducts?.[0] ?? query.range}.`);
+  } else if (query.range === "alternatives") {
+    lines.push("Range of interest: PVC-free alternatives (Comcork and/or Nora).");
+  } else if (mappedProducts) {
+    lines.push(`Range of interest: ${mappedProducts.join(", ")}.`);
+  }
+  if (query.sector) {
+    lines.push(`Sector: ${query.sector.replace(/-flooring$/, "").replace(/-/g, " ")}.`);
+  }
+  if (query.audience) {
+    lines.push(`I'm a ${query.audience.replace(/-/g, " ")}.`);
+  }
+
+  return {
+    products: mappedProducts ?? [],
+    message: lines.length > 0 ? lines.join("\n") + "\n\n" : "",
+  };
+}
+
+export function ContactForm({ query }: { query?: ContactQuery }) {
+  const initialPrefill = buildContactPrefill(query);
   const [submitted, setSubmitted] = useState(false);
   const [submitting, setSubmitting] = useState(false);
   const [errorMessage, setErrorMessage] = useState<string | null>(null);
-  const [products, setProducts] = useState<string[]>([]);
-  const [defaultMessage, setDefaultMessage] = useState("");
+  const [products, setProducts] = useState<string[]>(initialPrefill.products);
+  const [defaultMessage, setDefaultMessage] = useState(initialPrefill.message);
 
   useEffect(() => {
-    const range = searchParams.get("range");
-    const product = searchParams.get("product");
-    const sector = searchParams.get("sector");
-    const audience = searchParams.get("audience");
-    const intent = searchParams.get("intent");
-
-    const mappedProducts = range ? RANGE_TO_PRODUCTS[range] : undefined;
-    if (mappedProducts) {
-      setProducts(mappedProducts);
-    }
-
-    const lines: string[] = [];
-    if (intent === "samples") {
-      lines.push("I'd like to request samples.");
-    }
-    if (product && range) {
-      lines.push(`Product of interest: ${product} by ${mappedProducts?.[0] ?? range}.`);
-    } else if (range === "alternatives") {
-      lines.push("Range of interest: PVC-free alternatives (Comcork and/or Nora).");
-    } else if (mappedProducts) {
-      lines.push(`Range of interest: ${mappedProducts.join(", ")}.`);
-    }
-    if (sector) {
-      lines.push(`Sector: ${sector.replace(/-flooring$/, "").replace(/-/g, " ")}.`);
-    }
-    if (audience) {
-      lines.push(`I'm a ${audience.replace(/-/g, " ")}.`);
-    }
-    if (lines.length > 0) {
-      setDefaultMessage(lines.join("\n") + "\n\n");
-    }
-  }, [searchParams]);
+    const fromWindow = readQueryFromSearch(window.location.search);
+    const source = hasQueryValues(fromWindow) ? fromWindow : query;
+    const next = buildContactPrefill(source);
+    setProducts(next.products);
+    setDefaultMessage(next.message);
+  }, [query]);
 
   function handleProductToggle(product: string, checked: boolean) {
     setProducts((prev) =>
@@ -163,21 +196,12 @@ export function ContactForm() {
       method="POST"
       className="space-y-5"
     >
-      {/* Hidden Formspree subject */}
       <input
         type="hidden"
         name="_subject"
         value="New enquiry from vinyltiles.com.au"
       />
 
-      {/* Hidden products list (Formspree-friendly comma list of selected) */}
-      <input
-        type="hidden"
-        name="productsOfInterest"
-        value={products.join(", ")}
-      />
-
-      {/* Full Name */}
       <div className="space-y-1.5">
         <Label htmlFor="fullName">
           Full Name <span className="text-destructive">*</span>
@@ -190,7 +214,6 @@ export function ContactForm() {
         />
       </div>
 
-      {/* Email */}
       <div className="space-y-1.5">
         <Label htmlFor="email">
           Email <span className="text-destructive">*</span>
@@ -204,7 +227,6 @@ export function ContactForm() {
         />
       </div>
 
-      {/* Phone */}
       <div className="space-y-1.5">
         <Label htmlFor="phone">Phone</Label>
         <Input
@@ -215,7 +237,15 @@ export function ContactForm() {
         />
       </div>
 
-      {/* Project Type */}
+      <div className="space-y-1.5">
+        <Label htmlFor="company">Company</Label>
+        <Input
+          id="company"
+          name="company"
+          placeholder="Company or organisation"
+        />
+      </div>
+
       <div className="space-y-1.5">
         <Label htmlFor="projectType">Project Type</Label>
         <select
@@ -235,7 +265,6 @@ export function ContactForm() {
         </select>
       </div>
 
-      {/* Approximate Area */}
       <div className="space-y-1.5">
         <Label htmlFor="area">Approximate Area (m&sup2;)</Label>
         <Input
@@ -247,18 +276,19 @@ export function ContactForm() {
         />
       </div>
 
-      {/* Products of Interest */}
       <fieldset className="space-y-2.5">
         <legend className="text-sm font-medium">Products of Interest</legend>
         <div className="grid grid-cols-2 gap-x-4 gap-y-2.5 sm:grid-cols-3">
           {productOptions.map((product) => (
             <div key={product} className="flex items-center gap-2">
-              <Checkbox
+              <input
                 id={`product-${product}`}
+                type="checkbox"
+                name="productsOfInterest"
+                value={product}
                 checked={products.includes(product)}
-                onCheckedChange={(checked) =>
-                  handleProductToggle(product, checked === true)
-                }
+                onChange={(e) => handleProductToggle(product, e.target.checked)}
+                className="size-4 shrink-0 rounded-[4px] border border-input accent-[rgb(55,50,45)]"
               />
               <Label
                 htmlFor={`product-${product}`}
@@ -271,12 +301,14 @@ export function ContactForm() {
         </div>
       </fieldset>
 
-      {/* Message */}
       <div className="space-y-1.5">
-        <Label htmlFor="message">Message</Label>
+        <Label htmlFor="message">
+          Message <span className="text-destructive">*</span>
+        </Label>
         <Textarea
           id="message"
           name="message"
+          required
           placeholder="Tell us about your project, timeline, or any questions you have..."
           className="min-h-28"
           defaultValue={defaultMessage}
@@ -294,14 +326,13 @@ export function ContactForm() {
         </p>
       )}
 
-      {/* Submit */}
       <Button
         type="submit"
         size="lg"
         className="w-full sm:w-auto"
         disabled={submitting}
       >
-        {submitting ? "Sending…" : "Send Enquiry"}
+        {submitting ? "Sending…" : "Send enquiry"}
       </Button>
     </form>
   );
