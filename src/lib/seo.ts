@@ -2,10 +2,24 @@ import type { Metadata } from "next";
 
 export const SITE_ORIGIN = "https://www.vinyltiles.com.au";
 
+const openGraphDefaults = {
+  type: "website" as const,
+  locale: "en_AU",
+  siteName: "Vinyl Tiles Australia",
+};
+
+/** Homepage share card copy — keep in sync with root layout openGraph. */
+const homepageOpenGraph = {
+  ...openGraphDefaults,
+  title: "Commercial Vinyl Tile Flooring Australia | LVT Supply & Install",
+  description:
+    "Premium commercial LVT and vinyl plank supplied and installed across Melbourne, Sydney, and Brisbane. Interface, Karndean, Armstrong, Tarkett.",
+};
+
 /**
  * Per-page canonical and og:url. Do not set these on the root layout —
- * Next.js inherits them onto every child route, so a homepage default
- * makes inner pages canonicalise and share as the homepage.
+ * Next.js replaces the whole openGraph object per segment, and a homepage
+ * default would make inner pages canonicalise and share as the homepage.
  */
 export function selfCanonical(
   path: string,
@@ -15,6 +29,9 @@ export function selfCanonical(
 
   return {
     alternates: { canonical: pathname },
-    openGraph: { url },
+    openGraph: {
+      ...(pathname === "/" ? homepageOpenGraph : openGraphDefaults),
+      url,
+    },
   };
 }
