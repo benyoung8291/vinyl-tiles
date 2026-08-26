@@ -2,15 +2,16 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { ArrowRight, ArrowUpRight, Leaf, ExternalLink } from "lucide-react";
 import { QuoteCta } from "@/components/quote-cta";
+import { selfCanonical } from "@/lib/seo";
 
 const COMCORK_URL = "https://comcorkflooring.com.au";
 
 export const metadata: Metadata = {
   title:
     "PVC-Free Alternatives to Vinyl Tile | Comcork & Nora Rubber Flooring",
-  alternates: { canonical: "/sustainable-alternative" },
   description:
     "Two PVC-free alternatives to vinyl tile: Comcork (Australian-made cork and rubber composite, 31 colourways) and Nora by Interface (German-engineered rubber, 12 collections). Specify either, or both.",
+  ...selfCanonical("/sustainable-alternative"),
 };
 
 const NORA_URL = "https://www.interface.com/AU/en-AU/resilient/nora-rubber-benefits.html";

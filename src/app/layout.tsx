@@ -26,11 +26,11 @@ export const metadata: Metadata = {
     "Tarkett iD Inspiration",
   ],
   metadataBase: new URL("https://www.vinyltiles.com.au"),
-  alternates: { canonical: "/" },
+  // Canonical and og:url are set per page via selfCanonical() — a layout
+  // default would inherit onto every inner route as the homepage.
   openGraph: {
     type: "website",
     locale: "en_AU",
-    url: "https://www.vinyltiles.com.au",
     siteName: "Vinyl Tiles Australia",
     title: "Commercial Vinyl Tile Flooring Australia | LVT Supply & Install",
     description:

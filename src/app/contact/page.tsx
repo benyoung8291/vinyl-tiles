@@ -1,12 +1,13 @@
 import type { Metadata } from "next";
 import { Phone, Mail, Clock, Building2 } from "lucide-react";
 import { ContactForm, type ContactQuery } from "@/components/contact-form";
+import { selfCanonical } from "@/lib/seo";
 
 export const metadata: Metadata = {
   title: "Vinyl Tile Flooring Quotes | Book a Free Site Inspection",
-  alternates: { canonical: "/contact" },
   description:
     "Get a written quote for commercial vinyl tile supply and install across Melbourne, Sydney, and Brisbane. Every quote follows a free site inspection. Call 1300 207 915 or submit an enquiry.",
+  ...selfCanonical("/contact"),
 };
 
 type ContactSearchParams = {

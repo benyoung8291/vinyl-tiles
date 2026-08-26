@@ -1,7 +1,13 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
 import { ArrowRight } from "lucide-react";
 import { QuoteCta } from "@/components/quote-cta";
+import { selfCanonical } from "@/lib/seo";
+
+export const metadata: Metadata = {
+  ...selfCanonical("/"),
+};
 
 const rangeItems = [
   {

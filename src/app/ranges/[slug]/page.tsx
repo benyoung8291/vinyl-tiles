@@ -4,6 +4,7 @@ import Link from "next/link";
 import { ArrowRight, ExternalLink } from "lucide-react";
 import { QuoteCta } from "@/components/quote-cta";
 import { ranges, getRangeBySlug } from "@/lib/ranges";
+import { selfCanonical } from "@/lib/seo";
 
 interface RangePageProps {
   params: Promise<{ slug: string }>;
@@ -33,8 +34,8 @@ export async function generateMetadata({
 
   return {
     title: `${range.name} Vinyl Tile Flooring Australia | LVT Supply & Install`,
-    alternates: { canonical: `/ranges/${range.slug}` },
     description: `${range.name} commercial vinyl tile flooring — ${productCount} ranges, ${colourCount}+ colourways. Supplied and installed across Melbourne, Sydney, and Brisbane. Free site inspection on every quote.`,
+    ...selfCanonical(`/ranges/${range.slug}`),
   };
 }
 

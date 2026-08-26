@@ -3,11 +3,13 @@ import Link from "next/link";
 import Image from "next/image";
 import { ArrowRight } from "lucide-react";
 import { QuoteCta } from "@/components/quote-cta";
+import { selfCanonical } from "@/lib/seo";
 
 export const metadata: Metadata = {
   title: "Premium LVT for Homes | Designer Vinyl Tile Flooring",
   description:
     "Architect-grade LVT for premium homes in Melbourne, Sydney, and Brisbane. Karndean and Interface ranges, commercial-grade installation, every quote backed by a site inspection.",
+  ...selfCanonical("/residential"),
 };
 
 const positioning = [

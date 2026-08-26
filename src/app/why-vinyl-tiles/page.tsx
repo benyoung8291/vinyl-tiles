@@ -7,11 +7,13 @@ import {
   AccordionContent,
 } from "@/components/ui/accordion";
 import { QuoteCta } from "@/components/quote-cta";
+import { selfCanonical } from "@/lib/seo";
 
 export const metadata: Metadata = {
   title: "Why Vinyl Tiles? | The Complete Guide to Commercial Vinyl Flooring",
   description:
     "Discover why vinyl tile flooring is the preferred choice for commercial spaces across Australia. Compare LVT, VCT, and vinyl plank options — durability, lifecycle costs, sustainability, slip ratings, and fire compliance explained.",
+  ...selfCanonical("/why-vinyl-tiles"),
 };
 
 const faqItems = [

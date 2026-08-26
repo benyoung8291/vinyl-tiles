@@ -5,6 +5,7 @@ import { ArrowLeft, ArrowRight, ExternalLink } from "lucide-react";
 import { QuoteCta } from "@/components/quote-cta";
 import { ColourwayGrid } from "@/components/colourway-grid";
 import { ranges, getProductBySlug } from "@/lib/ranges";
+import { selfCanonical } from "@/lib/seo";
 
 interface ProductPageProps {
   params: Promise<{ slug: string; productSlug: string }>;
@@ -34,8 +35,8 @@ export async function generateMetadata({
 
   return {
     title: `${product.name} by ${range.name} | ${product.colourways.length} Colourways | LVT Supply & Install`,
-    alternates: { canonical: `/ranges/${range.slug}/${product.slug}` },
     description: `${product.name} ${product.style.toLowerCase()} vinyl tile flooring by ${range.name}. ${product.colourways.length} colourways. Commercial supply and install across Melbourne, Sydney, and Brisbane. ${product.description}`,
+    ...selfCanonical(`/ranges/${range.slug}/${product.slug}`),
   };
 }
 
