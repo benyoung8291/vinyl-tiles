@@ -47,7 +47,10 @@ export function FaqSection({
           </div>
 
           <div>
-            <Accordion className="divide-y divide-[rgb(230,225,215)]">
+            <Accordion
+              className="divide-y divide-[rgb(230,225,215)]"
+              hiddenUntilFound
+            >
               {items.map((item, index) => (
                 <AccordionItem key={item.question} value={`faq-${index}`}>
                   <AccordionTrigger
