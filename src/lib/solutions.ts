@@ -1,3 +1,5 @@
+import type { FaqItem } from "@/lib/faq";
+
 export interface RecommendedProduct {
   name: string;
   slug: string;
@@ -12,6 +14,7 @@ export interface Solution {
   content: string[];
   requirements: string[];
   recommendedProducts: RecommendedProduct[];
+  faq: FaqItem[];
   ctaTitle: string;
   ctaDescription: string;
 }
@@ -53,6 +56,28 @@ export const solutions: Solution[] = [
         slug: "tarkett",
         reason:
           "Integrated acoustic backing options delivering up to 19dB impact sound reduction",
+      },
+    ],
+    faq: [
+      {
+        question: "How much quieter is vinyl tile in an open-plan office?",
+        answer:
+          "Vinyl tile with acoustic backing dampens impact noise — footsteps, chair movement, dropped objects — by up to 19dB. That is the spec we use for open-plan offices. Tarkett iD Collection has integrated acoustic backing for this.",
+      },
+      {
+        question: "Can you replace one damaged office tile without replacing the floor?",
+        answer:
+          "Yes. Individual tiles can be replaced if damaged, so a scuffed corner does not mean a full floor replacement.",
+      },
+      {
+        question: "What ratings do you specify for office floors?",
+        answer:
+          "Acoustic performance of 19dB+ impact sound reduction, slip rating R10 minimum, fire rating Bfl-s1 for commercial compliance, and a 0.55mm+ wear layer for heavy commercial use. No specialist cleaning equipment.",
+      },
+      {
+        question: "How do you install in a live tenancy without weeks of downtime?",
+        answer:
+          "Karndean LooseLay is adhesive-free, so fitouts move faster with less disruption. We supply and install as one contractor — new tenancy, refurb, or multi-floor portfolio across Melbourne, Sydney, and Brisbane.",
       },
     ],
     ctaTitle: "Let's talk your office flooring",
@@ -97,6 +122,28 @@ export const solutions: Solution[] = [
           "Modular tile format allows easy reconfiguration and spot-replacement for seasonal layouts",
       },
     ],
+    faq: [
+      {
+        question: "Will vinyl tile hold up under trolleys and pallet jacks?",
+        answer:
+          "Heavy commercial grades with a 0.55mm to 0.70mm wear layer are specified for this. Armstrong Diamond 10 is the scratch-resistant option we use on heavy retail traffic. Laminate dents; timber warps at the entry. Vinyl does not.",
+      },
+      {
+        question: "Can you install overnight so the store can reopen in the morning?",
+        answer:
+          "Loose-lay systems can go down overnight — close Friday evening, reopen Saturday morning. That is the point of the format when trading hours matter.",
+      },
+      {
+        question: "Can a damaged tile be replaced without closing part of the shop?",
+        answer:
+          "Yes. Damaged tiles can be spot-replaced in minutes. Interface modular tiles also allow seasonal layout changes without a full rip-up.",
+      },
+      {
+        question: "What wear layer do you specify for retail?",
+        answer:
+          "0.55mm to 0.70mm, plus R10 slip for public commercial spaces, and high impact and indentation resistance for trolleys and display units.",
+      },
+    ],
     ctaTitle: "Let's spec your retail floor",
     ctaDescription:
       "Flagship stores, supermarkets, multi-site rollouts &mdash; we have done them all. Book a free site inspection across Melbourne, Sydney, or Brisbane. Call 1300 207 915 or email office@premrest.com.au.",
@@ -137,6 +184,28 @@ export const solutions: Solution[] = [
         slug: "interface",
         reason:
           "Warm, residential-look designs ideal for aged care environments where a homely atmosphere matters",
+      },
+    ],
+    faq: [
+      {
+        question: "How does vinyl tile meet infection-control requirements?",
+        answer:
+          "Heat-welded seams, no cracks for bacteria to sit in, sealed and impermeable, and resistant to healthcare-grade cleaning chemicals. That is the hygienic construction we specify for hospitals and aged care.",
+      },
+      {
+        question: "What slip rating do you use in wet healthcare areas?",
+        answer:
+          "R10 to R11, depending on wet and dry zones. Duty-of-care on corridors and wet areas is the reason.",
+      },
+      {
+        question: "Can aged care floors look residential instead of clinical?",
+        answer:
+          "Yes. Warm timber or natural stone looks are the usual brief — less institutional, same durability and chemical resistance. Interface is the range we use when a homely atmosphere matters.",
+      },
+      {
+        question: "Does vinyl reduce staff fatigue on long shifts?",
+        answer:
+          "It has enough give underfoot to reduce fatigue over an eight-hour shift compared with a hard sterile floor. That is part of the spec, not a bonus.",
       },
     ],
     ctaTitle: "Let's talk healthcare flooring",
@@ -181,6 +250,28 @@ export const solutions: Solution[] = [
           "Carbon-neutral products supporting school sustainability initiatives and Green Star targets",
       },
     ],
+    faq: [
+      {
+        question: "How does vinyl tile handle school traffic on an education budget?",
+        answer:
+          "Heavy commercial wear layers (0.55mm+) take corridors, classrooms, and halls across academic terms. No polishing, no specialist chemicals. Individual tiles spot-replace if damaged. Armstrong is the value range we use in schools nationwide.",
+      },
+      {
+        question: "What slip rating do you specify for student safety?",
+        answer:
+          "R10 minimum — dry classrooms and wet corridors after rain or cleaning.",
+      },
+      {
+        question: "Can vinyl reduce noise between classrooms and floors?",
+        answer:
+          "Acoustic backing absorbs impact sound — footsteps, dragging chairs, dropped equipment — and cuts noise bleeding between levels. Tarkett's education range is built around this.",
+      },
+      {
+        question: "Can you colour-code zones for wayfinding?",
+        answer:
+          "Yes. Colour-coded zones, school colours, warmer tones for libraries — without blowing the capital works budget. Tarkett has a broad colour palette for this.",
+      },
+    ],
     ctaTitle: "Let's talk education flooring",
     ctaDescription:
       "Primary, secondary, and tertiary &mdash; we know what education spaces need. Book a free site inspection in Melbourne, Sydney, or Brisbane. Call 1300 207 915 or email office@premrest.com.au.",
@@ -221,6 +312,28 @@ export const solutions: Solution[] = [
         slug: "tarkett",
         reason:
           "Broad design palette and water resistance for restaurant and bar environments",
+      },
+    ],
+    faq: [
+      {
+        question: "Can hospitality vinyl look like timber or stone?",
+        answer:
+          "Yes. Realistic timber, stone, concrete, and terrazzo — herringbone oak, dark slate, polished concrete. Karndean is the design-led range we use when the floor is part of the room, not a backdrop.",
+      },
+      {
+        question: "Will it handle kitchens, bars, and spilled drinks?",
+        answer:
+          "Vinyl is water-resistant and dimensionally stable — it will not warp or swell in kitchens, bars, or bathrooms. It also resists stains from food, wine, and cleaning chemicals.",
+      },
+      {
+        question: "What slip rating do you specify for bars and kitchens?",
+        answer:
+          "R10 to R11, particularly where spills are routine.",
+      },
+      {
+        question: "Does acoustic vinyl help keep hotel corridors quiet?",
+        answer:
+          "Acoustic backing dampens footsteps and luggage wheels in corridors. Interface modular tiles with integrated acoustic backing are the usual spec for hotel rooms and corridors.",
       },
     ],
     ctaTitle: "Let's design your hospitality floor",

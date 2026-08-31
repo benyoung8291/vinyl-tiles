@@ -2,7 +2,9 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
 import { ArrowRight } from "lucide-react";
+import { FaqSection } from "@/components/faq-section";
 import { QuoteCta } from "@/components/quote-cta";
+import { homepageFaqItems } from "@/lib/faq";
 import { selfCanonical } from "@/lib/seo";
 
 export const metadata: Metadata = {
@@ -579,6 +581,8 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      <FaqSection items={homepageFaqItems} />
 
       {/* Quote CTA */}
       <QuoteCta

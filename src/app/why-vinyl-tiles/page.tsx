@@ -1,12 +1,8 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import {
-  Accordion,
-  AccordionItem,
-  AccordionTrigger,
-  AccordionContent,
-} from "@/components/ui/accordion";
+import { FaqSection } from "@/components/faq-section";
 import { QuoteCta } from "@/components/quote-cta";
+import { whyVinylFaqItems } from "@/lib/faq";
 import { selfCanonical } from "@/lib/seo";
 
 export const metadata: Metadata = {
@@ -16,70 +12,9 @@ export const metadata: Metadata = {
   ...selfCanonical("/why-vinyl-tiles"),
 };
 
-const faqItems = [
-  {
-    question: "What's the difference between LVT and VCT?",
-    answer:
-      "LVT (Luxury Vinyl Tile) has multiple layers with a photographic top and a protective wear layer — it looks like real stone or timber. VCT (Vinyl Composition Tile) is solid throughout, made from vinyl, limestone, and plasticiser. Use LVT when the look matters — reception areas, retail, aged care. Use VCT when you need maximum durability on a tighter budget and you don't mind solid colours — hospitals, schools, warehouses. The bonus? VCT can be stripped and re-polished, so it'll often last well past 20 years.",
-  },
-  {
-    question: "How long does commercial vinyl flooring last?",
-    answer:
-      "Typically 15 to 25 years with proper installation and basic maintenance. VCT lasts longer — often exceeds 25 years if you keep up with stripping and polishing. LVT and vinyl plank depend mainly on the wear layer (we recommend minimum 0.55mm) and how well the subfloor was prepared. So really, longevity comes down to three things: decent thickness, solid prep work, and following the maintenance schedule.",
-  },
-  {
-    question: "Is vinyl tile suitable for healthcare and aged care?",
-    answer:
-      "It's the default choice in Australian aged care and healthcare. It's hygienic — especially when heat-welded, which prevents bacteria and moisture getting into joints. Slip ratings of R10 or higher are standard, which matters in wet areas and corridors. And if acoustic properties matter to you (quieter is better for residents), many products have backing that cuts impact noise by up to 19dB.",
-  },
-  {
-    question: "What subfloor preparation is needed?",
-    answer:
-      "This is non-negotiable. The subfloor has to be structurally sound, dry, clean, and level. For concrete, we test moisture levels to AS 1884 — relative humidity needs to sit below 75% RH. If it's higher, we apply a moisture barrier. The surface gets cleaned of cracks, ridges, and dirt, then usually levelled with a cementitious compound to meet the manufacturer's flatness tolerances. Skip this step and you're asking for trouble.",
-  },
-  {
-    question: "Can vinyl tiles be installed over existing flooring?",
-    answer:
-      "Sometimes. If the old vinyl is firmly bonded, undamaged, and clean, we can install over it. But we'll assess moisture, adhesion, and flatness first — that's non-negotiable. Installing over carpet, deep-grouted ceramic, or damaged floors? No. We'll always recommend a proper site assessment before we commit to anything.",
-  },
-  {
-    question: "What's the maintenance schedule for vinyl tile floors?",
-    answer:
-      "LVT and vinyl plank are easy — dry mop daily, damp mop occasionally with neutral pH cleaner. Most LVT has a protective polyurethane layer already on it, so no wax or polish needed. VCT needs more attention: sweep daily, damp mop regularly, and re-polish every 6 to 12 months depending on traffic. But that's also why VCT lasts so long.",
-  },
-  {
-    question: "Are vinyl tiles waterproof?",
-    answer:
-      "The tiles themselves are waterproof. Water won't get through the material. But installation method matters. Glue-down with heat-welded seams is your best bet for wet areas — solid protection. Click-lock floating floors are water-resistant but not completely sealed at the joints, so they're better for dry zones.",
-  },
-  {
-    question: "What fire rating do commercial vinyl tiles need?",
-    answer:
-      "The National Construction Code (NCC) sets the rules. For most projects — offices, retail, healthcare — Cfl-s1 meets requirements. Escape routes and high-risk areas usually need Bfl-s1. Always check with your building certifier before specifying; they'll tell you exactly what your project needs.",
-  },
-];
-
-const faqJsonLd = {
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  mainEntity: faqItems.map((item) => ({
-    "@type": "Question",
-    name: item.question,
-    acceptedAnswer: {
-      "@type": "Answer",
-      text: item.answer,
-    },
-  })),
-};
-
 export default function WhyVinylTilesPage() {
   return (
     <>
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
-      />
-
       {/* Hero */}
       <section className="bg-subtle-lines" style={{ backgroundColor: "rgb(248, 245, 237)" }}>
         <div className="mx-auto max-w-[1440px] px-6 pb-20 pt-28 md:pb-24 md:pt-36 lg:px-10">
@@ -303,39 +238,7 @@ export default function WhyVinylTilesPage() {
         </div>
       </section>
 
-      {/* FAQ */}
-      <section style={{ backgroundColor: "rgb(252, 250, 245)" }}>
-        <div className="mx-auto max-w-[1440px] px-6 py-20 md:py-28 lg:px-10">
-          <div className="grid gap-14 lg:grid-cols-[1fr_1.8fr] lg:gap-20">
-            <div>
-              <p className="text-[11px] font-medium uppercase tracking-widest mb-5" style={{ color: "rgb(120, 110, 100)" }}>
-                FAQ
-              </p>
-              <h2 className="text-[clamp(1.75rem,4vw,2.5rem)] font-bold tracking-tight leading-tight max-w-xl" style={{ color: "rgb(38, 35, 30)" }}>
-                Common questions.
-              </h2>
-            </div>
-
-            <div>
-              <Accordion className="divide-y divide-[rgb(230,225,215)]">
-                {faqItems.map((item, index) => (
-                  <AccordionItem key={index} value={`faq-${index}`}>
-                    <AccordionTrigger
-                      className="py-5 text-[14px] font-semibold hover:opacity-70"
-                      style={{ color: "rgb(38, 35, 30)" }}
-                    >
-                      {item.question}
-                    </AccordionTrigger>
-                    <AccordionContent className="pb-5 text-[14px] leading-relaxed" style={{ color: "rgb(82, 75, 68)" }}>
-                      <p>{item.answer}</p>
-                    </AccordionContent>
-                  </AccordionItem>
-                ))}
-              </Accordion>
-            </div>
-          </div>
-        </div>
-      </section>
+      <FaqSection items={whyVinylFaqItems} />
 
       {/* Quote CTA */}
       <QuoteCta
