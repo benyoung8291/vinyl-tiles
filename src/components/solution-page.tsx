@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { ArrowRight, Phone } from "lucide-react";
+import { FaqSection } from "@/components/faq-section";
 import { QuoteCta } from "@/components/quote-cta";
 import type { Solution } from "@/lib/solutions";
 import { solutions } from "@/lib/solutions";
@@ -197,6 +198,8 @@ export function SolutionPage({ solution }: SolutionPageProps) {
           </div>
         </div>
       </section>
+
+      <FaqSection items={solution.faq} />
 
       {/* Quote CTA */}
       <QuoteCta
