@@ -1,9 +1,11 @@
 import type { MetadataRoute } from "next";
 import { ranges } from "@/lib/ranges";
 
+/** Shared lastmod for a crawl refresh. Keep every loc on www. */
+const lastModified = new Date("2026-09-04T00:00:00.000Z");
+
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = "https://www.vinyltiles.com.au";
-  const lastModified = new Date();
 
   const staticPages: MetadataRoute.Sitemap = [
     { url: baseUrl, changeFrequency: "monthly", priority: 1, lastModified },

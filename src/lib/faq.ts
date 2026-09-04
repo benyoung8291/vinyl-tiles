@@ -98,3 +98,37 @@ export const whyVinylFaqItems: FaqItem[] = [
       "The National Construction Code (NCC) sets the rules. For most projects — offices, retail, healthcare — Cfl-s1 meets requirements. Escape routes and high-risk areas usually need Bfl-s1. Always check with your building certifier before specifying; they'll tell you exactly what your project needs.",
   },
 ];
+
+/** Process / supply-and-install questions for /how-we-work. Keep visible copy in sync. */
+export const howWeWorkFaqItems: FaqItem[] = [
+  {
+    question: "What is the commercial vinyl tile installation process?",
+    answer:
+      "Four steps. You tell us the brief, we inspect the site and write a quote, we source and deliver the product, then licensed installers lay the floor. One project manager owns the job from enquiry through to walkthrough — Melbourne, Sydney, and Brisbane.",
+  },
+  {
+    question: "Do you inspect the site before quoting?",
+    answer:
+      "Yes. Every quote — commercial or residential — follows a free site inspection. We measure, photograph, test moisture, and talk through what the space needs to do. We do not give phone quotes or walk-back \"from $X\" numbers.",
+  },
+  {
+    question: "How much does commercial vinyl tile installation cost?",
+    answer:
+      "Installation is a guide of $30–35/m² for laying premium LVT — install only, ex GST, before floor preparation, takeup, levelling, or trims. Product cost sits on top and varies by range. Prep and access are quoted line-by-line after the site visit.",
+  },
+  {
+    question: "Can I get supply-only, or do I have to use your installers?",
+    answer:
+      "Both. Supply and install is the usual path — one contractor from specification through to handover. Have your own install crew? We can supply only. You still get our manufacturer pricing, specification, and the technical documentation.",
+  },
+  {
+    question: "How long does commercial vinyl tile installation take?",
+    answer:
+      "Programme depends on area, floor preparation, and access. We set dates in the written quote after the site inspection — including staged deliveries and phased fitouts. You get a reply within one business day of enquiry and a quote within 48 hours of the visit.",
+  },
+  {
+    question: "What warranty do you offer, and who do I call?",
+    answer:
+      "15-year commercial warranty. The floor is specified, installed, and warranted by a contractor who answers the phone — 1300 207 915.",
+  },
+];

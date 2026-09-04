@@ -7,13 +7,15 @@ import {
   Clock,
   CheckCircle2,
 } from "lucide-react";
+import { FaqSection } from "@/components/faq-section";
 import { QuoteCta } from "@/components/quote-cta";
+import { howWeWorkFaqItems } from "@/lib/faq";
 import { selfCanonical } from "@/lib/seo";
 
 export const metadata: Metadata = {
-  title: "How We Work | Our Process from Consultation to Installation",
+  title: "Commercial Vinyl Tile Installation | Supply & Install Process",
   description:
-    "From enquiry to finished floor — discover how Vinyl Tiles by Premrest delivers commercial vinyl tile supply and installation across Australia. Free consultation, competitive pricing, professional results.",
+    "Commercial vinyl tile installation across Melbourne, Sydney, and Brisbane. Site inspection, written quote, then supply and install. Guide $30–35/m² plus prep.",
   ...selfCanonical("/how-we-work"),
 };
 
@@ -282,6 +284,11 @@ export default function HowWeWorkPage() {
           </div>
         </div>
       </section>
+
+      <FaqSection
+        items={howWeWorkFaqItems}
+        heading="Commercial vinyl tile installation, answered."
+      />
 
       {/* CTA */}
       <QuoteCta
