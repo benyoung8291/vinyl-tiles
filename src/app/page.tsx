@@ -429,7 +429,7 @@ export default function Home() {
                 href="/how-we-work"
                 className="mt-8 inline-flex items-center gap-2 text-[13px] font-medium text-white/60 transition-colors hover:text-white"
               >
-                Learn about our process
+                Commercial vinyl tile installation process
                 <ArrowRight className="size-4" />
               </Link>
             </div>
