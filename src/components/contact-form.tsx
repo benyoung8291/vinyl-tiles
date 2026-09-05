@@ -6,6 +6,22 @@ import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
 import { Button } from "@/components/ui/button";
 
+declare global {
+  interface Window {
+    gtag?: (
+      command: "event",
+      eventName: string,
+      params?: Record<string, string>,
+    ) => void;
+  }
+
+  function gtag(
+    command: "event",
+    eventName: string,
+    params?: Record<string, string>,
+  ): void;
+}
+
 const FORMSPREE_ENDPOINT = "https://formspree.io/f/mnjowgkl";
 
 const projectTypes = [
@@ -138,6 +154,14 @@ export function ContactForm({ query }: { query?: ContactQuery }) {
       });
 
       if (response.ok) {
+        if (typeof gtag === "function") {
+          gtag("event", "generate_lead", {
+            form_id: "mnjowgkl",
+            form_destination: "formspree",
+            page_path: window.location.pathname,
+            page_location: window.location.href,
+          });
+        }
         setSubmitted(true);
         formEl.reset();
         setProducts([]);
